@@ -39,3 +39,4 @@ The intake form builds a draft addressed to `info@skarion.com` in the visitor's 
 
 - [Brand, domain and social launch plan](review/launch-kit.md)
 - [Technical and publication review sheet](review/site-review.md)
+- [GTM watchlists, research reports and calendar](gtm-social/README.md)

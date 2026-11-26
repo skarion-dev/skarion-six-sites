@@ -1,0 +1,101 @@
+{
+  "name": "Skarion Drafting · CAD and as-builts",
+  "market": "U.S. civil and utility contractors, design firms and CAD managers; English",
+  "goal": "Find proof formats for approved redlines, native CAD, revision logs and client drafting standards.",
+  "topics": [
+    "redline to CAD",
+    "field redlines as-builts",
+    "drawing revision registers",
+    "client CAD standards",
+    "PDF to CAD"
+  ],
+  "accounts": [
+    "Precision Property Measurements",
+    "Skyline Design Group",
+    "GPRS Reality Capture",
+    "Scan2Plan",
+    "CADBRICKS",
+    "A+ Drafting Services",
+    "r/AutoCAD",
+    "AsBuilt 3D"
+  ],
+  "exclude": [
+    "software jobs",
+    "generic 3D renders",
+    "unrelated illustration"
+  ],
+  "lookback_days": 30,
+  "schedule": null,
+  "sources": {
+    "LinkedIn": {
+      "hosts": [
+        "linkedin.com"
+      ],
+      "method": "Public company feeds and individual posts"
+    },
+    "YouTube": {
+      "hosts": [
+        "youtube.com",
+        "youtu.be"
+      ],
+      "method": "Public videos and visible video counts"
+    },
+    "Reddit": {
+      "hosts": [
+        "reddit.com"
+      ],
+      "method": "Public discussions; cite relevant examples without bulk collection"
+    },
+    "Instagram": {
+      "hosts": [
+        "instagram.com"
+      ],
+      "method": "Public indexed posts and Reels"
+    },
+    "TikTok": {
+      "hosts": [
+        "tiktok.com"
+      ],
+      "method": "Public videos and TikTok Creative Center when available"
+    },
+    "Facebook": {
+      "hosts": [
+        "facebook.com"
+      ],
+      "method": "Public indexed posts; Ad Library separately for paid examples"
+    },
+    "X": {
+      "hosts": [
+        "x.com",
+        "twitter.com"
+      ],
+      "method": "Public indexed posts and publisher profiles"
+    },
+    "Threads": {
+      "hosts": [
+        "threads.com",
+        "threads.net"
+      ],
+      "method": "Public indexed posts"
+    },
+    "Pinterest": {
+      "hosts": [
+        "pinterest.com"
+      ],
+      "method": "Public indexed pins and boards"
+    },
+    "Bluesky": {
+      "hosts": [
+        "bsky.app"
+      ],
+      "method": "Public indexed posts and profiles"
+    },
+    "Publisher sites": {
+      "hosts": [
+        "scan2plan.io",
+        "asbuilt3d.com"
+      ],
+      "method": "Original case studies, articles and sample deliverables for context"
+    }
+  }
+}

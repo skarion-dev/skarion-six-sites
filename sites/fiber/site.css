@@ -1,0 +1,199 @@
+.fiber-page {
+  --fiber-ink: #182822;
+  --fiber-forest: #20382d;
+  --fiber-muted: #4d6055;
+  --fiber-paper: #f5f7ee;
+  --fiber-lime: #ddf887;
+  --fiber-rule: #cbd5c9;
+  --fiber-width: 74rem;
+  margin: 0;
+  color: var(--fiber-ink);
+  background: var(--fiber-paper);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.fiber-page *, .fiber-page *::before, .fiber-page *::after { box-sizing: border-box; }
+.fiber-page figure, .fiber-page p, .fiber-page h1, .fiber-page h2, .fiber-page h3 { margin: 0; }
+.fiber-page a { color: inherit; }
+.fiber-page img { display: block; max-width: 100%; }
+.fiber-page :focus-visible { outline: 3px solid #5b7c34; outline-offset: 4px; }
+.fiber-page section[id] { scroll-margin-top: 1rem; }
+.fiber-shell { width: min(calc(100% - 4rem), var(--fiber-width)); margin-inline: auto; }
+
+.fiber-header { background: var(--fiber-paper); }
+.fiber-header-layout, .fiber-footer-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  min-height: 5.25rem;
+}
+.fiber-brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 0.65rem;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+  text-decoration: none;
+}
+.fiber-brand-lane { margin-inline-start: 0.19em; color: #4d6254; font-weight: 650; }
+.fiber-nav { display: flex; align-items: center; gap: clamp(1.12rem, 3vw, 2.65rem); }
+.fiber-nav a { font-size: 0.95rem; font-weight: 650; text-decoration: none; }
+.fiber-nav > a:hover { text-decoration: underline; text-underline-offset: 0.26em; }
+.fiber-nav .fiber-nav-cta { padding: 0.57rem 0.92rem; border: 1px solid var(--fiber-ink); }
+
+.fiber-hero { display: grid; grid-template-columns: 49% 51%; color: var(--fiber-paper); background: var(--fiber-ink); }
+.fiber-hero-text { display: flex; align-items: center; padding: clamp(3.75rem, 7vw, 6.75rem) clamp(2rem, 4vw, 4rem) clamp(4rem, 7vw, 7rem) 2rem; }
+.fiber-hero-inner { width: min(100%, 34.5rem); margin-inline-start: auto; }
+.fiber-page .fiber-kicker {
+  margin-bottom: 1.25rem;
+  color: var(--fiber-muted);
+  font-size: 0.875rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+.fiber-hero .fiber-kicker, .fiber-process .fiber-kicker { color: var(--fiber-lime); }
+.fiber-page h1, .fiber-page h2 { font-weight: 720; letter-spacing: -0.065em; line-height: 1.02; }
+.fiber-page h1 { max-width: 12ch; font-size: clamp(3.6rem, 5.5vw, 6rem); }
+.fiber-page h2 { font-size: clamp(2.5rem, 4.6vw, 4.7rem); }
+.fiber-hero .fiber-hero-summary { max-width: 32rem; margin-block: 1.5rem 2rem; color: #d4e2d4; font-size: clamp(1rem, 1.6vw, 1.18rem); }
+.fiber-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.25rem; }
+.fiber-button {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.73rem 1.05rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font: inherit;
+  font-weight: 720;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+.fiber-page .fiber-button-primary { color: var(--fiber-ink); background: var(--fiber-lime); }
+.fiber-button-primary:hover { background: #f0ffbb; }
+.fiber-page .fiber-button-text { padding-inline: 0; text-decoration: underline; text-underline-offset: 0.25em; }
+.fiber-button-text:hover { color: var(--fiber-lime); }
+.fiber-hero-photo { position: relative; min-height: 100%; overflow: hidden; background: #506056; }
+.fiber-hero-photo img { position: absolute; width: 100%; height: 100%; object-fit: cover; object-position: 49% center; }
+.fiber-hero-photo figcaption {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  padding: 0.3rem 0.55rem;
+  background: var(--fiber-ink);
+  font-size: 0.81rem;
+}
+.fiber-hero-photo a { text-underline-offset: 0.18em; }
+
+.fiber-audiences { padding-block: 1.25rem; border-bottom: 1px solid var(--fiber-rule); }
+.fiber-audiences .fiber-shell { display: flex; align-items: center; gap: 0.9rem 2.5rem; }
+.fiber-audiences .fiber-audience-label { flex: 0 0 auto; color: var(--fiber-muted); font-size: 0.89rem; font-weight: 600; letter-spacing: 0; line-height: 1.4; }
+.fiber-audience-list { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem clamp(1.5rem, 6vw, 5.5rem); margin: 0; padding: 0; list-style: none; font-size: 1rem; font-weight: 700; }
+
+.fiber-section { padding-block: clamp(4.1rem, 8vw, 7.25rem); }
+.fiber-section-head { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 1.5rem 4rem; align-items: end; margin-bottom: 2.8rem; }
+.fiber-service-head h2 { max-width: 15ch; }
+.fiber-section-head > p { max-width: 25rem; color: var(--fiber-muted); font-size: 1.07rem; }
+.fiber-services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-block: 1px solid var(--fiber-rule); }
+.fiber-service { padding: 1.85rem clamp(1rem, 2.4vw, 2rem) 1.9rem; }
+.fiber-service + .fiber-service { border-left: 1px solid var(--fiber-rule); }
+.fiber-service:first-child { padding-inline-start: 0; }
+.fiber-service-icon { width: 2.5rem; height: 2.5rem; margin-bottom: 1rem; color: #446f4c; }
+.fiber-page h3 { font-size: clamp(1.25rem, 2.1vw, 1.56rem); font-weight: 740; letter-spacing: -0.035em; line-height: 1.17; }
+.fiber-service p { margin-top: 0.65rem; color: var(--fiber-muted); }
+.fiber-service ul { margin: 1rem 0 0; padding-left: 1.03rem; }
+.fiber-service li + li { margin-top: 0.23rem; }
+.fiber-service li::marker { color: #507b48; }
+
+.fiber-process { color: #eff6ec; background: var(--fiber-forest); }
+.fiber-process-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: clamp(2rem, 6vw, 6rem); }
+.fiber-process-lead > p:not(.fiber-kicker) { max-width: 31rem; margin-top: 1.35rem; color: #d4e2d4; }
+.fiber-process .fiber-diagram { max-width: 30rem; margin-top: 1.5rem; border: 1px solid #5a7768; background: #172a23; }
+.fiber-diagram svg { display: block; width: 100%; }
+.fiber-diagram figcaption { padding: 0.45rem 0.8rem 0.65rem; color: #d3e4d4; font-size: 0.875rem; }
+.fiber-steps { margin: 0; padding: 0; list-style: none; counter-reset: fiber-step; }
+.fiber-steps li { position: relative; padding: 1.3rem 0 1.35rem 3.75rem; border-top: 1px solid #5a7768; counter-increment: fiber-step; }
+.fiber-steps li::before { position: absolute; inset: 1.17rem auto auto 0; color: var(--fiber-lime); font-size: 1rem; font-weight: 720; content: "0" counter(fiber-step); }
+.fiber-steps p { margin-top: 0.45rem; color: #d4e2d4; }
+.fiber-steps .fiber-boundary::before { content: ""; width: 0.7rem; height: 0.7rem; margin: 0.4rem; border: 1.5px solid var(--fiber-lime); transform: rotate(45deg); }
+
+.fiber-contact { background: #eaf0e3; }
+.fiber-contact-layout { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr); align-items: start; gap: clamp(2.2rem, 7vw, 7rem); }
+.fiber-contact-lead > p:not(.fiber-kicker) { max-width: 28rem; margin-top: 1.2rem; color: var(--fiber-muted); }
+.fiber-contact-lead a { font-weight: 720; text-underline-offset: 0.2em; }
+.fiber-form-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.95rem 1rem; }
+.fiber-form label { display: block; font-size: 0.96rem; font-weight: 720; }
+.fiber-form label span { color: var(--fiber-muted); font-weight: 400; }
+.fiber-form-wide { grid-column: 1 / -1; }
+.fiber-form input, .fiber-form select, .fiber-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-top: 0.3rem;
+  padding: 0.64rem 0.72rem;
+  border: 1px solid #7c9181;
+  border-radius: 2px;
+  color: var(--fiber-ink);
+  background-color: #fafbf7;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.fiber-form select { appearance: none; padding-right: 2.15rem; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10'%3E%3Cpath d='m2 2 6 6 6-6' stroke='%23182822' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-position: right 0.7rem center; background-size: 0.75rem auto; background-repeat: no-repeat; }
+.fiber-form textarea { resize: vertical; }
+.fiber-form input::placeholder, .fiber-form textarea::placeholder { color: #586b5e; opacity: 1; }
+.fiber-button-dark { margin-top: 1.3rem; color: #f7faef; background: var(--fiber-ink); }
+.fiber-button-dark:hover { background: #365546; }
+.fiber-form .fiber-form-note, .fiber-form .fiber-form-status { margin-top: 0.7rem; color: var(--fiber-muted); font-size: 0.91rem; }
+.fiber-form .fiber-form-status:empty { margin-top: 0; }
+
+.fiber-footer { color: #e9f4e6; background: var(--fiber-ink); }
+.fiber-footer .fiber-brand-lane { color: #ccddd0; }
+.fiber-footer-layout > a:not(.fiber-brand) { font-size: 0.95rem; text-underline-offset: 0.25em; }
+
+@media (max-width: 60rem) {
+  .fiber-hero { grid-template-columns: 54% 46%; }
+  .fiber-page h1 { font-size: clamp(3rem, 7vw, 4.7rem); }
+  .fiber-audience-list { gap: 0.35rem 1.5rem; }
+}
+
+@media (max-width: 43rem) {
+  .fiber-shell { width: calc(100% - 2rem); }
+  .fiber-header-layout { flex-wrap: wrap; gap: 0.7rem 1.1rem; justify-content: start; padding-block: 0.8rem; }
+  .fiber-nav { flex-wrap: wrap; gap: 0.6rem 1.25rem; }
+  .fiber-nav .fiber-nav-cta { border-color: #819488; padding: 0.35rem 0.58rem; }
+  .fiber-hero { display: flex; flex-direction: column; }
+  .fiber-hero-text { padding: 3.3rem 1rem 2.8rem; }
+  .fiber-hero-inner { width: 100%; margin: 0; }
+  .fiber-page h1 { font-size: clamp(2.85rem, 11vw, 4.45rem); }
+  .fiber-hero-photo { min-height: clamp(14rem, 55vw, 20rem); }
+  .fiber-audiences .fiber-shell { align-items: flex-start; flex-direction: column; gap: 0.5rem; }
+  .fiber-audience-list { gap: 0.4rem 1.1rem; }
+  .fiber-section-head, .fiber-services, .fiber-process-layout, .fiber-contact-layout { grid-template-columns: 1fr; }
+  .fiber-section-head { margin-bottom: 1.75rem; }
+  .fiber-service { padding-inline: 0; }
+  .fiber-service + .fiber-service { border-top: 1px solid var(--fiber-rule); border-left: 0; }
+}
+
+@media (max-width: 30rem) {
+  .fiber-form-layout { grid-template-columns: 1fr; }
+  .fiber-form-wide { grid-column: auto; }
+  .fiber-footer-layout { align-items: flex-start; flex-direction: column; justify-content: center; gap: 0.85rem; padding-block: 1.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fiber-button { transition: none; }
+}

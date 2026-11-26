@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+  <title id="title">SkarionGIS social card. GIS data with a source trail.</title>
+  <defs>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0v42" stroke="#9bab91" stroke-width="1" opacity=".28" fill="none"/></pattern>
+  </defs>
+  <path fill="#f4f3e9" d="M0 0h1200v630H0z"/>
+  <path fill="#26352a" d="M754 0h446v630H754z"/>
+  <path fill="url(#grid)" d="M754 0h446v630H754z"/>
+  <g fill="none" stroke="#8faa84" stroke-width="1.15" opacity=".69">
+    <path d="M754 115c116-46 82-92 202-128M754 140c144-44 104-121 235-154M754 168C930 128 877 26 1032-21M754 196c118-18 154-50 181-108s69-79 130-108M754 223c119-16 178-50 208-110s53-94 144-133M754 250c143-14 188-56 220-119s72-113 170-147M754 279c147-17 219-62 245-131s68-109 169-148M754 309c169-14 233-75 261-145s88-119 185-139M754 338c176-17 250-75 284-146s87-123 162-139M754 367c210-18 260-87 303-158s92-128 143-125M754 398c235-19 269-86 311-163s93-117 135-119M754 430c250-23 294-94 327-164s96-110 119-118M754 461c264-24 304-90 347-168s82-102 99-111M754 491c287-35 322-115 358-177s69-94 88-106M754 525c282-35 356-123 380-176s53-92 66-111M754 558c265-28 359-120 393-188s45-74 53-81M754 591c288-32 367-122 407-191s33-59 39-63M754 624c257-18 361-101 421-192l25-47"/>
+  </g>
+  <path d="M812 491h73l111-218h55l70-91h38" fill="none" stroke="#26352a" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M812 491h73l111-218h55l70-91h38" fill="none" stroke="#d1e996" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#26352a" stroke="#d1e996" stroke-width="4"><circle cx="812" cy="491" r="10"/><circle cx="954" cy="356" r="8"/><circle cx="1051" cy="273" r="8"/><circle cx="1159" cy="182" r="10"/></g>
+  <path d="M996 262l11 11-11 11-11-11Z" fill="#f6be81" stroke="#26352a" stroke-width="3"/>
+  <g transform="translate(64 61)">
+    <rect width="60" height="60" rx="12" fill="#26352a"/>
+    <path d="M13 42c8 1 14-2 18-8l7-11c3-5 5-7 11-8m-36 19c5 0 8-2 10-6l7-12c4-7 10-9 19-9m-29 44c8-2 14-7 18-14l6-11 5-4" fill="none" stroke="#849877" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M16 43h8l12-21h9" fill="none" stroke="#d1e996" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="43" r="4.3" fill="#26352a" stroke="#d1e996" stroke-width="2.8"/><circle cx="45" cy="22" r="4.3" fill="#26352a" stroke="#d1e996" stroke-width="2.8"/>
+  </g>
+  <text x="144" y="101" fill="#26352a" font-family="Segoe UI, sans-serif" font-size="38" font-weight="700" letter-spacing="-2.15">Skarion<tspan fill="#53723a">GIS</tspan></text>
+  <text x="64" y="269" fill="#26352a" font-family="Segoe UI, sans-serif" font-size="82" font-weight="700" letter-spacing="-6"><tspan x="64">GIS data with</tspan><tspan x="64" dy="87">a source trail.</tspan></text>
+  <path d="M64 434h622" stroke="#b4bdad"/>
+  <text x="64" y="481" fill="#4b5b47" font-family="Segoe UI, sans-serif" font-size="25">Fiber closeout and utility records QA</text>
+  <text x="64" y="547" fill="#53723a" font-family="Consolas, monospace" font-size="19" letter-spacing=".75">SKARION ENGINEERING</text>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "name": "skarion-six-sites",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "npm run build && node scripts/check.mjs",
+    "preview": "npm run build && node scripts/preview.mjs"
+  }
+}

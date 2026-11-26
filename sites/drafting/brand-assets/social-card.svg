@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-labelledby="title">
+  <title id="title">Skarion Drafting social card. From field redlines to record drawings.</title>
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0v30" fill="none" stroke="#b9cabe" stroke-width=".85" opacity=".26"/>
+    </pattern>
+  </defs>
+  <path fill="#f7f6f0" d="M0 0h1200v630H0z"/>
+  <path fill="#20342e" d="M747 0h453v630H747z"/>
+  <path fill="url(#grid)" d="M747 0h453v630H747z"/>
+  <path d="M785 47h375v535H785zM785 457h375M950 95v335M1041 95v335M810 211h124l40-26h152M810 313h135l40-26h141M817 347h147l33-23h131M818 141h96v66h-96zM1034 355h92v77h-92z" fill="none" stroke="#acc4b6" stroke-width="1.35" opacity=".79"/>
+  <path d="M809 256h128l40-28h66l35-21h52" fill="none" stroke="#ff9b82" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ff9b82" font-family="Consolas,monospace" font-size="20">
+    <path d="m1039 230 18 42h68" fill="none" stroke="#ff9b82" stroke-width="1.75"/>
+    <text x="985" y="304">REV. ALIGNMENT</text>
+  </g>
+  <text x="812" y="510" fill="#e1e9dd" font-family="Consolas,monospace" font-size="18" letter-spacing="1.2">UTILITY PLAN DETAIL</text>
+  <text x="812" y="545" fill="#e1e9dd" font-family="Consolas,monospace" font-size="16" letter-spacing="1.2">ILLUSTRATIVE DRAWING</text>
+  <g transform="translate(65 62)">
+    <rect width="64" height="64" rx="11" fill="#20342e"/>
+    <path d="M15 14h27l9 9v26H15V14ZM42 14v10h9M22 25h11m-11 8h8m-8 8h7" fill="none" stroke="#f7f6f0" stroke-width="2.65" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="m30 40 7-8 5 2 9-9" fill="none" stroke="#ff9b82" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="148" y="102" fill="#20342e" font-family="Arial,sans-serif" font-size="28" font-weight="700">Skarion Drafting</text>
+  <text x="65" y="238" fill="#20342e" font-family="Georgia,serif" font-size="72" letter-spacing="-2">
+    <tspan x="65">From field redlines</tspan><tspan x="65" dy="84">to record drawings.</tspan>
+  </text>
+  <text x="67" y="441" fill="#50635a" font-family="Arial,sans-serif" font-size="27">
+    <tspan x="67">Editable CAD, plotted sheets and an exception</tspan><tspan x="67" dy="39">log for utility and civil closeout.</tspan>
+  </text>
+  <path d="M66 541h71" stroke="#a13624" stroke-width="4"/>
+</svg>

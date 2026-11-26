@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Skarion Fiber route mark</title>
+  <rect width="64" height="64" rx="14" fill="#ddf887"/>
+  <g stroke="#182822" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M15 42h8l13-20h13M17 31h9l8 11h14"/>
+    <path d="M43 32h6"/>
+  </g>
+  <g fill="#182822"><circle cx="15" cy="42" r="3"/><circle cx="49" cy="22" r="3"/><circle cx="49" cy="42" r="3"/></g>
+</svg>

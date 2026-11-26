@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title">
+  <title id="title">Skarion Stormwater social card for the drainage inventory pilot</title>
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0v36" fill="none" stroke="#9fb6a2" stroke-opacity=".18"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#142e2b"/>
+  <path d="M724 0h476v630H724z" fill="#1a3a34"/>
+  <path d="M724 0h476v630H724z" fill="url(#grid)"/>
+  <g fill="none" stroke="#73a590" stroke-width="2" opacity=".7">
+    <path d="M730 124c106-102 168 78 282 42 86-27 142-39 205-19M729 103c112-107 167 76 283 40 85-26 144-41 205-21M729 81c113-106 167 77 283 41 86-28 143-41 207-22M730 59c112-94 164 78 281 41 85-26 145-42 207-22"/>
+    <path d="M713 449c141-43 172 101 268 74 97-29 129-85 231-52M713 470c145-37 176 100 269 76 100-26 131-85 230-52M713 493c142-34 178 101 273 74 101-28 127-83 226-49M713 518c148-33 177 97 274 70 101-27 126-81 225-47"/>
+    <path d="M950 340q50-38 95-34t62 39q6 28-34 52t-95 14q-57-11-28-71z" fill="#316258"/>
+  </g>
+  <path d="M738 334 800 309 855 339 914 283 986 285 1026 347m-171-8-21 61-56 17m136-134 20-48 63-30" fill="none" stroke="#89decb" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1026 347l62-18 63 29" fill="none" stroke="#f1bb71" stroke-width="5" stroke-dasharray="8 10"/>
+  <g fill="#183c35" stroke="#c0f1df" stroke-width="3">
+    <circle cx="800" cy="309" r="8"/><circle cx="855" cy="339" r="8"/><circle cx="914" cy="283" r="8"/><circle cx="986" cy="285" r="8"/><circle cx="1026" cy="347" r="8"/>
+  </g>
+  <g transform="translate(62 54)">
+    <rect width="66" height="66" rx="12" fill="#1f4038" stroke="#77b4a3"/>
+    <path d="M11 27c0-6 3-8 9-10l9-3c5-2 8-2 12 2l8 8c4 4 4 7 1 12l-7 12c-2 4-7 6-11 4l-14-7c-5-3-7-6-7-11z" fill="none" stroke="#77b4a3" stroke-width="2.4"/>
+    <path d="M20 27h12l8 8m-8-8v12l-6 5" fill="none" stroke="#d6ed9b" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#d6ed9b"><circle cx="20" cy="27" r="3.4"/><circle cx="40" cy="35" r="3.4"/><circle cx="26" cy="44" r="3.4"/></g>
+  </g>
+  <g font-family="system-ui, Segoe UI, sans-serif">
+    <text x="146" y="95" fill="#f6f6ee" font-size="29" font-weight="700">Skarion Stormwater</text>
+    <text x="62" y="211" fill="#d6ed9b" font-size="25" font-weight="650">Stormwater GIS &amp; field records</text>
+    <text fill="#f6f6ee" font-size="70" font-weight="660" letter-spacing="-4"><tspan x="62" y="313">A drainage inventory</tspan><tspan x="62" y="393">your team can review.</tspan></text>
+    <text fill="#d7e5de" font-size="27"><tspan x="62" y="477">One basin, one traceable handoff.</tspan><tspan x="62" y="549" fill="#d6ed9b">Inventory pilot</tspan></text>
+    <text x="758" y="588" fill="#d7e5de" font-size="18">Fictional network detail</text>
+  </g>
+</svg>

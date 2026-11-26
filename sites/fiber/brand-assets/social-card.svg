@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Skarion Fiber OSP design</title>
+  <desc id="description">Forest green Skarion Fiber social card with a lime fiber route schematic.</desc>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0v44" fill="none" stroke="#31473b" stroke-width="1"/></pattern>
+  </defs>
+  <path d="M0 0h1200v630H0z" fill="#182822"/>
+  <path d="M730 0h470v630H730z" fill="#20382d"/>
+  <path d="M730 0h470v630H730z" fill="url(#grid)"/>
+  <path d="M768 444h104l87-119h149m-236 119 82 85h178m-173-204 55-93h111" fill="none" stroke="#ddf887" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="#20382d" stroke="#ddf887" stroke-width="4"><circle cx="872" cy="444" r="9"/><circle cx="959" cy="325" r="9"/><circle cx="1108" cy="325" r="9"/><circle cx="1132" cy="529" r="9"/><circle cx="1125" cy="232" r="9"/></g>
+  <rect x="76" y="72" width="64" height="64" rx="14" fill="#ddf887"/>
+  <g transform="translate(76 72)" stroke="#182822" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M15 42h8l13-20h13M17 31h9l8 11h14m-5-10h6"/></g>
+  <g transform="translate(76 72)" fill="#182822"><circle cx="15" cy="42" r="3"/><circle cx="49" cy="22" r="3"/><circle cx="49" cy="42" r="3"/></g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="158" y="115" fill="#f5f7ee" font-size="34" font-weight="700" letter-spacing="-1">Skarion Fiber</text>
+    <text x="76" y="241" fill="#ddf887" font-size="21" font-weight="700" letter-spacing="3">OUTSIDE PLANT FIBER DESIGN</text>
+    <text x="76" y="333" fill="#f5f7ee" font-size="68" font-weight="700" letter-spacing="-4">Review-ready</text>
+    <text x="76" y="405" fill="#f5f7ee" font-size="68" font-weight="700" letter-spacing="-4">fiber plan sets.</text>
+    <text x="77" y="544" fill="#c5d4c7" font-size="23">Plans, splice details, and material schedules</text>
+  </g>
+</svg>

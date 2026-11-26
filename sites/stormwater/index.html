@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Stormwater GIS inventory, culvert registers and inspection-record QA for engineering primes. Start with one basin or a bounded record batch.">
+  <meta name="theme-color" content="#eaece1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Skarion Stormwater | Drainage inventory and GIS support">
+  <meta property="og:description" content="Turn drainage plans, photos and inspection records into an inventory your team can review.">
+  <title>Skarion Stormwater | Drainage Inventory &amp; GIS Support</title>
+  <link rel="icon" href="./logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="./site.css">
+  <script defer src="shared/site.js"></script>
+</head>
+<body class="storm">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="storm-header">
+    <div class="storm-wrap storm-nav">
+      <a class="storm-brand" href="./" aria-label="Skarion Stormwater home">
+        <img src="./logo.svg" width="43" height="43" alt="">
+        <span>Skarion<strong>Stormwater</strong></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#sample">Sample</a>
+        <a href="#process">Process</a>
+      </nav>
+      <a class="storm-btn storm-btn-small" href="#contact">Request a pilot</a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div class="storm-wrap storm-hero">
+      <div class="storm-intro">
+        <p class="storm-eyebrow"><span></span> Stormwater GIS &amp; field records</p>
+        <h1>A drainage inventory your team can review.</h1>
+        <p class="storm-lead">Bring as-builts, photos and inspection records into one traceable GIS handoff. Start with a basin, a culvert register or a piece of your closeout backlog.</p>
+        <div class="storm-actions">
+          <a class="storm-btn" href="#contact">Scope one basin</a>
+          <a class="storm-link" href="#sample">See the sample package</a>
+        </div>
+        <p class="storm-audience">Production support for engineering primes, inspection teams and public works partners.</p>
+      </div>
+      <figure class="storm-map">
+        <img src="./assets/basin-map.svg" width="760" height="580" alt="Fictional basin map with teal storm pipes and structures, and an amber connection awaiting verification." fetchpriority="high">
+        <figcaption><span>Drainage inventory map</span><span>Fictional example</span></figcaption>
+      </figure>
+    </div>
+
+    <section class="storm-dark" id="services" aria-labelledby="services-heading">
+      <div class="storm-wrap storm-block">
+        <div class="storm-section-head">
+          <div>
+            <p class="storm-eyebrow"><span></span> Scope of work</p>
+            <h2 id="services-heading">Three ways to move a backlog.</h2>
+          </div>
+          <p>We work from the records and acceptance rules your team provides. Each batch ends with files your reviewer can inspect and clear.</p>
+        </div>
+        <div class="storm-offers">
+          <article>
+            <span class="storm-illustration" aria-hidden="true">◈</span>
+            <h3>Drainage GIS inventory</h3>
+            <p>Turn supplied plans, layers or tables into mapped inlets, outfalls and pipe segments with an asset-to-source crosswalk.</p>
+          </article>
+          <article>
+            <span class="storm-illustration" aria-hidden="true">⊞</span>
+            <h3>Inspection records QA</h3>
+            <p>Match photos, reports or CCTV indexes to asset IDs. Put orphan records, duplicates and conflicting references in a review queue.</p>
+          </article>
+          <article>
+            <span class="storm-illustration" aria-hidden="true">⊡</span>
+            <h3>Culvert and structure registers</h3>
+            <p>Build an editable register from approved records. Keep original observations, inspection dates and unresolved fields visible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sample" class="storm-wrap storm-block storm-sample" aria-labelledby="sample-heading">
+      <div>
+        <p class="storm-eyebrow"><span></span> Sample package</p>
+        <h2 id="sample-heading">Keep the evidence attached.</h2>
+        <p class="storm-copy">The handoff pairs editable layers with a map PDF, source crosswalk and exception log. Every released asset carries a source reference. Your reviewer can see where a proposed match still needs a decision.</p>
+        <ul class="storm-checklist">
+          <li>Agreed asset IDs, fields and coordinate system</li>
+          <li>Sheet, export or inspection record references</li>
+          <li>Open issues separated from verified records</li>
+        </ul>
+      </div>
+      <div class="storm-example">
+        <div class="storm-example-head"><h3>Asset-to-source crosswalk</h3><p>Fictional records</p></div>
+        <table aria-label="Fictional asset-to-source crosswalk">
+          <thead><tr><th scope="col">Asset</th><th scope="col">Source</th><th scope="col">Status</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">IN-104</th><td>Plan D-02</td><td><span class="storm-tag">Matched</span></td></tr>
+            <tr><th scope="row">MH-208</th><td>CCTV 017</td><td><span class="storm-tag">Matched</span></td></tr>
+            <tr><th scope="row">P-209</th><td>Plan D-04</td><td><span class="storm-tag storm-tag-amber">Review</span></td></tr>
+          </tbody>
+        </table>
+        <details>
+          <summary>Inspect the open connection</summary>
+          <p>Plan D-04 ends the pipe at the basin edge. The inspection export has no corresponding endpoint. P-209 stays flagged until the prime's reviewer confirms the downstream connection.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="process" class="storm-process" aria-labelledby="process-heading">
+      <div class="storm-wrap storm-block">
+        <div class="storm-section-head">
+          <div>
+            <p class="storm-eyebrow"><span></span> Pilot workflow</p>
+            <h2 id="process-heading">Start with one basin.</h2>
+          </div>
+          <p>Choose one basin, work order or a batch of 25–50 assets. We review the source summary before confirming scope, file format and acceptance checks.</p>
+        </div>
+        <ol class="storm-steps">
+          <li><h3>Agree the sample</h3><p>Define feature types, available records, owner schema and who approves the results.</p></li>
+          <li><h3>Build the inventory</h3><p>Map the approved inputs, link source records and identify gaps in the exception log.</p></li>
+          <li><h3>Review the handoff</h3><p>Your team reviews the GIS package, resolves flagged items and decides whether to scale.</p></li>
+        </ol>
+        <p class="storm-boundary"><strong>Review responsibility.</strong> The prime or qualified partner owns field verification. The assigned engineer owns analysis, permitting and professional approval.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="storm-wrap storm-block storm-contact" aria-labelledby="contact-heading">
+      <div>
+        <p class="storm-eyebrow"><span></span> Project intake</p>
+        <h2 id="contact-heading">What does your basin need?</h2>
+        <p class="storm-copy">Tell us the approximate asset count, source formats, destination system and who will review the handoff. We’ll agree on a transfer method before requesting files.</p>
+        <p><a class="storm-link" href="mailto:info@skarion.com">info@skarion.com</a></p>
+      </div>
+      <form action="mailto:info@skarion.com" method="post" enctype="text/plain" data-intake data-recipient="info@skarion.com" data-subject="Skarion Stormwater intake" aria-describedby="storm-email-note">
+        <div class="storm-form-row">
+          <label>Your name<input name="name" autocomplete="name" maxlength="120" required></label>
+          <label>Work email<input type="email" name="email" autocomplete="email" maxlength="160" required></label>
+        </div>
+        <div class="storm-form-row">
+          <label>Company<input name="company" autocomplete="organization" maxlength="160" required></label>
+          <label>Target deadline <span>(optional)</span><input name="timeline" maxlength="100" placeholder="Date and time zone"></label>
+        </div>
+        <label>Service
+          <select name="service" required>
+            <option value="">Choose a service</option>
+            <option>Drainage GIS inventory</option>
+            <option>Inspection records QA</option>
+            <option>Culvert and structure register</option>
+            <option>Other stormwater production support</option>
+          </select>
+        </label>
+        <label>Project summary<textarea name="scope" rows="4" maxlength="800" required></textarea></label>
+        <button class="storm-btn" type="submit">Open email draft</button>
+        <p id="storm-email-note">Your email app opens a draft for you to review and send.</p>
+        <p data-intake-status role="status" hidden></p>
+      </form>
+    </section>
+  </main>
+  <footer class="storm-footer">
+    <div class="storm-wrap">
+      <a class="storm-brand" href="./" aria-label="Skarion Stormwater home"><img src="./logo.svg" width="38" height="38" alt=""><span>Skarion<strong>Stormwater</strong></span></a>
+      <p>A Skarion Engineering service</p>
+      <a href="mailto:info@skarion.com">Email Skarion</a>
+    </div>
+  </footer>
+</body>
+</html>

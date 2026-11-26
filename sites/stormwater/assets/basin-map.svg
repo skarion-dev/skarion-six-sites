@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 580" width="760" height="580" role="img" aria-labelledby="title desc">
+  <title id="title">Fictional stormwater basin inventory</title>
+  <desc id="desc">The map identifies confirmed inlets and storm pipes near an example retention basin. An amber dashed segment depicts a downstream connection awaiting review.</desc>
+  <defs>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#829b8e" stroke-opacity=".13"/></pattern>
+    <pattern id="blocks" width="108" height="74" patternUnits="userSpaceOnUse" patternTransform="rotate(-23)">
+      <path d="M4 6h92v59H4zM25 6v59M49 6v59M74 6v59" fill="none" stroke="#70948a" stroke-opacity=".38"/>
+      <path d="M8 14h11v16H8zm0 29h11v17H8zm24-29h12v19H32zm0 26h12v17H32zm24-29h13v19H56zm1 27h11v19H57zm23-26h11v16H80zm1 28h11v18H81z" fill="#70948a" opacity=".27"/>
+    </pattern>
+    <pattern id="water" width="26" height="13" patternUnits="userSpaceOnUse"><path d="M0 5q6-5 13 0t13 0M0 12q6-5 13 0t13 0" fill="none" stroke="#5fa293" stroke-opacity=".32"/></pattern>
+    <radialGradient id="ground" cx=".36" cy=".44" r=".75">
+      <stop stop-color="#32554c"/><stop offset="1" stop-color="#142e2b"/>
+    </radialGradient>
+    <filter id="halo" x="-.1" y="-.1" width="1.2" height="1.2"><feGaussianBlur stdDeviation="4"/></filter>
+  </defs>
+  <path fill="url(#ground)" d="M0 0h760v580H0z"/>
+  <path fill="url(#grid)" d="M0 0h760v580H0z"/>
+  <g fill="none" stroke="#779282" stroke-width="1.15" opacity=".55">
+    <path d="M-40 117C55 90 87 131 155 117S315 47 410 73s119 47 180 21 109-23 192-31"/>
+    <path d="M-38 97C55 81 92 115 156 101S310 25 410 56s119 49 180 22 110-23 192-30"/>
+    <path d="M-44 78C52 60 98 98 151 83S310 5 412 40s121 47 181 20 108-23 190-31"/>
+    <path d="M-44 56C54 45 99 84 150 66S317-17 420 24 541 66 592 41s108-26 190-31"/>
+    <path d="M-39 141C56 115 85 150 158 135S320 66 420 95s118 36 172 10 103-28 190-29"/>
+    <path d="M-40 163C54 139 96 163 151 151S325 88 423 114s122 32 182 7 104-21 177-26"/>
+    <path d="M-41 188C53 163 105 183 155 172S323 112 427 135s122 24 181 4 100-17 174-23"/>
+    <path d="M-32 213C49 188 104 206 162 192s167-58 264-37 130 20 184 2 100-15 172-18"/>
+    <path d="M-40 442c120-80 204-11 278 16s152 44 249 15 160-94 295-65"/>
+    <path d="M-40 462c120-75 200-8 275 19s155 41 250 13 172-91 297-62"/>
+    <path d="M-40 482c122-58 200 0 274 26s154 32 250 4 173-77 298-58"/>
+    <path d="M-40 502c124-43 203 11 270 33s158 23 254-3 174-65 298-55"/>
+    <path d="M-40 522c121-31 199 18 266 39s160 14 255-8 184-57 301-49"/>
+    <path d="M-40 543c123-19 202 26 269 46s162 2 252-15 189-47 301-43"/>
+    <path d="M527 429c23-34 71-49 97-85 23-32 2-59 20-83 21-27 76-29 131-42"/>
+    <path d="M552 432c23-26 67-43 93-80 23-33 11-63 28-84 14-18 54-25 103-33"/>
+    <path d="M579 430c19-24 64-45 83-69 22-29 17-59 30-79 11-17 50-24 83-26"/>
+    <path d="M613 425c17-17 57-41 69-58 18-26 14-55 28-73 11-16 40-21 67-24"/>
+  </g>
+  <path d="M9 234c113-36 176-19 252-43l74-22 34 55c51 30 66 61 68 101-63 40-97 92-149 109-61 8-85-36-165-44L0 426z" fill="url(#blocks)"/>
+  <path d="M-20 385 108 351c105-26 156-91 258-110 92-20 156 7 221 4s108-30 193-63" fill="none" stroke="#172c26" stroke-width="28"/>
+  <path d="M-20 385 108 351c105-26 156-91 258-110 92-20 156 7 221 4s108-30 193-63" fill="none" stroke="#92a494" stroke-opacity=".76" stroke-width="16"/>
+  <path d="M-20 385 108 351c105-26 156-91 258-110 92-20 156 7 221 4s108-30 193-63" fill="none" stroke="#dce4cf" stroke-opacity=".71" stroke-width="1.4" stroke-dasharray="9 8"/>
+  <path d="M224 470c28-70 67-141 74-207 7-62-32-128-4-194l30-70M91 357c45-37 43-91 28-146-10-37-10-55 9-86" fill="none" stroke="#8a9c8c" stroke-width="6" opacity=".83"/>
+  <path d="M490 309c32-11 75-22 105-8s37 49 17 69c-19 19-47 19-76 34-32 16-76 9-83-18-9-38 12-65 37-77z" fill="#204943" stroke="#70a698" stroke-width="1.5"/>
+  <path d="M490 309c32-11 75-22 105-8s37 49 17 69c-19 19-47 19-76 34-32 16-76 9-83-18-9-38 12-65 37-77z" fill="url(#water)"/>
+  <path d="M40 216 123 225 159 271 227 292 295 264 380 247 424 270 467 333 509 347 551 350 590 320 632 307 689 251 733 237l-22 153-48 36-130 56-147 21-170-26-117-62-63-100z" fill="#8ac4a8" fill-opacity=".055" stroke="#9fcbbc" stroke-width="1.7" stroke-dasharray="6 7"/>
+  <g fill="none" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 298 120 314 196 312 268 281 320 275 380 267 416 283l51 68 47 12 36-13M131 234l13 53 52 25m109 71 13-52 2-56m153-89-55 40-38 41m153 4 42-2 39 29" stroke="#5bedd3" opacity=".42" filter="url(#halo)"/>
+    <path d="M72 298 120 314 196 312 268 281 320 275 380 267 416 283l51 68 47 12 36-13M131 234l13 53 52 25m109 71 13-52 2-56m153-89-55 40-38 41m153 4 42-2 39 29" stroke="#89decb"/>
+    <path d="M550 350l45-16 19-36 41-13 39 27" stroke="#f1bb71" stroke-dasharray="7 10"/>
+  </g>
+  <g fill="#163c36" stroke="#c0f1df" stroke-width="3">
+    <circle cx="72" cy="298" r="6"/><circle cx="131" cy="234" r="6"/><circle cx="196" cy="312" r="7"/><circle cx="268" cy="281" r="6"/><circle cx="320" cy="275" r="7"/>
+    <circle cx="380" cy="267" r="8"/><circle cx="305" cy="383" r="6"/><circle cx="473" cy="186" r="6"/><circle cx="416" cy="283" r="6"/><circle cx="467" cy="351" r="7"/><circle cx="550" cy="350" r="8"/><circle cx="533" cy="271" r="6"/>
+  </g>
+  <g fill="#162e2b" stroke="#f1bb71" stroke-width="3">
+    <path d="m614 291 7 7-7 7-7-7z"/><path d="m694 305 7 7-7 7-7-7z"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="15" font-weight="700">
+    <g><rect x="152" y="323" width="83" height="29" rx="4" fill="#193a32" stroke="#77b4a3"/><text x="165" y="343" fill="#d1eee0">IN-104</text></g>
+    <g><rect x="341" y="221" width="91" height="29" rx="4" fill="#193a32" stroke="#77b4a3"/><text x="351" y="241" fill="#d1eee0">MH-208</text></g>
+    <g><rect x="616" y="325" width="102" height="29" rx="4" fill="#352f23" stroke="#f1bb71"/><text x="625" y="345" fill="#f5cf99">P-209</text></g>
+  </g>
+  <g transform="translate(28 25)">
+    <rect width="233" height="67" rx="4" fill="#122824" stroke="#56776c"/>
+    <text x="15" y="28" fill="#d6ed9b" font-family="system-ui, sans-serif" font-size="23" font-weight="740">Basin 07</text>
+    <text x="15" y="50" fill="#cfe1d9" font-family="system-ui, sans-serif" font-size="14">Inventory review</text>
+  </g>
+  <g transform="translate(706 31)" fill="#dbece5">
+    <text x="0" y="13" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700">N</text>
+    <path d="M0 22 8 44 0 39-8 44z"/>
+  </g>
+  <g transform="translate(28 485)">
+    <rect width="293" height="67" rx="4" fill="#122824" stroke="#56776c"/>
+    <path d="M15 22h25" stroke="#89decb" stroke-width="4"/><circle cx="28" cy="22" r="4" fill="#163c36" stroke="#c0f1df" stroke-width="2"/>
+    <path d="M15 44h25" stroke="#f1bb71" stroke-width="4" stroke-dasharray="4 4"/>
+    <g fill="#dbece5" font-family="system-ui, sans-serif" font-size="14"><text x="49" y="27">Mapped asset and connection</text><text x="49" y="49">Connection for review</text></g>
+  </g>
+  <path d="M14 14h732v552H14z" fill="none" stroke="#68897c" stroke-opacity=".63"/>
+</svg>

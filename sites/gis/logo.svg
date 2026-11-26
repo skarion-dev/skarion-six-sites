@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SkarionGIS route and contour mark">
+  <rect width="64" height="64" rx="14" fill="#26352a"/>
+  <path d="M14 46c8 1 14-2 18-8l7-13c2-4 5-7 11-8M14 38c5 0 8-2 10-6l7-13c4-8 11-10 19-10M22 53c8-2 14-7 18-14l6-11c1-2 2-3 5-4" fill="none" stroke="#849877" stroke-width="1.65" stroke-linecap="round"/>
+  <path d="M17 46h7l13-23h10" fill="none" stroke="#d1e996" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="17" cy="46" r="4.6" fill="#26352a" stroke="#d1e996" stroke-width="3"/>
+  <circle cx="47" cy="23" r="4.6" fill="#26352a" stroke="#d1e996" stroke-width="3"/>
+</svg>

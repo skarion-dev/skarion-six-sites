@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SkarionGIS reconciles fiber closeout and utility asset records into editable GIS layers, a source crosswalk and an exception register.">
+  <meta name="theme-color" content="#f4f3e9">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SkarionGIS | GIS and closeout data">
+  <meta property="og:description" content="Editable fiber and utility records, with a source trail your GIS team can check.">
+  <link rel="icon" href="./logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="./site.css">
+  <script defer src="shared/site.js"></script>
+  <title>SkarionGIS | GIS and closeout data</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead" id="top">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="./" aria-label="SkarionGIS home">
+        <img src="./logo.svg" width="42" height="42" alt="">
+        <span>Skarion<span class="wordmark-accent">GIS</span></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#handoff">Handoff</a>
+        <a href="#process">Process</a>
+      </nav>
+      <a class="button button-small" href="#contact">Scope a batch</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="hero-title">
+      <div class="hero-intro">
+        <p class="kicker"><span></span> A Skarion Engineering service</p>
+        <h1 id="hero-title">GIS data with a source trail.</h1>
+        <p class="hero-lede">Turn approved redlines, field records and legacy drawings into editable fiber and utility layers your team can check and use.</p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Scope a GIS batch</a>
+          <a class="text-link" href="#handoff">See the handoff</a>
+        </div>
+        <p class="hero-fit">For fiber primes, network operators and utility GIS teams.</p>
+      </div>
+
+      <figure class="hero-map">
+        <div class="map-frame">
+          <img src="./assets/route-map.svg" width="760" height="570" alt="An illustrative fiber route crosses a river valley, linking mapped cabinets and splice points. One location is marked for review.">
+          <div class="map-id"><span class="map-status" aria-hidden="true"></span> Fiber closeout</div>
+          <ul class="map-legend" aria-label="Map legend">
+            <li><span class="legend-route" aria-hidden="true"></span>Route</li>
+            <li><span class="legend-asset" aria-hidden="true"></span>Asset</li>
+            <li><span class="legend-review" aria-hidden="true"></span>Review</li>
+          </ul>
+        </div>
+        <figcaption><span>Illustrative map · Synthetic data</span><span>Route and asset layers</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="services section" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="kicker"><span></span> Services</p><h2 id="services-title">Start with one batch.</h2></div>
+          <p>Choose a route, construction area or asset class. We agree the source revisions, output schema, QA rules and reviewer before production.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service service-fiber">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="34" height="34"><path d="M8 33h11l10-18h11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="8" cy="33" r="4" fill="var(--service-ground)" stroke="currentColor" stroke-width="2.5"/><circle cx="40" cy="15" r="4" fill="var(--service-ground)" stroke="currentColor" stroke-width="2.5"/><path d="M12 11h7m-7 4h4m17 19h7m-7 4h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Fiber closeout</h3>
+            <p>Reconcile an approved route or build area against field records so the prime or operator can review it for turnover.</p>
+            <dl>
+              <div><dt>Inputs</dt><dd>Approved redlines, asset IDs, available splice, test and photo references.</dd></div>
+              <div><dt>Outputs</dt><dd>Editable routes and point assets, linked evidence and unresolved items for review.</dd></div>
+            </dl>
+          </article>
+          <article class="service service-utility">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" width="34" height="34"><path d="M24 7 6 17l18 10 18-10L24 7Zm-18 17 18 10 18-10M6 31l18 10 18-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Utility records QA</h3>
+            <p>Convert a defined asset class or reconcile inconsistent water, sewer or other utility records against the owner’s schema.</p>
+            <dl>
+              <div><dt>Inputs</dt><dd>Legacy CAD, PDFs, existing GIS, field edits and the owner’s data dictionary.</dd></div>
+              <div><dt>Outputs</dt><dd>An editable asset layer, field mapping and a register of gaps or conflicts.</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="handoff section" id="handoff" aria-labelledby="handoff-title">
+      <div class="wrap handoff-grid">
+        <div>
+          <p class="kicker"><span></span> Deliverables</p>
+          <h2 id="handoff-title">Open the layer. Trace the edit.</h2>
+          <p class="handoff-lede">Your reviewer can trace an asset to the source that informed it and see which decisions still need an owner.</p>
+          <p>Agree the target format and coordinate system up front. Exchange formats can include GeoPackage, file geodatabase, CSV or KMZ, depending on the target workflow.</p>
+          <a class="text-link" href="#contact">Discuss your target format</a>
+        </div>
+        <div class="manifest" aria-label="Typical batch manifest">
+          <div class="manifest-head"><strong>Batch manifest</strong><span>Typical handoff</span></div>
+          <dl>
+            <div><dt><span aria-hidden="true">01</span> Editable GIS layers</dt><dd>Route, asset or source-derived features using the agreed schema.</dd></div>
+            <div><dt><span aria-hidden="true">02</span> Source crosswalk</dt><dd>Feature ID, source file, revision and the match or edit made.</dd></div>
+            <div><dt><span aria-hidden="true">03</span> Exception register</dt><dd>Conflicts, missing fields and records waiting for review.</dd></div>
+            <div><dt><span aria-hidden="true">04</span> Map and release notes</dt><dd>A review map, export details and the revision delivered.</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="kicker"><span></span> Delivery process</p><h2 id="process-title">Review built into the work.</h2></div>
+          <p>We record gaps as we go so the designated reviewer can resolve them with the right evidence.</p>
+        </div>
+        <ol class="steps">
+          <li><span aria-hidden="true">01</span><h3>Agree the spec</h3><p>Confirm boundaries, sources, target schema and who can accept the batch.</p></li>
+          <li><span aria-hidden="true">02</span><h3>Map and attribute</h3><p>Build the features and retain source IDs and revisions as we make edits.</p></li>
+          <li><span aria-hidden="true">03</span><h3>Check the batch</h3><p>Review IDs, required attributes and geometry. Log conflicts for owner review.</p></li>
+          <li><span aria-hidden="true">04</span><h3>Deliver for review</h3><p>Validate the exchange export or agreed staging import and record the release.</p></li>
+        </ol>
+        <div class="qa" id="questions">
+          <h3>Before you send data</h3>
+          <div>
+            <details><summary>What if the sources disagree?</summary><p>We keep the conflicting references visible, record the question and send it to the designated reviewer. The agreed source hierarchy guides routine edits.</p></details>
+            <details><summary>How do we exchange source files?</summary><p>Start with a short scope description. After review, agree a transfer channel, access permissions and retention terms with Skarion.</p></details>
+            <details><summary>Can you edit our production GIS?</summary><p>A typical batch is an editable handoff for your review. Production changes, field verification, surveying and professional approvals require a separately agreed scope and responsible party.</p></details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker"><span></span> Project intake</p>
+          <h2 id="contact-title">Scope a GIS batch.</h2>
+          <p>Tell us the work area, approximate record count, available sources and target format. We’ll use that to discuss a first batch and its review criteria.</p>
+          <p>Prefer direct email? <a href="mailto:info@skarion.com?subject=SkarionGIS%20intake">info@skarion.com</a></p>
+        </div>
+        <form class="intake" action="mailto:info@skarion.com" method="post" enctype="text/plain" data-intake data-recipient="info@skarion.com" data-subject="SkarionGIS intake" aria-describedby="intake-note">
+          <div class="form-grid">
+            <label>Full name<input name="name" autocomplete="name" maxlength="100" required></label>
+            <label>Work email<input name="email" type="email" autocomplete="email" maxlength="200" required></label>
+            <label>Company<input name="company" autocomplete="organization" maxlength="120" required></label>
+            <label>Service<select name="service" required><option value="">Choose a service</option><option>Fiber closeout</option><option>Utility records QA</option><option>Recurring GIS updates</option></select></label>
+            <label class="form-wide">Target deadline (optional)<input name="timeline" maxlength="120" placeholder="Include the time zone if relevant"></label>
+            <label class="form-wide">Project summary<textarea name="scope" rows="4" maxlength="1000" required placeholder="Work area, sources, record count and expected format"></textarea></label>
+          </div>
+          <p class="form-note" id="intake-note">This opens an email draft for you to review and send. Keep sensitive asset records and attachments out of the initial note.</p>
+          <button class="button" type="submit">Open email draft</button>
+          <p class="form-status" data-intake-status role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="wordmark" href="#top" aria-label="SkarionGIS, back to top"><img src="./logo.svg" width="38" height="38" alt=""><span>Skarion<span class="wordmark-accent">GIS</span></span></a>
+      <a href="https://skarionengineering.com/">Skarion Engineering</a>
+      <a href="mailto:info@skarion.com">Email the team</a>
+    </div>
+  </footer>
+</body>
+</html>

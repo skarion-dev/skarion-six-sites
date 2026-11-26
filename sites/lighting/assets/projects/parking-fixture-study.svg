@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-labelledby="parking-title parking-desc">
+  <title id="parking-title">Parking area fixture comparison</title>
+  <desc id="parking-desc">Schematic of four fixed parking lot poles, nine comparison points and five east boundary review points. No calculation results are shown.</desc>
+  <defs>
+    <pattern id="background-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0v20" stroke="#2D312C"/></pattern>
+    <g id="fixture-shape"><circle r="12" fill="#262621" stroke="#F7CB86"/><path d="M0-5v10m-5-5h10" stroke="#F7CB86" stroke-width="1.8"/></g>
+  </defs>
+  <rect width="800" height="500" fill="#1B1D1E"/>
+  <rect width="800" height="500" fill="url(#background-grid)"/>
+  <g font-family="Courier New, monospace" font-size="15">
+    <text x="42" y="39" fill="#F7CB86" font-weight="bold" letter-spacing="1">LGT-01 · SITE COMPARISON</text>
+    <text x="42" y="63" fill="#D2C6B5">P-101 REV 0 / SYNTHETIC GEOMETRY</text>
+  </g>
+  <path d="M42 85H442V445H42Z" stroke="#BFA48C" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <path d="M442 85V445" stroke="#DC946B" stroke-width="3" stroke-dasharray="6 6"/>
+  <path d="M82 125H402V405H82Z" fill="#252B28" stroke="#798277" stroke-width="2"/>
+  <path d="M82 165H402V221H82ZM82 309H402V365H82Z" fill="#2E342E"/>
+  <path d="M110 165v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56M110 309v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56m28-56v56" stroke="#4E594F"/>
+  <path d="M96 265H387" stroke="#6B756A" stroke-dasharray="11 9"/>
+  <g fill="#D1C6B4">
+    <circle cx="122" cy="365" r="3"/><circle cx="242" cy="365" r="3"/><circle cx="362" cy="365" r="3"/>
+    <circle cx="122" cy="265" r="3"/><circle cx="242" cy="265" r="3"/><circle cx="362" cy="265" r="3"/>
+    <circle cx="122" cy="165" r="3"/><circle cx="242" cy="165" r="3"/><circle cx="362" cy="165" r="3"/>
+  </g>
+  <g fill="#1B1D1E" stroke="#FFAC80" stroke-width="1.8">
+    <circle cx="442" cy="405" r="4"/><circle cx="442" cy="335" r="4"/><circle cx="442" cy="265" r="4"/><circle cx="442" cy="195" r="4"/><circle cx="442" cy="125" r="4"/>
+  </g>
+  <g>
+    <use href="#fixture-shape" x="142" y="197"/><use href="#fixture-shape" x="342" y="197"/>
+    <use href="#fixture-shape" x="142" y="333"/><use href="#fixture-shape" x="342" y="333"/>
+  </g>
+  <g fill="#F7CB86" font-family="Courier New, monospace" font-size="12" font-weight="bold">
+    <text x="157" y="201">P-01</text><text x="357" y="201">P-02</text><text x="157" y="337">P-03</text><text x="357" y="337">P-04</text>
+  </g>
+  <path d="M492 86H758V445H492Z" fill="#212526" stroke="#5E594E"/>
+  <g font-family="Arial, sans-serif">
+    <text x="515" y="126" fill="#F7CB86" font-size="13" font-weight="bold" letter-spacing="1.2">HELD CONSTANT</text>
+    <text x="515" y="157" fill="#FCF8F0" font-size="17">4 poles / 20 ft mounting</text>
+    <text x="515" y="185" fill="#FCF8F0" font-size="17">80 × 70 ft parking area</text>
+    <text x="515" y="213" fill="#FCF8F0" font-size="17">9 interior grid points</text>
+    <text x="515" y="241" fill="#FCF8F0" font-size="17">5 east boundary points</text>
+    <path d="M515 264H733" stroke="#5E594E"/>
+    <text x="515" y="295" fill="#F7CB86" font-size="13" font-weight="bold" letter-spacing="1.2">COMPARISON INPUT</text>
+    <text x="515" y="326" fill="#FCF8F0" font-size="17">Candidate IES file only</text>
+    <text x="515" y="375" fill="#D2C6B5" font-size="14">Values pending approved</text>
+    <text x="515" y="397" fill="#D2C6B5" font-size="14">inputs and model run.</text>
+  </g>
+  <text x="42" y="477" fill="#CBC3B7" font-family="Courier New, monospace" font-size="13">SYNTHETIC EXAMPLE · NO CALCULATED VALUES</text>
+</svg>

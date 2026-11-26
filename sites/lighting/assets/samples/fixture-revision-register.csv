@@ -1,0 +1,9 @@
+example_id,data_status,comment_id,item_id,field,baseline_option_b,proposed_b_rev_1,owner,required_evidence,review_status
+LGT-03,synthetic template,R-01,P-04,fixture catalog,DEMO-LTG-B,DEMO-LTG-C,fixture reviewer,confirmed catalog selection,open
+LGT-03,synthetic template,R-01,P-04,fixture optic,B-alternate,C-shielded candidate,fixture reviewer,confirmed optic and mounting compatibility,open
+LGT-03,synthetic template,R-01,P-04,IES source,DEMO-LTG-B.ies,DEMO-LTG-C.ies,modeling lead,approved manufacturer IES file,open
+LGT-03,synthetic template,R-01,P-04,location x y and height ft,65 / 18 / 20,65 / 18 / 20,CAD lead,unchanged model and schedule coordinates,open
+LGT-03,synthetic template,R-01,P-04,aim from plan north deg,0,0,modeling lead,unchanged aiming record,open
+LGT-03,synthetic template,R-01,P-01 to P-03,IES source,DEMO-LTG-B.ies,DEMO-LTG-B.ies,modeling lead,unchanged fixture assignments,open
+LGT-03,synthetic template,R-01,PK-01 to PK-09,parking grid,unchanged baseline points,unchanged baseline points,photometric reviewer,revised plot and matched baseline points,open
+LGT-03,synthetic template,R-01,EB-01 to EB-05,east edge grid,unchanged baseline points,unchanged baseline points,photometric reviewer,revised plot and matched baseline points,open

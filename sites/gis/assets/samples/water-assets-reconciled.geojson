@@ -1,0 +1,165 @@
+{
+  "type": "FeatureCollection",
+  "name": "Water asset records reconciliation",
+  "sample_scope": "SYNTHETIC DEMONSTRATION. Fictional records and coordinates.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "P-101",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.03,
+            0.013
+          ],
+          [
+            0.0318,
+            0.0142
+          ]
+        ]
+      },
+      "properties": {
+        "asset_id": "P-101",
+        "asset_type": "water_main",
+        "source_id": "WM-D01",
+        "source_revision": "R2",
+        "nominal_diameter_in": 6,
+        "legacy_id": "MAIN-1",
+        "record_status": "mapped"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P-102",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0318,
+            0.0142
+          ],
+          [
+            0.0337,
+            0.0136
+          ]
+        ]
+      },
+      "properties": {
+        "asset_id": "P-102",
+        "asset_type": "water_main",
+        "source_id": "WM-D01",
+        "source_revision": "R2",
+        "nominal_diameter_in": null,
+        "legacy_id": "MAIN-2",
+        "record_status": "open"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "P-103",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.0337,
+            0.0136
+          ],
+          [
+            0.0362,
+            0.0149
+          ]
+        ]
+      },
+      "properties": {
+        "asset_id": "P-103",
+        "asset_type": "water_main",
+        "source_id": "WM-D01",
+        "source_revision": "R2",
+        "nominal_diameter_in": 8,
+        "legacy_id": "MAIN-3",
+        "record_status": "mapped"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V-201",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.03,
+          0.013
+        ]
+      },
+      "properties": {
+        "asset_id": "V-201",
+        "asset_type": "valve",
+        "source_id": "FIELD-WM",
+        "source_revision": "R3",
+        "nominal_diameter_in": null,
+        "legacy_id": "LEG-06",
+        "record_status": "mapped"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "V-202",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0318,
+          0.0142
+        ]
+      },
+      "properties": {
+        "asset_id": "V-202",
+        "asset_type": "valve",
+        "source_id": "FIELD-WM",
+        "source_revision": "R3",
+        "nominal_diameter_in": null,
+        "legacy_id": "LEG-09",
+        "record_status": "open"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HY-203",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0337,
+          0.0136
+        ]
+      },
+      "properties": {
+        "asset_id": "HY-203",
+        "asset_type": "hydrant",
+        "source_id": "FIELD-WM",
+        "source_revision": "R3",
+        "nominal_diameter_in": null,
+        "legacy_id": "LEG-08",
+        "record_status": "mapped"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HY-204",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0362,
+          0.0149
+        ]
+      },
+      "properties": {
+        "asset_id": "HY-204",
+        "asset_type": "hydrant",
+        "source_id": "FIELD-WM",
+        "source_revision": "R3",
+        "nominal_diameter_in": null,
+        "legacy_id": "LEG-09",
+        "record_status": "open"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+dataset_status,item_code,description,row_type,unit,base_quantity,alternate_delta,alternate_quantity,source,basis
+Synthetic sample,F01,Open-cut installation,Bid item,LF,640,-80,560,OSP-04,STA 10+00 to 16+40 with 80 LF switched to HDD as alternate
+Synthetic sample,F02,HDD installation,Bid item,LF,280,80,360,OSP-04,STA 16+40 to 19+20 plus alternate 80 LF
+Synthetic sample,F03,Aerial strand installation,Bid item,LF,1180,0,1180,OSP-05,STA 19+20 to 31+00
+Synthetic sample,F04,Handhole installation,Bid item,EA,3,0,3,OSP-04,One each at STA 10+00 and STA 16+40 and STA 19+20
+Synthetic sample,F05,Splice closure installation,Bid item,EA,2,0,2,OSP-04 and OSP-05,One closure at STA 16+40 and one at STA 31+00
+Synthetic sample,F06,Service drops,Bid item,EA,12,0,12,OSP-D1,Scheduled drops by location; drop cable footage outside feeder material check
+Synthetic sample,M01,Two-inch feeder conduit,Material check,LF,920,0,920,OSP-04,Open-cut plus HDD centerline length; purchase waste excluded
+Synthetic sample,M02,Feeder fiber cable,Material check,LF,2263,0,2263,OSP-04 and OSP-05,2100 centerline feet plus 63 feet distributed slack plus 100 feet in four loops
+Synthetic sample,C01,Feeder route centerline,Reconciliation only,LF,2100,0,2100,OSP-04 and OSP-05,Sum of F01 to F03; exclude this check from bid total

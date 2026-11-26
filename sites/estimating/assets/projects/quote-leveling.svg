@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Fiber materials quote leveling</title>
+  <desc id="desc">Fictional complete delivered quotes from Supplier A at 4,200 dollars and Supplier C at 4,130 dollars. Supplier B quotes 3,750 dollars with two closure kits missing.</desc>
+  <rect width="960" height="560" fill="#faf8f2"/>
+  <rect width="960" height="135" fill="#17242d"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="46" y="45" fill="#f4bc43" font-family="Consolas, monospace" font-size="19" font-weight="700" letter-spacing="2">SYNTHETIC EXAMPLE / FICTIONAL PRICES</text>
+    <text x="46" y="99" fill="#faf8f2" font-size="43" font-weight="700">Fiber material quote leveling</text>
+    <rect x="46" y="173" width="868" height="273" fill="#faf8f2" stroke="#cbc7ba"/>
+    <rect x="47" y="174" width="866" height="56" fill="#efece1"/>
+    <path d="M46 230H914M46 302H914M46 374H914" stroke="#cbc7ba"/>
+    <g fill="#51616a" font-family="Consolas, monospace" font-size="18" font-weight="700" letter-spacing="1">
+      <text x="70" y="209">VENDOR</text><text x="279" y="209">DELIVERED TOTAL</text><text x="581" y="209">SCOPE STATUS</text>
+    </g>
+    <g fill="#17242d" font-size="25" font-weight="700">
+      <text x="70" y="276">Supplier A</text><text x="279" y="276">$4,200</text>
+      <text x="70" y="348">Supplier B</text><text x="279" y="348">$3,750</text>
+      <text x="70" y="420">Supplier C</text><text x="279" y="420">$4,130</text>
+    </g>
+    <g font-size="23">
+      <text x="581" y="276" fill="#17242d">Complete</text>
+      <rect x="565" y="319" width="323" height="43" fill="#f4bc43"/>
+      <text x="581" y="348" fill="#17242d" font-weight="700">2 closure kits missing</text>
+      <text x="581" y="420" fill="#17242d">Complete</text>
+    </g>
+    <text x="46" y="492" fill="#17242d" font-size="25" font-weight="700">$70 spread between complete quotes</text>
+    <text x="46" y="525" fill="#51616a" font-size="20">USD before tax · One delivery · Same fictional job site</text>
+  </g>
+</svg>

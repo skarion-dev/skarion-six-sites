@@ -30,14 +30,24 @@
     scope: 'Project summary',
   };
 
+  const reference = (new URLSearchParams(window.location.search).get('project') ?? '').trim().replace(/\s+/g, ' ').slice(0, 160);
+
   document.querySelectorAll('form[data-intake]').forEach((form) => {
+    if (reference) {
+      const note = document.createElement('p');
+      note.className = 'intake-project-reference';
+      note.textContent = `Example you’re referencing: ${reference}`;
+      form.prepend(note);
+    }
+
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       const data = new FormData(form);
-      const details = Object.entries(fields)
+      const lines = Object.entries(fields)
         .filter(([field]) => String(data.get(field) ?? '').trim())
-        .map(([field, label]) => `${label}: ${String(data.get(field)).trim()}`)
-        .join('\r\n');
+        .map(([field, label]) => `${label}: ${String(data.get(field)).trim()}`);
+      if (reference) lines.push(`Reference project: ${reference}`);
+      const details = lines.join('\r\n');
       const recipient = form.dataset.recipient;
       const subject = encodeURIComponent(form.dataset.subject);
       const draft = `mailto:${recipient}?subject=${subject}&body=${encodeURIComponent(details)}`;

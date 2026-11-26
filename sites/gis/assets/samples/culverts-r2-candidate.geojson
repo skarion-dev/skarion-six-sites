@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "name": "Culvert inventory R2",
+  "sample_scope": "SYNTHETIC DEMONSTRATION. Fictional records and coordinates.",
+  "release": "R2",
+  "release_status": "review_candidate",
+  "baseline": "R1",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "CV-011",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.045,
+          0.018
+        ]
+      },
+      "properties": {
+        "asset_id": "CV-011",
+        "asset_type": "culvert",
+        "source_id": "SK-01",
+        "source_revision": "R1",
+        "inspection_date": "2025-06-12",
+        "verification_status": "reviewed"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CV-012",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.04732,
+          0.01916
+        ]
+      },
+      "properties": {
+        "asset_id": "CV-012",
+        "asset_type": "culvert",
+        "source_id": "SK-02",
+        "source_revision": "R2",
+        "inspection_date": "2025-06-12",
+        "verification_status": "candidate"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CV-013",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.049,
+          0.021
+        ]
+      },
+      "properties": {
+        "asset_id": "CV-013",
+        "asset_type": "culvert",
+        "source_id": "SK-03",
+        "source_revision": "R1",
+        "inspection_date": "2025-06-13",
+        "verification_status": "reviewed"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CV-014",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.05,
+          0.02
+        ]
+      },
+      "properties": {
+        "asset_id": "CV-014",
+        "asset_type": "culvert",
+        "source_id": "SK-04",
+        "source_revision": "R1",
+        "inspection_date": null,
+        "verification_status": "open"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CV-015",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.051,
+          0.023
+        ]
+      },
+      "properties": {
+        "asset_id": "CV-015",
+        "asset_type": "culvert",
+        "source_id": "SK-05",
+        "source_revision": "R2",
+        "inspection_date": "2025-06-18",
+        "verification_status": "candidate"
+      }
+    }
+  ]
+}

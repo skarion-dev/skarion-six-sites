@@ -22,7 +22,11 @@ Add a named owner and evidence link to every decision. Review one lane at a time
 
 ## Portfolio review
 
-Use the sample brief in each site directory to produce original work samples. Review peer examples as benchmarks. Keep the original link and the evidence it provides in the private project queue. For each publishable project record, capture Skarion's actual role, project owner, inputs, outputs, date, approvals, redactions, visual rights and technical sign-off. For an illustrative demonstration, identify the synthetic inputs and replace any client data before showing it outside the company.
+Use the example galleries and sample downloads to review the six handoffs. These examples are synthetic. Review any real client work separately in the private project queue and keep peer examples there as benchmarks. For each proposed client case, capture Skarion's actual role, project owner, inputs, outputs, date, approvals, redactions, visual rights and technical sign-off.
+
+- [ ] A reviewer opens each sample file and reconciles record IDs, quantities, units, revisions and stated assumptions with the example page.
+- [ ] The offer lead confirms the inputs, formats, quality checks and scopes on the capabilities page reflect the work the team can accept.
+- [ ] The content lead checks that illustrative work, third-party research and approved client evidence are correctly identified before public release.
 
 The product of the first round is one approved draft page for each active offer and a documented scope decision for each pilot. Keep a separate sign-off for a finished case study or a social campaign.
 

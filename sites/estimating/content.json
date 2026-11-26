@@ -1,0 +1,114 @@
+{
+  "capabilityIntro": "Extend your bid desk for a released fiber or underground utility package. Quantity production starts from the latest authorized revisions and hands each measurement back with its item code, drawing source and scope status.",
+  "buyerRoles": ["OSP contractor and subcontractor estimators", "Civil and wet utility bid leads", "Design-build prime preconstruction teams", "Contractor purchasing and procurement leads"],
+  "capabilities": [
+    {
+      "title": "OSP fiber and conduit takeoffs",
+      "summary": "Build a route-by-route quantity schedule for aerial, open-cut and directional-bore work. Keep material footage, install units and bid alternates distinct.",
+      "inputs": ["Released route sheets and stationing", "Owner bid schedule and construction methods", "Cable slack, structure and drop criteria"],
+      "outputs": ["Marked route diagrams and station crosswalk", "Editable bid-item and materials schedule", "Alternate quantities and open questions"],
+      "checks": ["Reconcile original route footage by installation method", "Distinguish cable slack from centerline footage", "Check nodes at sheet and station boundaries for duplicate counts"]
+    },
+    {
+      "title": "Wet utility plan-and-profile takeoffs",
+      "summary": "Quantify gravity or pressure utility work by size, material, depth band and phase. Document separately measured restoration and owner-directed allowances.",
+      "inputs": ["Authorized plans, profiles and standard details", "Owner pay items and unit definitions", "Restoration limits and connection instructions"],
+      "outputs": ["Pipe, structure and fitting quantity schedule", "Depth-band reconciliation and marked source references", "Restoration and connection allowance register"],
+      "checks": ["Match segment lengths to station limits", "Check depth-band totals against measured pipe", "Record unresolved excavation, dewatering and restoration responsibilities"]
+    },
+    {
+      "title": "Addendum deltas and bid form reconciliation",
+      "summary": "Compare the authorized plan set to prior bid quantities and track which changes feed the owner form, internal assumptions or open questions.",
+      "inputs": ["Original and latest authorized plans", "Addendum index and due date with time zone", "Current bid form and prior takeoff"],
+      "outputs": ["Before-and-after bid-item delta register", "Changed-sheet markup and notes on unchanged related items", "Bid form crosswalk and issue list"],
+      "checks": ["Confirm each changed sheet against the addendum index", "Check signed deltas and totals by unit", "Review replacement versus additional work and superseded alternates"]
+    },
+    {
+      "title": "Supplier quote leveling",
+      "summary": "Convert quoted packs, lengths and units to shared purchase quantities. Separate freight and coverage gaps so the bid lead can compare equivalent scope.",
+      "inputs": ["Item quantities and acceptable specifications", "Supplier quotes with units, validity and delivery terms", "Required delivery date and freight basis"],
+      "outputs": ["Comparable line-item and delivered-cost worksheet", "Spec, coverage and validity exception log", "Procurement questions before award or bid issue"],
+      "checks": ["Recompute pack conversions and price extensions", "Separate supplier-quoted totals from allowance scenarios", "Exclude incomplete or expired quotes from the equivalent-scope ranking until resolved"]
+    },
+    {
+      "title": "Estimator-reviewed bid pricing support",
+      "summary": "Prepare a basis-of-estimate using authorized project rates and an experienced estimator’s review of installation methods and risk inputs.",
+      "inputs": ["Approved labor burden, production and equipment inputs", "Dated supplier and subcontractor quotes", "Contractor-directed risk, schedule and markup assumptions"],
+      "outputs": ["Traceable price basis and assumption register", "Scope exclusions and unresolved bid risks", "Review log showing who cleared each pricing input"],
+      "checks": ["Confirm input approval and rate dates before pricing", "Check labor, material and equipment extensions independently", "Refer final pricing and bid issue to the authorized bidder"]
+    }
+  ],
+  "handoff": {
+    "formats": ["Editable Excel or CSV quantity and delta schedules", "Marked PDF plans with sheet, station or feature references", "Quote comparison and scope issue registers"],
+    "requirements": ["Current authorized plan set, revisions and bid schedule", "Written measurement basis and limits of work", "Bid date, time zone and permission to share files", "Named point of contact for scope, rates and approvals"],
+    "boundaries": ["The bidder controls construction means, local rates, contingency and final submission.", "Priced work needs approved labor, equipment and vendor inputs and review by an experienced estimator.", "Field verification and licensed design decisions remain with the project’s assigned professionals."]
+  },
+  "projects": [
+    {
+      "id": "mixed-route-ftth-takeoff",
+      "title": "Mixed-route FTTH bid takeoff",
+      "category": "Synthetic project · OSP quantity takeoff",
+      "summary": "Carry 2,100 route feet from station limits into separate install and material items, with a reversible 80-foot construction-method alternate.",
+      "image": "assets/projects/mixed-route.svg",
+      "imageAlt": "Original station schedule showing 640 feet of open cut, 280 feet of bore and 1,180 feet of aerial route, with a common total of 2,100 feet.",
+      "context": "A fictional broadband contractor is bidding a three-segment feeder. The owner needs base bid quantities by method and a separate HDD alternate. The estimate team needs cable purchasing footage and the source of each quantity.",
+      "constraints": ["Base package covers station 10+00 through 31+00 only.", "The fictional cable schedule calls for 3% distributed slack plus four 25-foot service loops.", "The alternate moves station 15+60 through 16+40 from open cut to HDD within the same route limits."],
+      "approach": [
+        {"title": "Measure by route and construction method", "text": "Subtract the start station from the end station for each segment, classify the work as open cut, HDD or aerial, and record the controlling sheet."},
+        {"title": "Separate material, install and schedule counts", "text": "Carry 920 feet of underground installation into a conduit material check. Apply the fictional cable slack criteria to the full 2,100-foot route, then tie handholes, splice closures and drops to their sheets."},
+        {"title": "Isolate the bid alternate", "text": "Deduct 80 feet from open cut and add 80 feet to HDD. Confirm the two adjustments net to zero for the route and underground conduit material check."}
+      ],
+      "deliverables": ["Three-segment station and drawing crosswalk", "Editable bid-item and material quantity schedule", "Separate base, alternate delta and alternate total columns"],
+      "verification": ["640 + 280 + 1,180 = 2,100 route feet.", "2,100 + 63 feet of distributed slack + 100 feet of loops = 2,263 cable feet.", "The alternate changes the method mix to 560 feet open cut plus 360 feet HDD and keeps 920 feet of underground conduit."],
+      "review": "Internal review sample. Ask an OSP reviewer and an estimator to check station intervals, slack basis, lateral drop scope and which material rows are payable before any external use.",
+      "files": [
+        {"path": "assets/samples/ftth-route-schedule.csv", "label": "Route schedule CSV", "description": "Station pairs, controlling sheets and the change in installation method."},
+        {"path": "assets/samples/ftth-bid-takeoff.csv", "label": "Bid takeoff CSV", "description": "Base and alternate quantities for methods and material items, with an explicit row type."}
+      ]
+    },
+    {
+      "id": "sanitary-sewer-addendum-delta",
+      "title": "Sanitary sewer addendum delta",
+      "category": "Synthetic project · Wet utility bid revision",
+      "summary": "Reconcile a revised sanitary sewer profile by pipe size, depth band, manhole count and pavement restoration before bid lock.",
+      "image": "assets/projects/sewer-addendum.svg",
+      "imageAlt": "Original profile comparison showing the base 360-foot sewer and a revised alignment with 240 feet of 12-inch pipe and 160 feet of 15-inch pipe.",
+      "context": "An invented addendum replaces part of a sewer alignment and extends its east limit. A contractor needs the changed quantities plus a separate check of which values feed the owner’s bid form.",
+      "constraints": ["Use SW-04 revision A as baseline and SW-04 revision B as the authorized addendum sheet.", "Each depth band starts at its lower limit and ends before the next band starts. The last band includes its 14-foot maximum.", "Use size-based pipe rows for bid measurement, with depth bands supporting production review.", "Use the fictional owner detail’s 6-foot restoration width and keep the tie-in as an owner allowance."],
+      "approach": [
+        {"title": "Compare equivalent work limits", "text": "Reconcile base station 0+00 to 3+60 against revised station 0+00 to 4+00. Allocate the revised 400 feet to the sizes shown on the new profile."},
+        {"title": "Separate secondary checks", "text": "Assign the revised profile segments to one depth band each. Count the additional manhole from the proposed structure schedule, then recompute the area over the revised pavement limit."},
+        {"title": "Map changes into the bid schedule", "text": "Record each baseline, revised quantity and signed delta. Keep the unchanged tie-in allowance visible and raise excavation and dewatering assumptions to the bidder."}
+      ],
+      "deliverables": ["Profile segment schedule by revision and depth band", "Base versus addendum bid schedule with signed quantity deltas", "Pipe, restoration and structures cross-check"],
+      "verification": ["The pipe size deltas are −120 feet and +160 feet, a net +40 feet.", "The revised depth bands independently reconcile to 120 + 120 + 160 = 400 feet.", "Pavement restoration increases from 180 × 6 ÷ 9 = 120 square yards to 210 × 6 ÷ 9 = 140 square yards."],
+      "review": "Internal review sample. Civil and estimating reviewers should validate the depth assumptions, restoration limit and schedule mapping. The bidder confirms field conditions, excavation, support and dewatering scope.",
+      "files": [
+        {"path": "assets/samples/sewer-profile-schedule.csv", "label": "Profile schedule CSV", "description": "Baseline and addendum segment limits, sizes and depth bands."},
+        {"path": "assets/samples/sewer-addendum-delta.csv", "label": "Addendum delta CSV", "description": "Bid-item deltas, supporting checks and an unchanged owner allowance."}
+      ]
+    },
+    {
+      "id": "fiber-material-quote-leveling",
+      "title": "Fiber materials quote leveling",
+      "category": "Synthetic project · Procurement comparison",
+      "summary": "Normalize three fictional vendor quotes to one delivered scope and surface a missing splice kit before comparing complete totals.",
+      "image": "assets/projects/quote-leveling.svg",
+      "imageAlt": "Original comparison showing complete delivered totals of $4,200 and $4,130 and a $3,750 quote with an incomplete line for closure kits.",
+      "context": "An invented fiber bid needs 1,000 feet of 2-inch duct, six handholes and two splice closure kits. Three fictional suppliers quote different duct packs, a two-kit bundle and different freight conditions.",
+      "constraints": ["Compare one delivery to the same fictional job site, in USD before tax.", "All fictional included items share the same specified dimensions and material grade.", "One fictional vendor excludes both closure kits. The $370 allowance scenario stays separate from the quote comparison."],
+      "approach": [
+        {"title": "Normalize pack quantities", "text": "Convert 50-, 100- and 25-foot duct packs into comparable feet and a unit rate. Convert a quoted two-kit bundle to two individual kits for the scope check."},
+        {"title": "Build delivered quote totals", "text": "Extend quantity times quoted pack rate, then add each vendor’s quoted freight. Retain validity, freight basis and coverage flags with the comparison."},
+        {"title": "Escalate incomplete scope", "text": "Show the $3,750 incomplete total on its own line. Check the $4,120 allowance scenario separately and request an equivalent complete quote with compatible closure kits."}
+      ],
+      "deliverables": ["Pack-to-base-unit conversion and fictional quote detail", "Scope-equivalent delivered comparison", "Coverage, quote validity and follow-up flags"],
+      "verification": ["The duct pack extensions are $1,960, $1,920 and $2,040 for 1,000 feet each.", "The complete fictional totals are $4,200 and $4,130, a $70 spread.", "The incomplete $3,750 quote plus a fictional $370 kit allowance produces a $4,120 unranked scenario."],
+      "review": "Internal review sample. All figures are fictional product and freight amounts. Real pricing requires approved vendor, labor and equipment inputs and an experienced estimator’s review. Ask procurement to confirm matching specification, lead time and delivered terms.",
+      "files": [
+        {"path": "assets/samples/fiber-material-quote-lines.csv", "label": "Vendor quote lines CSV", "description": "Fictional pack rates, converted quantities, freight and line totals."},
+        {"path": "assets/samples/fiber-material-quote-comparison.csv", "label": "Leveled quote comparison CSV", "description": "Delivered scope and subtotal by vendor, with the separate allowance scenario."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+example_id,data_status,base_drawing,fixture_id,x_ft,y_ft,mounting_height_ft,aim,option_a_catalog,option_a_placeholder_ies,option_b_catalog,option_b_placeholder_ies,review_status
+LGT-02,synthetic template,W-101 Rev 0,H-01,20,56,24,vertical down,DEMO-HB-A,DEMO-HB-A.ies,DEMO-HB-B,DEMO-HB-B.ies,approved source files required
+LGT-02,synthetic template,W-101 Rev 0,H-02,60,56,24,vertical down,DEMO-HB-A,DEMO-HB-A.ies,DEMO-HB-B,DEMO-HB-B.ies,approved source files required
+LGT-02,synthetic template,W-101 Rev 0,H-03,100,56,24,vertical down,DEMO-HB-A,DEMO-HB-A.ies,DEMO-HB-B,DEMO-HB-B.ies,approved source files required
+LGT-02,synthetic template,W-101 Rev 0,H-04,20,16,24,vertical down,DEMO-HB-A,DEMO-HB-A.ies,DEMO-HB-B,DEMO-HB-B.ies,approved source files required
+LGT-02,synthetic template,W-101 Rev 0,H-05,60,16,24,vertical down,DEMO-HB-A,DEMO-HB-A.ies,DEMO-HB-B,DEMO-HB-B.ies,approved source files required
+LGT-02,synthetic template,W-101 Rev 0,H-06,100,16,24,vertical down,DEMO-HB-A,DEMO-HB-A.ies,DEMO-HB-B,DEMO-HB-B.ies,approved source files required

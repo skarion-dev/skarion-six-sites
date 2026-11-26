@@ -1,0 +1,201 @@
+{
+  "type": "FeatureCollection",
+  "name": "Ridgeline fiber closeout",
+  "sample_scope": "SYNTHETIC DEMONSTRATION. Fictional records and coordinates.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "RT-01",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            0.02108,
+            0.02034
+          ],
+          [
+            0.0232,
+            0.02186
+          ],
+          [
+            0.02422,
+            0.02312
+          ],
+          [
+            0.02604,
+            0.02328
+          ],
+          [
+            0.02756,
+            0.02446
+          ],
+          [
+            0.02884,
+            0.02488
+          ],
+          [
+            0.02978,
+            0.02498
+          ],
+          [
+            0.0312,
+            0.02616
+          ],
+          [
+            0.03216,
+            0.0272
+          ]
+        ]
+      },
+      "properties": {
+        "asset_id": "RT-01",
+        "asset_type": "fiber_route",
+        "source_id": "RDL-12",
+        "source_revision": "R2",
+        "evidence_reference": "APPROVED_ROUTE",
+        "review_status": "mapped",
+        "review_only": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CAB-01",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.02108,
+          0.02034
+        ]
+      },
+      "properties": {
+        "asset_id": "CAB-01",
+        "asset_type": "cabinet",
+        "source_id": "RDL-12",
+        "source_revision": "R2",
+        "evidence_reference": "CAB-01-PH",
+        "review_status": "mapped",
+        "review_only": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SP-02",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0232,
+          0.02186
+        ]
+      },
+      "properties": {
+        "asset_id": "SP-02",
+        "asset_type": "splice",
+        "source_id": "FIDX-04",
+        "source_revision": "R1",
+        "evidence_reference": "TST-02",
+        "review_status": "mapped",
+        "review_only": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HH-14",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.02604,
+          0.02328
+        ]
+      },
+      "properties": {
+        "asset_id": "HH-14",
+        "asset_type": "handhole",
+        "source_id": "RDL-12",
+        "source_revision": "R2",
+        "evidence_reference": "HH-14-PH",
+        "review_status": "mapped",
+        "review_only": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "SP-03",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.02756,
+          0.02446
+        ]
+      },
+      "properties": {
+        "asset_id": "SP-03",
+        "asset_type": "splice",
+        "source_id": "FIDX-04",
+        "source_revision": "R1",
+        "evidence_reference": "SPL-03",
+        "review_status": "mapped",
+        "review_only": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "HH-15",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0312,
+          0.02616
+        ]
+      },
+      "properties": {
+        "asset_id": "HH-15",
+        "asset_type": "handhole",
+        "source_id": "RDL-12",
+        "source_revision": "R2",
+        "evidence_reference": "HH-15-PH",
+        "review_status": "mapped",
+        "review_only": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "CAB-02",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.03216,
+          0.0272
+        ]
+      },
+      "properties": {
+        "asset_id": "CAB-02",
+        "asset_type": "cabinet",
+        "source_id": "RDL-12",
+        "source_revision": "R2",
+        "evidence_reference": "CAB-02-PH",
+        "review_status": "mapped",
+        "review_only": false
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "EX-01",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.02884,
+          0.02488
+        ]
+      },
+      "properties": {
+        "asset_id": "EX-01",
+        "asset_type": "review_marker",
+        "source_id": "RDL-12",
+        "source_revision": "R2",
+        "evidence_reference": null,
+        "review_status": "open",
+        "review_only": true
+      }
+    }
+  ]
+}

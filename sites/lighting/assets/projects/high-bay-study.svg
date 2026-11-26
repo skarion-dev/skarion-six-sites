@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-labelledby="high-bay-title high-bay-desc">
+  <title id="high-bay-title">Warehouse bay alternate</title>
+  <desc id="high-bay-desc">Two calculation zones share six unchanged high-bay fixture locations. Separate diagrams describe the 30-inch packing plane and the floor-level aisle plane.</desc>
+  <defs>
+    <pattern id="rack-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V7" stroke="#747D73" stroke-width="2"/></pattern>
+    <g id="high-bay-fixture"><path d="M-7-7H7V7H-7Z" fill="#473B2A" stroke="#F7CB86" stroke-width="1.5"/><circle r="2.2" fill="#F7CB86"/></g>
+  </defs>
+  <rect width="800" height="500" fill="#222726"/>
+  <g font-family="Courier New, monospace" font-size="15">
+    <text x="42" y="39" fill="#F7CB86" font-weight="bold" letter-spacing="1">LGT-02 · HIGH-BAY ALTERNATE</text>
+    <text x="42" y="63" fill="#D2C6B5">W-101 REV 0 / SYNTHETIC GEOMETRY</text>
+  </g>
+  <path d="M43 85H523V373H43Z" fill="#2A302F" stroke="#A3AAA0" stroke-width="2"/>
+  <path d="M75 209H491V249H75Z" fill="#32443E" stroke="#A0C1B0" stroke-dasharray="5 5"/>
+  <path d="M75 269H491V349H75Z" fill="#453B2A" stroke="#DAAD70" stroke-dasharray="5 5"/>
+  <path d="M139 109h60v76h-60zm164 0h60v76h-60zm152 0h60v76h-60z" fill="url(#rack-hatch)" stroke="#A5A79C"/>
+  <g fill="#ADB9B2" font-family="Courier New, monospace" font-size="12">
+    <text x="153" y="125">RACK 1</text><text x="317" y="125">RACK 2</text><text x="469" y="125">RACK 3</text>
+  </g>
+  <text x="91" y="234" fill="#D5E6D9" font-family="Courier New, monospace" font-size="15">Z-AISLE · FLOOR PLANE</text>
+  <text x="91" y="291" fill="#F7CB86" font-family="Courier New, monospace" font-size="15">Z-PACK · 30 IN PLANE</text>
+  <g>
+    <use href="#high-bay-fixture" x="123" y="149"/><use href="#high-bay-fixture" x="283" y="149"/><use href="#high-bay-fixture" x="443" y="149"/>
+    <use href="#high-bay-fixture" x="123" y="309"/><use href="#high-bay-fixture" x="283" y="309"/><use href="#high-bay-fixture" x="443" y="309"/>
+  </g>
+  <g fill="#F7CB86" font-family="Courier New, monospace" font-size="12" font-weight="bold" text-anchor="middle">
+    <text x="123" y="177">H-01</text><text x="283" y="177">H-02</text><text x="443" y="177">H-03</text>
+    <text x="123" y="337">H-04</text><text x="283" y="337">H-05</text><text x="443" y="337">H-06</text>
+  </g>
+  <path d="M552 85H758V373H552Z" fill="#1C2121" stroke="#5E675C"/>
+  <g font-family="Arial, sans-serif">
+    <text x="572" y="119" fill="#F7CB86" font-size="13" font-weight="bold" letter-spacing="1.2">SEPARATE PLANES</text>
+    <text x="572" y="151" fill="#FCF8F0" font-size="18">Packing benches</text>
+    <text x="572" y="173" fill="#CBC3B7" font-size="15">30 in above floor</text>
+    <text x="572" y="213" fill="#FCF8F0" font-size="18">Forklift aisle</text>
+    <text x="572" y="235" fill="#CBC3B7" font-size="15">At floor level</text>
+    <path d="M572 262H737" stroke="#5E675C"/>
+    <text x="572" y="293" fill="#F7CB86" font-size="13" font-weight="bold" letter-spacing=".7">CONSTANT MOUNTING</text>
+    <text x="572" y="325" fill="#FCF8F0" font-size="18">6 fixtures / 24 ft</text>
+  </g>
+  <path d="M43 402H758" stroke="#5E675C"/>
+  <text x="43" y="436" fill="#F7CB86" font-family="Courier New, monospace" font-size="16" font-weight="bold">120 FT × 72 FT BAY · 3 KNOWN RACK OBSTRUCTIONS</text>
+  <text x="43" y="462" fill="#CBC3B7" font-family="Courier New, monospace" font-size="13">SYNTHETIC EXAMPLE · NO CALCULATED VALUES</text>
+</svg>

@@ -1,0 +1,7 @@
+asset_id,asset_type,source_key,source_locator,status,exception_id
+IN-104,inlet,PLAN-D02,Sheet D-02 detail B,matched,
+MH-208,manhole,CCTV-017,Inspection index row 17,matched,
+OUT-301,outfall,PLAN-D03,Sheet D-03 detail A,matched,
+IN-105,inlet,PLAN-D01,Sheet D-01 grid C4,matched,
+P-107,storm_pipe,PLAN-D02,Sheet D-02 run P-107,matched,
+P-209,storm_pipe,PLAN-D04,Sheet D-04 run P-209,review,EX-01

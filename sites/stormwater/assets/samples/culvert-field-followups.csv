@@ -1,0 +1,4 @@
+issue_id,asset_id,issue,review_owner,evidence_needed,state
+CV-QA-01,CV-32,Outlet not observed,Prime field lead,Outlet observation and referenced photo,open
+CV-QA-02,CV-33,Source road conflicts with destination register,GIS reviewer,Approved road log and station reference,open
+CV-QA-03,CV-34,Recorded dimensions unavailable,Inspection lead,Source measurement in millimeters or approved unknown status,open

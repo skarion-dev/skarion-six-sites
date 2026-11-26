@@ -1,0 +1,260 @@
+{
+  "capabilityIntro": "Production drafting for utility closeout, legacy drawing conversion and civil CAD queues. Start with one to three representative sheets so the buyer’s reviewer can confirm fit before assigning a larger batch.",
+  "buyerRoles": [
+    "Utility contractor closeout or project manager",
+    "Engineering or survey CAD production lead",
+    "Facilities or asset-records manager",
+    "Civil consultant assembling plan and profile sheets"
+  ],
+  "capabilities": [
+    {
+      "title": "Record drawings from approved field redlines",
+      "summary": "Bring construction revisions into the approved base drawing and log questions that need a review decision.",
+      "inputs": [
+        "Approved field markups with revision and sheet references",
+        "Editable base CAD and dependent references",
+        "Target sheet list, plot standards and handoff deadline"
+      ],
+      "outputs": [
+        "Revised native CAD and plotted sheet set in the agreed format",
+        "Drawing index and source-to-change register",
+        "Exception log with sheet references and reviewer actions"
+      ],
+      "checks": [
+        "Compare incorporated changes with the approved markups",
+        "Validate affected layers, external references and plot readability",
+        "Keep unresolved dimensions and tie-ins visible for the buyer’s decision"
+      ]
+    },
+    {
+      "title": "Legacy PDF and raster conversion",
+      "summary": "Rebuild legible archive drawings as editable linework organized by the buyer’s layer and block standards.",
+      "inputs": [
+        "Readable scan or PDF and a known dimension reference",
+        "Required file version, layer naming and drawing conventions",
+        "Instructions for gaps, blurry symbols and conflicting dimensions"
+      ],
+      "outputs": [
+        "Editable geometry on named layers",
+        "Visual overlay or plotted source comparison",
+        "Source-to-layer crosswalk and conversion exceptions"
+      ],
+      "checks": [
+        "Calibrate against the supplied dimension and cross-check another known interval when available",
+        "Review line alignment, labels and units against the source",
+        "Record unreadable details for resolution"
+      ]
+    },
+    {
+      "title": "Civil and survey drafting production",
+      "summary": "Prepare agreed plan, profile and existing-condition sheets from reviewed source data under the buyer’s template.",
+      "inputs": [
+        "Reviewer-approved source data and point or feature codes",
+        "Horizontal reference, vertical datum and units",
+        "Sheet template, callout list and drafting instructions"
+      ],
+      "outputs": [
+        "Assigned AutoCAD or Civil 3D files in the agreed format",
+        "Plotted sheets and dependent file manifest",
+        "Source point and missing-data notes for assigned review"
+      ],
+      "checks": [
+        "Confirm source identifiers, units and coordinate handling",
+        "Reconcile profile station and elevation labels with approved inputs",
+        "Log unknown attributes and wait for reviewer direction where needed"
+      ]
+    },
+    {
+      "title": "CAD overflow and revision control",
+      "summary": "Establish a shared revision queue and repeatable handoff after the first production batch is accepted.",
+      "inputs": [
+        "Representative set and buyer standards",
+        "Batch priorities, reviewers and revision cadence",
+        "Written scope and acceptance rules"
+      ],
+      "outputs": [
+        "Each dated production batch with revision status",
+        "Manifest for files, references and unresolved inputs",
+        "Batch closeout notes for the designated reviewer"
+      ],
+      "checks": [
+        "Compare each revised sheet with its approved instruction",
+        "Confirm working files and plotted sheets match the issue register",
+        "Capture approved revision requests and return open decisions to the owner"
+      ]
+    }
+  ],
+  "handoff": {
+    "formats": [
+      "Native AutoCAD DWG or agreed Civil 3D version for production work",
+      "Plotted PDFs with a named sheet index",
+      "CSV or spreadsheet revision and exception registers",
+      "Portable DXF for the website illustrations"
+    ],
+    "requirements": [
+      "One authorized source set with a current revision",
+      "Approved units, CAD template, plot layout and dependent file list",
+      "Named reviewer, target delivery date and secure handoff channel"
+    ],
+    "boundaries": [
+      "The buyer’s accountable reviewer handles field verification, survey determinations and interpretation of design intent.",
+      "Engineering approval, professional sealing and permitting remain with the designated accountable professionals.",
+      "An unclear source detail stays logged until the buyer directs its disposition."
+    ]
+  },
+  "projects": [
+    {
+      "id": "utility-trench-closeout",
+      "title": "Utility trench closeout",
+      "category": "Record drawing incorporation",
+      "summary": "A fictional utility record sheet demonstrates an approved alignment offset while keeping an unresolved tie-in visible.",
+      "image": "assets/projects/utility-trench-closeout.svg",
+      "imageAlt": "Blueprint-style utility drawing with a 14-foot alignment offset and an open tie-in circled in orange",
+      "context": "A simulated closeout lead provides approved instruction M-01 to move the utility alignment from station 0+60 through 1+20. A separate markup M-02 asks for a tie-in dimension at 1+80 that the source package does not give.",
+      "constraints": [
+        "Model geometry uses feet in an arbitrary local grid.",
+        "Incorporate the approved 14-foot offset using explicit bends at station 0+60 and 1+20.",
+        "Retain the tie-in check at 1+80 as an open issue until a reviewer provides a dimension."
+      ],
+      "approach": [
+        {
+          "title": "Separate approved work from review items",
+          "text": "Treat M-01 as the approved change. Record M-02 as exception E-01 and mark the tie-in with a review circle."
+        },
+        {
+          "title": "Update the record geometry",
+          "text": "Move the route between the two bends, retain the original route on a reference layer and keep station ticks in their original position."
+        },
+        {
+          "title": "Prepare the issue package",
+          "text": "Index UT-01 as a review issue and attach the change register so every mark can be traced to a source instruction."
+        }
+      ],
+      "deliverables": [
+        "UT-01 editable alignment DXF with original and revised route layers",
+        "Sheet register tracing two source marks to an incorporation decision",
+        "Illustrated record sheet with station marks and the open tie-in callout"
+      ],
+      "verification": [
+        "Measure 14 drawing units between the two route layers between station 0+60 and 1+20.",
+        "Trace E-01 at station 1+80 from the DXF to the source mark register.",
+        "Check UT-01 title and coordinates against the project illustration."
+      ],
+      "review": "CAD lead checks layers and source traceability. The designated reviewer would resolve the open dimension before a final issue. All inputs and results are synthetic.",
+      "files": [
+        {
+          "path": "assets/samples/utility-ut01.dxf",
+          "label": "UT-01 alignment drawing (DXF)",
+          "description": "Editable original and revised alignment, station marks and the issue location. One model unit is one foot."
+        },
+        {
+          "path": "assets/samples/utility-change-register.csv",
+          "label": "Source and exception register (CSV)",
+          "description": "Two mock instructions with sheet, station, revision status and next action."
+        }
+      ]
+    },
+    {
+      "id": "legacy-utility-plan-redraw",
+      "title": "Legacy utility plan redraw",
+      "category": "PDF and raster conversion",
+      "summary": "An invented archive plan becomes editable CAD, with dimension checks and an unreadable tag carried forward visibly.",
+      "image": "assets/projects/legacy-utility-plan-redraw.svg",
+      "imageAlt": "Side-by-side illustration of a fictional archive plan and layered CAD redraw showing a 48 by 32 foot envelope and an unresolved source tag",
+      "context": "A fictional facilities manager has an old utility room plan and needs editable floor limits and linework. The image has a readable 48-foot dimension, a 32-foot perpendicular check and an unreadable identifier near the pump line.",
+      "constraints": [
+        "Use the 48-foot horizontal dimension to calibrate the redraw.",
+        "Use the separately labeled 32-foot vertical dimension to check scale in the other axis.",
+        "Retain the blurry tag location and log the missing identifier as L-01."
+      ],
+      "approach": [
+        {
+          "title": "Calibrate the source",
+          "text": "Match the known room width to 48 drawing units. Compare the perpendicular wall extent against the independent 32-foot dimension."
+        },
+        {
+          "title": "Organize editable lines",
+          "text": "Separate the room bounds, utility path and visible equipment outline. Add a review mark at the unclear source tag."
+        },
+        {
+          "title": "Record conversion rules",
+          "text": "Map each feature to its output layer and preserve the exception for the buyer’s records team."
+        }
+      ],
+      "deliverables": [
+        "LEG-01 layered redraw DXF with room envelope and visible utility geometry",
+        "Layer crosswalk and issue disposition table",
+        "Side-by-side archive and redraw illustration with dimension checks"
+      ],
+      "verification": [
+        "Measure the DXF room outline at 48 by 32 drawing units.",
+        "Compare the equipment outline and utility run with the illustration.",
+        "Find the exception layer and source-tag disposition in the layer crosswalk."
+      ],
+      "review": "The CAD checker can repeat the dimension checks. The facilities reviewer would provide the missing label before using the room drawing as an authoritative record. All inputs and results are synthetic.",
+      "files": [
+        {
+          "path": "assets/samples/legacy-leg01.dxf",
+          "label": "LEG-01 layered redraw (DXF)",
+          "description": "Editable walls, visible utility path, equipment and a markup for the unreadable tag. One model unit is one foot."
+        },
+        {
+          "path": "assets/samples/legacy-layer-crosswalk.csv",
+          "label": "Source-to-layer crosswalk (CSV)",
+          "description": "Five conversion rules for the walls, utility, equipment, dimensions and the open source tag."
+        }
+      ]
+    },
+    {
+      "id": "civil-existing-conditions",
+      "title": "Civil existing-conditions plan and profile",
+      "category": "Civil CAD production",
+      "summary": "Five fictional source points produce a coordinated plan and profile with checked station and elevation labels.",
+      "image": "assets/projects/civil-existing-conditions.svg",
+      "imageAlt": "Synthetic civil drawing showing five centerline points over 100 feet and the corresponding existing elevation profile",
+      "context": "A fictional civil reviewer provides five existing-ground points along an access corridor. The sample turns them into a centerline plan and profile with enough source detail to reconcile each plotted label.",
+      "constraints": [
+        "Use the supplied synthetic local planar coordinates and illustrative vertical datum.",
+        "Draft a 100-foot alignment at 25-foot source intervals.",
+        "Represent the profile at 10 times vertical exaggeration in its separate graphic frame."
+      ],
+      "approach": [
+        {
+          "title": "Validate the source import",
+          "text": "Check that source point IDs are unique and stations advance in 25-foot increments from 0+00 to 1+00."
+        },
+        {
+          "title": "Draft plan and profile views",
+          "text": "Plot coordinates in the plan frame. Convert each supplied elevation to its profile height above the 100-foot datum line."
+        },
+        {
+          "title": "Package the source for checking",
+          "text": "Retain the input register with source IDs, stations, coordinates and elevations so a reviewer can reconstruct the views."
+        }
+      ],
+      "deliverables": [
+        "CV-01 editable DXF with plan and profile frames",
+        "Synthetic source point register",
+        "Illustrated plan and profile preview with the vertical scale noted"
+      ],
+      "verification": [
+        "Check that the centerline spans 100 drawing units with five labeled points.",
+        "Confirm that the peak elevation is 101.20 feet at station 0+50 and plots 12 profile drawing units above the 100-foot datum line.",
+        "Check every annotated elevation against the downloaded point register."
+      ],
+      "review": "The client’s civil or survey reviewer would approve source, datum and drawing suitability. These fictional points have no survey provenance and are provided only for the workflow illustration.",
+      "files": [
+        {
+          "path": "assets/samples/civil-cv01.dxf",
+          "label": "CV-01 plan and profile drawing (DXF)",
+          "description": "Layered centerline, point marks and a separate profile frame. Plan model units are feet."
+        },
+        {
+          "path": "assets/samples/civil-source-points.csv",
+          "label": "Synthetic source points (CSV)",
+          "description": "Five local-grid coordinates and elevations with station labels for the plan and profile."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+point_id,station,local_easting_ft,local_northing_ft,illustrative_elevation_ft,data_origin
+P-01,0+00,500,1000,100.00,Synthetic
+P-02,0+25,525,1000,100.90,Synthetic
+P-03,0+50,550,1000,101.20,Synthetic
+P-04,0+75,575,1000,100.80,Synthetic
+P-05,1+00,600,1000,100.40,Synthetic

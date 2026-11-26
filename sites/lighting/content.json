@@ -1,0 +1,119 @@
+{
+  "capabilityIntro": "Skarion Lighting prepares desktop photometrics and option-review packages for one defined site or interior area. Start with issued geometry, approved fixture data and a named reviewer. The comparison records what changed, what stayed fixed and which questions still require a project decision.",
+  "buyerRoles": [
+    "Electrical estimators comparing two fixture schedules for a commercial bid",
+    "Civil and MEP project managers coordinating a site plan, calculation plot and electrical scope",
+    "Design-build and facilities teams reviewing an approved fixture alternate or retrofit",
+    "Lighting leads needing overflow production on a bounded layout and review package"
+  ],
+  "capabilities": [
+    {
+      "title": "Site layout and calculation setup",
+      "summary": "Set up one bounded parking area from approved geometry and document the planes, zones and points used for review.",
+      "inputs": ["Issued CAD or reliably scaled PDF, site boundary, surface levels and obstructions", "Approved pole locations, mounting heights, orientations and fixture files", "Reviewer-approved reporting units, calculation plane, spacing and boundary points"],
+      "outputs": ["Versioned base plan with fixture locations, calculation zones and boundary markers", "PDF point-by-point calculation plot with zone statistics and legend", "Assumptions register with geometry gaps and reviewer decisions"],
+      "checks": ["Confirm scale, drawing revision, plane elevation and fixture orientation", "Tie every plotted fixture to a schedule ID and exact manufacturer IES file", "Check that boundary review points and reporting units match the reviewer’s brief"]
+    },
+    {
+      "title": "Fixture option and substitution comparisons",
+      "summary": "Evaluate one approved alternate against a reference while holding unrelated model settings constant.",
+      "inputs": ["Reference and alternate catalog numbers, outputs, optics and matching IES files", "Baseline mounting arrangement, project areas to compare and requested metrics", "Reviewer direction on which variables may change in the same comparison"],
+      "outputs": ["Matched plan views and point-by-point plots with the differing input called out", "Editable fixture schedule mapping each option to its model ID and source file", "Comparison register identifying the reported values, changed assumptions and open decisions"],
+      "checks": ["Check variant, optic, light output, aiming and source-file identity", "Hold the reference grid, height, units and agreed light-loss settings constant unless separately approved", "Flag results affected by changed grid coverage or geometry before drawing comparisons"]
+    },
+    {
+      "title": "Interior task-area study",
+      "summary": "Define task and aisle zones in a small open high-bay area and make the physical assumptions visible alongside the results.",
+      "inputs": ["Floor plan, ceiling profile, work-plane definitions and mounting arrangement", "Approved values or ranges for surface reflectance and fixture light loss", "Rack layout, structural obstructions and lighting options"],
+      "outputs": ["Zone map with separate task and aisle calculation planes where requested", "Option plots with named metrics and assumptions for each zone", "Fixture schedule and register of unresolved obstructions or source gaps"],
+      "checks": ["Verify each zone’s plane, grid spacing and exclusions", "Confirm visible obstruction and surface assumptions with the project team", "Review minimum values locally so a combined average does not conceal an issue"]
+    },
+    {
+      "title": "Fixture schedule and source-file traceability",
+      "summary": "Connect the exact fixture selection that was modeled to the schedule row and plot marker the reviewer sees.",
+      "inputs": ["Client fixture schedule and exact catalog ordering codes", "Original IES files and available vendor cut sheets", "Client naming convention for options, drawing IDs and revisions"],
+      "outputs": ["Editable source-to-model schedule with catalog, optic, orientation and revision fields", "List of replaced, missing or ambiguous fixture files and their disposition", "Crosswalk from schedule row to plotted fixture instance"],
+      "checks": ["Reconcile fixture counts and unique ID coverage across plan, model and schedule", "Reject ambiguous catalog or file matches for reviewer resolution", "Record substitutions with date, source and revision"]
+    },
+    {
+      "title": "Reviewer comments and revision handoff",
+      "summary": "Translate one consolidated review round into controlled model changes, a refreshed handoff and a traceable change log.",
+      "inputs": ["Issued package and consolidated reviewer comments", "Revision-sensitive geometry, criteria, fixture files and schedule IDs", "Submission naming, file format and acceptance requirements"],
+      "outputs": ["Updated plots, schedule and assumptions register with aligned revision marks", "Impact log linking each comment to the affected fixture, zone or assumption", "Manifest that distinguishes issued files from material still awaiting a decision"],
+      "checks": ["Reconcile changed and unchanged inputs before rerun", "Review every impacted grid and boundary under the same comparison conditions", "Check document dates and revisions align before handing back the package"]
+    }
+  ],
+  "handoff": {
+    "formats": ["PDF calculation plots and reviewer summary", "Editable fixture schedule and issue register in the agreed spreadsheet format", "Annotated CAD overlay or native calculation model when file version and scope are agreed"],
+    "requirements": ["One issued base plan, dimensional check and agreed vertical assumptions", "Exact approved fixtures, mounting details and original IES source files", "Named reviewer, target date, units, project criteria and requested grid/zone definition", "Agreed transfer channel, included revision round and acceptance procedure"],
+    "boundaries": ["The service models predicted conditions from accepted inputs. Field measurements and verification are separately scoped.", "Your project professional sets governing criteria, decides suitability and owns required seals or permit approvals.", "Confirm circuiting, controls, emergency egress and roadway design scope with the qualified project team."]
+  },
+  "projects": [
+    {
+      "id": "parking-area-fixture-comparison",
+      "title": "Parking area fixture comparison",
+      "category": "Exterior photometrics workflow",
+      "summary": "Hold locations and grid settings fixed while comparing two candidate fixture distributions on a fictional 80 × 70 ft parking area.",
+      "image": "assets/projects/parking-fixture-study.svg",
+      "imageAlt": "Synthetic parking area schematic with four numbered poles, an interior point grid and marked review points at the east boundary.",
+      "context": "An electrical estimator wants a reviewer to understand the change from option A to B before choosing a fixture schedule. Both options use the same four poles, mounting and base plan. The synthetic east edge represents shared property where the reviewer would request additional boundary points.",
+      "constraints": ["20 ft mounting height and four planned positions remain fixed in both schedules.", "Use identical work-plane, grid, orientation and boundary coordinates for the comparison.", "The fixture codes, filenames and coordinates below are fictional examples. Calculation values are blank pending an actual model run with approved IES files."],
+      "approach": [
+        {"title": "Freeze the base", "text": "Record drawing P-101 Rev 0, local origins, a flat grade assumption and the site review boundaries before placing fixtures."},
+        {"title": "Run a controlled comparison", "text": "Assign a candidate file to each pole and hold the mounting and orientation fixed. Request reviewer confirmation of light-loss assumptions before calculating either layout."},
+        {"title": "Review the zones separately", "text": "Compare parking grid and east-edge readings as separate outputs. Request a reviewer decision on any flagged area before drafting a summary."}
+      ],
+      "deliverables": ["Fixture-option schedule with exact placeholder IDs, positions and source-file references", "Matched parking and east-edge grid template with named points and empty result fields", "In live delivery, paired plots, option summary and recorded assumptions for review"],
+      "verification": ["Compare each P-01 to P-04 coordinate and mounting height in option A against option B.", "Check that both options report the same point IDs and that east-edge points fall on x = 90 ft.", "Check that the grid’s units and light-loss settings are agreed before interpreting any real results."],
+      "review": "Original synthetic workflow example. Have the CAD reviewer confirm the base geometry and the photometric reviewer supply the acceptance matrix and approved files before using the comparison process on a client site.",
+      "files": [
+        {"path": "assets/samples/parking-fixture-option-schedule.csv", "label": "Fixture option schedule (CSV)", "description": "Eight synthetic schedule rows connect four poles in each option to locations, mounting details and placeholder IES filenames."},
+        {"path": "assets/samples/parking-comparison-grid.csv", "label": "Comparison-grid template (CSV)", "description": "A point register for the interior grid and the east boundary. The matching option A and B result cells are blank."}
+      ]
+    },
+    {
+      "id": "high-bay-task-area-alternate",
+      "title": "High-bay task-area alternate",
+      "category": "Interior fixture substitution workflow",
+      "summary": "Compare a fixture alternate for a fictional 120 × 72 ft warehouse bay using separate packing and forklift-aisle planes.",
+      "image": "assets/projects/high-bay-study.svg",
+      "imageAlt": "Synthetic warehouse plan with six high-bay fixtures, a packing bench task zone, a forklift aisle and three rack obstructions.",
+      "context": "A facilities team evaluating a replacement high-bay fixture needs a comparable review across a workbench zone and an adjacent forklift aisle. Results grouped across the full building would obscure the difference in tasks and plane heights.",
+      "constraints": ["The packing zone uses a 30-inch working plane and the aisle uses the floor plane in this mock setup.", "Six fixture instances mount at a constant 24 ft. Coordinates and rack geometry are held constant for both options.", "Surface properties and fixture files are synthetic placeholders. The scenario includes no simulated values or acceptance targets."],
+      "approach": [
+        {"title": "Separate the planes", "text": "Define the packing benches and aisle as independent calculation areas. Record each plane height, grid spacing and any excluded footprint."},
+        {"title": "Map the obstructions", "text": "Keep three 14 ft rack rows in the layout. List assumptions about ceiling, wall and floor reflectance so the buyer can replace them with approved values."},
+        {"title": "Compare alternate sources", "text": "Link each synthetic layout option to a fixture-file register, keep mounting and room assumptions equal and reserve results for the approved run."}
+      ],
+      "deliverables": ["Editable zone and input register with working planes, grid spacing and obstruction assumptions", "Fixture instance and option schedule with shared locations for both candidates", "In live delivery, zone-based point plots, fixture schedule and comparison notes"],
+      "verification": ["Ensure both runs use the same packing plane and floor-level aisle plane.", "Verify the six fixture locations remain unchanged and rack footprints are accounted for.", "Confirm reflectances, light-loss basis and requested metrics before starting the live model."],
+      "review": "Original synthetic warehouse workflow. The reviewing team establishes acceptable targets, location restrictions and suitability for intended use.",
+      "files": [
+        {"path": "assets/samples/high-bay-zone-inputs.csv", "label": "Zone and assumptions register (CSV)", "description": "Editable synthetic records for two calculation planes, rack assumptions, mounting and surface properties."},
+        {"path": "assets/samples/high-bay-fixture-schedule.csv", "label": "High-bay fixture schedule (CSV)", "description": "The same six reference locations map to two fictional fixture options, with no redistributed vendor files."}
+      ]
+    },
+    {
+      "id": "site-fixture-revision-handoff",
+      "title": "Site fixture change through the package",
+      "category": "Revision and reviewer handoff",
+      "summary": "Carry one proposed alternate at pole P-04 through the plot, schedule and comment log without changing unrelated model inputs.",
+      "image": "assets/projects/fixture-revision-study.svg",
+      "imageAlt": "Revision flow showing reviewer comment R-01 linked to fixture P-04, updated plots, fixture schedule and an issue manifest.",
+      "context": "The reviewer of the synthetic parking study asks for a different optic at the southeast source near the east boundary. Treat option B as the base for the revision. Mark the requested change and track every affected file before deciding whether the option is acceptable.",
+      "constraints": ["P-04 retains its (65, 18) ft local coordinate, mounting height and aiming. The other three fixtures retain their option B files.", "Keep the interior and east boundary grids fixed across revisions to isolate the fixture change.", "The review remains open. The project example tracks required checks and document effects with all result fields unpopulated."],
+      "approach": [
+        {"title": "Turn the request into a change record", "text": "Assign comment R-01 to P-04 and record the new candidate optic, its placeholder file and the buyer who must confirm the actual source."},
+        {"title": "Track each output", "text": "Link the fixture schedule, parking plot, east boundary plot and assumptions log to their baseline and proposed revision. Show sheet IDs without marking any file issued."},
+        {"title": "Close only on evidence", "text": "Ask the reviewer to confirm source matching and compare both target zones. Move the comment out of draft only when the approved model run and decision are recorded."}
+      ],
+      "deliverables": ["Revision register with changed fields, owner and evidence required", "Handoff manifest with proposed revisions and open review state", "In live delivery, reissued plots and schedule tied to the reviewer decision"],
+      "verification": ["Compare P-04’s proposed source file with the latest approved catalog selection once available.", "Confirm the three unchanged instances, grid basis and orientation still match option B.", "Trace R-01 in the issue log, plot pair and schedule before treating the revision as reviewed."],
+      "review": "Original synthetic revision exercise. The sample trains document control and review handoff with no installed project, calculation result or sign-off.",
+      "files": [
+        {"path": "assets/samples/fixture-revision-register.csv", "label": "Fixture revision register (CSV)", "description": "The change request, unchanged source settings, affected zones and evidence needed before release."},
+        {"path": "assets/samples/fixture-revision-manifest.csv", "label": "Revision handoff manifest (CSV)", "description": "Five items mapped to each responsible reviewer, baseline/proposed revision and open verification status."}
+      ]
+    }
+  ]
+}

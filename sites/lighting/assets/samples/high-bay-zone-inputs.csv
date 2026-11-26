@@ -1,0 +1,13 @@
+example_id,data_status,base_drawing,input_id,category,name,x_min_ft,y_min_ft,x_max_ft,y_max_ft,value,units,applies_to,review_status
+LGT-02,synthetic template,W-101 Rev 0,Z-PACK,working plane,packing bench area,8,6,112,26,30,in above floor,both options,geometry and plane need confirmation
+LGT-02,synthetic template,W-101 Rev 0,Z-PACK-GRID,grid interval,packing bench area,8,6,112,26,4,ft nominal,both options,grid spacing needs confirmation
+LGT-02,synthetic template,W-101 Rev 0,Z-AISLE,working plane,forklift aisle,8,31,112,41,0,in above floor,both options,geometry and plane need confirmation
+LGT-02,synthetic template,W-101 Rev 0,Z-AISLE-GRID,grid interval,forklift aisle,8,31,112,41,4,ft nominal,both options,grid spacing needs confirmation
+LGT-02,synthetic template,W-101 Rev 0,OBS-R1,obstruction,storage rack 1,24,47,39,66,14,ft height,both options,geometry and height need confirmation
+LGT-02,synthetic template,W-101 Rev 0,OBS-R2,obstruction,storage rack 2,65,47,80,66,14,ft height,both options,geometry and height need confirmation
+LGT-02,synthetic template,W-101 Rev 0,OBS-R3,obstruction,storage rack 3,103,47,118,66,14,ft height,both options,geometry and height need confirmation
+LGT-02,synthetic template,W-101 Rev 0,MOUNT,fixture setting,mounting height,0,0,120,72,24,ft above floor,both options,fixture schedule and height need confirmation
+LGT-02,synthetic template,W-101 Rev 0,REF-CEILING,surface property,ceiling reflectance,0,0,120,72,0.70,illustrative fraction,both options,replace with approved assumption
+LGT-02,synthetic template,W-101 Rev 0,REF-WALL,surface property,wall reflectance,0,0,120,72,0.50,illustrative fraction,both options,replace with approved assumption
+LGT-02,synthetic template,W-101 Rev 0,REF-FLOOR,surface property,floor reflectance,0,0,120,72,0.20,illustrative fraction,both options,replace with approved assumption
+LGT-02,synthetic template,W-101 Rev 0,LLF,maintenance assumption,light loss factor,0,0,120,72,,fraction,both options,reviewer input required

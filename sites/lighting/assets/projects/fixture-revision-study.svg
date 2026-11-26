@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-labelledby="revision-title revision-desc">
+  <title id="revision-title">Fixture revision trace from one comment to the issue package</title>
+  <desc id="revision-desc">Reviewer comment R-01 changes pole P-04 from B alternate to a C shielded candidate. The fixture schedule, parking and boundary plots, assumptions log and review decision remain open.</desc>
+  <rect width="800" height="500" fill="#F4F0E9"/>
+  <g font-family="Courier New, monospace" font-size="15">
+    <text x="42" y="39" fill="#775131" font-weight="bold" letter-spacing="1">LGT-03 · PROPOSED REVISIONS</text>
+    <text x="42" y="63" fill="#5C554A">P-101 REV 0 / SYNTHETIC WORKFLOW</text>
+  </g>
+  <path d="M248 111H285M510 111H556M655 143V164H121V197M655 164V197M300 164V197M478 164V197" stroke="#9B7954" stroke-width="2"/>
+  <rect x="42" y="81" width="206" height="62" fill="#E7DDCE" stroke="#AE9B84"/>
+  <rect x="285" y="81" width="225" height="62" fill="#F7CB86" stroke="#AB7C41"/>
+  <rect x="556" y="81" width="202" height="62" fill="#222627"/>
+  <g fill="#262522" font-family="Arial, sans-serif" font-size="15">
+    <text x="59" y="106" font-weight="bold">Comment R-01</text><text x="59" y="128">Review P-04 alternate</text>
+    <text x="303" y="106" font-weight="bold">P-04 fixture file</text><text x="303" y="128">DEMO-LTG-B → DEMO-LTG-C</text>
+    <text x="574" y="106" fill="#FCF8F0" font-weight="bold">B REV 1 DRAFT</text><text x="574" y="128" fill="#CBC3B7">Geometry remains fixed</text>
+  </g>
+  <g fill="#FEFBF5" stroke="#AE9B84"><path d="M42 197h161v101H42z"/><path d="M219 197h162v101H219z"/><path d="M397 197h162v101H397z"/><path d="M575 197h183v101H575z"/></g>
+  <g fill="#262522" font-family="Arial, sans-serif" font-size="15">
+    <text x="58" y="225" fill="#775131" font-family="Courier New, monospace" font-weight="bold">S-101</text><text x="58" y="252" font-weight="bold">Fixture schedule</text><text x="58" y="275">Check new file</text>
+    <text x="235" y="225" fill="#775131" font-family="Courier New, monospace" font-weight="bold">PH-101</text><text x="235" y="252" font-weight="bold">Parking grid</text><text x="235" y="275">Await rerun</text>
+    <text x="413" y="225" fill="#775131" font-family="Courier New, monospace" font-weight="bold">PH-102</text><text x="413" y="252" font-weight="bold">East boundary</text><text x="413" y="275">Await rerun</text>
+    <text x="591" y="225" fill="#775131" font-family="Courier New, monospace" font-weight="bold">A-101</text><text x="591" y="252" font-weight="bold">Assumptions log</text><text x="591" y="275">Record exception</text>
+  </g>
+  <path d="M121 298V325H668V298M300 298V325M478 298V325M400 325V348" stroke="#9B7954" stroke-width="2"/>
+  <rect x="139" y="348" width="522" height="90" fill="#272B29"/>
+  <text x="165" y="379" fill="#F7CB86" font-family="Courier New, monospace" font-size="15" font-weight="bold">R-101 / REVIEW DECISION REMAINS OPEN</text>
+  <text x="165" y="407" fill="#FCF8F0" font-family="Arial, sans-serif" font-size="16">Confirm source files, rerun both grids and record acceptance.</text>
+  <text x="42" y="472" fill="#5C554A" font-family="Courier New, monospace" font-size="13">SYNTHETIC EXAMPLE · NO CALCULATED VALUES OR APPROVAL</text>
+</svg>

@@ -1,6 +1,7 @@
 import { cp, lstat, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { buildCatalog, buildPages, escapeHtml, expandHome } from './pages.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = path.join(root, 'dist');
@@ -8,6 +9,7 @@ const marker = path.join(dist, '.skarion-build');
 const sites = JSON.parse(await readFile(path.join(root, 'sites.json'), 'utf8'));
 const publicFiles = new Set(['index.html', 'site.css', 'logo.svg', 'favicon.svg', 'social-card.svg', 'social-card.png']);
 const assetExtensions = new Set(['.avif', '.css', '.gif', '.ico', '.jpeg', '.jpg', '.js', '.png', '.svg', '.webp', '.woff2']);
+const sampleExtensions = new Set(['.csv', '.dxf', '.geojson', '.json', '.txt']);
 
 async function exists(file) {
   try {
@@ -26,19 +28,46 @@ async function copyAssets(from, to) {
     if (entry.isDirectory()) {
       await mkdir(target, { recursive: true });
       await copyAssets(source, target);
-    } else if (entry.isFile() && assetExtensions.has(path.extname(entry.name).toLowerCase())) {
+    } else if (entry.isFile() && isCopyable(source)) {
       await cp(source, target);
     }
   }
 }
 
+function isCopyable(file) {
+  const extension = path.extname(file).toLowerCase();
+  const sampleDirectory = `${path.sep}assets${path.sep}samples${path.sep}`;
+  return assetExtensions.has(extension) || (file.includes(sampleDirectory) && sampleExtensions.has(extension));
+}
+
+const contentBySite = new Map();
 for (const { id } of sites) {
   if (!/^[a-z]+$/.test(id)) throw new Error(`Invalid site id: ${id}`);
-  for (const file of ['index.html', 'site.css', 'logo.svg']) {
-    if (!(await exists(path.join(root, 'sites', id, file)))?.isFile()) {
+  const source = path.join(root, 'sites', id);
+  for (const file of ['index.html', 'site.css', 'logo.svg', 'content.json']) {
+    if (!(await exists(path.join(source, file)))?.isFile()) {
       throw new Error(`Build input missing: sites/${id}/${file}`);
     }
   }
+  const content = JSON.parse(await readFile(path.join(source, 'content.json'), 'utf8'));
+  if (content.projects.length < 3 || content.capabilities.length < 4) {
+    throw new Error(`${id} needs at least three projects and four capabilities.`);
+  }
+  const projectIds = new Set();
+  for (const project of content.projects) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id) || projectIds.has(project.id)) {
+      throw new Error(`${id}: invalid or duplicate project ${project.id}`);
+    }
+    projectIds.add(project.id);
+    if (!project.files.length) throw new Error(`${id}/${project.id} has no sample files.`);
+    for (const asset of [project.image, ...project.files.map((file) => file.path)]) {
+      const file = path.join(source, asset);
+      if (!/^assets\/(?:[a-z0-9_-]+\/)*[a-z0-9_-]+\.[a-z0-9]+$/i.test(asset) || !isCopyable(file) || !(await exists(file))?.isFile()) {
+        throw new Error(`${id}/${project.id}: invalid or missing asset ${asset}`);
+      }
+    }
+  }
+  contentBySite.set(id, content);
 }
 
 const previousBuild = await exists(dist);
@@ -55,22 +84,27 @@ const robots = 'User-agent: *\nDisallow: /\n';
 await cp(path.join(root, 'preview'), dist, { recursive: true });
 await writeFile(path.join(dist, 'robots.txt'), robots);
 
-const escapeHtml = (value) => value.replace(/[&<>"']/g, (character) => (
-  { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]
-));
-
 const cards = sites.map(({ id, name, scope, domain, color, phase, summary }) => `
-        <a class="site-card" href="${id}/" style="--lane: ${color}">
+        <article class="site-card" style="--lane: ${color}">
           <span class="lane"><span>${escapeHtml(scope)}</span><span class="phase">${escapeHtml(phase)}</span></span>
           <div class="card-title"><img src="${id}/logo.svg" width="44" height="44" alt=""><h2>${escapeHtml(name)}</h2></div>
           <p>${escapeHtml(summary)}</p>
-          <span class="card-foot"><span>${escapeHtml(domain)}</span><strong>Preview site</strong></span>
-        </a>`).join('\n');
+          <div class="card-foot"><span>${escapeHtml(domain)}</span><a href="${id}/">Website</a><a href="${id}/projects/">Projects</a><a href="${id}/capabilities/">Capabilities</a></div>
+        </article>`).join('\n');
 const previewPath = path.join(dist, 'index.html');
 const preview = await readFile(previewPath, 'utf8');
 await writeFile(previewPath, preview.replace('<!-- SITE_CARDS -->', cards));
+const catalog = path.join(dist, 'catalog');
+const catalogShared = path.join(dist, 'catalog-shared');
+await mkdir(catalog);
+await mkdir(catalogShared);
+for (const asset of ['base.css', 'details.css']) {
+  await cp(path.join(root, 'shared', asset), path.join(catalogShared, asset));
+}
+await writeFile(path.join(catalog, 'index.html'), buildCatalog(sites, contentBySite));
 
-for (const { id } of sites) {
+for (const site of sites) {
+  const { id } = site;
   const source = path.join(root, 'sites', id);
   const destination = path.join(dist, id);
   await mkdir(destination);
@@ -87,11 +121,19 @@ for (const { id } of sites) {
   }
   await cp(path.join(root, 'shared'), path.join(destination, 'shared'), { recursive: true });
   const htmlPath = path.join(destination, 'index.html');
-  const html = await readFile(htmlPath, 'utf8');
+  const content = contentBySite.get(id);
+  let html = expandHome(await readFile(htmlPath, 'utf8'), site, content);
   if (!/<meta\b[^>]*\bname=["']robots["']/i.test(html)) {
-    await writeFile(htmlPath, html.replace('</head>', '  <meta name="robots" content="noindex,nofollow">\n</head>'));
+    html = html.replace('</head>', '  <meta name="robots" content="noindex,nofollow">\n</head>');
+  }
+  await writeFile(htmlPath, html);
+  for (const [relativePath, markup] of buildPages(site, content)) {
+    const page = path.join(destination, relativePath);
+    await mkdir(path.dirname(page), { recursive: true });
+    await writeFile(page, markup);
   }
   await writeFile(path.join(destination, 'robots.txt'), robots);
 }
 
-console.log(`Built ${sites.length} sites and the preview hub in dist/.`);
+const count = [...contentBySite.values()].reduce((total, content) => total + content.projects.length, 0);
+console.log(`Built ${sites.length} sites with capabilities, ${count} project case studies, and the preview hub in dist/.`);

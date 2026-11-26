@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title description">
+  <title id="title">Culvert batch revision comparison</title>
+  <desc id="description">A fictional revision log compares four issued inventory records with five candidate records. It highlights one move, one addition and an existing open issue.</desc>
+  <path fill="#27382c" d="M0 0h800v500H0z"/>
+  <path d="M0 94h800M0 448h800" stroke="#59705b"/>
+  <text x="40" y="42" fill="#d1e996" font-family="Consolas, monospace" font-size="13" letter-spacing="1.5">SYNTHETIC INVENTORY / RELEASE COMPARISON</text>
+  <text x="40" y="76" fill="#f4f3e9" font-family="Segoe UI, sans-serif" font-weight="700" font-size="24">Culvert revision batch</text>
+  <rect x="39" y="117" width="333" height="307" rx="5" fill="#334b3a" stroke="#6e8570"/>
+  <rect x="428" y="117" width="333" height="307" rx="5" fill="#334b3a" stroke="#6e8570"/>
+  <path d="M39 171h333m56 0h333" stroke="#6e8570"/>
+  <path d="M40 221h331m-331 48h331m-331 48h331m-331 48h331m57-144h331m-331 48h331m-331 48h331m-331 48h331" stroke="#546b57"/>
+  <rect x="430" y="222" width="329" height="46" fill="#44583a"/>
+  <rect x="430" y="318" width="329" height="46" fill="#594f34"/>
+  <rect x="430" y="366" width="329" height="54" fill="#44583a"/>
+  <path d="M399 132v280" stroke="#6e8570" stroke-dasharray="3 7"/>
+  <g fill="#f4f3e9" font-family="Segoe UI, sans-serif" font-weight="700" font-size="18">
+    <text x="58" y="150">R1 · Issued sample</text><text x="448" y="150">R2 · Review candidate</text>
+  </g>
+  <g fill="#e3ecdf" font-family="Consolas, monospace" font-size="14">
+    <text x="58" y="201">CV-011</text><text x="58" y="249">CV-012</text><text x="58" y="297">CV-013</text><text x="58" y="345">CV-014</text>
+    <text x="448" y="201">CV-011</text><text x="448" y="249">CV-012</text><text x="448" y="297">CV-013</text><text x="448" y="345">CV-014</text><text x="448" y="395">CV-015</text>
+  </g>
+  <g fill="#bfcebe" font-family="Segoe UI, sans-serif" font-size="16">
+    <text x="165" y="201">Reviewed</text><text x="165" y="249">Original location</text><text x="165" y="297">Reviewed</text><text x="165" y="345">Inspection date open</text>
+    <text x="555" y="201">Unchanged</text><text x="555" y="297">Unchanged</text>
+  </g>
+  <g font-family="Segoe UI, sans-serif" font-size="16" font-weight="650">
+    <circle cx="542" cy="244" r="4" fill="#d1e996"/><text x="555" y="249" fill="#d1e996">Location moved</text>
+    <path d="m542 336 5 5-5 5-5-5z" fill="#f6be81"/><text x="555" y="345" fill="#f6be81">Open issue carried</text>
+    <circle cx="542" cy="390" r="4" fill="#d1e996"/><text x="555" y="395" fill="#d1e996">Record added</text>
+  </g>
+  <text x="39" y="477" fill="#c7d6c6" font-family="Consolas, monospace" font-size="13">4 BASELINE / 5 CANDIDATE / 0 REMOVED</text>
+</svg>

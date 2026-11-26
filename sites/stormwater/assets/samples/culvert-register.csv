@@ -1,0 +1,7 @@
+asset_id,target_road,source_road,station,material,span_mm,rise_mm,inlet_observation,outlet_observation,inlet_photo_key,outlet_photo_key,source_key,status
+CV-31,Willow Spur,Willow Spur,4+25,Corrugated metal,900,900,observed,observed,PHOTO-31-I,PHOTO-31-O,INSPECTION-31,ready_for_review
+CV-32,Willow Spur,Willow Spur,6+10,Concrete,1200,900,observed,unknown,PHOTO-32-I,,INSPECTION-32,needs_outlet_confirmation
+CV-33,Fern Lane,Fern Connector,8+20,Concrete,900,900,observed,observed,PHOTO-33-I,PHOTO-33-O,INSPECTION-33,needs_road_reference_check
+CV-34,Cedar Track,Cedar Track,2+30,Unknown,,,observed,observed,PHOTO-34-I,PHOTO-34-O,INSPECTION-34,needs_measurement_evidence
+CV-35,Cedar Track,Cedar Track,9+58,HDPE,750,750,observed,observed,PHOTO-35-I,PHOTO-35-O,INSPECTION-35,ready_for_review
+CV-36,Marsh Road,Marsh Road,10+25,Concrete,1500,1200,observed,observed,PHOTO-36-I,PHOTO-36-O,INSPECTION-36,ready_for_review

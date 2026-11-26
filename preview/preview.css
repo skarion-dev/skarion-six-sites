@@ -29,6 +29,7 @@ body { margin: 0; }
 }
 h1 { margin: 0; font-size: clamp(3rem, 7.5vw, 7rem); line-height: .96; letter-spacing: -.08em; font-weight: 650; }
 .intro p { margin: 1.25rem 0 0; max-width: 36rem; color: #c5cbd0; line-height: 1.6; font-size: 1.125rem; }
+.project-directory { margin-top: 1.05rem; display: inline-block; color: #e2efbc; font-weight: 680; text-underline-offset: .25em; }
 dl { margin: 0; display: flex; gap: 2rem; }
 dl div { display: flex; flex-direction: column-reverse; gap: .25rem; min-width: 5rem; }
 dt { color: #c5cbd0; white-space: nowrap; font-size: .875rem; }
@@ -40,8 +41,8 @@ dd { margin: 0; color: #e2efbc; font-size: 2rem; line-height: 1; font-weight: 65
   background: #1b242a; color: inherit; text-decoration: none;
   transition: background .2s ease;
 }
-.site-card:hover { background: #253039; }
-.site-card:focus-visible { outline: 3px solid #e2efbc; outline-offset: 4px; }
+.site-card:focus-within { background: #253039; }
+.site-card a:focus-visible { outline: 3px solid #e2efbc; outline-offset: 4px; }
 .lane, .card-foot { display: flex; align-items: center; justify-content: space-between; gap: .6rem; font-size: .875rem; }
 .lane { color: var(--lane); }
 .phase { white-space: nowrap; border: 1px solid #536067; padding: .2rem .45rem; border-radius: .25rem; color: #e7ebe2; }
@@ -50,7 +51,8 @@ dd { margin: 0; color: #e2efbc; font-size: 2rem; line-height: 1; font-weight: 65
 h2 { font-weight: 650; font-size: clamp(1.4rem, 2.25vw, 2rem); line-height: 1.06; margin: 0; letter-spacing: -.04em; }
 .site-card p { color: #c5cbd0; margin: 0; line-height: 1.5; }
 .card-foot { color: #c5cbd0; padding-top: 1rem; margin-top: auto; border-top: 1px solid #46505a; flex-wrap: wrap; }
-.card-foot strong { color: #f2f4ef; }
+.card-foot a { font-weight: 675; color: #f2f4ef; text-underline-offset: .24em; text-decoration-color: var(--lane); }
+.card-foot a:hover { color: var(--lane); }
 .review-links { margin-top: 2.5rem; background: #1b242a; padding: 1.25rem; border: 1px solid #3b4448; }
 .review-links h2 { margin: 0; }
 .review-links p { color: #c5cbd0; line-height: 1.5; }

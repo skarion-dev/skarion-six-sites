@@ -1,0 +1,4 @@
+dataset_status,segment_id,sheet,start_station_ft,end_station_ft,length_ft,base_method,alternate_open_cut_ft,alternate_hdd_ft,alternate_aerial_ft,alternate_change
+Synthetic sample,SEG-01,OSP-04,1000,1640,640,Open cut,560,80,0,STA 15+60 to 16+40 changes to HDD
+Synthetic sample,SEG-02,OSP-04,1640,1920,280,HDD,0,280,0,No method change
+Synthetic sample,SEG-03,OSP-05,1920,3100,1180,Aerial,0,0,1180,No method change

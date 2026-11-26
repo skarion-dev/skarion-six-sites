@@ -1,0 +1,6 @@
+sheet,source_feature,target_layer,dimension_reference,disposition
+LEG-01,Room perimeter,WALLS,48 ft by 32 ft,Redrawn as a closed rectangular outline
+LEG-01,Visible utility line,UTILITY,Aligned to calibrated source,Reproduced as editable segments
+LEG-01,Visible equipment outline,EQUIPMENT,8 ft by 6 ft,Reproduced as editable outline
+LEG-01,Horizontal and perpendicular checks,DIMENSIONS,48 ft horizontal and 32 ft vertical,Recorded as check dimensions
+LEG-01,Unreadable identifier,REVIEW,L-01 at local 40 ft easting and 20 ft northing,Open for source clarification

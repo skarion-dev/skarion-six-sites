@@ -1,0 +1,9 @@
+example_id,data_status,base_drawing,option,fixture_id,x_ft,y_ft,mounting_height_ft,aim_from_plan_north_deg,synthetic_catalog,synthetic_optic,placeholder_ies_filename,validation_status
+LGT-01,synthetic template,P-101 Rev 0,A,P-01,15,52,20,0,DEMO-LTG-A,A-reference,DEMO-LTG-A.ies,source file required
+LGT-01,synthetic template,P-101 Rev 0,A,P-02,65,52,20,0,DEMO-LTG-A,A-reference,DEMO-LTG-A.ies,source file required
+LGT-01,synthetic template,P-101 Rev 0,A,P-03,15,18,20,0,DEMO-LTG-A,A-reference,DEMO-LTG-A.ies,source file required
+LGT-01,synthetic template,P-101 Rev 0,A,P-04,65,18,20,0,DEMO-LTG-A,A-reference,DEMO-LTG-A.ies,source file required
+LGT-01,synthetic template,P-101 Rev 0,B,P-01,15,52,20,0,DEMO-LTG-B,B-alternate,DEMO-LTG-B.ies,source file required
+LGT-01,synthetic template,P-101 Rev 0,B,P-02,65,52,20,0,DEMO-LTG-B,B-alternate,DEMO-LTG-B.ies,source file required
+LGT-01,synthetic template,P-101 Rev 0,B,P-03,15,18,20,0,DEMO-LTG-B,B-alternate,DEMO-LTG-B.ies,source file required
+LGT-01,synthetic template,P-101 Rev 0,B,P-04,65,18,20,0,DEMO-LTG-B,B-alternate,DEMO-LTG-B.ies,source file required

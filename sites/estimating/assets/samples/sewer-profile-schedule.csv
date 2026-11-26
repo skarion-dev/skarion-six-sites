@@ -1,0 +1,7 @@
+dataset_status,scenario,sheet_revision,profile_segment,start_station_ft,end_station_ft,pipe_nominal_in,depth_band_ft,length_ft
+Synthetic sample,Baseline,SW-04 Rev A,A01,0,120,12,0 to 6,120
+Synthetic sample,Baseline,SW-04 Rev A,A02,120,240,12,6 to 10,120
+Synthetic sample,Baseline,SW-04 Rev A,A03,240,360,12,6 to 10,120
+Synthetic sample,Addendum,SW-04 Rev B,B01,0,120,12,0 to 6,120
+Synthetic sample,Addendum,SW-04 Rev B,B02,120,240,12,6 to 10,120
+Synthetic sample,Addendum,SW-04 Rev B,B03,240,400,15,10 to 14,160

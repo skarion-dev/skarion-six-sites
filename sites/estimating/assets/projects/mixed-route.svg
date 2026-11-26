@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Mixed-route FTTH bid takeoff</title>
+  <desc id="desc">Synthetic schematic of a 2,100-foot feeder with 640 feet of open cut, 280 feet of HDD, and 1,180 feet of aerial route. Stations are shown in sequence on a schematic diagram.</desc>
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#deddd3"/></pattern>
+  </defs>
+  <rect width="960" height="560" fill="#faf8f2"/>
+  <rect width="960" height="135" fill="#17242d"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="46" y="45" fill="#f4bc43" font-family="Consolas, monospace" font-size="19" font-weight="700" letter-spacing="2">SYNTHETIC EXAMPLE / OSP-04–05</text>
+    <text x="46" y="99" fill="#faf8f2" font-size="43" font-weight="700">Feeder route takeoff</text>
+    <rect x="46" y="173" width="868" height="228" fill="url(#grid)" stroke="#cbc7ba"/>
+    <path d="M98 305H327" stroke="#9f5500" stroke-width="8"/>
+    <path d="M327 305H439" stroke="#9f5500" stroke-width="8" stroke-dasharray="12 8"/>
+    <path d="M439 305H859" stroke="#17242d" stroke-width="8"/>
+    <g fill="#f4bc43" stroke="#17242d" stroke-width="3">
+      <rect x="90" y="297" width="16" height="16"/><rect x="319" y="297" width="16" height="16"/><rect x="431" y="297" width="16" height="16"/><circle cx="859" cy="305" r="8" fill="#faf8f2"/>
+    </g>
+    <g fill="#17242d" font-size="24" font-weight="700" text-anchor="middle">
+      <text x="211" y="238">640 LF</text><text x="383" y="238">280 LF</text><text x="649" y="238">1,180 LF</text>
+    </g>
+    <g fill="#51616a" font-size="20" text-anchor="middle">
+      <text x="211" y="266">Open cut</text><text x="383" y="266">HDD</text><text x="649" y="266">Aerial</text>
+    </g>
+    <g fill="#17242d" font-size="19" font-family="Consolas, monospace" font-weight="700" text-anchor="middle">
+      <text x="99" y="348">10+00</text><text x="327" y="348">16+40</text><text x="439" y="348">19+20</text><text x="857" y="348">31+00</text>
+    </g>
+    <text x="63" y="384" fill="#51616a" font-size="17">Station sequence schematic</text>
+    <path d="M46 448H914" stroke="#cbc7ba"/>
+    <g fill="#17242d" font-size="30" font-weight="700"><text x="46" y="489">2,100 LF</text><text x="338" y="489">2,263 LF</text><text x="630" y="489">80 LF</text></g>
+    <g fill="#51616a" font-size="20"><text x="46" y="522">Route centerline</text><text x="338" y="522">Feeder cable with slack</text><text x="630" y="522">Alternate shifts to HDD</text></g>
+  </g>
+</svg>

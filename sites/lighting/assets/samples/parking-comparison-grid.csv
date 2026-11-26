@@ -1,0 +1,15 @@
+example_id,data_status,base_drawing,zone,point_id,x_ft,y_ft,plane_height_ft,draft_units,option_a_illuminance,option_b_illuminance,review_status
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-01,10,10,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-02,40,10,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-03,70,10,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-04,10,35,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-05,40,35,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-06,70,35,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-07,10,60,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-08,40,60,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,parking,PK-09,70,60,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,east boundary,EB-01,90,0,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,east boundary,EB-02,90,17.5,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,east boundary,EB-03,90,35,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,east boundary,EB-04,90,52.5,0,fc,,,model and criteria required
+LGT-01,synthetic template,P-101 Rev 0,east boundary,EB-05,90,70,0,fc,,,model and criteria required

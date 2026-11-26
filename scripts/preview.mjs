@@ -20,6 +20,10 @@ const types = {
   '.ico': 'image/x-icon',
   '.woff2': 'font/woff2',
   '.txt': 'text/plain; charset=utf-8',
+  '.csv': 'text/csv; charset=utf-8',
+  '.json': 'application/json; charset=utf-8',
+  '.geojson': 'application/geo+json; charset=utf-8',
+  '.dxf': 'application/dxf',
 };
 
 createServer(async (request, response) => {

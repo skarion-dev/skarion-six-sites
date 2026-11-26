@@ -1,0 +1,10 @@
+dataset_status,item_code,description,row_type,unit,baseline_quantity,addendum_quantity,delta,source,basis
+Synthetic sample,S01,12-inch sanitary sewer,Bid item,LF,360,240,-120,SW-04 Rev A to Rev B,Measure segments by pipe size
+Synthetic sample,S02,15-inch sanitary sewer,Bid item,LF,0,160,160,SW-04 Rev A to Rev B,New pipe size from station 2+40 to 4+00
+Synthetic sample,S03,Manhole,Bid item,EA,2,3,1,SW-04 structure schedule,One additional proposed manhole in revision B
+Synthetic sample,S04,Pavement restoration,Bid item,SY,120,140,20,SW-04 and SD-09,Six-foot width times 180 or 210 linear feet divided by nine
+Synthetic sample,S05,Existing sewer tie-in,Owner allowance,EA,1,1,0,SW-04 and owner bid form,Owner-directed allowance pending field confirmation
+Synthetic sample,C01,Pipe depth 0 to 6 ft,Reconciliation only,LF,120,120,0,SW-04 profile,Supporting depth allocation; exclude from bid quantity sum
+Synthetic sample,C02,Pipe depth 6 to 10 ft,Reconciliation only,LF,240,120,-120,SW-04 profile,Supporting depth allocation; exclude from bid quantity sum
+Synthetic sample,C03,Pipe depth 10 to 14 ft,Reconciliation only,LF,0,160,160,SW-04 profile,Supporting depth allocation; exclude from bid quantity sum
+Synthetic sample,C04,Total measured pipe,Reconciliation only,LF,360,400,40,SW-04 profile,Sum S01 plus S02; compare with sum C01 through C03

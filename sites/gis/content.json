@@ -1,0 +1,269 @@
+{
+  "capabilityIntro": "SkarionGIS converts owner-approved redlines, legacy drawings and field evidence into editable geographic records. We scope one route, asset class or release batch, then give the reviewer the source references and decisions needed to accept it.",
+  "buyerRoles": [
+    "Fiber prime project managers preparing a construction area for turnover",
+    "Operator GIS and closeout coordinators receiving editable route and point assets",
+    "Utility GIS managers reconciling legacy drawings against an owner schema",
+    "Asset operations teams managing controlled backlog and revision batches"
+  ],
+  "capabilities": [
+    {
+      "title": "Fiber route and asset closeout",
+      "summary": "Build an editable route and point inventory from an approved construction package. Keep test and splice references joined to the records your operator receives.",
+      "inputs": [
+        "Approved route and construction redlines with sheet IDs and revisions",
+        "Field references and the owner’s point and line schema",
+        "Available splice, test and photo indexes tied to asset or route IDs"
+      ],
+      "outputs": [
+        "Editable route, cabinet, handhole or splice features in the agreed format",
+        "Asset-to-source crosswalk with revision, feature ID and evidence references",
+        "Open exception register for missing or conflicting records"
+      ],
+      "checks": [
+        "Stable feature IDs and permitted owner codes",
+        "Point/line geometry and endpoints against approved route evidence",
+        "Required references present and traceable, with discrepancies routed for review"
+      ]
+    },
+    {
+      "title": "Utility drawing conversion and reconciliation",
+      "summary": "Convert one asset class or defined area from legacy CAD, PDF and field records. Resolve attributes where the evidence supports a choice and flag unresolved records.",
+      "inputs": [
+        "Approved drawings, CAD exports, tabular registers and available field edits",
+        "Owner field definitions, code lists and source precedence",
+        "Agreed asset classes, draft extent and coordinate reference system"
+      ],
+      "outputs": [
+        "Editable GIS layers with normalized identifiers, fields and owner domains",
+        "Source-to-target field map documenting transforms and empty values",
+        "Flagged geometry, identifier or attribute discrepancies"
+      ],
+      "checks": [
+        "One output record per agreed asset with unique owner IDs",
+        "Units, data types, permissible values and null handling",
+        "Spatial alignment and conflicting evidence reviewed against owner criteria"
+      ]
+    },
+    {
+      "title": "Revision and update queues",
+      "summary": "Process a bounded group of owner-approved edits against an issued baseline. Record what moves, what is added and what remains open before the reviewer accepts a new release.",
+      "inputs": [
+        "Previous release and current change instructions",
+        "Stable owner IDs, approved source revisions and delivery cutoff",
+        "Disposition of previously open items"
+      ],
+      "outputs": [
+        "Candidate version and asset-level delta register",
+        "Negotiated changes to schemas or relationships recorded separately",
+        "Evidence and open decisions carried into the next release"
+      ],
+      "checks": [
+        "Repeatable comparison of IDs, geometry and relevant attributes",
+        "No unintended deletions or changes to accepted features",
+        "Match every approved update and carried issue to a source or recorded decision"
+      ]
+    },
+    {
+      "title": "Exchange and staging QA",
+      "summary": "Validate the handoff against the owner’s acceptance rules. Provide a test exchange or agreed staging import with clear reconciliation notes.",
+      "inputs": [
+        "Destination system and owner import or exchange requirements",
+        "Required field and geometry checks with acceptance owner",
+        "Permitted transfer method and reviewer access"
+      ],
+      "outputs": [
+        "Validated exchange bundle or documented staging import results",
+        "Reconciliation counts, review map and revision summary",
+        "Known limitations and remaining owner decisions"
+      ],
+      "checks": [
+        "Import opens with expected layers, IDs and data types",
+        "Coordinate reference system and geometry match agreed rules",
+        "File references and attachment permissions checked before release"
+      ]
+    }
+  ],
+  "handoff": {
+    "formats": [
+      "GeoPackage or file geodatabase for editable layers",
+      "GeoJSON, CSV or KMZ when appropriate to the exchange workflow",
+      "CSV source crosswalk and exception register with revision notes",
+      "Review maps and release manifests where specified"
+    ],
+    "requirements": [
+      "Batch extent, asset types and approximate feature count",
+      "Owner schema, coordinate reference system and approved source revisions",
+      "Target workflow, acceptance reviewer and source precedence",
+      "Approved file transfer and retention expectations"
+    ],
+    "boundaries": [
+      "Owner acceptance and operational decisions stay with the designated reviewer.",
+      "Live-system edits, surveying, locating and professional approvals require separate scope.",
+      "Unresolved conflicts stay visible with evidence and an accountable review owner."
+    ]
+  },
+  "projects": [
+    {
+      "id": "ridgeline-fiber-closeout",
+      "title": "Ridgeline fiber route closeout",
+      "category": "Fiber turnover",
+      "summary": "Package one synthetic route and six mapped assets for operator review. Carry an unresolved crossing into the handoff with an explicit owner action.",
+      "image": "assets/route-map.svg",
+      "imageAlt": "Illustrative green fiber route map with cabinet, splice and handhole symbols and a crossing marked for review.",
+      "context": "In this synthetic construction turnover exercise, the operator needs a route layer it can edit and point assets it can trace back to a marked plan and field indexes. The drawing and evidence files use different reference conventions. One crossing lacks enough approved evidence for acceptance.",
+      "constraints": [
+        "Accept construction redline revision R2 as the route reference for this exercise.",
+        "Link named field references at the asset level when available. Keep missing crossing evidence in the review register.",
+        "Demo longitude and latitude are fictional and represent no actual utility assets."
+      ],
+      "approach": [
+        {
+          "title": "Map the approved route",
+          "text": "Build route RT-01 with endpoints at CAB-01 and CAB-02. Keep the two cabinets, two splice points and two handholes as separately keyed features."
+        },
+        {
+          "title": "Retain source evidence",
+          "text": "Link each production asset to a source ID and revision. Associate test and splice record references by asset ID, including the TST-02 reference on SP-02."
+        },
+        {
+          "title": "Isolate the crossing decision",
+          "text": "Mark EX-01 as a review-only point. Preserve the route alignment in the demo and route the missing crossing evidence to the designated operator reviewer."
+        }
+      ],
+      "deliverables": [
+        "GeoJSON FeatureCollection containing one route, six production assets and one review-only marker.",
+        "CSV crosswalk with one record for each GeoJSON feature and review status."
+      ],
+      "verification": [
+        "RT-01 endpoints coincide with CAB-01 and CAB-02. All six point assets align with route vertices.",
+        "Every feature ID appears once in the source crosswalk.",
+        "EX-01 is marked review-only and has open status in both files."
+      ],
+      "review": "The OSP reviewer confirms the record types and required evidence. The operator’s reviewer reconciles the owner schema and decides whether EX-01 can be closed with approved crossing evidence.",
+      "files": [
+        {
+          "path": "assets/samples/ridgeline-fiber-closeout.geojson",
+          "label": "Editable GeoJSON",
+          "description": "One fictional route, six keyed point assets and a marked crossing exception."
+        },
+        {
+          "path": "assets/samples/ridgeline-fiber-source-crosswalk.csv",
+          "label": "Source crosswalk CSV",
+          "description": "Feature IDs, revisions, evidence reference and disposition for all eight records."
+        }
+      ]
+    },
+    {
+      "id": "utility-records-reconciliation",
+      "title": "Water asset records reconciliation",
+      "category": "Utility data QA",
+      "summary": "Convert three synthetic mains and four keyed assets into an editable layer. Show how conflicting dimensions and a duplicate legacy ID appear in the handoff.",
+      "image": "assets/projects/water-records.svg",
+      "imageAlt": "Schematic of three blue mains with valve and hydrant symbols over an olive grid. Amber annotation shows a pipe size conflict.",
+      "context": "This sample models a utility GIS manager receiving legacy drawings and a newer field register. The records disagree about one main’s diameter and use the same legacy identifier on two distinct points. The target dataset must preserve the records and the uncertainty for review.",
+      "constraints": [
+        "Keep seven stable output IDs across the pipe and point features.",
+        "Use null where diameter conflicts. Preserve both values in the issue log with sources and units.",
+        "Use synthetic geometry with fictional coordinates and sample owner IDs."
+      ],
+      "approach": [
+        {
+          "title": "Align the inputs",
+          "text": "Record source drawing and field register revisions against the owner’s draft schema. Normalize permitted pipe diameter values in inches and preserve unknown values."
+        },
+        {
+          "title": "Build a connected example",
+          "text": "Create three mains and four matching point features. Assign each point a unique proposed owner ID, even when the legacy alias matches another record."
+        },
+        {
+          "title": "Expose disputed evidence",
+          "text": "Leave P-102 diameter empty and log a six-versus-eight-inch conflict. Flag the LEG-09 alias shared by V-202 and HY-204 for the owner to confirm."
+        }
+      ],
+      "deliverables": [
+        "Editable GeoJSON with three pipe features and four point assets.",
+        "CSV field map defining output fields, transforms and unresolved values.",
+        "CSV register with the two owner decisions."
+      ],
+      "verification": [
+        "Main endpoints match the adjacent point geometry and all seven asset IDs are unique.",
+        "The two disputed dimensions remain visible in the issue log. The P-102 value in GeoJSON is null.",
+        "Each legacy duplicate points to both affected owner IDs in the issue log."
+      ],
+      "review": "The utility records owner decides the authoritative evidence for P-102 and the treatment of the duplicate legacy identifier. A GIS reviewer validates field domains, endpoint matches and target import after those decisions.",
+      "files": [
+        {
+          "path": "assets/samples/water-assets-reconciled.geojson",
+          "label": "Reconciled water GeoJSON",
+          "description": "Three connected main segments and four uniquely keyed point assets."
+        },
+        {
+          "path": "assets/samples/water-field-map.csv",
+          "label": "Attribute mapping CSV",
+          "description": "Source fields, normalized field types and null handling."
+        },
+        {
+          "path": "assets/samples/water-owner-issues.csv",
+          "label": "Owner issue register CSV",
+          "description": "Evidence and review action for the two unresolved records."
+        }
+      ]
+    },
+    {
+      "id": "culvert-revision-control",
+      "title": "Culvert inventory revision batch",
+      "category": "Controlled GIS updates",
+      "summary": "Compare a four-record baseline and a five-record candidate. See one location move, one added culvert and an unresolved source gap carried forward.",
+      "image": "assets/projects/culvert-delta.svg",
+      "imageAlt": "Two revision columns show an illustrative culvert inventory before and after, with a moved record, an added record and one open issue.",
+      "context": "The reviewer in this fictional asset queue needs a reproducible comparison of a previously issued culvert inventory and a proposed update. Two owner-provided edits enter the batch while a prior field evidence request remains pending.",
+      "constraints": [
+        "Use issued R1 as the comparison baseline and R2 as a candidate for review.",
+        "Keep stable asset IDs for both revisions. Record additions, geometric edits and carried issues separately.",
+        "Apply only the supplied synthetic source changes. Keep unrelated accepted features unchanged."
+      ],
+      "approach": [
+        {
+          "title": "Freeze the baseline",
+          "text": "Read the four R1 assets by ID and compare named geometry and inspection fields to the R2 candidate."
+        },
+        {
+          "title": "Record the authorized changes",
+          "text": "Move CV-012 against a revised field sketch and add CV-015 from a new location record. Preserve CV-011 and CV-013 exactly."
+        },
+        {
+          "title": "Carry the open issue",
+          "text": "Keep CV-014 verification status open with no inspection date. Give the reviewer the issue and the evidence request alongside the candidate."
+        }
+      ],
+      "deliverables": [
+        "Baseline R1 and candidate R2 GeoJSON snapshots.",
+        "Delta CSV with the location move, addition and one carried issue."
+      ],
+      "verification": [
+        "R1 has four unique assets and R2 has five. R2 adds CV-015 and deletes none.",
+        "CV-012 is the only previously issued asset with changed coordinates. CV-011 and CV-013 stay identical.",
+        "CV-014 remains open with a null inspection date in both releases."
+      ],
+      "review": "The inventory owner checks the revised sketch and new culvert record before accepting R2. Keep CV-014 open on release unless the owner supplies verified inspection evidence.",
+      "files": [
+        {
+          "path": "assets/samples/culverts-r1-baseline.geojson",
+          "label": "R1 baseline GeoJSON",
+          "description": "Read-only comparison snapshot of the four previously issued sample assets."
+        },
+        {
+          "path": "assets/samples/culverts-r2-candidate.geojson",
+          "label": "R2 candidate GeoJSON",
+          "description": "Candidate with five fictional culvert locations, including one approved source move."
+        },
+        {
+          "path": "assets/samples/culverts-release-delta.csv",
+          "label": "Release delta CSV",
+          "description": "Asset-level change register with old and new values and reviewer action."
+        }
+      ]
+    }
+  ]
+}

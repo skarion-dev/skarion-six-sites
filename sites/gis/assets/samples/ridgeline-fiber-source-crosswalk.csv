@@ -1,0 +1,9 @@
+sample_scope,asset_id,asset_type,source_id,source_revision,evidence_reference,review_status,review_note
+SYNTHETIC,RT-01,fiber_route,RDL-12,R2,APPROVED_ROUTE,mapped,Approved redline is the geometric baseline
+SYNTHETIC,CAB-01,cabinet,RDL-12,R2,CAB-01-PH,mapped,Route start with photo index reference
+SYNTHETIC,SP-02,splice,FIDX-04,R1,TST-02,mapped,Test index tied to splice ID
+SYNTHETIC,HH-14,handhole,RDL-12,R2,HH-14-PH,mapped,Handhole location retained from redline
+SYNTHETIC,SP-03,splice,FIDX-04,R1,SPL-03,mapped,Splice index tied to asset ID
+SYNTHETIC,HH-15,handhole,RDL-12,R2,HH-15-PH,mapped,Handhole location and photo index
+SYNTHETIC,CAB-02,cabinet,RDL-12,R2,CAB-02-PH,mapped,Route end with photo index reference
+SYNTHETIC,EX-01,review_marker,RDL-12,R2,,open,Crossing evidence pending from the operator reviewer

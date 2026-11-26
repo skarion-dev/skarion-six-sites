@@ -1,0 +1,113 @@
+{
+  "capabilityIntro": "Skarion Stormwater prepares drainage GIS inventories and traceable handoff files from records supplied by the prime. Start with one basin, one inspection export or a bounded culvert backlog and agree on what the owner's reviewer can accept.",
+  "buyerRoles": [
+    "Drainage project managers reconciling as-builts before a prime-led owner handoff",
+    "GIS leads preparing owner-schema asset layers and records for import",
+    "Inspection operations managers linking reports, photos and CCTV indexes to asset IDs",
+    "Public works asset staff working with an assigned civil or GIS reviewer"
+  ],
+  "capabilities": [
+    {
+      "title": "Drainage asset GIS production",
+      "summary": "Build owner-schema points and lines for inlets, manholes, outfalls and pipes with stable IDs and source references.",
+      "inputs": ["As-built plans, owner GIS features or prime-approved field tables", "Destination schema, coordinate reference system and agreed map extent", "Owner ID rules and approach to unknown fields"],
+      "outputs": ["Editable asset layers in the agreed format", "Asset-to-source crosswalk and map for reviewer orientation", "Geometry, connectivity and missing-attribute exception register"],
+      "checks": ["Validate unique IDs and required fields for each feature type", "Check pipe endpoints resolve to the expected asset or an explicit exception", "Reconcile input scope against staged, queued and accepted feature counts"]
+    },
+    {
+      "title": "Inspection records reconciliation",
+      "summary": "Prepare a relationship table between the owner asset register and the inspection records supplied by the prime.",
+      "inputs": ["Owner asset export with original IDs and permitted legacy aliases", "Inspection report, CCTV or photo index with observation and source fields", "Owner rules for duplicates, attachment references and condition codes"],
+      "outputs": ["Asset-to-inspection crosswalk with match method and review status", "Orphan, conflicting and duplicate-record queue", "Batch manifest recording input counts and source file versions"],
+      "checks": ["Confirm source record IDs remain visible for every proposed link", "Prevent duplicate evidence from being exported as a second accepted relationship", "Retain original observations and request a reviewer decision on contradictions"]
+    },
+    {
+      "title": "Culvert and structure registers",
+      "summary": "Consolidate prime-supplied culvert records into an editable, source-based register with a short field follow-up list.",
+      "inputs": ["Owner asset IDs, road references and inventory boundaries", "Recorded dimensions and materials with their source and measurement units", "Prime photo indexes and approved condition vocabulary"],
+      "outputs": ["Asset register with source documents and attachment keys", "Review queue for unseen outlets, conflicting locations and missing records", "Schema dictionary specifying units, unknown values and status meanings"],
+      "checks": ["Preserve a missing dimension or unobserved outlet explicitly", "Verify each photo key links to the owner-authorized file manifest", "Compare the recorded road or station with the original source before release"]
+    },
+    {
+      "title": "Reviewer-ready closeout packaging",
+      "summary": "Organize the GIS delivery, exception queue and source manifest into a documented draft release for the prime or asset owner.",
+      "inputs": ["Prime-approved release extent, naming conventions and file formats", "Delivery system import rules and person authorized to accept the batch", "Approved way to exchange network drawings, images and field evidence"],
+      "outputs": ["Release manifest with filenames, record counts and revision status", "Owner review copy and open decisions grouped by responsible role", "Pilot acceptance summary and next-batch scope notes"],
+      "checks": ["Reopen the exported layers and validate rows against the manifest", "Confirm queued items remain distinguishable from accepted data", "Review that attachments, attribution and data-transfer rules match the agreed scope"]
+    }
+  ],
+  "handoff": {
+    "formats": ["Editable GIS layer and agreed attribute schema", "CSV crosswalk, source manifest and exception list", "Map PDF or review image and draft release notes"],
+    "requirements": ["Agree on the review boundary, record count and expected geometry accuracy before production", "Supply the target coordinate system, units, IDs and destination schema", "Assign a prime reviewer and an approved transfer route for source files"],
+    "boundaries": ["Field verification and surveyed locations remain with the prime or qualified field partner", "The assigned engineer owns hydrologic or hydraulic modeling, permit determinations and professional approvals", "Owner reviewers control production release and any change to approved condition or asset values"]
+  },
+  "projects": [
+    {
+      "id": "basin-07-drainage-inventory",
+      "title": "Basin 07 drainage inventory",
+      "category": "GIS inventory and source QA",
+      "summary": "Trace a fictional storm network to plan and inspection records while keeping one downstream connection open for review.",
+      "image": "assets/basin-map.svg",
+      "imageAlt": "Synthetic basin and storm pipes with mapped connections in teal and a connection awaiting review in dashed amber.",
+      "context": "In this fictional scenario a prime needs to reconcile mixed as-built sheets and inspection evidence before assembling an owner handoff. The downloadable extract holds four point features and two pipes. The graphic illustrates the broader inventory workflow and is schematic. The sample coordinates are fictional WGS 84 values.",
+      "constraints": ["Preserve source keys and the owner's published feature IDs in the draft", "An upstream pipe endpoint is known while the downstream terminus of P-209 has no confirmed asset ID", "Use the editable extract for workflow review. The exhibit is a schematic and has no surveyed position"],
+      "approach": [
+        {"title": "Catalog drainage evidence", "text": "Index fictional plans D-01 to D-04 and CCTV 017 using stable source keys. Associate each point and pipe with its most relevant single record for this small extract."},
+        {"title": "Link geometry and asset IDs", "text": "Use coordinate pairs consistent with RFC 7946 and keep a shared asset ID across the geometry file and source crosswalk. Compare known pipe endpoints against the related point coordinates."},
+        {"title": "Keep the unknown endpoint open", "text": "Retain the plan-derived geometry for P-209 as a draft. Leave its downstream ID empty and record the action that the civil or GIS reviewer must take before release."}
+      ],
+      "deliverables": ["Six-feature GeoJSON extract with source keys and pipe-endpoint fields", "Six-row asset-to-source crosswalk with release state", "Open connection ticket for P-209 with reviewer role and acceptance evidence"],
+      "verification": ["Four point features and two lines are present with unique asset IDs", "The crosswalk maps one row to each feature and agrees on its source key and state", "P-107 resolves to both known assets. P-209 resolves to MH-208 upstream and retains a null downstream ID", "The issue register connects EX-01 to P-209 and its fictional plan record"],
+      "review": "GIS lead verifies geometry, IDs and field mapping. The prime's drainage reviewer resolves the P-209 downstream link, then separately approves owner import.",
+      "files": [
+        {"path": "assets/samples/basin-07-inventory.geojson", "label": "Basin 07 inventory (GeoJSON)", "description": "Six synthetic features with coordinates, source keys and draft pipe connections."},
+        {"path": "assets/samples/basin-07-crosswalk.csv", "label": "Asset-to-source crosswalk (CSV)", "description": "Six asset IDs with fictional evidence records and match or exception state."},
+        {"path": "assets/samples/basin-07-exceptions.csv", "label": "Connection exception (CSV)", "description": "The open P-209 endpoint ticket and the evidence needed to resolve it."}
+      ]
+    },
+    {
+      "id": "cctv-inspection-record-reconciliation",
+      "title": "CCTV inspection record reconciliation",
+      "category": "Inspection records QA",
+      "summary": "Compare exact links, potential aliases and unresolved inspection records before sending relationships to an owner system.",
+      "image": "assets/projects/cctv-reconciliation.svg",
+      "imageAlt": "A fictional inspection relationship queue showing a matched record, an alias for review and an unmatched record.",
+      "context": "A synthetic drain inspection index has seven incoming rows. Three rows use exact owner IDs. Four need a different disposition because of an alias, missing registry match, conflicting condition and duplicate inspection. These files demonstrate relationships between the source report, registered asset and human review state.",
+      "constraints": ["Retain the original asset ID and raw condition text from each input row", "Potential aliases and condition conflicts stay in review until the owner signs off", "Attachment keys in the sample are fictional placeholders without included media"],
+      "approach": [
+        {"title": "Establish the asset registry", "text": "Use a four-asset synthetic master table that includes one reported legacy alias. Use canonical IDs for all staged exact relationships."},
+        {"title": "Separate record dispositions", "text": "Apply exact owner-ID matching first. Then route alias candidates, unknown asset IDs, conflicts and duplicate evidence to explicit review states. Preserve the source key and candidate identity."},
+        {"title": "Guard the release file", "text": "Stage exact links as candidates for owner review. Keep the raw condition and the registry condition in separate fields so a reviewer can inspect disagreement without altering either source."}
+      ],
+      "deliverables": ["Four-row synthetic asset registry with rule inputs", "Seven-row inspection relationship and QA queue", "Disposition and owner action visible on each intake row"],
+      "verification": ["Every canonical or candidate asset ID appears in the registry", "Three rows are exact links and four have distinct review states", "CCTV-23 preserves Poor from the source while the related registry records Fair", "CCTV-26 references CCTV-11 as duplicate evidence and remains excluded from the matched subset"],
+      "review": "The inspection delivery lead verifies source-report keys, attachment availability and duplicate evidence. The assigned owner reviewer confirms proposed aliases and resolves condition conflicts before import.",
+      "files": [
+        {"path": "assets/samples/cctv-asset-registry.csv", "label": "Synthetic owner asset registry (CSV)", "description": "Four fictional asset IDs, a legacy alias and recorded conditions."},
+        {"path": "assets/samples/cctv-record-qa.csv", "label": "Inspection record QA queue (CSV)", "description": "Seven inspection records with original values, match disposition and reviewer action."}
+      ]
+    },
+    {
+      "id": "rural-culvert-register",
+      "title": "Rural culvert register and field follow-up",
+      "category": "Asset register and field-source QA",
+      "summary": "Organize culvert dimensions, road references and photo keys into a small register with clear field follow-up.",
+      "image": "assets/projects/rural-culvert-register.svg",
+      "imageAlt": "A diagrammatic culvert section with an observed inlet, recorded span and downstream outlet pending field confirmation.",
+      "context": "This fictional register represents a six-record extract from a rural culvert backlog. The hypothetical prime provides road-log and inspection data. Three rows are ready for owner review and three need either field confirmation, documented evidence or a road-log cross-check.",
+      "constraints": ["Span and rise are recorded in millimeters and kept blank when the source is missing", "Photo references are illustrative keys. No real photographs or georeferenced locations are included", "Field survey, hydraulic adequacy and repair prioritization remain with the prime and engineer"],
+      "approach": [
+        {"title": "Normalize source records", "text": "Align controlled material terms and keep recorded dimensions, stations, source keys and photo identifiers available for every populated field."},
+        {"title": "Disclose incomplete evidence", "text": "Flag the inaccessible outlet, mismatched road reference and missing measurement as distinct issue types. Do not copy a nearby culvert's dimensions or transfer a condition grade."},
+        {"title": "Assign the next review", "text": "Have the field lead resolve an unobserved outlet, the GIS reviewer reconcile the road reference and the inspection lead obtain the missing dimension evidence."}
+      ],
+      "deliverables": ["Six-row editable culvert register including original record keys and photo references", "Field follow-up queue grouped by the responsible reviewer", "Inspection status separated from designed capacity or repair recommendation"],
+      "verification": ["Asset IDs in the follow-up queue exist in the register and are unique", "Three rows are ready for review and three have assigned follow-ups", "CV-32 has an unknown outlet and no outlet photo key. CV-34 keeps blank measurements", "The source road and target road remain separate on the mismatched CV-33 item"],
+      "review": "The culvert inventory lead verifies units and attachment references. Assigned field and GIS reviewers resolve open items before the responsible reviewer clears any actual asset record.",
+      "files": [
+        {"path": "assets/samples/culvert-register.csv", "label": "Culvert register extract (CSV)", "description": "Six fictional culverts with source keys, observed endpoints and review status."},
+        {"path": "assets/samples/culvert-field-followups.csv", "label": "Field follow-up queue (CSV)", "description": "Three open decisions tied to asset IDs, owners and required evidence."}
+      ]
+    }
+  ]
+}

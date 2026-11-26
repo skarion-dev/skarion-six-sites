@@ -1,0 +1,3 @@
+dataset,revision,cable_id,material,fiber_count,span_ids,route_ft,end_allowance_ft_per_end,end_count,total_allowance_ft,scheduled_ft
+synthetic_example,R01,C-101,Aerial fiber cable,48,S-101;S-102,945,20,2,40,985
+synthetic_example,R01,C-102,Aerial fiber cable,48,S-103,370,20,2,40,410

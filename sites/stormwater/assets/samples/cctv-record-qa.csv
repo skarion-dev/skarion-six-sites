@@ -1,0 +1,8 @@
+record_id,source_key,reported_asset_id,candidate_asset_id,raw_observation,media_key,disposition,related_record_id,review_action
+CCTV-11,REPORT-11,P-107,P-107,Fair,MEDIA-11,matched,,Verify attachment in authorized manifest
+CCTV-14,REPORT-14,P-318,P-318,Good,MEDIA-14,matched,,Verify attachment in authorized manifest
+CCTV-18,REPORT-18,P-403,P-403,Fair,MEDIA-18,matched,,Verify attachment in authorized manifest
+CCTV-21,REPORT-21,P209A,P-209,Fair,MEDIA-21,review_alias,,Confirm approved alias before staging
+CCTV-22,REPORT-22,P-702,,Fair,MEDIA-22,orphan,,Locate a canonical asset or retain as orphan
+CCTV-23,REPORT-23,P-209,P-209,Poor,MEDIA-23,review_conflict,,Inspect report and registry conditions with owner
+CCTV-26,REPORT-26,P-107,P-107,Fair,MEDIA-11,duplicate,CCTV-11,Confirm reused media and exclude extra relationship

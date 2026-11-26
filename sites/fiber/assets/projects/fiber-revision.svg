@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Handhole relocation and quantity reconciliation</title>
+  <desc id="desc">Synthetic comparison of UG-204 revisions R00 and R01. Moving HH-04 fifteen feet transfers footage between cables without changing the 780-foot corridor.</desc>
+  <path d="M0 0h960v640H0z" fill="#20382d"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="48" y="62" fill="#ddf887" font-size="19" font-weight="700" letter-spacing="2">REDLINE REVISION / SYNTHETIC EXAMPLE</text>
+    <text x="48" y="120" fill="#f5f7ee" font-size="39" font-weight="700">Handhole relocation</text>
+    <path d="M48 160h864v145H48zm0 170h864v145H48z" fill="#172a23" stroke="#5c7b69"/>
+    <g fill="#f5f7ee" font-size="20" font-weight="700">
+      <text x="74" y="202">R00 / prior</text><text x="74" y="372">R01 / revised</text>
+    </g>
+    <g fill="#c5d8ca" font-size="17">
+      <text x="86" y="280">2+25</text><text x="571" y="280">HH-04 / 8+07</text><text x="803" y="280">10+05</text>
+      <text x="86" y="451">2+25</text><text x="641" y="451">HH-04 / 8+22</text><text x="803" y="451">10+05</text>
+    </g>
+    <path d="M100 240h527M100 411h594" fill="none" stroke="#ddf887" stroke-width="5"/>
+    <path d="M627 240h213M694 411h146" fill="none" stroke="#a6c6b1" stroke-width="5"/>
+    <path d="M627 250v67h67v84" fill="none" stroke="#ddf887" stroke-width="2" stroke-dasharray="6 6"/>
+    <g fill="#172a23" stroke="#ddf887" stroke-width="4">
+      <circle cx="100" cy="240" r="8"/><circle cx="627" cy="240" r="10"/><circle cx="840" cy="240" r="8"/>
+      <circle cx="100" cy="411" r="8"/><circle cx="694" cy="411" r="10"/><circle cx="840" cy="411" r="8"/>
+    </g>
+    <g fill="#ddf887" font-size="18" font-weight="700" text-anchor="middle">
+      <text x="350" y="225">C-201 · 582 ft</text><text x="746" y="225">C-202 · 198 ft</text>
+      <text x="350" y="395">C-201 · 597 ft</text><text x="771" y="395">C-202 · 183 ft</text>
+    </g>
+    <text x="48" y="539" fill="#f5f7ee" font-size="28" font-weight="700">15 ft transferred</text>
+    <text x="363" y="539" fill="#f5f7ee" font-size="28" font-weight="700">780 ft remains</text>
+    <text x="650" y="539" fill="#f5f7ee" font-size="28" font-weight="700">1 open item</text>
+    <text x="48" y="594" fill="#c5d8ca" font-size="17">Schematic exaggerates the shift of HH-04. Marker discrepancy RL-02 remains open.</text>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "type": "FeatureCollection",
+  "name": "Basin 07 fictional inventory extract",
+  "features": [
+    {"type":"Feature","id":"IN-104","geometry":{"type":"Point","coordinates":[-40.201,25.801]},"properties":{"asset_id":"IN-104","asset_type":"inlet","source_key":"PLAN-D02","status":"matched"}},
+    {"type":"Feature","id":"MH-208","geometry":{"type":"Point","coordinates":[-40.199,25.800]},"properties":{"asset_id":"MH-208","asset_type":"manhole","source_key":"CCTV-017","status":"matched"}},
+    {"type":"Feature","id":"OUT-301","geometry":{"type":"Point","coordinates":[-40.196,25.799]},"properties":{"asset_id":"OUT-301","asset_type":"outfall","source_key":"PLAN-D03","status":"matched"}},
+    {"type":"Feature","id":"IN-105","geometry":{"type":"Point","coordinates":[-40.200,25.802]},"properties":{"asset_id":"IN-105","asset_type":"inlet","source_key":"PLAN-D01","status":"matched"}},
+    {"type":"Feature","id":"P-107","geometry":{"type":"LineString","coordinates":[[-40.201,25.801],[-40.200,25.8005],[-40.199,25.800]]},"properties":{"asset_id":"P-107","asset_type":"storm_pipe","from_asset_id":"IN-104","to_asset_id":"MH-208","source_key":"PLAN-D02","status":"matched"}},
+    {"type":"Feature","id":"P-209","geometry":{"type":"LineString","coordinates":[[-40.199,25.800],[-40.198,25.7997],[-40.197,25.7993]]},"properties":{"asset_id":"P-209","asset_type":"storm_pipe","from_asset_id":"MH-208","to_asset_id":null,"source_key":"PLAN-D04","status":"review","exception_id":"EX-01"}}
+  ]
+}

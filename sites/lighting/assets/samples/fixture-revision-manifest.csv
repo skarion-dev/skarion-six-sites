@@ -1,0 +1,6 @@
+example_id,data_status,comment_id,artifact_id,deliverable,baseline_revision,proposed_revision,verification_owner,verification_evidence,issue_status
+LGT-03,synthetic template,R-01,S-101,fixture schedule,B Rev 0,B Rev 1,modeling lead,correct P-04 file and unchanged settings,awaiting review
+LGT-03,synthetic template,R-01,PH-101,parking grid plot,B Rev 0,B Rev 1,photometric reviewer,matched PK grid and completed approved calculation,awaiting calculation and review
+LGT-03,synthetic template,R-01,PH-102,east boundary plot,B Rev 0,B Rev 1,photometric reviewer,matched EB grid and completed approved calculation,awaiting calculation and review
+LGT-03,synthetic template,R-01,A-101,assumptions register,B Rev 0,B Rev 1,CAD and modeling leads,unchanged P-101 base and logged fixture exception,awaiting review
+LGT-03,synthetic template,R-01,R-101,review decision log,B Rev 0,B Rev 1,project reviewer,request tracked to source check and resulting reviewer decision,awaiting reviewer decision

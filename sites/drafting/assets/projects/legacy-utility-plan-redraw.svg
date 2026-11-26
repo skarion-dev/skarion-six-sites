@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" role="img" aria-labelledby="title">
+  <title id="title">Legacy utility room plan conversion</title>
+  <defs>
+    <pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M25 0H0v25" fill="none" stroke="#87a398" stroke-width="1" opacity=".22"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="640" fill="#1c3735"/>
+  <rect width="1000" height="640" fill="url(#grid)"/>
+  <rect x="34" y="33" width="932" height="574" rx="6" fill="none" stroke="#7f9d91" stroke-width="1.3"/>
+  <path d="M34 122h932M34 566h932" fill="none" stroke="#7f9d91" stroke-width="1.3"/>
+  <g font-family="Arial, sans-serif">
+    <text x="62" y="68" fill="#a9c7b9" font-size="17" letter-spacing="2">SKARION DRAFTING · SYNTHETIC SAMPLE</text>
+    <text x="62" y="103" fill="#f7f6f0" font-size="26" font-weight="700">LEG-01 · Source-to-CAD comparison</text>
+
+    <g fill="#d8e7dd" font-size="21" font-weight="700">
+      <text x="100" y="174">Archive reference</text><text x="573" y="174">Editable redraw</text>
+    </g>
+
+    <g transform="translate(100 200)">
+      <rect width="324" height="216" fill="#f4eee0" stroke="#a79881" stroke-width="2.5"/>
+      <path d="M54 142h94v-61h115" fill="none" stroke="#73766c" stroke-width="4"/>
+      <rect x="135" y="67.5" width="54" height="40.5" fill="none" stroke="#73766c" stroke-width="2.5"/>
+      <path d="M256 77h22m-20 5h19m-20 5h17" fill="none" stroke="#534d44" stroke-width="3.2" opacity=".50"/>
+    </g>
+
+    <g transform="translate(573 200)">
+      <rect width="324" height="216" fill="#223f3b" stroke="#b9d4c8" stroke-width="2.5"/>
+      <path d="M54 142h94v-61h115" fill="none" stroke="#d5e897" stroke-width="4"/>
+      <rect x="135" y="67.5" width="54" height="40.5" fill="none" stroke="#95c7bd" stroke-width="2.5"/>
+      <circle cx="270" cy="81" r="18" fill="none" stroke="#ff9b82" stroke-width="3"/><path d="m282 93 24 22" stroke="#ff9b82" stroke-width="1.8"/><text x="261" y="138" fill="#ffac97" font-size="19">L-01</text>
+    </g>
+    <g fill="none" stroke="#a9c7b9" stroke-width="1.3">
+      <path d="M100 452h324m-324-9v18m324-18v18M573 452h324m-324-9v18m324-18v18"/>
+      <path d="M921 200v216m-8-216h16m-16 216h16"/>
+    </g>
+    <g fill="#d8e7dd" font-family="Consolas, monospace" font-size="20" text-anchor="middle">
+      <text x="262" y="488">48 FT REFERENCE</text><text x="735" y="488">48 DRAWING UNITS</text>
+      <text x="940" y="312" transform="rotate(-90 940 312)">32 FT CHECK</text>
+    </g>
+    <text x="100" y="529" fill="#a9c7b9" font-size="17">Trace visible features. Keep the blurred tag in the review crosswalk.</text>
+    <text x="62" y="591" fill="#a9c7b9" font-size="15" letter-spacing="1.5">ILLUSTRATIVE DRAWING</text>
+  </g>
+</svg>

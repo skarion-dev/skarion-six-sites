@@ -1,0 +1,4 @@
+dataset,revision,span_id,from_structure,to_structure,length_ft,sheet_id,cable_id,match_structure
+synthetic_example,R01,S-101,P-101,P-102,420,A-101,C-101,
+synthetic_example,R01,S-102,P-102,P-103,525,A-101,C-101,P-103
+synthetic_example,R01,S-103,P-103,P-104,370,A-102,C-102,P-103

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Aerial distribution plans and splice continuity</title>
+  <desc id="desc">Synthetic 1,315-foot fiber route across poles P-101 to P-104. Two drawing sheets meet at splice closure SC-103.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" fill="none" stroke="#385448" stroke-width="1"/></pattern>
+  </defs>
+  <path d="M0 0h960v640H0z" fill="#182822"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="48" y="63" fill="#ddf887" font-size="19" font-weight="700" letter-spacing="2">AERIAL FTTH / SYNTHETIC EXAMPLE</text>
+    <text x="48" y="121" fill="#f5f7ee" font-size="39" font-weight="700">Aerial distribution segment</text>
+    <path d="M48 162h864v332H48z" fill="#20382d" stroke="#587665"/>
+    <path d="M48 162h864v332H48z" fill="url(#grid)"/>
+    <path d="M620 184v290" fill="none" stroke="#d2e2d4" stroke-width="1.5" stroke-dasharray="9 7"/>
+    <g fill="#d2e2d4" font-size="19" font-weight="650">
+      <text x="74" y="208">A-101 · C-101</text><text x="645" y="208">A-102 · C-102</text>
+      <text x="110" y="403">P-101</text><text x="300" y="352">P-102</text><text x="645" y="306">P-103</text><text x="790" y="295">P-104</text>
+    </g>
+    <path d="M130 365L320 314L620 267L830 254" fill="none" stroke="#ddf887" stroke-width="5" stroke-linecap="round"/>
+    <g fill="#182822" stroke="#ddf887" stroke-width="4"><circle cx="130" cy="365" r="11"/><circle cx="320" cy="314" r="11"/><circle cx="620" cy="267" r="14"/><circle cx="830" cy="254" r="11"/></g>
+    <g fill="#f5f7ee" font-size="19" font-weight="650" text-anchor="middle">
+      <text x="207" y="310">420 ft</text><text x="461" y="265">525 ft</text><text x="738" y="238">370 ft</text>
+    </g>
+    <path d="M620 281v85h100" fill="none" stroke="#ddf887" stroke-width="1.5"/>
+    <text x="733" y="372" fill="#ddf887" font-size="19" font-weight="700">SC-103</text>
+    <text x="48" y="555" fill="#f5f7ee" font-size="27" font-weight="700">1,315 route ft</text>
+    <text x="327" y="555" fill="#f5f7ee" font-size="27" font-weight="700">48-fiber continuity</text>
+    <text x="673" y="555" fill="#f5f7ee" font-size="27" font-weight="700">1,395 scheduled ft</text>
+    <text x="48" y="598" fill="#c5d8ca" font-size="17">Diagram is schematic. Cable quantity includes 80 ft of illustrative end allowance.</text>
+  </g>
+</svg>

@@ -1,0 +1,3 @@
+sample_scope,issue_id,affected_asset_ids,field,evidence_a,evidence_b,status,owner_action
+SYNTHETIC,U-01,P-102,nominal_diameter_in,WM-D01/R2: 6 in,FIELD-WM/R3: 8 in,open,Confirm authoritative diameter evidence
+SYNTHETIC,U-02,V-202;HY-204,legacy_id,FIELD-WM/R3 row V-202: LEG-09,FIELD-WM/R3 row HY-204: LEG-09,open,Confirm alias assignment or retain both flagged aliases

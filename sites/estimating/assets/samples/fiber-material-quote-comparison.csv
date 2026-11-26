@@ -1,0 +1,4 @@
+dataset_status,vendor,required_delivery_day,quoted_delivery_day,valid_through_day,scope_status,duct_usd,handholes_usd,closure_kits_usd,freight_usd,quoted_delivered_pretax_total_usd,unquoted_kit_allowance_usd,scenario_total_usd,complete_quote_rank,next_action
+Fictional pricing,Supplier A,18,15,20,Complete,1960,1590,370,280,4200,,,2,Confirm product and delivery terms before commitment
+Fictional pricing,Supplier B,18,16,17,Incomplete,1920,1560,,270,3750,370,4120,,Obtain two compatible closure kits and refresh quote if validity lapses
+Fictional pricing,Supplier C,18,18,21,Complete,2040,1500,380,210,4130,,,1,Confirm delivery-day commitment and bundle compatibility

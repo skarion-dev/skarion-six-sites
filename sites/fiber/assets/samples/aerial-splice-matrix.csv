@@ -1,0 +1,5 @@
+dataset,revision,closure_id,structure_id,in_cable,in_fiber_start,in_fiber_end,out_cable,out_fiber_start,out_fiber_end,group,assignment
+synthetic_example,R01,SC-103,P-103,C-101,1,12,C-102,1,12,G01,Active distribution A
+synthetic_example,R01,SC-103,P-103,C-101,13,24,C-102,13,24,G02,Active distribution B
+synthetic_example,R01,SC-103,P-103,C-101,25,36,C-102,25,36,G03,Reserved through
+synthetic_example,R01,SC-103,P-103,C-101,37,48,C-102,37,48,G04,Reserved through

@@ -1,0 +1,6 @@
+dataset,revision,feature_id,feature_type,from_station,to_station,length_ft,in_corridor_total,status
+synthetic_example,R01,SEG-A1,Approach,0+00,0+35,35,yes,proposed
+synthetic_example,R01,SEG-B1,Bore,0+35,2+75,240,yes,review hold
+synthetic_example,R01,SEG-A2,Approach,2+75,3+40,65,yes,proposed
+synthetic_example,R01,RD-01,Roadway reference,1+04,1+56,52,no,fictional reference
+synthetic_example,R01,U-01,Utility conflict point,1+43,1+43,0,no,depth unverified

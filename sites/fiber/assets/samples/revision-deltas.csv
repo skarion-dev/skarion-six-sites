@@ -1,0 +1,3 @@
+dataset,sheet_id,previous_revision,current_revision,cable_id,from_id,to_id,previous_start_station,previous_end_station,current_start_station,current_end_station,previous_length_ft,current_length_ft,delta_ft,splice_group_1_active,splice_group_2_reserved
+synthetic_example,UG-204,R00,R01,C-201,HH-03,HH-04,2+25,8+07,2+25,8+22,582,597,15,1-24,25-48
+synthetic_example,UG-204,R00,R01,C-202,HH-04,HH-05,8+07,10+05,8+22,10+05,198,183,-15,1-24,25-48

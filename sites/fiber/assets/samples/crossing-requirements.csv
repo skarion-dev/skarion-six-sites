@@ -1,0 +1,4 @@
+dataset,revision,requirement_id,feature_id,station_or_limit,evidence,example_state,responsibility,decision_to_close
+synthetic_example,R01,REQ-01,RD-01,1+04 to 1+56,ROW-01 fictional owner sketch,review required,Authorized owner reviewer,Confirm right-of-way and exhibit naming before submission
+synthetic_example,R01,REQ-02,U-01,1+43,LOC-01 fictional locate note with depth blank,hold,Field verification lead then authorized design reviewer,Measure depth and obtain disposition before advancing bore
+synthetic_example,R01,REQ-03,SEG-B1,0+35 to 2+75,DET-01 fictional standard detail reference,review required,Authorized owner reviewer,Confirm applicable crossing detail and restoration notes

@@ -1,0 +1,119 @@
+{
+  "capabilityIntro": "Bring an approved route, a set of field records, or a defined redline backlog. We produce the drawings and schedules your OSP team needs, keep them synchronized, and flag questions for your reviewer before handoff.",
+  "buyerRoles": [
+    "OSP design leads at broadband operators and cooperatives who need consistent route and construction documentation",
+    "Engineering prime project managers who need a defined work package with review boundaries and native file handoff",
+    "Fiber construction teams that need controlled drawing updates before the next review or field release"
+  ],
+  "capabilities": [
+    {
+      "title": "HLD route and service-area production",
+      "summary": "Translate the buyer’s approved network architecture and route concept into consistent map and schedule records for review.",
+      "inputs": ["Approved route corridors, service-area limits, and architecture rules", "Available basemap, structures, and service point data with capture dates"],
+      "outputs": ["Route map and labeled endpoints or service areas", "Length and structure counts by segment with assumptions", "Log of missing route inputs or decisions"],
+      "checks": ["Tie segment identifiers and endpoints between the map and schedule", "Distinguish sourced geometry from geometry awaiting confirmation"]
+    },
+    {
+      "title": "LLD aerial and underground plan sheets",
+      "summary": "Build coordinated plan sheets from approved route geometry and construction criteria. Maintain visible cross-references between sheets and details.",
+      "inputs": ["Route geometry, stationing conventions, and client drawing templates", "Field records and controlled details for poles, ducts, handholes, or crossings"],
+      "outputs": ["Plan sheets, key map, match lines, and referenced details", "Sheet index, structure schedule, and reviewer exceptions", "Native working files and a PDF review set in agreed versions"],
+      "checks": ["Trace each detailed segment through the key map and matching sheet", "Check for unresolved field conflicts and missing input references before packaging"]
+    },
+    {
+      "title": "Splice schedules and material quantities",
+      "summary": "Tie cable IDs, fiber groups, closures, and quantities to the same design revision so reviewers can compare them with the drawings.",
+      "inputs": ["Approved cable sizes, fiber assignments, and splice rules", "Measured route lengths, allocation assumptions, and required units"],
+      "outputs": ["Cable and fiber-group schedule by splice enclosure", "Material quantities split between measured length and allowances", "Exceptions for unassigned fibers or unconfirmed units"],
+      "checks": ["Trace each fiber group through its incoming and outgoing cable", "Cross-check measured lengths, cable allowances, and unit labels against the plan"]
+    },
+    {
+      "title": "Crossing and permit exhibit preparation",
+      "summary": "Compile the graphics and source crosswalk that the buyer’s reviewer needs to assess a proposed crossing and prepare their submission.",
+      "inputs": ["Owner-provided right-of-way limits and crossing exhibits", "Stationed survey or utility records and the buyer’s approved detail criteria"],
+      "outputs": ["Stationed crossing exhibit and referenced detail sheet", "Requirements crosswalk with evidence references and assigned owners", "Conflict register with a hold or decision request for unverified conditions"],
+      "checks": ["Reconcile station limits and source references between exhibit and schedule", "Carry unknown depths, utility conflicts, and permitting dependencies as open items"]
+    },
+    {
+      "title": "Redline revisions and turnover coordination",
+      "summary": "Process consolidated markups and track each impacted drawing, data record, and schedule under a single revision.",
+      "inputs": ["Last controlled plan set and related schedule versions", "Consolidated redlines with the approving reviewer and source for each instruction"],
+      "outputs": ["Updated sheets, quantity deltas, and disposition of comments", "Handoff index with current file versions and dependent records", "Open-item and exclusion log for deferred decisions"],
+      "checks": ["Track affected IDs, sheets, schedules, and counts before and after", "Retain prior revision records alongside the dated handoff and exception log"]
+    }
+  ],
+  "handoff": {
+    "formats": ["PDF review sets and native CAD records in agreed file versions", "CSV or XLSX schedules with documented units, revision IDs, and field names", "GeoPackage, shapefile, or KMZ exchange only when scoped and validated in the receiving workflow"],
+    "requirements": ["Identify the controlled source set, its revision, and the authorized reviewer", "Agree on the route limits, templates, intake channel, and receiving file formats", "Record the acceptance criteria, review window, and how to handle open issues"],
+    "boundaries": ["The designated reviewer controls design decisions, field certification, and sign-off", "The buyer or authorized permitting party controls submissions and permit status", "Use a controlled file exchange after confirming authority and data requirements"]
+  },
+  "projects": [
+    {
+      "id": "aerial-distribution-segment",
+      "title": "Aerial distribution plans and splice continuity",
+      "category": "Aerial FTTH",
+      "summary": "A synthetic 1,315-foot route across four poles, with a two-sheet handoff, one splice closure, and matched cable quantities.",
+      "image": "assets/projects/fiber-aerial.svg",
+      "imageAlt": "Synthetic aerial route schematic showing four poles, three spans, two drawing sheets, and splice closure SC-103 at the match point",
+      "context": "A fictional cooperative has selected one aerial segment for a production trial. Its design lead provides four pole IDs and three approved spans. The reviewing team needs the plan split, cable IDs, splice records, and allowance calculations to agree.",
+      "constraints": ["Four fictional poles and three fixed spans", "Two sheets meeting at P-103 and closure SC-103", "Two 48-fiber cables with a demonstration allowance of 20 feet per cable end"],
+      "approach": [
+        { "title": "Split the plan at a known structure", "text": "Place the first two spans on A-101 and the final span on A-102. Use P-103 as the shared reference for the drawing and splice matrix." },
+        { "title": "Trace cable and fiber groups", "text": "Link cable C-101 to C-102 at SC-103. Carry active fibers 1–24 and reserved fibers 25–48 through matching groups on both sides." },
+        { "title": "Separate placement footage and allowances", "text": "Add 40 feet of illustrative end allowance per cable. Keep it separate so the buyer can revise the assumptions without changing surveyed route length." }
+      ],
+      "deliverables": ["Two-sheet aerial route and match-line schematic", "Span schedule keyed by pole, sheet, and cable ID", "Fiber-group splice matrix and cable quantity schedule"],
+      "verification": ["420 + 525 + 370 feet totals 1,315 route feet", "C-101 uses 945 route feet and C-102 uses 370 route feet. The 80-foot sample allowance brings the total to 1,395 feet", "The splice matrix uses every fiber 1–48 exactly once on each cable"],
+      "review": "Synthetic production example. The plan division and schedules demonstrate consistency. Pole loading, field clearance, and construction release are outside this sample.",
+      "files": [
+        { "path": "assets/samples/aerial-spans.csv", "label": "Span and sheet schedule", "description": "Three spans with pole IDs, sheet references, route feet, and cable assignments." },
+        { "path": "assets/samples/aerial-splice-matrix.csv", "label": "48-fiber splice matrix", "description": "Four fiber groups carried through closure SC-103 with active and reserved assignments." },
+        { "path": "assets/samples/aerial-cable-quantities.csv", "label": "Cable quantity schedule", "description": "Measured route feet, terminal allowances, and the resulting scheduled footage by cable." }
+      ]
+    },
+    {
+      "id": "underground-crossing-exhibit",
+      "title": "Underground road crossing review package",
+      "category": "Crossing exhibit",
+      "summary": "A synthetic 340-foot crossing segment with a 240-foot proposed bore and a clearly marked utility-depth decision.",
+      "image": "assets/projects/fiber-crossing.svg",
+      "imageAlt": "Fictional road crossing exhibit showing bore stations 0+35 to 2+75 and a utility depth hold at station 1+43",
+      "context": "A fictional municipality’s reviewer needs a crossing exhibit and requirements register. The proposed bore is stationed from 0+35 to 2+75. A utility crossing at 1+43 has an unverified depth in the source records.",
+      "constraints": ["All stations and constraints are fictional", "The vertical profile is schematic and does not establish depths or clearances", "The unverified utility depth stays open for field confirmation and reviewer disposition"],
+      "approach": [
+        { "title": "Assign a single station reference", "text": "Record both approaches and the bore against the same baseline and use it for the exhibit and conflict register." },
+        { "title": "Identify what the reviewer needs", "text": "Cross-reference the right-of-way sketch, utility locate note, and owner’s detail reference against the open requirements." },
+        { "title": "Keep the hold visible", "text": "Attach the missing utility-depth confirmation to station 1+43. Assign field verification and route disposition to their respective owners." }
+      ],
+      "deliverables": ["Stationed crossing graphic with proposed limits and the unresolved utility conflict", "Segment schedule for the approaches and bore", "Requirements crosswalk with evidence and ownership"],
+      "verification": ["Approaches of 35 and 65 feet plus a 240-foot bore total 340 feet", "The proposed bore lies between 0+35 and 2+75 and spans the fictional roadway from 1+04 to 1+56", "Station 1+43 and the open utility-depth hold match between exhibit and crosswalk"],
+      "review": "Synthetic exhibit preparation example. The authorized reviewer and governing agency control any clearance, construction, or permitting decision.",
+      "files": [
+        { "path": "assets/samples/crossing-stations.csv", "label": "Crossing station schedule", "description": "Approach and bore limits, roadway reference, and the unresolved utility point." },
+        { "path": "assets/samples/crossing-requirements.csv", "label": "Requirements and conflict crosswalk", "description": "Evidence and responsibility for the fictional ROW sketch, utility conflict, and detail reference." }
+      ]
+    },
+    {
+      "id": "handhole-revision-cycle",
+      "title": "Handhole relocation and quantity reconciliation",
+      "category": "Redline revision",
+      "summary": "A synthetic field redline moves a handhole 15 feet. The revision shows the transfer between two cable spans and carries one open locator discrepancy forward.",
+      "image": "assets/projects/fiber-revision.svg",
+      "imageAlt": "Before and after diagrams showing handhole HH-04 moving from station 8+07 to 8+22 while total route length stays 780 feet",
+      "context": "A fictional construction team submits redline RL-01 to shift a handhole on an existing corridor. Two cable records reference the handhole. The reviewer needs the sheet and schedule differences, fiber continuity, and remaining open issue in one place.",
+      "constraints": ["The corridor endpoints are fixed at stations 2+25 and 10+05", "The controlled redline covers a 15-foot handhole move and no other design change", "The locator discrepancy at the downstream marker remains open"],
+      "approach": [
+        { "title": "Retain a prior revision reference", "text": "Compare sheet UG-204 at R00 and R01. Move HH-04 from station 8+07 to 8+22 while retaining its structure ID." },
+        { "title": "Update dependent records together", "text": "Extend C-201 by 15 feet and shorten C-202 by 15 feet. Record that the 48-fiber groups retain their prior assignments." },
+        { "title": "Separate the remaining issue", "text": "Log the locator-marker discrepancy as RL-02 with a field follow-up owner and carry it in the handoff as an unresolved record." }
+      ],
+      "deliverables": ["Before-and-after station schematic for UG-204", "Controlled redline and open-item register", "Cable and splice change schedule with prior and current values"],
+      "verification": ["R00 cable spans total 582 + 198 = 780 feet", "R01 cable spans total 597 + 183 = 780 feet", "HH-04 keeps its asset ID and fiber assignments across both revisions"],
+      "review": "Synthetic revision example. The resulting package is prepared for buyer review. The drawing release and field asset reconciliation require the designated reviewer.",
+      "files": [
+        { "path": "assets/samples/revision-deltas.csv", "label": "Cable and splice delta schedule", "description": "Before and after measurements and 48-fiber assignments keyed to UG-204." },
+        { "path": "assets/samples/revision-register.csv", "label": "Redline and exception register", "description": "Revision trace for the handhole move and the still-open downstream marker issue." }
+      ]
+    }
+  ]
+}

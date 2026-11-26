@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">Sanitary sewer addendum delta</title>
+  <desc id="desc">Synthetic SW-04 diagram with 360 feet of 12-inch pipe in Revision A and 240 feet of 12-inch pipe and 160 feet of new 15-inch pipe in Revision B.</desc>
+  <rect width="960" height="560" fill="#faf8f2"/>
+  <rect width="960" height="135" fill="#17242d"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="46" y="45" fill="#f4bc43" font-family="Consolas, monospace" font-size="19" font-weight="700" letter-spacing="2">SYNTHETIC EXAMPLE / SW-04</text>
+    <text x="46" y="99" fill="#faf8f2" font-size="43" font-weight="700">Sanitary sewer addendum</text>
+    <rect x="46" y="174" width="868" height="244" fill="#efece1" stroke="#cbc7ba"/>
+    <g stroke="#cbc7ba" stroke-dasharray="4 4"><path d="M201 180V411M584 180V411M776 180V411M840 180V411"/></g>
+    <g fill="#51616a" font-family="Consolas, monospace" font-size="19" font-weight="700">
+      <text x="65" y="245">REV A</text><text x="65" y="335">REV B</text>
+      <text x="201" y="394" text-anchor="middle">0+00</text><text x="584" y="394" text-anchor="middle">2+40</text><text x="775" y="394" text-anchor="middle">3+60</text><text x="840" y="394" text-anchor="middle">4+00</text>
+    </g>
+    <rect x="201" y="226" width="575" height="23" fill="#6b7b80"/>
+    <rect x="201" y="316" width="383" height="23" fill="#17242d"/>
+    <rect x="584" y="316" width="256" height="23" fill="#f4bc43"/>
+    <g fill="#17242d" font-size="22" font-weight="700" text-anchor="middle">
+      <text x="489" y="211">12″ pipe · 360 LF</text><text x="395" y="301">12″ pipe · 240 LF</text><text x="712" y="301">15″ pipe · 160 LF</text>
+    </g>
+    <path d="M46 451H914" stroke="#cbc7ba"/>
+    <g fill="#17242d" font-size="30" font-weight="700"><text x="46" y="491">+40 LF</text><text x="338" y="491">+1 EA</text><text x="630" y="491">+20 SY</text></g>
+    <g fill="#51616a" font-size="20"><text x="46" y="524">Net pipe length</text><text x="338" y="524">Manhole</text><text x="630" y="524">Pavement restoration</text></g>
+  </g>
+</svg>

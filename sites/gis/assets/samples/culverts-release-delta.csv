@@ -1,0 +1,4 @@
+sample_scope,baseline_revision,candidate_revision,asset_id,change,previous_value,candidate_value,source_record,review_action
+SYNTHETIC,R1,R2,CV-012,geometry_move,0.047 0.019,0.04732 0.01916,SK-02/R2,Verify moved point against revised sketch
+SYNTHETIC,R1,R2,CV-015,addition,,0.051 0.023,SK-05/R2,Validate new feature and assigned ID
+SYNTHETIC,R1,R2,CV-014,issue_carried,open; inspection date empty,open; inspection date empty,SK-04/R1,Retain unresolved field evidence request

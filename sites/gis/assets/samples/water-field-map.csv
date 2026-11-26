@@ -1,0 +1,8 @@
+sample_scope,source_field,target_field,type,transform,unknown_policy
+SYNTHETIC,owner_key,asset_id,string,Assign stable unique key within accepted schema,Required
+SYNTHETIC,layer_or_type,asset_type,string,Normalize to water_main valve or hydrant,Unknown code routes to reviewer
+SYNTHETIC,drawing_or_register,source_id,string,Preserve source reference,Required
+SYNTHETIC,source_rev,source_revision,string,Preserve approved or reviewed revision,Required
+SYNTHETIC,diam_in,nominal_diameter_in,integer or null,Use normalized inches for water mains,Null for conflict or non-main asset
+SYNTHETIC,legacy_key,legacy_id,string,Preserve original alias and report duplicate,Null if none supplied
+SYNTHETIC,review_flag,record_status,string,Use mapped or open,Required

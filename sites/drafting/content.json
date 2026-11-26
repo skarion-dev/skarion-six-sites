@@ -107,61 +107,111 @@
       "id": "utility-trench-closeout",
       "title": "Utility trench closeout",
       "category": "Record drawing incorporation",
-      "summary": "A fictional utility record sheet demonstrates an approved alignment offset while keeping an unresolved tie-in visible.",
-      "image": "assets/projects/utility-trench-closeout.svg",
-      "imageAlt": "Blueprint-style utility drawing with a 14-foot alignment offset and an open tie-in circled in orange",
-      "context": "A simulated closeout lead provides approved instruction M-01 to move the utility alignment from station 0+60 through 1+20. A separate markup M-02 asks for a tie-in dimension at 1+80 that the source package does not give.",
+      "draft": true,
+      "summary": "One approved field offset carried into a three-sheet record set, with a pending tie-in assigned for review.",
+      "image": "assets/projects/ut-closeout-comparison.webp",
+      "imageAlt": "Side-by-side utility field markup and revised record plan",
+      "comparison": [
+        {
+          "label": "Before · Field markup",
+          "image": "assets/projects/ut-closeout-before.webp",
+          "alt": "Source plan with a dashed marked-up 14-foot offset and a circled tie-in",
+          "caption": "M-01 supplies the offset and station limits. M-02 asks for a tie-in dimension at 1+80."
+        },
+        {
+          "label": "After · Record plan",
+          "image": "assets/projects/ut-closeout-after.webp",
+          "alt": "Revised solid green route with the original alignment in gray and open issue E-01 at the right",
+          "caption": "The approved offset is in the editable record geometry. E-01 stays open across the plan, detail and change register."
+        }
+      ],
+      "context": "A simulated closeout lead supplies a marked-up utility alignment and illustrative conduit elevations. The handoff includes the record plan, supplied profile and tie-in detail, with the original markup available for comparison.",
       "constraints": [
-        "Model geometry uses feet in an arbitrary local grid.",
-        "Incorporate the approved 14-foot offset using explicit bends at station 0+60 and 1+20.",
-        "Retain the tie-in check at 1+80 as an open issue until a reviewer provides a dimension."
+        "Use feet in a fictional local grid. Stations follow the original baseline.",
+        "Incorporate the approved 14-foot shift between 0+60 and 1+20. Retain supplied profile elevations.",
+        "Keep the tie-in dimension at 1+80 open for the designated reviewer."
       ],
       "approach": [
         {
           "title": "Separate approved work from review items",
-          "text": "Treat M-01 as the approved change. Record M-02 as exception E-01 and mark the tie-in with a review circle."
+          "text": "Carry approved markup M-01 into the record geometry. Tie M-02 to E-01 in the register and on the detail."
         },
         {
           "title": "Update the record geometry",
-          "text": "Move the route between the two bends, retain the original route on a reference layer and keep station ticks in their original position."
+          "text": "Move the route between the station limits, keep the original line on its own layer and retain the supplied conduit profile."
         },
         {
           "title": "Prepare the issue package",
-          "text": "Index UT-01 as a review issue and attach the change register so every mark can be traced to a source instruction."
+          "text": "Assemble UT-01, UT-02 and UT-03 as named CAD layouts and matching 11 × 17-inch PDF sheets, then index each sheet by its source and review status."
         }
       ],
       "deliverables": [
-        "UT-01 editable alignment DXF with original and revised route layers",
-        "Sheet register tracing two source marks to an incorporation decision",
-        "Illustrated record sheet with station marks and the open tie-in callout"
+        "Layered DXF with UT-01 record plan, UT-02 profile and UT-03 tie-in detail",
+        "Matching vector PDF set and the source markup PDF",
+        "Sheet index and a source-linked change register with the open issue"
       ],
       "verification": [
-        "Measure 14 drawing units between the two route layers between station 0+60 and 1+20.",
-        "Trace E-01 at station 1+80 from the DXF to the source mark register.",
-        "Check UT-01 title and coordinates against the project illustration."
+        "Check the modeled 14-foot offset between 0+60 and 1+20.",
+        "Open the three named layouts and compare sheet IDs and revisions to the PDF set.",
+        "Trace E-01 at 1+80 back to M-02 and verify who owes the next decision."
       ],
-      "review": "CAD lead checks layers and source traceability. The designated reviewer would resolve the open dimension before a final issue. All inputs and results are synthetic.",
+      "review": "The draft demonstrates a review issue. For a live package, the designated reviewer supplies the tie-in dimension and approves the final record. The example uses fictional coordinates and elevations.",
       "files": [
         {
           "path": "assets/samples/utility-ut01.dxf",
-          "label": "UT-01 alignment drawing (DXF)",
-          "description": "Editable original and revised alignment, station marks and the issue location. One model unit is one foot."
+          "label": "Editable utility CAD set",
+          "description": "AutoCAD 2013 DXF with layered model geometry and three named paper layouts. One model unit is one foot."
+        },
+        {
+          "path": "assets/samples/utility-record-set.pdf",
+          "label": "Plotted utility record set",
+          "description": "Three vector sheets matching the layout IDs in the CAD file."
+        },
+        {
+          "path": "assets/samples/utility-source-markup.pdf",
+          "label": "Synthetic field markup",
+          "description": "Source sheet UT-M1 with instructions M-01 and M-02."
+        },
+        {
+          "path": "assets/samples/utility-sheet-index.csv",
+          "label": "Sheet and revision index",
+          "description": "Sheet IDs, sources and review status for the three-sheet package."
+        },
+        {
+          "path": "assets/samples/utility-source-profile.csv",
+          "label": "Synthetic source profile",
+          "description": "Seven station, ground and conduit elevation values plotted on UT-02."
         },
         {
           "path": "assets/samples/utility-change-register.csv",
-          "label": "Source and exception register (CSV)",
+          "label": "Change and exception register",
           "description": "Two mock instructions with sheet, station, revision status and next action."
         }
       ]
     },
     {
       "id": "legacy-utility-plan-redraw",
-      "title": "Legacy utility plan redraw",
+      "title": "Legacy PDF to editable CAD",
       "category": "PDF and raster conversion",
-      "summary": "An invented archive plan becomes editable CAD, with dimension checks and an unreadable tag carried forward visibly.",
-      "image": "assets/projects/legacy-utility-plan-redraw.svg",
-      "imageAlt": "Side-by-side illustration of a fictional archive plan and layered CAD redraw showing a 48 by 32 foot envelope and an unresolved source tag",
-      "context": "A fictional facilities manager has an old utility room plan and needs editable floor limits and linework. The image has a readable 48-foot dimension, a 32-foot perpendicular check and an unreadable identifier near the pump line.",
+      "draft": true,
+      "summary": "A raster utility-room plan redrawn as layered CAD, with two scale checks and one unreadable equipment tag logged.",
+      "image": "assets/projects/leg-redraw-comparison.webp",
+      "imageAlt": "Side-by-side archive scan and editable CAD redraw of a utility room",
+      "comparison": [
+        {
+          "label": "Before · PDF scan",
+          "image": "assets/projects/leg-redraw-before.webp",
+          "alt": "Sepia raster scan of a utility room with 48-foot and 32-foot dimension references",
+          "caption": "The archive scan provides two readable dimension references. The equipment tag near the return run is indistinct."
+        },
+        {
+          "label": "After · Layered CAD",
+          "image": "assets/projects/leg-redraw-after.webp",
+          "alt": "Clean CAD redraw with wall outlines, visible utility lines and a red L-01 review callout",
+          "caption": "Editable walls, door, equipment footprints and visible pipe runs, with the source-tag exception identified as L-01."
+        }
+      ],
+      "context": "A fictional facilities manager supplies a scanned utility-room PDF. The redraw uses the 48-foot room width for scale, the independent 32-foot depth for a perpendicular check and the visible equipment and piping for linework.",
       "constraints": [
         "Use the 48-foot horizontal dimension to calibrate the redraw.",
         "Use the separately labeled 32-foot vertical dimension to check scale in the other axis.",
@@ -174,34 +224,44 @@
         },
         {
           "title": "Organize editable lines",
-          "text": "Separate the room bounds, utility path and visible equipment outline. Add a review mark at the unclear source tag."
+          "text": "Separate the room bounds, door, visible piping and equipment footprints into named layers. Carry the unclear tag as a review callout."
         },
         {
           "title": "Record conversion rules",
-          "text": "Map each feature to its output layer and preserve the exception for the buyer’s records team."
+          "text": "Plot LEG-01 from the same geometry, then map each feature to its target layer and log the source issue for the records owner."
         }
       ],
       "deliverables": [
-        "LEG-01 layered redraw DXF with room envelope and visible utility geometry",
-        "Layer crosswalk and issue disposition table",
-        "Side-by-side archive and redraw illustration with dimension checks"
+        "LEG-01 layered DXF with one named drawing layout",
+        "Matching vector redraw PDF and original synthetic raster PDF",
+        "Source-to-layer crosswalk with open issue L-01"
       ],
       "verification": [
-        "Measure the DXF room outline at 48 by 32 drawing units.",
-        "Compare the equipment outline and utility run with the illustration.",
-        "Find the exception layer and source-tag disposition in the layer crosswalk."
+        "Measure the editable room envelope at 48 by 32 feet in model space.",
+        "Compare the door, equipment and pipes in the source scan with the plotted redraw.",
+        "Find L-01 in the CAD layout and crosswalk, then identify the records owner’s next action."
       ],
-      "review": "The CAD checker can repeat the dimension checks. The facilities reviewer would provide the missing label before using the room drawing as an authoritative record. All inputs and results are synthetic.",
+      "review": "The draft demonstrates translation from a synthetic scan. On a live job, the records owner confirms the equipment tag and the approved source before release.",
       "files": [
         {
           "path": "assets/samples/legacy-leg01.dxf",
-          "label": "LEG-01 layered redraw (DXF)",
-          "description": "Editable walls, visible utility path, equipment and a markup for the unreadable tag. One model unit is one foot."
+          "label": "Editable legacy redraw",
+          "description": "AutoCAD 2013 DXF with layered room geometry and the LEG-01 paper layout."
+        },
+        {
+          "path": "assets/samples/legacy-utility-redraw.pdf",
+          "label": "Plotted legacy redraw",
+          "description": "Matching vector drawing with the two dimension checks and open tag callout."
+        },
+        {
+          "path": "assets/samples/legacy-archive-source.pdf",
+          "label": "Synthetic archive scan",
+          "description": "Raster-only source PDF with the legible room dimensions and the unclear equipment tag."
         },
         {
           "path": "assets/samples/legacy-layer-crosswalk.csv",
-          "label": "Source-to-layer crosswalk (CSV)",
-          "description": "Five conversion rules for the walls, utility, equipment, dimensions and the open source tag."
+          "label": "Source-to-layer crosswalk",
+          "description": "CAD layers, dimension checks and the owner action for open tag L-01."
         }
       ]
     },

@@ -1,13 +1,13 @@
 # Skarion Drafting portfolio review
 
-**Status.** Internal manual review. The files on the website are fictional workflow illustrations. They show a redline and a record plot and make no completed project claim. The proposed project samples below remain internal until approvals are recorded.
+**Status.** The utility trench closeout and legacy PDF-to-CAD showcases are prepared as drafts for team review. They use synthetic source records and include editable DXF, matching PDF plots and before-and-after views. A CAD lead should check the packages in the client's target CAD application before release.
 
 ## What to build
 
 | Sample | Source and deliverables | Owner and acceptance |
 | --- | --- | --- |
-| Utility trench closeout | Draw a fictional utility plan, profile and tie-in detail. Create two approved source markup sheets and an intentional tie-in ambiguity. Deliver three DWG files or a clearly organized multi-layout DWG, matching PDF sheets, drawing index and source-linked exception log. | CAD lead checks layer conventions, source traceability, displayed levels, planned plot sizes and exception handoff. Business owner confirms the example is labeled fictional. |
-| Legacy site utility redraw | Create an original scanned plan with a reliable scale reference and one illegible label. Deliver layered DWG, a plotted overlay and a log of uncertain geometry. | CAD checker confirms scale, reference alignment, reproducible plotting, layer names and notes tied to source locations. |
+| Utility trench closeout | UT-01 plan, UT-02 profile and UT-03 tie-in detail in one layered DXF and a matching PDF set. UT-M1 contains the fictional source markup. The source profile, sheet index and change register accompany the drawings. | Check the 14 ft offset at 0+60 to 1+20, profile values, plot sizes and the E-01 handoff at 1+80. |
+| Legacy PDF to editable CAD | LEG-01 layered DXF and matching vector PDF from a synthetic raster archive. The crosswalk identifies the target layers and leaves the unclear equipment tag open as L-01. | Measure 48 ft by 32 ft in model space, open the LEG-01 layout and reconcile the plotted features and layer crosswalk. |
 | Civil existing-condition sheets | Create a fictional reviewed set of field observations. Choose explicit units, horizontal and vertical reference. Deliver a plan, profile, reference-file manifest and exception log. | Civil or survey reviewer checks input origin, coordinate use, units, scale and sample scope language. |
 
 Document each sample with **what arrived**, **what we delivered**, **what needed review** and **what the reviewer accepted**. Put a small output manifest beside the drawing previews. Start with utility closeout, then use its review notes to improve the other two samples.

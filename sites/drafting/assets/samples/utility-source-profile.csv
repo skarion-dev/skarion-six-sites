@@ -1,0 +1,8 @@
+source,station,existing_ground_ft,conduit_elevation_ft,vertical_reference
+P-01,0+00,105.00,101.20,Synthetic local datum
+P-01,0+30,104.70,100.85,Synthetic local datum
+P-01,0+60,104.50,100.45,Synthetic local datum
+P-01,0+90,104.10,100.10,Synthetic local datum
+P-01,1+20,103.90,99.70,Synthetic local datum
+P-01,1+50,103.40,99.35,Synthetic local datum
+P-01,1+80,103.10,98.95,Synthetic local datum

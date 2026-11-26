@@ -24,6 +24,7 @@ const types = {
   '.json': 'application/json; charset=utf-8',
   '.geojson': 'application/geo+json; charset=utf-8',
   '.dxf': 'application/dxf',
+  '.pdf': 'application/pdf',
 };
 
 createServer(async (request, response) => {

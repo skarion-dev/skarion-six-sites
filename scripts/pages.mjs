@@ -26,7 +26,7 @@ function projectCard(project, base, lazy = true) {
         <p class="detail-kicker">${h(project.category)}</p>
         <h3>${h(project.title)}</h3>
         <p>${h(project.summary)}</p>
-        <span class="detail-meta">${project.files.length} sample ${project.files.length === 1 ? 'file' : 'files'}</span>
+        <span class="detail-meta">${project.files.length} sample ${project.files.length === 1 ? 'file' : 'files'}${project.draft ? ' · Draft' : ''}</span>
       </div>
     </a>
   </article>`;
@@ -155,6 +155,19 @@ function projectsPage(site, content) {
     ${discussion(site, base)}`);
 }
 
+function caseVisuals(project, base) {
+  if (project.comparison) {
+    return `<section class="case-comparison" aria-label="Before and after drawings">
+      ${project.comparison.map(({ label, image, alt, caption }) => `<figure class="case-figure">
+        <h2>${h(label)}</h2>
+        <img src="${base}${h(image)}" alt="${h(alt)}" width="1350" height="904">
+        <figcaption><span>${h(caption)}</span><a class="detail-text-link" href="${base}${h(image)}" target="_blank" rel="noopener" aria-label="Open full-size drawing, ${h(label)}">Open full-size drawing</a></figcaption>
+      </figure>`).join('')}
+    </section>`;
+  }
+  return `<figure class="case-figure"><img src="${base}${h(project.image)}" alt="${h(project.imageAlt)}" fetchpriority="high"><figcaption><span>${h(project.imageAlt)}</span><a class="detail-text-link" href="${base}${h(project.image)}" target="_blank" rel="noopener">Open full-size graphic</a></figcaption></figure>`;
+}
+
 function casePage(site, project, others) {
   const base = '../../';
   const files = project.files.map(({ path, label, description }) => {
@@ -170,9 +183,9 @@ function casePage(site, project, others) {
       ${breadcrumbs(base, project.title, true)}
       <div class="case-intro">
         <div><p class="detail-kicker">${h(project.category)}</p><h1>${h(project.title)}</h1><p class="detail-lead">${h(project.summary)}</p></div>
-        <div class="case-actions"><p class="sample-status">Illustrative project · Synthetic data</p><a class="detail-button detail-button-solid" href="#sample-files">View sample files</a></div>
+        <div class="case-actions"><p class="sample-status">${project.draft ? 'Draft showcase' : 'Illustrative project'} · Synthetic data</p><a class="detail-button detail-button-solid" href="#sample-files">View sample files</a></div>
       </div>
-      <figure class="case-figure"><img src="${base}${h(project.image)}" alt="${h(project.imageAlt)}" fetchpriority="high"><figcaption><span>${h(project.imageAlt)}</span><a class="detail-text-link" href="${base}${h(project.image)}" target="_blank" rel="noopener">Open full-size graphic</a></figcaption></figure>
+      ${caseVisuals(project, base)}
     </section>
     <div class="detail-width case-layout">
       <div class="case-story">

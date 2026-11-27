@@ -10,7 +10,7 @@ const subcontract = `${shared}skarion_subcontract_due_diligence_2026-11-25/`;
 const benchmark = `${shared}skarion_six_arenas_2026-11-26/`;
 const prime = `${shared}skarion_live_prime_subcontract_search_2026-11-25/`;
 const bundle = 'original-bundle/Skarion_Engineering_Research_Archive/';
-const repository = 'https://github.com/skarion-dev/skarion-six-sites/blob/codex/founders-research/';
+const repository = `https://github.com/skarion-dev/skarion-six-sites/blob/${encodedPath(process.env.SKARION_RESEARCH_REF ?? 'codex/surveying-desktop-pilot')}/`;
 const sourceOfferFolders = { drafting: '02_Drafting', lighting: '03_Lighting', gis: '04_GIS_and_Utility_Assets', stormwater: '05_Stormwater' };
 const primeSearches = new Map([[8, '01'], [10, '02'], [17, '03'], [16, '04'], [19, '05']]);
 const originalNiches = { 1: 'drafting', 2: 'lighting', 3: 'gis', 4: 'stormwater', 15: 'drafting', 23: 'stormwater' };
@@ -182,6 +182,7 @@ export async function buildFoundersResearch(root, dist, sites) {
     const sectorAttachments = niche.number === 4 || niche.number === 23
       ? selectFiles(files, ['official-supplements/'])
       : [];
+    if (niche.number === 13) supporting.push(...selectFiles(files, offers.surveying.archivePrefixes));
     await writePage(path.join(destination, 'niches', niche.id), layout('../../', niche.title,
       'Market evidence, buyer and prime opportunities, and the subcontract follow-up recorded for this niche.', `
       ${block('Market, RFP and subcontract files', fileRows(niche.records))}
@@ -194,9 +195,10 @@ export async function buildFoundersResearch(root, dist, sites) {
 
   for (const site of sites) {
     const offer = offers[site.id];
-    const keys = [offer.watchlist, ...(site.id === 'fiber' || site.id === 'gis' ? ['fiber-closeout'] : [])];
+    const keys = [offer.watchlist, ...(site.id === 'fiber' || site.id === 'gis' ? ['fiber-closeout'] : [])].filter(Boolean);
     const keyFiles = [
-      `${benchmark}${offer.benchmark}_`,
+      ...(offer.benchmark ? [`${benchmark}${offer.benchmark}_`] : []),
+      ...(offer.archivePrefixes ?? []),
       ...keys.flatMap((key) => [
         `gtm-social/watchlists/${key}.json`, `${shared}gtm-social/${key}/`, `social-source-snapshots/${key}-`,
       ]),
@@ -207,9 +209,9 @@ export async function buildFoundersResearch(root, dist, sites) {
     const offerFiles = selectFiles(files, keyFiles);
     await writePage(path.join(destination, 'offers', site.id), layout('../../', `${site.name} research`,
       'Offer benchmarks, launch plans, source files and related procurement work.', `
-      ${block('Benchmark, watchlist and launch records', fileRows(offerFiles))}
+      ${block('Offer evidence and launch records', fileRows(offerFiles))}
       <p><a href="${repositoryFile(`sites/${site.id}/portfolio-review.md`)}">Open the portfolio and example project research</a></p>
-      ${block('Related niches and RFPs', `<ul class="research-niches">${niches.filter(({ number }) => offer.niches.includes(number)).map((niche) => nicheLink('../../', niche)).join('')}</ul>`)}
+      ${block('Related niches and RFPs', `<ul class="research-niches">${offer.niches.map((number) => nicheLink('../../', niches[number - 1])).join('')}</ul>`)}
       `, { site: 'Offer research' }));
   }
 

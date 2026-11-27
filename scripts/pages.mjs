@@ -255,7 +255,7 @@ export function buildCatalog(sites, contentBySite) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Browse technical project demonstrations and sample files across the six Skarion Engineering services.">
+  <meta name="description" content="Browse technical project demonstrations and sample files across Skarion Engineering services.">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="../catalog-shared/base.css">
   <link rel="stylesheet" href="../catalog-shared/details.css">
@@ -271,7 +271,7 @@ export function buildCatalog(sites, contentBySite) {
     <section class="detail-width detail-mast">
       ${breadcrumbs('../', 'Project library')}
       <h1>Project library</h1>
-      <p class="detail-lead">Compare ${caseCount} example scopes across six services. Open a project to review the technical workflow and its downloadable files.</p>
+      <p class="detail-lead">Compare ${caseCount} example scopes across ${sites.length} services. Open a project to review the technical workflow and its downloadable files.</p>
       <p class="sample-status">Illustrative projects built with synthetic data</p>
       <nav class="catalog-nav" aria-label="Jump to service">${sites.map(({ id, name }) => `<a href="#${id}">${h(name)}</a>`).join('')}</nav>
     </section>

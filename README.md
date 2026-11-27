@@ -1,6 +1,6 @@
 # Skarion Engineering service websites
 
-Six standalone static websites with a common intake workflow and an internal review hub. Each site includes capabilities, an example project library, downloadable sample deliverables and a brand kit. The Drafting library has seven illustrated examples. The other five libraries have three each. The websites are drafts for Skarion's team to review.
+Seven standalone static websites with a common intake workflow and an internal review hub. Each site includes capabilities, an example project library, downloadable sample deliverables and a brand kit. Drafting has seven examples and Surveying has four. The websites are drafts for Skarion's team to review.
 
 ## Preview
 
@@ -22,6 +22,7 @@ The [combined project library](http://127.0.0.1:4173/catalog/) and the service c
 | SkarionGIS | `/gis/` | `skariongis.com` | Active offer | [Brand](sites/gis/brand.md) · [Projects](sites/gis/portfolio-review.md) |
 | Skarion Lighting | `/lighting/` | `skarionlighting.com` | Pilot | [Brand](sites/lighting/brand.md) · [Projects](sites/lighting/portfolio-review.md) |
 | Skarion Stormwater | `/stormwater/` | `skarionstormwater.com` | Pilot | [Brand](sites/stormwater/brand.md) · [Projects](sites/stormwater/portfolio-review.md) |
+| Skarion Surveying | `/surveying/` | Pending | Desktop support pilot | [Brand](sites/surveying/brand.md) · [Projects](sites/surveying/portfolio-review.md) |
 
 ## Build and review
 
@@ -31,7 +32,7 @@ npm run check
 
 `dist/index.html` is the review hub. The cross-service library is `dist/catalog/`. Each `dist/<site>/` is self-contained and can be served at a domain root or a path. The build includes synthetic examples and excludes Markdown and portfolio research. All output uses draft indexing controls.
 
-`sites.json` lists the six offers. Edit `sites/<site>/index.html`, `site.css`, `logo.svg` and `assets/` for the home page and identity. `sites/<site>/content.json` controls the capability sections, project pages and sample downloads. Keep approved-for-preview files under `assets/samples/`, and illustrations under `assets/projects/`. `shared/` contains accessibility defaults, detail page styles and intake behavior. `preview/` contains the hub.
+`sites.json` lists the offers. Edit `sites/<site>/index.html`, `site.css`, `logo.svg` and `assets/` for the home page and identity. `sites/<site>/content.json` controls the capability sections, project pages and sample downloads. Keep approved-for-preview files under `assets/samples/`, and illustrations under `assets/projects/`. `shared/` contains accessibility defaults, detail page styles and intake behavior. `preview/` contains the hub.
 
 The intake form builds a draft addressed to `info@skarion.com` in the visitor's email application. A project-page inquiry carries the example title into that draft. Buyers should send a summary first and arrange a transfer channel for project files with Skarion.
 

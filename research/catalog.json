@@ -28,5 +28,9 @@
     "benchmark": "06",
     "watchlist": "skarion-stormwater",
     "niches": [4, 7, 8, 21, 22, 23, 24]
+  },
+  "surveying": {
+    "archivePrefixes": ["surveying/"],
+    "niches": [13, 3, 5, 7, 15, 19, 20, 23, 24]
   }
 }

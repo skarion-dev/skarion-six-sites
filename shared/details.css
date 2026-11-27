@@ -17,6 +17,7 @@
 [data-lane='gis'] { --detail-paper: #f4f3e9; --detail-ink: #26352a; --detail-dark: #26352a; --detail-muted: #4b5b47; --detail-line: #c8cabb; --detail-accent: #d1e996; }
 [data-lane='lighting'] { --detail-paper: #f4f0e9; --detail-ink: #262522; --detail-dark: #151719; --detail-muted: #5c554a; --detail-line: #c7bdae; --detail-accent: #f7cb86; }
 [data-lane='stormwater'] { --detail-paper: #f6f6ee; --detail-ink: #192d28; --detail-dark: #142e2b; --detail-muted: #465850; --detail-line: #c1cec1; --detail-accent: #d6ed9b; }
+[data-lane='surveying'] { --detail-paper: #f1f6f7; --detail-ink: #172e3d; --detail-dark: #172e3d; --detail-muted: #425e6b; --detail-line: #b2c8d0; --detail-accent: #9ed6e7; }
 
 .detail-width { width: min(78rem, calc(100% - clamp(2rem, 9vw, 8rem))); margin-inline: auto; }
 .detail-page a, .home-work a { color: inherit; }

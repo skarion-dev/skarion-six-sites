@@ -95,7 +95,9 @@ const cards = sites.map(({ id, name, scope, domain, color, phase, summary }) => 
         </article>`).join('\n');
 const previewPath = path.join(dist, 'index.html');
 const preview = await readFile(previewPath, 'utf8');
-await writeFile(previewPath, preview.replace('<!-- SITE_CARDS -->', cards));
+const launchCounts = `<div><dt>Active offers</dt><dd>${sites.filter(({ phase }) => phase === 'Active offer').length}</dd></div>
+        <div><dt>Pilots</dt><dd>${sites.filter(({ phase }) => phase === 'Pilot').length}</dd></div>`;
+await writeFile(previewPath, preview.replace('<!-- SITE_CARDS -->', cards).replace('<!-- SITE_COUNTS -->', launchCounts));
 const catalog = path.join(dist, 'catalog');
 const catalogShared = path.join(dist, 'catalog-shared');
 await mkdir(catalog);

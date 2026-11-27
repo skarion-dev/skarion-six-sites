@@ -1,0 +1,4 @@
+asset,point_id,delta_e_ft,delta_n_ft,status,action
+MH-01,301,0.00,0.00,Compared,Retain approved value
+MH-02,302,3.00,0.00,Compared,Retain approved value
+MH-03,303,0.00,-1.00,S-03 open,Confirm invert with survey lead

@@ -908,5 +908,25 @@
     "path": "social-source-snapshots/social-plan.json",
     "bytes": 2704,
     "sha256": "6152273262e2a1f4bb92a9d69dbf31f45d960876751d5f9f2f0707a7cfa584fa"
+  },
+  {
+    "path": "surveying/Long_Island_Topo_and_Boundary_Buyer_Reference_2026-11-27.txt",
+    "bytes": 14691,
+    "sha256": "d31a259472092dd24b6665c58c37952f0fe4135ffb093361b3b08d7bf99bd328"
+  },
+  {
+    "path": "surveying/Loudoun_County_RFQ_675853_Notice_of_Award.pdf",
+    "bytes": 100765,
+    "sha256": "be91c2b72d52cfd4b61621e94fe7cff2d57fa34d94b5c9482f377df87e22270f"
+  },
+  {
+    "path": "surveying/Santa_Clara_Open_Space_Authority_RFP_2026-14.pdf",
+    "bytes": 656101,
+    "sha256": "6587305107a1f728b7dc4fef066c486db98b0d380593f74db68ba2f8bb343e7c"
+  },
+  {
+    "path": "surveying/Skarion_Surveying_Desktop_Pilot_2026-11-27.md",
+    "bytes": 6333,
+    "sha256": "d0ea10fee28c120a7d33bb9da3f8730677d8cf9035f0df5ff9861e0f2bc6ce15"
   }
 ]

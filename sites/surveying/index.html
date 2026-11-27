@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Remote residential topo and boundary drafting for licensed survey firms. Send approved field data and boundary geometry for editable CAD, check plots and review notes.">
+  <meta name="theme-color" content="#eaf2f3">
+  <link rel="icon" href="./logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="./site.css">
+  <script defer src="shared/site.js"></script>
+  <title>Skarion Surveying | Desktop CAD Support</title>
+</head>
+<body class="surveying">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="survey-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><img src="./logo.svg" width="44" height="44" alt=""><span>Skarion<br><strong>Surveying</strong></span></a>
+      <nav aria-label="Main navigation">
+        <a href="./capabilities/">Capabilities</a>
+        <a href="./projects/">Projects</a>
+        <a href="#process">Process</a>
+      </nav>
+      <a class="button header-action" href="#contact">Scope a pilot</a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="wrap survey-hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Desktop CAD support for licensed survey firms</p>
+        <h1 id="hero-title">Residential topo and boundary plans.</h1>
+        <p class="lead">Send approved field data, surveyor-determined boundary linework and your CAD standards. We draft contours, spot elevations, site features, labels and sheet layouts for your survey lead to review.</p>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Scope a paid pilot</a>
+          <a class="text-link" href="./projects/">Open sample packages</a>
+        </div>
+      </div>
+      <figure class="hero-drawing">
+        <img src="./assets/projects/residential-topo-hero.webp" width="1350" height="900" alt="A residential lot draft showing a supplied boundary, house and pool, contours, and a fence flagged for surveyor review" fetchpriority="high">
+        <figcaption><span>SV-401 · Synthetic residential example</span><a href="./projects/residential-boundary-topo/">View the drawing and source files</a></figcaption>
+      </figure>
+    </section>
+    <!-- SITE_DETAIL_SHOWCASE -->
+    <section class="wrap survey-services" id="services" aria-labelledby="services-title">
+      <h2 id="services-title">What we can do from your desk files</h2>
+      <div class="service-grid">
+        <article><h3>Surveyor-directed boundary drafting</h3><p>Draw approved boundary geometry and annotate the corners, bearings, distances and easements your surveyor supplies.</p></article>
+        <article><h3>Topographic base and profile drafting</h3><p>Plot accepted shots, profiles and contours from your supplied surface or from explicit build instructions and breaklines.</p></article>
+        <article><h3>Field-to-finish CAD</h3><p>Import accepted points, preserve IDs and elevations, and connect coded features using your layers, blocks and field-code library.</p></article>
+        <article><h3>As-built comparison</h3><p>Compare supplied asset shots with prior records. Return point references, coordinate differences and an exception log.</p></article>
+      </div>
+    </section>
+    <section class="responsibility" aria-labelledby="responsibility-title">
+      <div class="wrap">
+        <h2 id="responsibility-title">Your surveyor directs and releases the work.</h2>
+        <p>The responsible licensed surveyor directs field capture, decides control and boundary questions, interprets deeds and easements, and approves, certifies or seals the final survey products. We agree on the jurisdiction, supervision and file-handling terms before accepting a batch.</p>
+      </div>
+    </section>
+    <section class="wrap survey-process" id="process" aria-labelledby="process-title">
+      <div><h2 id="process-title">Test a single sheet.</h2><p class="lead">Choose a representative area with a known deliverable and a named reviewer.</p></div>
+      <ol>
+        <li><strong>Confirm the inputs.</strong> Agree on the source files, references, units, field codes and template. Confirm the required AutoCAD or Carlson version and working-file format.</li>
+        <li><strong>Draft and document.</strong> Preserve the source IDs and confirmed values. Log unrecognized codes, ambiguous ties and missing observations.</li>
+        <li><strong>Hand off for review.</strong> Open the agreed editable file and check plot with your survey lead. Use their decision on the open items to scope the next batch.</li>
+      </ol>
+    </section>
+    <section class="survey-contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
+        <div><h2 id="contact-title">Tell us about your first batch.</h2>
+          <p class="lead">Share your state, file inventory, CAD version and reviewer. We’ll agree on a transfer channel before you share restricted records.</p>
+          <a class="text-link" href="mailto:info@skarion.com?subject=Skarion%20Surveying%20CAD%20support">info@skarion.com</a>
+        </div>
+        <form data-intake data-recipient="info@skarion.com" data-subject="Skarion Surveying desktop support" action="mailto:info@skarion.com" method="post" enctype="text/plain">
+          <div class="form-grid">
+            <label>Your name<input name="name" autocomplete="name" required></label>
+            <label>Work email<input type="email" name="email" autocomplete="email" required></label>
+            <label>Survey firm<input name="company" autocomplete="organization"></label>
+            <label>Work type<select name="service" required>
+              <option value="" disabled selected>Choose a work type</option>
+              <option>Residential topo and boundary drafting</option><option>Point file to CAD</option><option>Topographic or profile drafting</option>
+              <option>As-built comparison</option><option>Record or drawing production</option>
+            </select></label>
+            <label class="wide">Target deadline<input name="timeline" placeholder="Date and time zone"></label>
+            <label class="wide">Batch brief<textarea name="scope" rows="4" required maxlength="1600" placeholder="State, field files, target CAD version and licensed reviewer"></textarea></label>
+          </div>
+          <p class="form-help">Review the email in your mail app before sending.</p>
+          <button class="button" type="submit">Open email draft</button>
+          <p data-intake-status role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap survey-footer"><strong>Skarion Surveying</strong><span>Desktop production support</span><a href="mailto:info@skarion.com">Email Skarion</a></footer>
+</body>
+</html>

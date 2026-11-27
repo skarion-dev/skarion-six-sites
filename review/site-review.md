@@ -10,6 +10,7 @@ Add a named owner and evidence link to every decision. Review one lane at a time
 | SkarionGIS | GIS delivery lead | Pending | Draft | [Project brief](../sites/gis/portfolio-review.md) |
 | Lighting | Photometric reviewer | Pending | Pilot review | [Project brief](../sites/lighting/portfolio-review.md) |
 | Stormwater | Stormwater and GIS reviewers | Pending | Pilot review | [Project brief](../sites/stormwater/portfolio-review.md) |
+| Surveying | Licensed surveyor for the target jurisdiction | Pending | Desktop pilot draft | [Project brief](../sites/surveying/portfolio-review.md) |
 
 ## Website review
 
@@ -22,7 +23,7 @@ Add a named owner and evidence link to every decision. Review one lane at a time
 
 ## Portfolio review
 
-Use the example galleries and sample downloads to review the six handoffs. These examples are synthetic. Review any real client work separately in the private project queue and keep peer examples there as benchmarks. For each proposed client case, capture Skarion's actual role, project owner, inputs, outputs, date, approvals, redactions, visual rights and technical sign-off.
+Use the example galleries and sample downloads to review each named handoff. These examples are synthetic. Review any real client work separately in the private project queue and keep peer examples there as benchmarks. For each proposed client case, capture Skarion's actual role, project owner, inputs, outputs, date, approvals, redactions, visual rights and technical sign-off.
 
 - [ ] A reviewer opens each sample file and reconciles record IDs, quantities, units, revisions and stated assumptions with the example page.
 - [ ] The offer lead confirms the inputs, formats, quality checks and scopes on the capabilities page reflect the work the team can accept.

@@ -1,0 +1,395 @@
+{
+  "capabilityIntro": "Remote residential topo and boundary drafting for licensed survey firms. Start with one surveyor-directed sheet and review the editable CAD, plot and source questions against your standards.",
+  "buyerRoles": [
+    "Licensed survey firm owners",
+    "Survey operations managers",
+    "Field-to-finish CAD leads",
+    "Civil and survey project managers"
+  ],
+  "capabilities": [
+    {
+      "title": "Surveyor-directed boundary and residential topo sheets",
+      "summary": "Assemble a polished residential sheet from the survey firm’s boundary determination, accepted field data and drafting standards.",
+      "inputs": [
+        "Surveyor-issued boundary geometry, annotations and field data",
+        "Layer and block library, checklists, sample plot and title-block standards",
+        "Contour interval, masked features and licensed reviewer"
+      ],
+      "outputs": [
+        "Editable CAD with approved boundary, observed features and contours on separate layers",
+        "Check plot with spot elevations, labels, symbols and title block",
+        "Source-linked questions for the survey lead"
+      ],
+      "checks": [
+        "Compare corners and labels with the supplied determination",
+        "Check contours against ground data, breaklines and masking limits",
+        "Document any feature or deed conflict for the licensed surveyor"
+      ]
+    },
+    {
+      "title": "Field-to-finish CAD production",
+      "summary": "Turn an approved field export into a review drawing using the survey firm’s code map and drawing standards.",
+      "inputs": [
+        "Accepted point export and field notes",
+        "Coordinate system and realization, vertical datum, units and grid or ground basis",
+        "Field-code dictionary, figure instructions, CAD template and target version"
+      ],
+      "outputs": [
+        "Editable drawing in the agreed CAD format and a check plot",
+        "Point-to-feature crosswalk with source IDs",
+        "Open-code and missing-shot log"
+      ],
+      "checks": [
+        "Verify column order, unique point IDs and point counts",
+        "Match control check values and feature codes against the approved source",
+        "Flag unidentified codes and conflicting figure connections for the survey lead"
+      ]
+    },
+    {
+      "title": "Existing-ground plans and profiles",
+      "summary": "Prepare topographic base sheets, profiles and contour views from the surveyor’s accepted data and instructions.",
+      "inputs": [
+        "Accepted point groups or surface, baseline and stationing",
+        "Directed breaklines, surface extents, contour interval and review limits",
+        "Sheet and label standards"
+      ],
+      "outputs": [
+        "Editable existing-conditions linework and plotted sheets",
+        "Requested surface views, profiles or sections for surveyor review",
+        "Station and elevation check register"
+      ],
+      "checks": [
+        "Compare elevations at identified checkpoints",
+        "Check the plotted limits against accepted coverage",
+        "Route surface, interpolation and outlier decisions to the licensed surveyor"
+      ]
+    },
+    {
+      "title": "As-built asset comparison",
+      "summary": "Reconcile supplied observations to prior records and prepare a comparison the survey lead can disposition.",
+      "inputs": [
+        "Accepted as-built observations, field identifiers and asset schedule",
+        "Prior record drawings and approved matching rules",
+        "Approved datum, units and reporting thresholds"
+      ],
+      "outputs": [
+        "Working comparison drawing and check plot",
+        "Source-linked coordinate differences and elevation table",
+        "Exceptions for gaps, conflicts and unresolved asset matches"
+      ],
+      "checks": [
+        "Preserve record values and observed values as separate fields",
+        "Check difference signs and refer each observation back to its source point",
+        "Keep a missing measurement blank and flag it for review"
+      ]
+    },
+    {
+      "title": "Record indexing and sheet revisions",
+      "summary": "Prepare working files and drawing sheets from supplied records and the surveyor’s instructions.",
+      "inputs": [
+        "Authorized plats, deeds or record sheets",
+        "Surveyor-approved linework, annotation and change instructions",
+        "Sheet list, reference files and publication template"
+      ],
+      "outputs": [
+        "Indexed source records and CAD base attachments",
+        "Draft sheet layouts and callouts for the survey lead",
+        "Revision log and requested supporting files"
+      ],
+      "checks": [
+        "Match file names, source revisions and drawing references",
+        "Compare annotations to surveyor-issued instructions",
+        "Route conflicting records and legal descriptions back to the surveyor"
+      ]
+    }
+  ],
+  "handoff": {
+    "formats": [
+      "Editable CAD in the agreed software version, with references and support files as scoped",
+      "Vector PDF check sheets and a source-linked exception register",
+      "Point CSV or agreed exchange files for source reconciliation",
+      "Editable DXF in the downloadable synthetic examples"
+    ],
+    "requirements": [
+      "Accepted source revision, point schema, field codes and drawing template",
+      "Horizontal reference, vertical datum, units and grid or ground basis supplied by the survey lead",
+      "Named licensed reviewer, permitted subcontract arrangement and approved transfer method"
+    ],
+    "boundaries": [
+      "The licensed surveyor directs field work, accepts survey control and decides professional survey questions.",
+      "The authorized survey firm reviews, certifies, signs or seals, and issues final deliverables.",
+      "Apply only approved geometry, feature codes and revisions. Hold uncertain inputs for review."
+    ]
+  },
+  "projects": [
+    {
+      "id": "residential-boundary-topo",
+      "title": "Residential topo and boundary check drawing",
+      "category": "Residential survey CAD",
+      "draft": true,
+      "summary": "Convert supplied boundary geometry and field observations into one residential check sheet, with 1-foot contours and a fence flagged for surveyor review.",
+      "image": "assets/projects/residential-topo.webp",
+      "imageAlt": "Sheet SV-401 with the supplied residential boundary, structures, contour lines, spot elevations and S-04 fence review",
+      "handoffSummary": {
+        "Source": "Surveyor-supplied boundary and ground shots",
+        "Draft sheet": "SV-401 residential boundary and topo",
+        "Open review": "S-04 observed fence relative to supplied boundary"
+      },
+      "context": "A fictional residential survey team supplies approved parcel geometry, local-grid spot shots, a breakline and observed site features. The draft carries the approved boundary onto the same sheet as the residence, drive, pool, trees and terrain.",
+      "constraints": [
+        "Use the supplied four boundary corners and keep the 100 by 130-foot dimensions.",
+        "Use the supplied ground point groups and breakline with a one-foot contour interval.",
+        "Keep the observed fence geometry separate and refer its relationship to the licensed surveyor."
+      ],
+      "approach": [
+        {
+          "title": "Fit the client’s drawing inputs",
+          "text": "Keep accepted point IDs and elevations. Draw the supplied boundary and features on separate layers."
+        },
+        {
+          "title": "Draft the terrain and annotations",
+          "text": "Plot the sample ground shots and one-foot contours with the residence and pool masked. Add a scale bar and directional reference."
+        },
+        {
+          "title": "Flag the discrepancy",
+          "text": "Carry the fence location as observed and record S-04 for the survey lead’s decision."
+        }
+      ],
+      "deliverables": [
+        "Editable layered DXF and vector check plot",
+        "Synthetic approved geometry, ground point export and review register"
+      ],
+      "verification": [
+        "Compare four supplied corners against the editable boundary geometry.",
+        "Check one-foot contour labels against the sample ground data and breakline.",
+        "Check the plotted fence position and cross-reference S-04 in the register."
+      ],
+      "review": "The surveyor reviews the fence relationship and approves the final boundary and topographic deliverable.",
+      "files": [
+        {
+          "path": "assets/samples/residential-topo.dxf",
+          "label": "Editable residential CAD",
+          "description": "Layered geometry and the named SV-401 layout."
+        },
+        {
+          "path": "assets/samples/residential-topo.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch residential check sheet."
+        },
+        {
+          "path": "assets/samples/residential-topo-features.csv",
+          "label": "Supplied feature geometry",
+          "description": "Boundary corners, structural footprints, drive, breakline and observed fence."
+        },
+        {
+          "path": "assets/samples/residential-topo-ground.csv",
+          "label": "Supplied ground points",
+          "description": "Synthetic source points with elevations, IDs and ground or breakline codes."
+        },
+        {
+          "path": "assets/samples/residential-topo-review.csv",
+          "label": "Review register",
+          "description": "S-04 and the surveyor’s follow-up."
+        }
+      ]
+    },
+    {
+      "id": "coded-topographic-draft",
+      "title": "Coded points to topographic linework",
+      "category": "Field-to-finish CAD",
+      "draft": true,
+      "summary": "Twelve synthetic observations become labeled roadway features. One unknown code stays flagged for the survey lead.",
+      "image": "assets/projects/coded-topo.webp",
+      "imageAlt": "Sheet SV-101 with two pavement edges, centerline shots, elevations and a red S-01 review marker",
+      "handoffSummary": {
+        "Source": "12 supplied locations with raw field codes",
+        "Draft sheet": "SV-101 topographic draft",
+        "Open review": "S-01 feature code for point 112"
+      },
+      "context": "A fictional survey lead supplies a local-grid point file and instructions for joining the pavement and centerline shots. The result is a check sheet for office review.",
+      "constraints": [
+        "Keep the original point IDs, elevations and local feet.",
+        "Use the instructed figure order and preserve separate feature layers.",
+        "Display point 112 as a review marker until its feature is confirmed."
+      ],
+      "approach": [
+        {
+          "title": "Check the export",
+          "text": "Reconcile the point count and column order against the supplied CSV."
+        },
+        {
+          "title": "Draft the coded figures",
+          "text": "Join the assigned points as two pavement edges and a centerline. Add point symbols for the supplied inlet and pole."
+        },
+        {
+          "title": "Flag the unknown code",
+          "text": "Keep point 112 out of the accepted figures and log the decision against S-01."
+        }
+      ],
+      "deliverables": [
+        "Editable DXF and matching vector plot",
+        "Original point export and issue register"
+      ],
+      "verification": [
+        "Count 12 source records and locate point labels on the check plot.",
+        "Check that point 105 remains at elevation 102.24 feet.",
+        "Find point 112 on the sheet and in the open item register."
+      ],
+      "review": "The survey lead supplies the missing feature code and approves the updated figure.",
+      "files": [
+        {
+          "path": "assets/samples/coded-topo.dxf",
+          "label": "Editable DXF",
+          "description": "Layered linework and the named SV-101 layout for review."
+        },
+        {
+          "path": "assets/samples/coded-topo.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch check sheet plotted from the same geometry."
+        },
+        {
+          "path": "assets/samples/coded-topo-points.csv",
+          "label": "Coded source points",
+          "description": "Fictional inputs used in this example."
+        },
+        {
+          "path": "assets/samples/coded-topo-review.csv",
+          "label": "Review register",
+          "description": "The recorded follow-up for the open item."
+        }
+      ]
+    },
+    {
+      "id": "existing-ground-profile",
+      "title": "Existing-ground profile from accepted shots",
+      "category": "Topographic CAD",
+      "draft": true,
+      "summary": "Five supplied stations form an existing-ground profile through 1+20. The extension to 1+50 stays open.",
+      "image": "assets/projects/existing-ground.webp",
+      "imageAlt": "Sheet SV-201 with five plotted elevations and a held station beyond the end of the profile",
+      "handoffSummary": {
+        "Source": "Five accepted station elevations",
+        "Draft sheet": "SV-201 existing-ground profile",
+        "Open review": "S-02 unobserved station 1+50"
+      },
+      "context": "A fictional survey team provides a baseline and station elevations for an existing conditions review. The sample plots only the accepted portion.",
+      "constraints": [
+        "Use the supplied station distances and elevations in feet.",
+        "Label the schematic profile’s vertical exaggeration.",
+        "Keep the unsupported extension off the ground line."
+      ],
+      "approach": [
+        {
+          "title": "Validate the station order",
+          "text": "Confirm the five accepted positions from 0+00 to 1+20."
+        },
+        {
+          "title": "Plot the existing profile",
+          "text": "Build the draft view and label the elevations from the source file."
+        },
+        {
+          "title": "Record the limit",
+          "text": "Flag 1+50 for the survey lead to supply the missing shot or remove the extension."
+        }
+      ],
+      "deliverables": [
+        "Editable CAD profile and matching vector plot",
+        "Station/elevation source table and exception register"
+      ],
+      "verification": [
+        "Check 103.15 feet at 0+60.",
+        "Confirm that accepted linework ends at 1+20 and includes five stations.",
+        "Find 1+50 in the review register and confirm the elevation stays blank."
+      ],
+      "review": "The surveyor determines coverage and approves any interpolation or extension.",
+      "files": [
+        {
+          "path": "assets/samples/existing-ground.dxf",
+          "label": "Editable DXF",
+          "description": "Layered linework and the named SV-201 layout for review."
+        },
+        {
+          "path": "assets/samples/existing-ground.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch check sheet plotted from the same geometry."
+        },
+        {
+          "path": "assets/samples/existing-ground-source.csv",
+          "label": "Source station elevations",
+          "description": "Fictional inputs used in this example."
+        },
+        {
+          "path": "assets/samples/existing-ground-review.csv",
+          "label": "Review register",
+          "description": "The recorded follow-up for the open item."
+        }
+      ]
+    },
+    {
+      "id": "as-built-asset-reconciliation",
+      "title": "As-built asset record comparison",
+      "category": "As-built review",
+      "draft": true,
+      "summary": "Three asset shots are compared with earlier records. One shot plots three feet east and one invert remains open.",
+      "image": "assets/projects/as-built.webp",
+      "imageAlt": "Sheet SV-301 with three accepted manhole locations, dashed prior references and a red missing-invert callout",
+      "handoffSummary": {
+        "Source": "Prior record coordinates and three accepted shots",
+        "Draft sheet": "SV-301 record comparison",
+        "Open review": "S-03 missing invert for MH-03"
+      },
+      "context": "A fictional surveyor provides accepted as-built shots and a prior three-asset schedule. The comparison keeps the earlier and observed coordinates visible for review.",
+      "constraints": [
+        "Match the three assets by their supplied IDs.",
+        "Keep prior and observed points separate.",
+        "Carry the missing invert through to the exception register."
+      ],
+      "approach": [
+        {
+          "title": "Join the records",
+          "text": "Match the asset IDs to source point IDs and retain both coordinate sets."
+        },
+        {
+          "title": "Compare the observations",
+          "text": "Calculate easting and northing differences and plot the two sets of positions."
+        },
+        {
+          "title": "Log the missing invert",
+          "text": "Keep the observed rim and assign the unanswered invert to the survey lead."
+        }
+      ],
+      "deliverables": [
+        "Editable CAD comparison and matching vector plot",
+        "Source asset table and coordinate-difference register"
+      ],
+      "verification": [
+        "Compare prior 62.00 feet to observed 65.00 feet easting for MH-02.",
+        "Check that shot 303 stays tied to MH-03.",
+        "Confirm the invert blank and S-03 review status agree across the files."
+      ],
+      "review": "The survey lead confirms missing measurements and decides what carries into the issued record.",
+      "files": [
+        {
+          "path": "assets/samples/as-built.dxf",
+          "label": "Editable DXF",
+          "description": "Layered linework and the named SV-301 layout for review."
+        },
+        {
+          "path": "assets/samples/as-built.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch check sheet plotted from the same geometry."
+        },
+        {
+          "path": "assets/samples/as-built-source.csv",
+          "label": "Prior and observed source data",
+          "description": "Fictional inputs used in this example."
+        },
+        {
+          "path": "assets/samples/as-built-review.csv",
+          "label": "Review register",
+          "description": "The recorded follow-up for the open item."
+        }
+      ]
+    }
+  ]
+}

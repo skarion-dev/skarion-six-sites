@@ -1,0 +1,7 @@
+distance_ft,elevation_ft,review_status
+0,104.0,Accepted
+30,103.7,Accepted
+60,103.15,Accepted
+90,102.95,Accepted
+120,102.5,Accepted
+150,,Pending observation

@@ -1,0 +1,31 @@
+# Skarion Surveying desktop pilot
+
+November 27, 2026 · Internal offer and pursuit brief
+
+## Sell a defined production batch
+
+Start with licensed residential survey firms with more field data than their drafters can turn into review-ready sheets. Offer one paid residential boundary and topo drawing from a redacted point export and surveyor-approved boundary. Match the buyer’s layers, blocks, symbols, labels and title block. Ask for the point format, code map, horizontal and vertical reference, units, grid/ground basis, one check point, AutoCAD or Carlson version, template and named reviewer. Return the specified editable CAD, check PDF and source-linked exception list. Agree the scope, review round and delivery date from the approved inputs. [Autodesk field codes and figure prefixes](https://help.autodesk.com/cloudhelp/2024/ENU/Civil3D-UserGuide/files/GUID-A7663C01-739E-4032-9B70-6385AA352A2D.htm) · [NOAA NGS datums and reference frames](https://www.ngs.noaa.gov/datums/)
+
+| Desktop lane | What Skarion can work on | Review decision |
+| --- | --- | --- |
+| Residential boundary and topo | Plot approved boundaries, terrain, site features, requested bearings, distances, labels and symbols to the buyer’s sheet standards. | The licensed surveyor determines and approves the boundary and resolves conflicts. |
+| Field-to-finish drafting | Import accepted point files, apply the firm’s code map and template, and draft approved figures with traceable point IDs. | The survey lead supplies the code map and resolves missing or conflicting field evidence. |
+| Existing ground | Assemble topographic bases, contours, surface views, profiles and sections from approved geometry and build instructions. | The surveyor controls accepted observations, coverage, breaklines, interpolation and accuracy. |
+| As-built production | Match supplied shot and asset IDs, retain earlier and observed values, calculate instructed differences and prepare a check plot. | The surveyor confirms the observations, tolerance and final acceptance. |
+| Record and sheet support | Catalogue furnished deed, plat and field records, prepare attachments and transcribe approved notes and linework. | The surveyor interprets calls, easements and legal descriptions, directs the boundary opinion and issues the final drawing. |
+| Follow-on to qualify | Digitize agreed features from a registered, accepted point cloud or ortho. Quote after confirming size, coordinates, extraction targets and the client’s accuracy requirements. | The surveyor authorizes the capture, control and registration and evaluates final suitability. |
+
+Keep field measurement, monument recovery or setting, control decisions, boundary establishment, legal descriptions, certification, sealing and release with the responsible licensed firm. Actual subcontract and supervision requirements depend on the jurisdiction and the contract. Confirm that the intended working name and advertising do not imply an independent surveying practice. California describes a subordinate role in §8730, and Texas requires firm registration for businesses that offer land surveying to the public. [California Land Surveyors’ Act](https://www.bpelsg.ca.gov/laws/pls_act.pdf) · [Texas Board firm registration](https://pels.texas.gov/surveying_firm.htm)
+
+## Buyer and procurement evidence
+
+- The East End Long Island posting is the closest target. It seeks an experienced AutoCAD or Carlson drafter for residential boundary and topo production, starting with a paid test. The November 27 check showed a posted $10–$30/hour range, more than 30 hours a week, a duration beyond six months, 20–50 proposals and one hire. This is buyer evidence and a service benchmark. Verify current availability and ongoing volume before budgeting. [Buyer posting](https://www.upwork.com/freelance-jobs/apply/Land-Survey-CAD-Drafter-Topo-Boundary-Plans-AutoCAD-Carlson_~022120244494842798551/)
+- The supplied [buyer reference and training notes](Long_Island_Topo_and_Boundary_Buyer_Reference_2026-11-27.txt) preserve the posting capture and possible local prospects. The Upwork buyer’s company remains unidentified. For this opportunity, use Upwork’s process and substantiate the named drafter’s actual experience, software, samples and availability. The synthetic examples demonstrate workflow. [New York Article 145](https://www.op.nysed.gov/professions/land-surveying/laws-rules-regulations/article-145)
+- Dedicated firms advertise surveyor-facing drafting from point files and company standards. Use their offer packaging as evidence of an existing category. Test whether local firms will buy a B2B pilot at Skarion’s actual reviewer and production cost. [Land Drafters scope](https://landdrafters.com/services/land-surveying) · [Survey to CAD Solutions](https://surveytocadsolutions.com/) · [Cadra](https://cadrasolutions.com/)
+- The Nov. 24 Survey CAD brief records recurring buyer listings, observed marketplace competition and the contractor-to-firm access gap. The original Nov. 25 opportunity and due-diligence files retain Grand Junction, Aberdeen/LKC, Santa Clara, Loudoun, Bluffton, Massport and prime quote paths. Reopen the buyer and prime notices before pursuit.
+- Santa Clara Valley Open Space Authority advertises a five-year as-needed surveying procurement, RFP 2026-14, due January 22, 2027 at 5 p.m. local time on its November 27 notice. Treat it as a licensed prime opportunity and qualify an explicitly approved production workshare. [Official bids and proposals](https://www.openspaceauthority.org/bids-proposals)
+- Loudoun County’s February 10, 2026 award notice names J2 Engineers and Rice Associates. Qualify any active task order and a separately purchasable office batch with the awardee. [County award notice](https://www.loudoun.gov/DocumentCenter/View/219155/Notice-of-Award-PDF?bidId=)
+
+## Pilot acceptance
+
+Confirm point count and IDs, the supplied coordinate basis and independent check points, layer and figure names, and the source references on the check plot. Have the survey lead open the agreed native file and disposition every exception. Capture first-pass acceptance, revision time and reviewer time before offering a recurring batch. The draft showcases use DXF and PDF so the buyer can inspect the proof without specialized survey objects.

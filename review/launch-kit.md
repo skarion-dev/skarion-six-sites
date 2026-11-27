@@ -1,6 +1,6 @@
 # Skarion Engineering launch kit
 
-Use Skarion Engineering as the parent company and the six lane marks as offer identities. Keep each name in its written form. The contact team, proposal footer and delivery terms should identify the responsible business consistently across six sites. Use SkarionGIS without a space.
+Use Skarion Engineering as the parent company and the lane marks as offer identities. Keep each name in its written form. The contact team, proposal footer and delivery terms should identify the responsible business consistently across sites. Use SkarionGIS without a space.
 
 ## Brand system
 
@@ -37,10 +37,11 @@ Use one subject and one visual per post. Start with the four active offers. Keep
 | `skariongis.com` | `skariongisdata.com` | `dist/gis/` |
 | `skarionlighting.com` | `skarionphotometrics.com` | `dist/lighting/` |
 | `skarionstormwater.com` | `skariondrainage.com` | `dist/stormwater/` |
+| Pending Surveying name and jurisdiction review | Pending | `dist/surveying/` |
 
 Before registration, check each candidate at the company registrar for availability, first-year and renewal prices, and disputed or similar names. Record the account owner, payment owner, renewal setting and routing decision. Enable account MFA. Keep domain acquisition and production DNS under the company account.
 
-The six builds work as individual domain microsites or under service paths on the parent site. Choose one canonical public address per lane. If a short domain forwards to a parent-site service page, send root and `www` requests to that address, over HTTPS. Avoid changing existing OSP and GIS URLs until the web lead has mapped backlinks, search pages, navigation and forms. [Parent website](https://skarionengineering.com/) · [Google redirect guidance](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
+The builds work as individual domain microsites or under service paths on the parent site. Choose one canonical public address per lane. If a short domain forwards to a parent-site service page, send root and `www` requests to that address, over HTTPS. Avoid changing existing OSP and GIS URLs until the web lead has mapped backlinks, search pages, navigation and forms. [Parent website](https://skarionengineering.com/) · [Google redirect guidance](https://developers.google.com/search/docs/crawling-indexing/301-redirects)
 
 For a hosted team review, use an access-controlled preview and deploy the hub and site builds there. For public release, select only an approved `dist/<site>/` directory as the deployment root, change the draft indexing controls in the release build, and configure final canonical, social metadata, HTTPS and redirects. The preview hub and source review docs stay private. Maintain an assigned owner for production access, content changes and uptime.
 

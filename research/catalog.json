@@ -31,6 +31,11 @@
   },
   "surveying": {
     "archivePrefixes": ["surveying/"],
-    "niches": [13, 3, 5, 7, 15, 19, 20, 23, 24]
+    "niches": [13, 5, 3, 7, 15, 19, 20, 23, 24],
+    "researchHighlights": [
+      "Lead with repeat point-to-CAD, utility mapping and revisions from approved client records.",
+      "Qualify Transglobal’s project-based contract path first. Keep Repset, marketplace posts and prime awards in the evidence queue with their status and eligibility terms.",
+      "Test one paid sheet or segment and build a 30-firm campaign. Track replies, first-pass acceptance, revisions and contribution margin."
+    ]
   }
 }

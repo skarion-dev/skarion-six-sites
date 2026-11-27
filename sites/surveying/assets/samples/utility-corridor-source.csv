@@ -1,0 +1,17 @@
+source_id,source_type,feature,easting_ft,northing_ft,source_disposition
+R-01,RTK pickup,EDGE_N,5,48,Accepted feature
+R-02,RTK pickup,EDGE_N,78,47,Accepted feature
+R-03,RTK pickup,EDGE_N,155,53,Accepted feature
+R-04,RTK pickup,EDGE_S,5,30,Accepted feature
+R-05,RTK pickup,EDGE_S,78,29,Accepted feature
+R-06,RTK pickup,EDGE_S,155,35,Accepted feature
+R-07,RTK pickup,BOX,34,61,Accepted feature
+R-08,RTK pickup,BOX,133,63,Accepted feature
+E-01,EM locator marks,COM-A,34,61,Approved connection
+E-02,EM locator marks,COM-A,76,57,Approved connection
+E-03,EM locator marks,COM-A,108,58,Approved connection
+E-04,EM locator marks,COM-A,133,63,Approved connection
+U-01,Owner record sketch,WM-REF,14,17,Record only
+U-02,Owner record sketch,WM-REF,145,23,Record only
+G-01,Reviewed GPR markup,RESP-1,107,39,Location only
+G-02,Reviewed GPR markup,RESP-1,112,49,Location only

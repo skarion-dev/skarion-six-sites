@@ -1,6 +1,6 @@
 # Skarion Engineering service websites
 
-Seven standalone static websites with a common intake workflow and an internal review hub. Each site includes capabilities, an example project library, downloadable sample deliverables and a brand kit. Drafting has seven examples and Surveying has four. The websites are drafts for Skarion's team to review.
+Seven standalone static websites with a common intake workflow and an internal review hub. Each site includes capabilities, an example project library, downloadable sample deliverables and a brand kit. Drafting has seven examples and Survey CAD has five. The websites are drafts for Skarion's team to review.
 
 ## Preview
 
@@ -22,7 +22,7 @@ The [combined project library](http://127.0.0.1:4173/catalog/) and the service c
 | SkarionGIS | `/gis/` | `skariongis.com` | Active offer | [Brand](sites/gis/brand.md) · [Projects](sites/gis/portfolio-review.md) |
 | Skarion Lighting | `/lighting/` | `skarionlighting.com` | Pilot | [Brand](sites/lighting/brand.md) · [Projects](sites/lighting/portfolio-review.md) |
 | Skarion Stormwater | `/stormwater/` | `skarionstormwater.com` | Pilot | [Brand](sites/stormwater/brand.md) · [Projects](sites/stormwater/portfolio-review.md) |
-| Skarion Surveying | `/surveying/` | Pending | Desktop support pilot | [Brand](sites/surveying/brand.md) · [Projects](sites/surveying/portfolio-review.md) |
+| Skarion Survey CAD | `/surveying/` | Pending | Desktop support pilot | [Brand](sites/surveying/brand.md) · [Projects](sites/surveying/portfolio-review.md) |
 
 ## Build and review
 

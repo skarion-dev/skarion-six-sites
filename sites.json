@@ -5,5 +5,5 @@
   { "id": "gis", "name": "SkarionGIS", "scope": "GIS and closeout data", "domain": "skariongis.com", "color": "#d1e996", "phase": "Active offer", "summary": "Reconcile route and utility records into usable GIS layers with a source crosswalk." },
   { "id": "lighting", "name": "Skarion Lighting", "scope": "Lighting and photometrics", "domain": "skarionlighting.com", "color": "#f7cb86", "phase": "Pilot", "summary": "Evaluate a site layout with calculation plots, fixture schedules and stated assumptions." },
   { "id": "stormwater", "name": "Skarion Stormwater", "scope": "Stormwater support", "domain": "skarionstormwater.com", "color": "#77c8ba", "phase": "Pilot", "summary": "Assemble a drainage inventory with mapped assets, source records and an exception log." },
-  { "id": "surveying", "name": "Skarion Surveying", "scope": "Desktop CAD support for licensed survey firms", "domain": "Domain pending", "color": "#9ed6e7", "phase": "Pilot", "summary": "Draft coded features and review sheets from approved survey data under the licensed surveyor’s direction." }
+  { "id": "surveying", "name": "Skarion Survey CAD", "scope": "Desktop survey and utility CAD production", "domain": "Domain pending", "color": "#9ed6e7", "phase": "Pilot", "summary": "Turn approved survey points, locator markups and redlines into editable CAD, check plots and a source-linked issue log." }
 ]

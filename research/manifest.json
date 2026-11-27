@@ -928,5 +928,30 @@
     "path": "surveying/Skarion_Surveying_Desktop_Pilot_2026-11-27.md",
     "bytes": 6333,
     "sha256": "d0ea10fee28c120a7d33bb9da3f8730677d8cf9035f0df5ff9861e0f2bc6ce15"
+  },
+  {
+    "path": "surveying/Maryland_BPW_2026-11-18_Approved_Awards.pdf",
+    "bytes": 235301,
+    "sha256": "b2b044e6223329db3d3e94e3cb49e5c6cea4eae2d248d1a3185d8cfdfd7f88d0"
+  },
+  {
+    "path": "surveying/McHenry_County_College_RFP_11122026_GIS.pdf",
+    "bytes": 504388,
+    "sha256": "762a5f72ad35aa197fba837a0951a42b3730e73cfa6afe609451cb922fb256cc"
+  },
+  {
+    "path": "surveying/Santa_Fe_County_Chupadero_Utility_Survey_Agreement.pdf",
+    "bytes": 2690071,
+    "sha256": "c8ca78ca39557895c5a2c9188e921b65d3524e8fd97ce0b492f60a2430993bc2"
+  },
+  {
+    "path": "surveying/Survey_CAD_Prospect_Queue_2026-11-27.csv",
+    "bytes": 4623,
+    "sha256": "f3c2e68ea026fd535981f6ca86ed0c1810fedbf6501f3e71967425fe54fc31c3"
+  },
+  {
+    "path": "surveying/Survey_CAD_Utility_Research_2026-11-27.md",
+    "bytes": 11582,
+    "sha256": "97801a6f993c144f18b2c841cd0e707205a7dbe64d40e0c917b761dec34a0054"
   }
 ]

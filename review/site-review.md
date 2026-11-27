@@ -10,7 +10,7 @@ Add a named owner and evidence link to every decision. Review one lane at a time
 | SkarionGIS | GIS delivery lead | Pending | Draft | [Project brief](../sites/gis/portfolio-review.md) |
 | Lighting | Photometric reviewer | Pending | Pilot review | [Project brief](../sites/lighting/portfolio-review.md) |
 | Stormwater | Stormwater and GIS reviewers | Pending | Pilot review | [Project brief](../sites/stormwater/portfolio-review.md) |
-| Surveying | Licensed surveyor for the target jurisdiction | Pending | Desktop pilot draft | [Project brief](../sites/surveying/portfolio-review.md) |
+| Survey CAD | Client’s survey or utility reviewer and licensed professional where required | Pending | Desktop pilot draft | [Project brief](../sites/surveying/portfolio-review.md) |
 
 ## Website review
 

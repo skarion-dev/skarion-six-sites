@@ -37,7 +37,7 @@ Use one subject and one visual per post. Start with the four active offers. Keep
 | `skariongis.com` | `skariongisdata.com` | `dist/gis/` |
 | `skarionlighting.com` | `skarionphotometrics.com` | `dist/lighting/` |
 | `skarionstormwater.com` | `skariondrainage.com` | `dist/stormwater/` |
-| Pending Surveying name and jurisdiction review | Pending | `dist/surveying/` |
+| Pending Survey CAD jurisdiction and name review | Pending | `dist/surveying/` |
 
 Before registration, check each candidate at the company registrar for availability, first-year and renewal prices, and disputed or similar names. Record the account owner, payment owner, renewal setting and routing decision. Enable account MFA. Keep domain acquisition and production DNS under the company account.
 

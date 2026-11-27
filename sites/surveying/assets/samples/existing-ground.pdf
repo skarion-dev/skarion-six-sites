@@ -4,7 +4,7 @@
 <<
 /Producer (pypdf)
 /Title (Existing ground along a supplied baseline)
-/Author (Skarion Surveying CAD Support)
+/Author (Skarion Survey CAD)
 >>
 endobj
 2 0 obj
@@ -37,11 +37,549 @@ endobj
 endobj
 5 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ]
-/Length 1685
+/Length 6176
 >>
 stream
-Gatm<?#SIU'Rf_Z\1[rm'k-o4l!Y*:lSMq#,d?)X%"$?;-<23^L8:X0cl^"qM>FFm]29[RYsZYtLZdO;bJQ$,pqs,`eHXs^&mh.a?lYIk^a,&H]R]6e_VcsDr]),Y%&aG_#V?M95SOld/"")BE;2?elYj^E:Jq=W6jYJ2#)lAG"5!V*S:mRA5cT?f9S\^[Ul7j@,Y/[^6(,SM-,TM`UnS&b5T>)e!X6G;s1-6\65Wc:(W15aS-*2;D;6^t"T?jV9"=Ms)dk32`+VA1g9K&L]d<ZohU$cK33-*[Vq%IbMYDAo`&"&'j$`O5r'U^"lL0mdKc9!2@k!dm"=l/@IgbDZcWQS6C(o9+j?Z=qWZA$Mr%*OO,S[""'p7%PPU*g\-dC;o<)iqka7k>5V]@L4"e$C0n3,\rM8o`U'eb6=9,3;O-@tMqScRE,HO%!c!="*HC'a!#G@9g^1Vfe39H)@^CM'.=eocfRXI2'Qp9XO<pn@=#kD<khYNhg(rG*fbgZ<`p?0</af(R-*>1YQcU33$76YkkVN+P>`4^kPX]9M`6*B6U\gIZMliQe@O)8uI[KX8lE<Z!ZGkW47U#(Bjj4.X^#/n+:!raGYKG52o&_!BH.353,@RP0/Cj]>R`mN;urUQ1Kn8')K+5`3/W4+ecK5/]l-VmgW7B6WSYU*RWB"NB2?S&BIZs$VQ8imd\d[6T]Qq&(uu&TG(d5PgNnIO6,r%k5PtUN#Y4<$hJ6jmmf1S@sZrq:3O;Vi,8]9[rSXU.Q07.iq=6Os+5P75:hJ\L84.YILaA]Y)@L3.iF/C_M^]0(UJd>mOJ6QET=*.W$mcfZ1p>K/O_HFHbbLVqGO9WBGMg^NtD*#-R,jB=!NDo[\,Q''W&(ou1gC11%dTcYh`7m_-kb,"fX77(9W`a2]'@*W:N7MX2s&=g3arYGM\`;n0*@,_K,7&EVMg0I2f?CHRMVNX?T`flOdB4;7qDZ5g;i^2eQBgM`1Ma`fM=(luTc#XcI]?@M%c&$tLjQn9*BLF)&\A5@hAX=hB]/<BhUdLnDn(Z@T/i<nM?*(K/u6i>da^+RFL^k8[djSAo3,V(#fENSl"6$6K;P4Q]qaf$p"!/A,H<i,QLKMscod*Y6)5"8Y,'L%3A?0F?47/C)KQ)!V1+-'?L6D/C5qg9,4C`IP=L;ra?$u0U5ecsY5@XJWe2ej2Lf?bA3RR)t2_6)9r[fF6jH(ZhS%`(r%o:o=>=s7'J[2R$t_/WCT);Z#M7MEUB#GqTtWBW>Bi/K$L";DfXk5-@pBHfi[r4&`>DBjam<Nq@7ohO-Q&WS2)H+W=B7CT8D]8n7(.oU)*7fn%R8!BV9nll,&'DD$J]l1:/'^E8:m"s@@d+fX#mW<NkGe,&h1f&2WJ`#!_o`u<\Pf$.]ITfK"(XBI]:G:Sk*2h&$kD0s1].:qI]mtCS+HBP;XVe#nn#[eH3aKrFK?ik:b$&-rSP-+beJ>57C\p&V0D.^_XSrr3]=rXXXD!"A/fAH:aa1+2R+luiYL.3jLGAs5iKXj%m@&tP8gS"hX1:Ve&#Du.B<V&J:h,<%=_jD!e]Mc,%2<0^\\n7c4,ag$-gF6/fEh(MI^,!/81<il`hk%m>FUWl:oT,OJ%+CV(51@M*rR_+\)/@6dCQmc(9P<UBpidBEgsPHp]3$2AKGasXI2dfmd(+Er!.Ejr<!~>
+1 0 0 1 0 0 cm
+BT
+/F1 12 Tf
+14.4 TL
+ET
+1 j
+1 J
+0.098039 0.364706 0.513725 RG
+2 w
+[ ] 0 d
+n
+124.5323 481.0708 m
+262.9938 458.9169 l
+401.4554 418.3015 l
+539.9169 403.5323 l
+678.3785 370.3015 l
+S
+0.12549 0.203922 0.180392 RG
+0.8 w
+[ ] 0 d
+n
+30.24 30.24 m
+1193.76 30.24 l
+1193.76 761.76 l
+30.24 761.76 l
+30.24 30.24 l
+S
+0.12549 0.203922 0.180392 RG
+0.65 w
+[ ] 0 d
+n
+30.24 695.52 m
+1193.76 695.52 l
+S
+0.12549 0.203922 0.180392 RG
+0.65 w
+[ ] 0 d
+n
+30.24 112.32 m
+1193.76 112.32 l
+S
+0.780392 0.819608 0.784314 RG
+0.65 w
+[ ] 0 d
+n
+875.52 112.32 m
+875.52 695.52 l
+S
+0.12549 0.203922 0.180392 RG
+0.65 w
+[ ] 0 d
+n
+875.52 30.24 m
+875.52 112.32 l
+S
+0.12549 0.203922 0.180392 RG
+0.65 w
+[ ] 0 d
+n
+1055.52 30.24 m
+1055.52 112.32 l
+S
+0.780392 0.819608 0.784314 RG
+0.65 w
+[ ] 0 d
+n
+59.04 145.44 m
+854.64 145.44 l
+854.64 678.24 l
+59.04 678.24 l
+59.04 145.44 l
+S
+0.8 0.862745 0.882353 RG
+0.65 w
+[ ] 0 d
+n
+124.5323 333.3785 m
+816.84 333.3785 l
+S
+0.8 0.862745 0.882353 RG
+0.65 w
+[ ] 0 d
+n
+124.5323 370.3015 m
+816.84 370.3015 l
+S
+0.8 0.862745 0.882353 RG
+0.65 w
+[ ] 0 d
+n
+124.5323 407.2246 m
+816.84 407.2246 l
+S
+0.8 0.862745 0.882353 RG
+0.65 w
+[ ] 0 d
+n
+124.5323 444.1477 m
+816.84 444.1477 l
+S
+0.8 0.862745 0.882353 RG
+0.65 w
+[ ] 0 d
+n
+124.5323 481.0708 m
+816.84 481.0708 l
+S
+0.8 0.862745 0.882353 RG
+0.6 w
+[ ] 0 d
+n
+124.5323 333.3785 m
+124.5323 494.9169 l
+S
+0.8 0.862745 0.882353 RG
+0.6 w
+[ ] 0 d
+n
+262.9938 333.3785 m
+262.9938 494.9169 l
+S
+0.8 0.862745 0.882353 RG
+0.6 w
+[ ] 0 d
+n
+401.4554 333.3785 m
+401.4554 494.9169 l
+S
+0.8 0.862745 0.882353 RG
+0.6 w
+[ ] 0 d
+n
+539.9169 333.3785 m
+539.9169 494.9169 l
+S
+0.8 0.862745 0.882353 RG
+0.6 w
+[ ] 0 d
+n
+678.3785 333.3785 m
+678.3785 494.9169 l
+S
+0.8 0.862745 0.882353 RG
+0.6 w
+[ 7 4 ] 0 d
+n
+816.84 333.3785 m
+816.84 494.9169 l
+S
+0.098039 0.364706 0.513725 rg
+BT
+/F2 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 54 733.68 Tm
+(SKARION SURVEY CAD) Tj
+T*
+ET
+0.12549 0.203922 0.180392 rg
+BT
+/F2 21 Tf
+25.2 TL
+ET
+BT
+1 0 0 1 54 707.04 Tm
+(Existing ground along a supplied baseline) Tj
+T*
+ET
+0.631373 0.211765 0.141176 rg
+BT
+/F2 11 Tf
+13.2 TL
+ET
+BT
+1 0 0 1 902.88 732.24 Tm
+(SYNTHETIC SHOWCASE) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 902.88 709.92 Tm
+(Portfolio sample \174 training coordinates) Tj
+T*
+ET
+0.12549 0.203922 0.180392 rg
+BT
+/F2 11 Tf
+13.2 TL
+ET
+BT
+1 0 0 1 54.72 85.68 Tm
+(EXISTING\055GROUND PROFILE) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 54.72 60.48 Tm
+(Schematic profile \174 vertical exaggeration 16x \174 source elevations in feet\056) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 8.5 Tf
+10.2 TL
+ET
+BT
+1 0 0 1 54.72 42.48 Tm
+(Fictional source records\056 For portfolio review only\056) Tj
+T*
+ET
+0.631373 0.211765 0.141176 rg
+BT
+/F2 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 899.28 85.68 Tm
+(REVIEW ISSUE) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 8.5 Tf
+10.2 TL
+ET
+BT
+1 0 0 1 899.28 61.2 Tm
+(Horizontal 1 in \075 15\0566 ft) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 899.28 42.48 Tm
+(17 x 11 in \174 plot at 100\045) Tj
+T*
+ET
+0.12549 0.203922 0.180392 rg
+BT
+/F2 19 Tf
+22.8 TL
+ET
+BT
+1 0 0 1 1077.12 72.72 Tm
+(SV\055201) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F2 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 1078.56 43.2 Tm
+(R1) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 78.37846 333.3785 Tm
+(102\0560) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 78.37846 370.3015 Tm
+(102\0565) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 78.37846 407.2246 Tm
+(103\0560) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 78.37846 444.1477 Tm
+(103\0565) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 78.37846 481.0708 Tm
+(104\0560) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 103.7631 310.3015 Tm
+(0\05300) Tj
+T*
+ET
+0.098039 0.364706 0.513725 rg
+BT
+/F2 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 101.4554 490.7631 Tm
+(104\05600) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 242.2246 310.3015 Tm
+(0\05330) Tj
+T*
+ET
+0.098039 0.364706 0.513725 rg
+BT
+/F2 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 239.9169 468.6092 Tm
+(103\05670) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 380.6862 310.3015 Tm
+(0\05360) Tj
+T*
+ET
+0.098039 0.364706 0.513725 rg
+BT
+/F2 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 378.3785 427.9938 Tm
+(103\05615) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 519.1477 310.3015 Tm
+(0\05390) Tj
+T*
+ET
+0.098039 0.364706 0.513725 rg
+BT
+/F2 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 516.84 413.2246 Tm
+(102\05695) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 657.6092 310.3015 Tm
+(1\05320) Tj
+T*
+ET
+0.098039 0.364706 0.513725 rg
+BT
+/F2 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 655.3015 379.9938 Tm
+(102\05650) Tj
+T*
+ET
+0.341176 0.431373 0.478431 rg
+BT
+/F2 8 Tf
+9.6 TL
+ET
+BT
+1 0 0 1 796.0708 310.3015 Tm
+(1\05350) Tj
+T*
+ET
+0.623529 0.207843 0.117647 rg
+BT
+/F2 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 581.4554 250.3015 Tm
+(S\05502 \057 EXTENSION HELD) Tj
+T*
+ET
+0.113725 0.376471 0.286275 rg
+BT
+/F2 11.5 Tf
+13.8 TL
+ET
+BT
+1 0 0 1 899.28 651.6 Tm
+(PROFILE BASIS) Tj
+T*
+ET
+0.12549 0.203922 0.180392 rg
+BT
+/F2 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 899.28 614.88 Tm
+(Source stations) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 899.28 595.44 Tm
+(Five verified demo elevations\056) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 899.28 576 Tm
+(0\05300 to 1\05320 plotted\056) Tj
+T*
+ET
+0.12549 0.203922 0.180392 rg
+BT
+/F2 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 899.28 534.24 Tm
+(No extension line) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 899.28 514.8 Tm
+(No accepted shot at 1\05350\056) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 899.28 495.36 Tm
+(Leave the next segment open\056) Tj
+T*
+ET
+0.12549 0.203922 0.180392 rg
+BT
+/F2 10 Tf
+12 TL
+ET
+BT
+1 0 0 1 899.28 453.6 Tm
+(S\05502) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 899.28 434.16 Tm
+(Survey lead supplies the next) Tj
+T*
+ET
+0.313725 0.388235 0.352941 rg
+BT
+/F1 9 Tf
+10.8 TL
+ET
+BT
+1 0 0 1 899.28 414.72 Tm
+(accepted elevation or trims limits\056) Tj
+T*
+ET
+
 endstream
 endobj
 6 0 obj
@@ -72,13 +610,13 @@ xref
 0 9
 0000000000 65535 f 
 0000000015 00000 n 
-0000000145 00000 n 
-0000000204 00000 n 
-0000000253 00000 n 
-0000000443 00000 n 
-0000002220 00000 n 
-0000002261 00000 n 
-0000002368 00000 n 
+0000000134 00000 n 
+0000000193 00000 n 
+0000000242 00000 n 
+0000000432 00000 n 
+0000006660 00000 n 
+0000006701 00000 n 
+0000006808 00000 n 
 trailer
 <<
 /Size 9
@@ -86,5 +624,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-2480
+6920
 %%EOF

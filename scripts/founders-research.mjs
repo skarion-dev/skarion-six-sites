@@ -209,6 +209,7 @@ export async function buildFoundersResearch(root, dist, sites) {
     const offerFiles = selectFiles(files, keyFiles);
     await writePage(path.join(destination, 'offers', site.id), layout('../../', `${site.name} research`,
       'Offer benchmarks, launch plans, source files and related procurement work.', `
+      ${offer.researchHighlights?.length ? block('Research and pilot priorities', `<ul>${offer.researchHighlights.map((item) => `<li>${h(item)}</li>`).join('')}</ul>`) : ''}
       ${block('Offer evidence and launch records', fileRows(offerFiles))}
       <p><a href="${repositoryFile(`sites/${site.id}/portfolio-review.md`)}">Open the portfolio and example project research</a></p>
       ${block('Related niches and RFPs', `<ul class="research-niches">${offer.niches.map((number) => nicheLink('../../', niches[number - 1])).join('')}</ul>`)}

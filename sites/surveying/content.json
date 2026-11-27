@@ -1,15 +1,35 @@
 {
-  "capabilityIntro": "Remote residential topo and boundary drafting for licensed survey firms. Start with one surveyor-directed sheet and review the editable CAD, plot and source questions against your standards.",
+  "capabilityIntro": "Remote survey and utility CAD production from data your team has reviewed. Start with one sheet or utility segment and use your own standards to check the editable drawing, PDF and issue register.",
   "buyerRoles": [
     "Licensed survey firm owners",
     "Survey operations managers",
     "Field-to-finish CAD leads",
-    "Civil and survey project managers"
+    "Civil and survey project managers",
+    "Utility mapping and SUE production leads"
   ],
   "capabilities": [
     {
+      "title": "Utility CAD from client-supplied observations",
+      "summary": "Turn accepted RTK pickups, locator ties, reviewed GPR markups and owner records into a source-separated CAD exhibit.",
+      "inputs": [
+        "Accepted point exports, reviewed locator and GPR markups, and explicit connection instructions",
+        "Base drawings, owner records, reported coordinate reference and units",
+        "Layer and symbol standard, supplied confidence tags and named client reviewer"
+      ],
+      "outputs": [
+        "Editable review CAD with distinct field, utility and record layers",
+        "Check PDF and a source-ID crosswalk",
+        "Open issues for missing depth, ownership, location or contradictory marks"
+      ],
+      "checks": [
+        "Match every drafted feature to its record and accepted connection instructions",
+        "Preserve the client’s source and confidence distinctions",
+        "Leave unknown depths, identities and survey or engineering determinations with the client"
+      ]
+    },
+    {
       "title": "Surveyor-directed boundary and residential topo sheets",
-      "summary": "Assemble a polished residential sheet from the survey firm’s boundary determination, accepted field data and drafting standards.",
+      "summary": "For agreed support tasks, draft approved geometry from the survey firm’s boundary determination and accepted field data. The named reviewer confirms the scope and workflow before a work order.",
       "inputs": [
         "Surveyor-issued boundary geometry, annotations and field data",
         "Layer and block library, checklists, sample plot and title-block standards",
@@ -113,15 +133,82 @@
     "requirements": [
       "Accepted source revision, point schema, field codes and drawing template",
       "Horizontal reference, vertical datum, units and grid or ground basis supplied by the survey lead",
-      "Named licensed reviewer, permitted subcontract arrangement and approved transfer method"
+      "Named technical reviewer, professional oversight where required, permitted subcontract arrangement and approved transfer method"
     ],
     "boundaries": [
       "The licensed surveyor directs field work, accepts survey control and decides professional survey questions.",
       "The authorized survey firm reviews, certifies, signs or seals, and issues final deliverables.",
-      "Apply only approved geometry, feature codes and revisions. Hold uncertain inputs for review."
+      "The client confirms utility identity, source confidence and depth. Apply approved geometry and hold uncertain inputs for review."
     ]
   },
+  "featuredProjectIds": ["utility-corridor-cad", "coded-topographic-draft", "as-built-asset-reconciliation"],
   "projects": [
+    {
+      "id": "utility-corridor-cad",
+      "title": "Utility corridor CAD from field records",
+      "category": "Utility and survey CAD",
+      "draft": true,
+      "summary": "A fictional 16-record handoff becomes a layered review sheet. A GPR response stays separate and its owner and depth stay open.",
+      "image": "assets/projects/utility-corridor.webp",
+      "imageAlt": "Sheet SV-501 with approved RTK roadway features, a blue locator run, a separate record-only line and a red GPR response review item",
+      "handoffSummary": {
+        "Source": "16 RTK, locator, owner record and reviewed GPR records",
+        "Draft sheet": "SV-501 utility corridor",
+        "Open review": "S-05 response owner and depth"
+      },
+      "context": "A fictional utility project team supplies RTK picks for pavement and boxes, an approved connection list for locator marks, an owner sketch and a reviewed GPR response markup. The check sheet keeps each source distinct.",
+      "constraints": [
+        "Preserve the training coordinates and feet as supplied.",
+        "Connect only the locator points with accepted tie instructions.",
+        "Keep the owner’s water route record-only and plot the reviewed GPR response separately."
+      ],
+      "approach": [
+        {
+          "title": "Check the input inventory",
+          "text": "Record the source ID and type for each feature and retain the approved connection instructions."
+        },
+        {
+          "title": "Build the layered review drawing",
+          "text": "Draw pavement edges, RTK boxes, accepted locator linework, record-only linework and the reviewed response on distinct layers."
+        },
+        {
+          "title": "Keep the missing attributes visible",
+          "text": "Tag S-05 on the sheet and return the source IDs, open identity and open depth to the reviewer."
+        }
+      ],
+      "deliverables": [
+        "Editable layered DXF and matching vector PDF",
+        "Original source-index CSV and issue register"
+      ],
+      "verification": [
+        "Count 16 unique source records and match the four COM-A ties.",
+        "Compare accepted locator linework and record-only water by layer and source.",
+        "Confirm that G-01 and G-02 stay on the review layer and both missing attributes remain blank."
+      ],
+      "review": "The designated client reviewer confirms interpretation, utility identity, depth and whether further field verification is required.",
+      "files": [
+        {
+          "path": "assets/samples/utility-corridor.dxf",
+          "label": "Editable utility corridor CAD",
+          "description": "Source-separated geometry with the named SV-501 layout."
+        },
+        {
+          "path": "assets/samples/utility-corridor.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch check plot with the S-05 callout."
+        },
+        {
+          "path": "assets/samples/utility-corridor-source.csv",
+          "label": "Source inventory",
+          "description": "Sixteen illustrative records with source type, coordinates and disposition."
+        },
+        {
+          "path": "assets/samples/utility-corridor-review.csv",
+          "label": "Issue register",
+          "description": "Unresolved GPR response attributes with source references."
+        }
+      ]
+    },
     {
       "id": "residential-boundary-topo",
       "title": "Residential topo and boundary check drawing",

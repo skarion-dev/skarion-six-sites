@@ -30,6 +30,7 @@ body { margin: 0; }
 h1 { margin: 0; font-size: clamp(3rem, 7.5vw, 7rem); line-height: .96; letter-spacing: -.08em; font-weight: 650; }
 .intro p { margin: 1.25rem 0 0; max-width: 36rem; color: #c5cbd0; line-height: 1.6; font-size: 1.125rem; }
 .project-directory { margin-top: 1.05rem; display: inline-block; color: #e2efbc; font-weight: 680; text-underline-offset: .25em; }
+.project-directory + .project-directory { margin-left: 1rem; }
 dl { margin: 0; display: flex; gap: 2rem; }
 dl div { display: flex; flex-direction: column-reverse; gap: .25rem; min-width: 5rem; }
 dt { color: #c5cbd0; white-space: nowrap; font-size: .875rem; }
@@ -63,6 +64,7 @@ h2 { font-weight: 650; font-size: clamp(1.4rem, 2.25vw, 2rem); line-height: 1.06
   .sites { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
+  .project-directory + .project-directory { display: block; margin-left: 0; }
   .top { min-height: 64px; }
   .intro { align-items: start; flex-direction: column; }
   .sites { grid-template-columns: 1fr; }

@@ -1,10 +1,13 @@
 import { createServer } from 'node:http';
 import { createReadStream } from 'node:fs';
-import { stat } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../dist/', import.meta.url));
+const archive = fileURLToPath(new URL('../research/archive/', import.meta.url));
+const manifest = JSON.parse(await readFile(new URL('../research/manifest.json', import.meta.url), 'utf8'));
+const archivePaths = new Set(manifest.map(({ path: file }) => file));
 const port = Number(process.env.SKARION_PREVIEW_PORT ?? 4173);
 const types = {
   '.html': 'text/html; charset=utf-8',
@@ -37,6 +40,26 @@ createServer(async (request, response) => {
     const segments = decodeURIComponent(url.pathname).split('/').filter(Boolean);
     if (segments.some((segment) => segment.startsWith('.') || /[\\:\x00]/.test(segment))) {
       response.writeHead(404).end('Not found');
+      return;
+    }
+    if (segments[0] === '_research_archive') {
+      const name = segments.slice(1).join('/');
+      if (!archivePaths.has(name)) {
+        response.writeHead(404).end('Not found');
+        return;
+      }
+      const file = path.join(archive, ...segments.slice(1));
+      const details = await stat(file);
+      response.writeHead(200, {
+        'Content-Type': 'application/octet-stream',
+        'Content-Length': details.size,
+        'Content-Disposition': `attachment; filename*=UTF-8''${encodeURIComponent(path.basename(file))}`,
+        'Cache-Control': 'no-store',
+        'Cross-Origin-Resource-Policy': 'same-origin',
+        'X-Robots-Tag': 'noindex, nofollow',
+      });
+      if (request.method === 'HEAD') response.end();
+      else createReadStream(file).pipe(response);
       return;
     }
     let file = path.join(root, ...segments);

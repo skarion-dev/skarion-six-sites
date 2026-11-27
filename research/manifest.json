@@ -1,0 +1,912 @@
+[
+  {
+    "path": "drafting-business/build_feasibility_report.py",
+    "bytes": 19447,
+    "sha256": "8436623b0ecb79a80445af7c1f7a6d1704b5c932190759c26772ba87729206e0"
+  },
+  {
+    "path": "drafting-business/build_launch_kit.py",
+    "bytes": 27220,
+    "sha256": "c7ddb8a33e907219d042dc084fdc6820a8ff383ebc61c4723a44bc6c53ddbd36"
+  },
+  {
+    "path": "drafting-business/launch-templates.txt",
+    "bytes": 6240,
+    "sha256": "17566454fd05ac7cb2c9223839541ce30ea9f6a80033557e0044193ac2971660"
+  },
+  {
+    "path": "drafting-business/low-price-trial-protocol.txt",
+    "bytes": 3485,
+    "sha256": "361b573fbe1e56c1b1f7204a097304ed7ff11945ee75bd1ca3445f35a54c6b88"
+  },
+  {
+    "path": "drafting-business/Skarion_Drafting_Launch_Package.zip",
+    "bytes": 22858,
+    "sha256": "c3bd929cc420b2342697c087812ef8a9bd6442b8e27de74cdbb6793335ccdff4"
+  },
+  {
+    "path": "drafting-business/stress_test_results.json",
+    "bytes": 39364,
+    "sha256": "5b152500b266ee5b480938b0d9d5da51bd3cdd2dac75b3d691966b257e948c9d"
+  },
+  {
+    "path": "drafting-business/stress_test_run.txt",
+    "bytes": 17396,
+    "sha256": "339cdc4aaf815b7eac6b8a28b100daab1292ccda30a5882fc3cdd04839f37475"
+  },
+  {
+    "path": "drafting-business/stress_tests.py",
+    "bytes": 14387,
+    "sha256": "5cd48fd21d6448f80acca91d894da8209be64619a48685c3419124e18f631a34"
+  },
+  {
+    "path": "gtm-social/README.md",
+    "bytes": 5928,
+    "sha256": "dc7e9fd3debcbebb7d8b184c1f390426be5aa08d958c94776fb07b913aba32c5"
+  },
+  {
+    "path": "gtm-social/watch.py",
+    "bytes": 15105,
+    "sha256": "9d27824829003e05f71248c7cc0d2cd92c8e4d1cf237b96d03f5d94e55e47ee3"
+  },
+  {
+    "path": "gtm-social/watchlists/fiber-closeout.json",
+    "bytes": 1753,
+    "sha256": "fabf857dbd9f9680f825bcb49fdbba5b6bda80c9790c4e29548426ac910e5f61"
+  },
+  {
+    "path": "gtm-social/watchlists/skarion-drafting.json",
+    "bytes": 2457,
+    "sha256": "76518214aaea6d5f2314d956a0b423b9e7af78dbc3e79beb60d600a56bbe4cd7"
+  },
+  {
+    "path": "gtm-social/watchlists/skarion-estimating.json",
+    "bytes": 2469,
+    "sha256": "bcada1e52a40a77788b5978787eb06c7a0377ee616108d3e039d81694894ecae"
+  },
+  {
+    "path": "gtm-social/watchlists/skarion-fiber.json",
+    "bytes": 2380,
+    "sha256": "4da9a53263987f759d2d306ca5c03586c20bfd99d6f8c2978a126fad8c87ffb1"
+  },
+  {
+    "path": "gtm-social/watchlists/skarion-gis.json",
+    "bytes": 2382,
+    "sha256": "4656d42e6e5cbaa51d26a1b035fe3ee6458d8a736098f331ffe5274d646f1296"
+  },
+  {
+    "path": "gtm-social/watchlists/skarion-lighting.json",
+    "bytes": 2427,
+    "sha256": "694287f506d6257045ff9862762da04240d324a9fceec324d7f40945d915b49a"
+  },
+  {
+    "path": "gtm-social/watchlists/skarion-stormwater.json",
+    "bytes": 2539,
+    "sha256": "8696e619cf7d81b3d12c7c0fbba0c68002f16b5d4f9b108ea93d034073f1dbf2"
+  },
+  {
+    "path": "official-supplements/Traverse_City_Stormwater_RFP_Addendum_1.pdf",
+    "bytes": 281145,
+    "sha256": "064299daea474e8e58acac510c30f3028d5d03be516a43609b589018939c71cd"
+  },
+  {
+    "path": "opportunities/data/county_adjacency2024.txt",
+    "bytes": 1116030,
+    "sha256": "912ca408163016864fe64aaf667b53ad03a19ce4acbc586d3ac508395bdac980"
+  },
+  {
+    "path": "opportunities/data/county_source_registry.csv",
+    "bytes": 613223,
+    "sha256": "b53af6a9a019725cc4adf942b267a1b7672b84f61a6612575509c423bc730d8e"
+  },
+  {
+    "path": "opportunities/national_rfp_pipeline_plan.md",
+    "bytes": 9253,
+    "sha256": "bede781413f01ede29a1d62ca38428ee3ceccc82d83a90f0cbc4b20fa9830197"
+  },
+  {
+    "path": "opportunities/pipeline_2026-10-31.md",
+    "bytes": 7201,
+    "sha256": "63fb73c497caacfe4c173d0e0bb2bba4f5f5211f2829f668410aaf2e1e7ad9c4"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/00_START_HERE.md",
+    "bytes": 2647,
+    "sha256": "baef5f64e5a71c360896363f94153e96920d353de21a918a30ff054d13abe450"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/01_Strategy/25_Niche_Opportunity_Map.md",
+    "bytes": 6999,
+    "sha256": "9523bde03a46ccde09bf29ac34d41d052da8c95d57709c85e17964c97e064150"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/01_Strategy/Operating_Model_and_Portfolios.md",
+    "bytes": 2073,
+    "sha256": "a8346f58e990ee212c269e066e6ff560634ee440f3fe8029fae77d6f143a7678"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/02_Drafting/Drafting_Entry_Brief.md",
+    "bytes": 1748,
+    "sha256": "a544f93347dab8b51701e4f3d3854450c835652da6d336bad88121910fc7c6c2"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/02_Drafting/Original_Datasets/Skarion_100_B2B_Prospects.csv",
+    "bytes": 58517,
+    "sha256": "0076a0b233a4e0af6eee6f22701a16b077be3c8ed74bebead0162a9b62df6b1e"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/02_Drafting/Original_Datasets/Skarion_100_Upwork_Jobs.csv",
+    "bytes": 27785,
+    "sha256": "adb381a1f66a09190c1818c344fd752f298afb3e8631c4d864f42e96d8a52e29"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/02_Drafting/Original_Research/Skarion_Drafting_Market_Entry_Research_2026-11-10.pdf",
+    "bytes": 208233,
+    "sha256": "69520b61afe720f864b884a8297772195dc7b23dac0770f991207eb0044506ab"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/03_Lighting/Automation_and_SaaS_Concept.md",
+    "bytes": 1468,
+    "sha256": "0f531351487ddce28af0b18de8963244a4bdd57224aded1ea3a0056ffa1bbce2"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/03_Lighting/Lighting_Launch_Plan.md",
+    "bytes": 4847,
+    "sha256": "8ea06919e9aa3b1ed0ffad41bc65d8a36e32b4316ab5879ad8be06084266b7c4"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/03_Lighting/Restricted_Reference/VCL_AI_Agents_Project_Context.md",
+    "bytes": 13185,
+    "sha256": "07382789af7f1394b0b653275f48fbbf74de8ed764cc5e27bc386609033d7af4"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/04_GIS_and_Utility_Assets/GIS_Market_and_Competitor_Brief.md",
+    "bytes": 3408,
+    "sha256": "53e48b4ec0be8f07d9022af55dad5761b5fe4f09678c4ec264ee680a337b1d19"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/04_GIS_and_Utility_Assets/Original_Research/skarion_competitor_research_tracker.xlsx",
+    "bytes": 25441,
+    "sha256": "b1cf98b96ade0f5e8f8ea1b94bd219b38c56e00bccd9e95febb9ec7cc54b6236"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/04_GIS_and_Utility_Assets/Original_RFPs/City of Edmond - GIS Data Updates RFP Addendum1.pdf",
+    "bytes": 309462,
+    "sha256": "e380988deb0a3d6277b1e859cf0dba3410a872ed22aa0005c9901313a16f480a"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/05_Stormwater/Original_RFPs/Traverse_City_Stormwater_RFP.pdf",
+    "bytes": 764291,
+    "sha256": "e50f7f5317f2a895e158ca3e54647173e619f2d487cdaba687e240d986670869"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/05_Stormwater/Stormwater_Entry_and_RFP_Brief.md",
+    "bytes": 3424,
+    "sha256": "91cdaf770fd45918b3f536996b62144fc53891c813a364877d16578828ade0fc"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/06_RFPs_and_Teaming/Original_Research/Skarion_Unexpired_RFP_Master_List_2026-11-01.md",
+    "bytes": 27837,
+    "sha256": "959272bb8642d285b7e12f70fd25d439d5e186cdefaf640b9b9f5f0537419114"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/06_RFPs_and_Teaming/Teaming_and_Bid_Playbook.md",
+    "bytes": 2974,
+    "sha256": "20b4658a18eb85ee0354dc5c7c2e4d0a315344a2e40084d834cb31f88174e5ed"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/07_GTM_and_Execution/Original_Research/OpenClaw_Skarion_Engineering_Handover.md",
+    "bytes": 25878,
+    "sha256": "aeaf807038a620f67b5a42f1d1a1a9368137ade40e344fc9f7e2c3490d201ac7"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/07_GTM_and_Execution/Original_Research/Skarion_Outreach_Automation_Landscape_2026-11-14.pdf",
+    "bytes": 109341,
+    "sha256": "0aa60704fb5f62b6eba8f302b94ff934edab8cbf0043acef079215de9b54a580"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/07_GTM_and_Execution/Shared_GTM_Playbook.md",
+    "bytes": 3832,
+    "sha256": "d01215b74294034863401431f1101e03f5f688b05c851ae6ff11c5ecfb79df76"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/08_Source_Register/File_Manifest.md",
+    "bytes": 2974,
+    "sha256": "7f691219d8eabcd2744a94298b23a615515d45dd93bf210dd85cbcd056df6ffb"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive/08_Source_Register/Source_Register.md",
+    "bytes": 3099,
+    "sha256": "55922385807bc1a442778e8df7d1d42db16b76d68fed5a31c36554a64ee3385b"
+  },
+  {
+    "path": "original-bundle/Skarion_Engineering_Research_Archive_2026-11-24.zip",
+    "bytes": 1314181,
+    "sha256": "c831f04b6b51f13ee424c7bb78c953887cff9986179ae21fa52888c35005aacc"
+  },
+  {
+    "path": "output/gtm-social/fiber-closeout/m-20261126T212310Z.json",
+    "bytes": 11165,
+    "sha256": "71f4507982ce77af7b75b198f379d6206a3fd91af9aafc6aecfb1c65d8542a7e"
+  },
+  {
+    "path": "output/gtm-social/fiber-closeout/m-20261126T212310Z.md",
+    "bytes": 6216,
+    "sha256": "823c526a95a6d930c456910ed98d9ece1268e7f7882017e18f47effc893e5d9b"
+  },
+  {
+    "path": "output/gtm-social/skarion-drafting/m-20261126T221534Z.json",
+    "bytes": 11118,
+    "sha256": "eba678fb7c7ef265c06c5daf68c8065e4bb108b0d4b32941e95eb18c67480bc6"
+  },
+  {
+    "path": "output/gtm-social/skarion-drafting/m-20261126T221534Z.md",
+    "bytes": 5911,
+    "sha256": "832b3a8b8333cdf1fa7148bc9df660e15474d8a567998202e2c3e8ecc2d4f8a3"
+  },
+  {
+    "path": "output/gtm-social/skarion-estimating/m-20261126T221535Z.json",
+    "bytes": 11504,
+    "sha256": "722a1c8324ca6d0989334369500b487c66f39f7a82f45d851f0e5fd8b5e9331a"
+  },
+  {
+    "path": "output/gtm-social/skarion-estimating/m-20261126T221535Z.md",
+    "bytes": 6262,
+    "sha256": "25f922cbd4d70b0da5ffda9ddf226639f93de5898d2f4bbf0d30fb012f8d3022"
+  },
+  {
+    "path": "output/gtm-social/skarion-fiber/m-20261126T221535Z.json",
+    "bytes": 10351,
+    "sha256": "0cfe76647d5c8daf9e83d682f0eac1696ef99805aceea40f81997903310b6d29"
+  },
+  {
+    "path": "output/gtm-social/skarion-fiber/m-20261126T221535Z.md",
+    "bytes": 5259,
+    "sha256": "f84a069fba1d918a1b81b417b6c82775ccc24f21c127f9b164a7c4817d54faa9"
+  },
+  {
+    "path": "output/gtm-social/skarion-gis/m-20261126T221535Z.json",
+    "bytes": 10523,
+    "sha256": "e2c634045f75aff31186304d210d3419b0a85f7d0b741f062e10ea8d91bf780a"
+  },
+  {
+    "path": "output/gtm-social/skarion-gis/m-20261126T221535Z.md",
+    "bytes": 5489,
+    "sha256": "0e44b434c56ec410779ccd164688912140d0963830d8511f5f0466fee556fb58"
+  },
+  {
+    "path": "output/gtm-social/skarion-lighting/m-20261126T221536Z.json",
+    "bytes": 10896,
+    "sha256": "9b8fbdbce5a4131d1344f256ca533417b84dcbc9597a5ca4a88225d696b367d4"
+  },
+  {
+    "path": "output/gtm-social/skarion-lighting/m-20261126T221536Z.md",
+    "bytes": 5820,
+    "sha256": "9f882a050329281b102f6e7213b82776fea55abffad3366e8befb660b0433242"
+  },
+  {
+    "path": "output/gtm-social/skarion-stormwater/m-20261126T221536Z.json",
+    "bytes": 11258,
+    "sha256": "e923642e61325664d0a802ef347ad4594d2dc84b020d45ae0d1974277da29bd6"
+  },
+  {
+    "path": "output/gtm-social/skarion-stormwater/m-20261126T221536Z.md",
+    "bytes": 6013,
+    "sha256": "91bd49123f0dee302291f9dfb04dd5bfa716945221d3a64b7363986f483b3889"
+  },
+  {
+    "path": "output/pdf/Skarion_Drafting_Feasibility_Stress_Test.pdf",
+    "bytes": 19685,
+    "sha256": "27892e1b729c2b61b07a60c7c65aa7659e4655350955d6f228b0c969ad502b59"
+  },
+  {
+    "path": "output/pdf/Skarion_Drafting_Launch_Playbook.pdf",
+    "bytes": 27970,
+    "sha256": "9f9a2f3378ae8fb7754918099abcb5490cfd560e0ab7b117ccb74a34cfd060db"
+  },
+  {
+    "path": "output/pdf/skarion_drafting_linkedin/legacy-pdf-to-cad-linkedin-draft.pdf",
+    "bytes": 291010,
+    "sha256": "8bc5ed8ce9b24063d1bda8cfaac58ca13f2630c41155c0925a409b88384ac66e"
+  },
+  {
+    "path": "output/pdf/skarion_drafting_linkedin/utility-trench-closeout-linkedin-draft.pdf",
+    "bytes": 275600,
+    "sha256": "0d39e5ce5127d3dbd6f6d67b33993abf4118808217024daee9409b4d84e2c24a"
+  },
+  {
+    "path": "output/pdf/Skarion_Engineering_All_Opportunities_2026-11-26.pdf",
+    "bytes": 1638087,
+    "sha256": "0c0557e6daf6cdfad93f78abb7f08760cbdba2061637e968aca47b51b4b04e2a"
+  },
+  {
+    "path": "output/Skarion_Engineering_Expansion_Review_2026-11-24.md",
+    "bytes": 35197,
+    "sha256": "5b8d9f27236f345326172ad39a981d411bf6d684b38e4222c00e662c0ee1699d"
+  },
+  {
+    "path": "output/Skarion_Engineering_GTM_Launch.xlsx",
+    "bytes": 27874,
+    "sha256": "772b756a0d6bc1b08e9e7fb7904c1ced580f283d2c7de7fdf75e4b9e6c1b16a0"
+  },
+  {
+    "path": "output/skarion_live_prime_subcontract_search_2026-11-25/01_Water_Wastewater_Asset_GIS.md",
+    "bytes": 11577,
+    "sha256": "a5703701c12358f3efe360655a9343883a6cb9cfd2276868e3c6c77957e48480"
+  },
+  {
+    "path": "output/skarion_live_prime_subcontract_search_2026-11-25/02_Lead_Service_Line_Records.md",
+    "bytes": 11055,
+    "sha256": "b89567c42fdba1048147b38cd015ae203ddc33434de702127f395a0b812ff6b1"
+  },
+  {
+    "path": "output/skarion_live_prime_subcontract_search_2026-11-25/03_OSP_Fiber_Design.md",
+    "bytes": 9460,
+    "sha256": "cbc73fb5c26d5346b92e702263ed45eefc65832dd82f02efee7337a43bfe368f"
+  },
+  {
+    "path": "output/skarion_live_prime_subcontract_search_2026-11-25/04_Utility_Permitting.md",
+    "bytes": 9935,
+    "sha256": "86bac31b718ec2d96b473efddf9df0dd62415ae53ecee89bfb81701a55295f71"
+  },
+  {
+    "path": "output/skarion_live_prime_subcontract_search_2026-11-25/05_Telecom_Closeout_GIS.md",
+    "bytes": 9412,
+    "sha256": "6cfa6ceccc3f628c732562ce7cc05e1fe82c39809c45a668120dd9435cc35263"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/00_Research_Method.md",
+    "bytes": 6706,
+    "sha256": "c7b1d99a2e27ba67b779fe6c3b8ce146f63558f630bb9249262d14f6243ec82c"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/01_Drafting_CAD_Overflow.md",
+    "bytes": 13593,
+    "sha256": "52d100c63da9808456c9ed59fdc30ea09b969b4e1bbd53be5e0e8f5483340e83"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/02_Lighting_Photometrics.md",
+    "bytes": 12547,
+    "sha256": "2c7b68cf8171f240eb23686a6ff28c9c80fe8f3680e85e2ded0e10d5b9822deb"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/03_GIS_Production.md",
+    "bytes": 12785,
+    "sha256": "9317b9112b69ff0b8a33b0177435434e92feb910fdd46f0008fdd4ca7b969bd9"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/04_Stormwater_Asset_Support.md",
+    "bytes": 13387,
+    "sha256": "6a3a9ec94e6ce7e2b3a1b1bbc102e835aee873a4069ac07d76d431be53f3cd3b"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/05_SUE_Records_and_Utility_Conflicts.md",
+    "bytes": 11204,
+    "sha256": "47f45f4756315111c21a9b939d8fea909ee7167f42c5c5b731d124ac4459f74c"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/06_Electric_Distribution_Production.md",
+    "bytes": 15431,
+    "sha256": "5685303a2dcd9de3e1b7a8754e2afd6d9d9e15380095e220dd57834db7fc204a"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/07_Civil_3D_Land_Development.md",
+    "bytes": 15353,
+    "sha256": "97f71a1056dc9da60fa644c91f7de6f5515397b65174e98c4e8bde3ebca3946a"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/08_Water_Wastewater_Asset_GIS.md",
+    "bytes": 15927,
+    "sha256": "6826f6f4d0a3c83f2369110b28dab36138f28f6ab13c5788db06e1701ac38bef"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/09_Solar_PV_Permit_Drafting.md",
+    "bytes": 11802,
+    "sha256": "b492756333067216fd07acbb102a3bf29461cd6a23f9ed3c13e34b9443f2ae14"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/10_Lead_Service_Line_Inventory.md",
+    "bytes": 16927,
+    "sha256": "16f85f4792a2a40532521a6171f2fd62a59bb743d14c80ba7851d7c66cec2dbd"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/11_Traffic_Engineering_Drafting.md",
+    "bytes": 11120,
+    "sha256": "3ba15857923b9b7347d76eabbb33f788a27dc175f82c6b257ebeb8e0602eea65"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/12_EV_Charging_Infrastructure_CAD.md",
+    "bytes": 14322,
+    "sha256": "d29c84323c05e30758ae23ea5cb1b94d63f6139b1625a3f45a0c4f3f851cfd49"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/13_Survey_CAD_Processing.md",
+    "bytes": 12319,
+    "sha256": "f2fea1640a390d7399c2cdf6f98c2480ab3fdb00fc6d21ea9d4ff4f2cc581b80"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/14_Data_Center_Site_Utility_CAD.md",
+    "bytes": 14889,
+    "sha256": "351a1397aacd269b62f28075d6d8dd126a4cf97fa1ce6f74a0e96223129342f9"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/15_As_Built_Drawing_Digitization.md",
+    "bytes": 16370,
+    "sha256": "a91e93474c566da535d70f4d2169f82ba2c16709fec671c0ed2933c791fb7caf"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/16_Utility_Permitting_Support.md",
+    "bytes": 17163,
+    "sha256": "482f0cf5b0ba6b4ca1fd573a966aef1db8192e80c9fdc7aff963bd4868e223f1"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/17_OSP_Fiber_Design.md",
+    "bytes": 13690,
+    "sha256": "5eadbe0710ed5933726b34f1f6b55907b33b939b39bdc3bda2b8f5fc6e52261e"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/18_Pole_Attachment_and_Make_Ready_Records.md",
+    "bytes": 13580,
+    "sha256": "5251714dfc081f7a3a16d8171d18e1ae1b87f41d8aea8a21240315ace92828a5"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/19_Telecom_Construction_Closeout_GIS.md",
+    "bytes": 14693,
+    "sha256": "2702b93aec559574fa06b5bd5b9f352ff5a7bd37d54a1c7866d60277f3a33aba"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/20_Utility_Easement_and_ROW_Exhibits.md",
+    "bytes": 12704,
+    "sha256": "a681c87b5709f0b4cdbe733d76a3e53ed43086b641be3414769e91281a0784e3"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/21_Floodplain_GIS_and_FEMA_Mapping.md",
+    "bytes": 14170,
+    "sha256": "720479ab949630c8abf8cf6e6bd59fc1d28774a90ed11d922337371a375c37b2"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/22_Erosion_and_Sediment_Control_CAD.md",
+    "bytes": 11967,
+    "sha256": "956ec746580b0a057552072ddbb3766ff244ee372a6bfb687f52b6ca6ed431e5"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/23_Culvert_and_Drainage_Asset_Inventory.md",
+    "bytes": 14453,
+    "sha256": "72a30a678c5a261ea91767bd1536c632621c091dc6822b456852641e5f69c46b"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/24_Roadway_Drainage_CAD.md",
+    "bytes": 12645,
+    "sha256": "cf7159c026bc58f47314a70138c342cce106a471cc2b2a6f0abfddf31a8f422c"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/research/25_BIM_and_MEP_Production.md",
+    "bytes": 15636,
+    "sha256": "7ec72489227988e737cd3e500eb1e503d4ead1e28ce23ae534f845efa0fd7617"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/Skarion_Niche_Market_Ranking.md",
+    "bytes": 20563,
+    "sha256": "f4599ebbffc087f90da235f884e4370201cd3aaa840993ffc1837d794fd7d460"
+  },
+  {
+    "path": "output/skarion_niche_market_research_2026-11-24/Skarion_RFP_and_Prime_Teaming_Report_2026-11-25.md",
+    "bytes": 62528,
+    "sha256": "243e542d8e44f96f47f8e5fe288b38a319dcff2759039f61a7416c4f427d0c53"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/00_Opportunity_Search_Protocol.md",
+    "bytes": 3583,
+    "sha256": "af4a80c656e2aa8c36e02a6960777345bf4c2556553f8aa6a266073f55683bc8"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/01_Drafting_CAD_Overflow.md",
+    "bytes": 9834,
+    "sha256": "86627ed93e6591746a91ebc5d684fc84c3f4cb370dd16b236e71e051fad745e3"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/02_Lighting_Photometrics.md",
+    "bytes": 10709,
+    "sha256": "799c907e559e0ba2a9d61f8ba8b5cec25687bd3eb81665572d97903a166e1804"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/03_GIS_Production.md",
+    "bytes": 9695,
+    "sha256": "83c522153f0c0a9c7ad2b1e4441acf527a865f605a2b4405089918eacefd548a"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/04_Stormwater_Asset_Support.md",
+    "bytes": 11406,
+    "sha256": "cbae792dc1442cd08d693e07008eaa4b61f3853d4716430bd77c9846210b3887"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/05_SUE_Records_Utility_Conflicts.md",
+    "bytes": 12409,
+    "sha256": "fc68103ba4c367403b07274eda83841b69774834666b22c8d1df8749cbf6f116"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/06_Electric_Distribution_Production.md",
+    "bytes": 12831,
+    "sha256": "82caeb1adc5c43977fc25468a680729ccf3c25ce8f48a977457df076b9c5adc6"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/07_Civil_3D_Land_Development.md",
+    "bytes": 11403,
+    "sha256": "39caaff42e2360b68711dfb3b678dd1763a9a64c8722919201933efef3bcae9a"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/08_Water_Wastewater_Asset_GIS.md",
+    "bytes": 12168,
+    "sha256": "be4ed982b8452b34893956869da0e4c0fb626bb28844b049ce908add9787aae1"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/09_Solar_PV_Permit_Drafting.md",
+    "bytes": 14650,
+    "sha256": "f2a8e0ce7663043ef14460298368bf54ac9d2af06a97731b7913e2360d812d97"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/10_Lead_Service_Line_Inventory.md",
+    "bytes": 15558,
+    "sha256": "da6fd5911b800c9feb9f8a070d7e235f1289236b2f0013b39769c2622964bafb"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/11_Traffic_Engineering_Drafting.md",
+    "bytes": 13700,
+    "sha256": "dff55a38e36b6db7cc52690ee532382c5e54a4c3f51110054cdac2648ee7f023"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/12_EV_Charging_Infrastructure_CAD.md",
+    "bytes": 11103,
+    "sha256": "556139a716dcfc8d6cac0e61e40169181cf3496a23a2b900983fb7e0aea9a01a"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/13_Survey_CAD_Processing.md",
+    "bytes": 12722,
+    "sha256": "53ed37a9a839e8aead329a9c08e24ae6b8be5298019ecbe29399f94f6c9e47df"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/14_Data_Center_Site_Utility_CAD.md",
+    "bytes": 12922,
+    "sha256": "63f892ec7834d439f10ed5b23b0f0da3aa798478d1bd14c313bcc7bd83d7b278"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/15_As_Built_Digitization.md",
+    "bytes": 11643,
+    "sha256": "510366f901d267d604f48e895bd1811e581b019011d969415565fdc0ca743b54"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/16_Utility_Permitting_Support.md",
+    "bytes": 14390,
+    "sha256": "e09ec6529feea0fcc150a82bf8371710d6e8548abb7a413b97fb17ece798ad11"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/17_OSP_Fiber_Design.md",
+    "bytes": 12961,
+    "sha256": "1bac7ac9c6f0031c8ba8b2915a23c704a61bf2f8d890d712e058cf849f64fbe7"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/18_Pole_Attachment_Make_Ready_Records.md",
+    "bytes": 12225,
+    "sha256": "78531139d0408917d7d68be6efacae9b98d73b0106e004d6a196cd3f205c0a78"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/19_Telecom_Construction_Closeout_GIS.md",
+    "bytes": 13411,
+    "sha256": "d44bc7730496e278eb9524cc21b13c60218b0b6ad21344ab699ce0cbace327dc"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/20_Utility_Easement_ROW_Exhibits.md",
+    "bytes": 12545,
+    "sha256": "91c56aeb209150b7972169719c1ffaa7016b38b69da0325b131b71dfbb79e5d2"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/21_Floodplain_GIS_FEMA_Mapping.md",
+    "bytes": 12540,
+    "sha256": "0d6810d2a189e0fb027decb3fe6e1cf19b4a7ac45f48060c84744ca0127d072c"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/22_Erosion_Sediment_Control_CAD.md",
+    "bytes": 12895,
+    "sha256": "9f2b8fe76d36306374a14ddc58dd4221810c7ff35fa218fad36ff711be4df917"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/23_Culvert_Drainage_Asset_Inventory.md",
+    "bytes": 11178,
+    "sha256": "cc126cbcd3a165c2e7ef29f3f9fe867ce2fca594dec4de34d362de40aa95a069"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/24_Roadway_Drainage_CAD.md",
+    "bytes": 11553,
+    "sha256": "69d1682156c987098b7e9a5979f0a50b1dd74479a59c83ead7dd7e1e6317ba27"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/25_BIM_MEP_Production.md",
+    "bytes": 13805,
+    "sha256": "c66cc937084727cfe3c35481dabf0409a0448646c260b7a3bb21f63b3e84f233"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities/Skarion_25_Niche_Opportunity_Index.md",
+    "bytes": 16499,
+    "sha256": "bb1a06cdd3ec800a6dc7282272d32336390a49f32ea3aff4346dd5976ac5e558"
+  },
+  {
+    "path": "output/skarion_opportunity_search_2026-11-25/opportunities.zip",
+    "bytes": 147702,
+    "sha256": "49062bc463e241b5e6bbe8720b730dcd1ad42db2ffc09115fd1dbf7eb95d8730"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/01_osp_fiber.json",
+    "bytes": 41616,
+    "sha256": "74a22bfe74862877cefaaa9bb9e37a069ec3592cc75e9ac2f038bfe20ed9bf13"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/01_OSP_Fiber_Design_Website_Plan.md",
+    "bytes": 15145,
+    "sha256": "199f3a8e46ee0d95cb21530b2bcff9d975796a2df5d0c9e391c5b7e22f084786"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/02_Utility_Bid_Estimating_Website_Plan.md",
+    "bytes": 16763,
+    "sha256": "fe5f12f87bd19113d71b333465a5a0df84c569802a6269f9ecbb49aa42bdc996"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/02_utility_estimating.json",
+    "bytes": 39962,
+    "sha256": "63ae8d6c1dfff223e8cbd24f70d1419f198d669cd3422ee38e7b7c4cba1067d6"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/03_CAD_Drafting_and_As_Builts_Website_Plan.md",
+    "bytes": 15136,
+    "sha256": "db4a5ff6996f2b56cfa931dfc14aac8efb3028db534cb3730b0bdabffea6b593"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/03_drafting.json",
+    "bytes": 40308,
+    "sha256": "984dff96eacf2053bacfb2cb45d370ded50a152301c1705b11455263b8d589a7"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/04_GIS_and_Closeout_Data_Website_Plan.md",
+    "bytes": 15541,
+    "sha256": "d6671cc55cbec46e2e081fd7308ca4b3bb0114989add511cc6ea4c5ecffacbe6"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/04_gis_closeout.json",
+    "bytes": 46526,
+    "sha256": "380fbe7ccbb577f9a19be815b9bbaefc589440fd40b74e5382b2a8805f646072"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/05_lighting.json",
+    "bytes": 47095,
+    "sha256": "e7ad09fc6399c63f44cbaa2a1010673d51ce0e5cb73314eab7a00501e503358f"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/05_Lighting_and_Photometrics_Website_Plan.md",
+    "bytes": 19365,
+    "sha256": "093f47d9b93a9411583e2823183286097fe5d3d91b3ea60d2b5c201d4f23f878"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/06_stormwater.json",
+    "bytes": 47704,
+    "sha256": "abb3381c6bf5bc1f9926365d9b178777231ee52ecb28971d0e0e9d13392a32a5"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/06_Stormwater_Support_Website_Plan.md",
+    "bytes": 19667,
+    "sha256": "8e09d1f0273de05e6b09447c62372a97b59e880ce25e8e367b8c7a1be2b212e0"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/Skarion_Six_Arenas_Benchmark_and_Review.xlsx",
+    "bytes": 107624,
+    "sha256": "760732e5e3ac42f394ab434fe057caba9ea8c6a32d5b5fd7690a1b32b2cb9fe4"
+  },
+  {
+    "path": "output/skarion_six_arenas_2026-11-26/Skarion_Six_Arenas_Website_and_Social_Plan.md",
+    "bytes": 17716,
+    "sha256": "da8a967f587e845f30a0a23a4577d2e6855fb33d6af7f3e61c9de98fa709b73b"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/00_Subcontract_Research_Brief.md",
+    "bytes": 2726,
+    "sha256": "c8c0fcc59f72151e6f0398a1a190f4a25c2f92ff75ed02798b40ab033605fc1a"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/01_Drafting_CAD_Overflow.md",
+    "bytes": 12498,
+    "sha256": "7d388fe4a13ec57d66e635d28a4e59d944b248ef71d77e0946ea2502ba347811"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/02_Lighting_Photometrics.md",
+    "bytes": 13855,
+    "sha256": "6029a71fc9aa16eb2208ee22ae8f3feab116042487e922d1a68790b8c6b587be"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/03_GIS_Production.md",
+    "bytes": 12798,
+    "sha256": "1245a07251f33004950245abb6c810d562c8eb4c47984d4da741efe5f4038097"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/04_Stormwater_Asset_Support.md",
+    "bytes": 14565,
+    "sha256": "f560e5e0ff83b9a7ef02423d103f03d2d364b170f9ea4a14aa6fe0fb140864ad"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/05_SUE_Records_Utility_Conflicts.md",
+    "bytes": 11666,
+    "sha256": "f16f86153f9831ec55855eb62fde44694401bd653125bd6211b10fa7e26eab8c"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/06_Electric_Distribution_Production.md",
+    "bytes": 15371,
+    "sha256": "d525a08bbdf2039fd610d417563ae23f11755917c2c4d3f9cb2e5ea36b52546c"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/07_Civil_3D_Land_Development.md",
+    "bytes": 11145,
+    "sha256": "3d31e28280777cac9f8dd6c6cd6afed6afffdcc2c9be80738c20b41967d9c40b"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/08_Water_Wastewater_Asset_GIS.md",
+    "bytes": 15771,
+    "sha256": "e3b6b757b02b325ed04f07e10ffab18f2e2d0bd97aff666c49b7d80e6edfa8dd"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/09_Solar_PV_Permit_Drafting.md",
+    "bytes": 13276,
+    "sha256": "b0313100f0452e6c30485ada88330620c4c1014b064ed96de9fca249511b2725"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/10_Lead_Service_Line_Inventory.md",
+    "bytes": 12221,
+    "sha256": "498aacacdf2fa4380be04fbc4194419f88eb9ed4963aa11242304cdafad20464"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/11_Traffic_Engineering_Drafting.md",
+    "bytes": 14430,
+    "sha256": "79a702106770bfb10b670d0efc4bd45f67e7fe78f7f3ae49ecc5a241ce28a068"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/12_EV_Charging_Infrastructure_CAD.md",
+    "bytes": 14417,
+    "sha256": "0616e11f826eb4e97c13366621f78cff5a8dc10029f8b3b1d9e493973c70bb37"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/13_Survey_CAD_Processing.md",
+    "bytes": 14448,
+    "sha256": "3e0aaf1c060ff6f49308cbc9d99bcea87b8d8a48468db70056de4082d7aa1016"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/14_Data_Center_Site_Utility_CAD.md",
+    "bytes": 14254,
+    "sha256": "4615ce7f9e24f01abb12fc676aa9efa328e7c16b703370267b2ca8c44ad1783b"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/15_As_Built_Digitization.md",
+    "bytes": 14068,
+    "sha256": "2715a92aa223c4f136c389884a75d87a5af6dbc9668fba6e0ce21ed841ffec19"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/16_Utility_Permitting_Support.md",
+    "bytes": 13543,
+    "sha256": "167753e387b6904734694b81dd81b44d4b03d2bafaad4af6a988b889acf45dcb"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/17_OSP_Fiber_Design.md",
+    "bytes": 13617,
+    "sha256": "52adfbbbf4f69ea5d6febb4635ef615a63423ce5c6cb80c3a8b57b1055e2335a"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/18_Pole_Attachment_Make_Ready_Records.md",
+    "bytes": 12364,
+    "sha256": "cd37fe75862dd4d5790e17d76d46596526cded73be31ff8a4f89cc885ed4f0f8"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/19_Telecom_Construction_Closeout_GIS.md",
+    "bytes": 15566,
+    "sha256": "04af3da22cf2991e685cb0d4e6b718bbfcd88759418ac4b847a42582e9262dc9"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/20_Utility_Easement_ROW_Exhibits.md",
+    "bytes": 16051,
+    "sha256": "6f06a06ee22d60ec3c8d7191a9b0677077f515afad9d2c6c6ca9051bf566959a"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/21_Floodplain_GIS_FEMA_Mapping.md",
+    "bytes": 10995,
+    "sha256": "01f266eb0a951febf46a9114ff6357b88db32964d673076ab8062809933b1454"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/22_Erosion_Sediment_Control_CAD.md",
+    "bytes": 15402,
+    "sha256": "bdb97f6ecf502a78b11fd3793b1e9e20b3993bc65e41f341e5cd5fbf7ee5b9ae"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/23_Culvert_Drainage_Asset_Inventory.md",
+    "bytes": 14287,
+    "sha256": "b14f46b4d765335108330df04769e18637d1e688949237fce3ed929ebb9b3537"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/24_Roadway_Drainage_CAD.md",
+    "bytes": 15107,
+    "sha256": "4759ed110e4c3927ba6b00366d790f4ec682641936e5c9eff5e9065b8e64a671"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/25_BIM_MEP_Production.md",
+    "bytes": 14334,
+    "sha256": "fb130c9fc902964aaaa43596ca978bfe2774d7ecab2095ce4e66f59926e49284"
+  },
+  {
+    "path": "output/skarion_subcontract_due_diligence_2026-11-25/Skarion_25_Niche_Subcontract_Pursuit_Index.md",
+    "bytes": 17682,
+    "sha256": "1df779a6d54f6ec80fe2b33501c61058b5f8600ce97e11e912b46bbd81284389"
+  },
+  {
+    "path": "social-source-snapshots/skarion-drafting-observations.json",
+    "bytes": 6862,
+    "sha256": "9cb9ed08676e73192adda4246abc336f94ce840539ce9e4babb2ee79f1cc5679"
+  },
+  {
+    "path": "social-source-snapshots/skarion-drafting-plan.json",
+    "bytes": 2841,
+    "sha256": "f794a473fbad828188c4685f2020b21faaf949539014ea78e077e6cb7745cd4f"
+  },
+  {
+    "path": "social-source-snapshots/skarion-estimating-observations.json",
+    "bytes": 7095,
+    "sha256": "c0034d2a59347f923eab8fab7626c7c23c7ce1ddb01ea4fc98806a087c888b77"
+  },
+  {
+    "path": "social-source-snapshots/skarion-estimating-plan.json",
+    "bytes": 2835,
+    "sha256": "bbdabbf015b7afecbda4df7b99e5c8f97d7d092d018791625b66493e60387ab0"
+  },
+  {
+    "path": "social-source-snapshots/skarion-fiber-observations.json",
+    "bytes": 6747,
+    "sha256": "6e30d5f52c5d4326c7af5af683d67d89cc1b1a802dce2423ccd68ace1a467756"
+  },
+  {
+    "path": "social-source-snapshots/skarion-fiber-plan.json",
+    "bytes": 2908,
+    "sha256": "853ec387ef9a0027033a446b533193738d122fe9e885a421ec55efd29f63625f"
+  },
+  {
+    "path": "social-source-snapshots/skarion-gis-observations.json",
+    "bytes": 6904,
+    "sha256": "d384e761882a07a8affde99f3a57d5ab1af8f1ceed4ea4ba315075b07815db39"
+  },
+  {
+    "path": "social-source-snapshots/skarion-gis-plan.json",
+    "bytes": 2908,
+    "sha256": "39dcade16fec27cba64be935df587ab275d7b66425f9df3093b63f4fa87e542e"
+  },
+  {
+    "path": "social-source-snapshots/skarion-lighting-observations.json",
+    "bytes": 7232,
+    "sha256": "4f72cebc37ad642f1ef67e336171107de080118e5ce3c78e8d743aadb03014a6"
+  },
+  {
+    "path": "social-source-snapshots/skarion-lighting-plan.json",
+    "bytes": 2955,
+    "sha256": "acb8eccb0bb2b22900411a85cd931087231c3095c47141857a44ab29f312e5c0"
+  },
+  {
+    "path": "social-source-snapshots/skarion-stormwater-observations.json",
+    "bytes": 6963,
+    "sha256": "35039acae8fee700ca32d96ee72638c51a5e02b8ab65afa2ff72dac424bf9b9e"
+  },
+  {
+    "path": "social-source-snapshots/skarion-stormwater-plan.json",
+    "bytes": 2950,
+    "sha256": "1338e3162e59f0fc918ade9e550dce49026481b63908577b904fa8c818addec4"
+  },
+  {
+    "path": "social-source-snapshots/social-observations.json",
+    "bytes": 7447,
+    "sha256": "824d6e645e8c816b48cbab33c0183bc7e70796923be0a3af166e8f2a6f8292ad"
+  },
+  {
+    "path": "social-source-snapshots/social-plan.json",
+    "bytes": 2704,
+    "sha256": "6152273262e2a1f4bb92a9d69dbf31f45d960876751d5f9f2f0707a7cfa584fa"
+  }
+]

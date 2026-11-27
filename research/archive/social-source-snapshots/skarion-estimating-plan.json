@@ -1,0 +1,112 @@
+{
+  "watchlist": "skarion-estimating",
+  "run_id": "m-20261126T221535Z",
+  "current": [
+    "2026-10-28",
+    "2026-11-26"
+  ],
+  "previous": [
+    "2026-09-28",
+    "2026-10-27"
+  ],
+  "latest_saved": null,
+  "config": {
+    "name": "Skarion Estimating · utility bid takeoffs",
+    "market": "U.S. wet utility, underground and heavy civil contractors; English",
+    "goal": "Find useful posts about verifiable quantity takeoffs, revisions, exclusions and bid review.",
+    "topics": [
+      "utility quantity takeoff",
+      "wet utility estimating",
+      "bid addendum delta",
+      "trench depth bands",
+      "marked-up bid plans and Excel"
+    ],
+    "accounts": [
+      "StatLab",
+      "Bidding Enterprise",
+      "AGTEK",
+      "HCSS",
+      "Draftech",
+      "Construction Queen",
+      "r/estimators"
+    ],
+    "exclude": [
+      "homeowner pricing",
+      "generic construction budgets",
+      "software demos unrelated to utilities"
+    ],
+    "lookback_days": 30,
+    "schedule": null,
+    "sources": {
+      "LinkedIn": {
+        "hosts": [
+          "linkedin.com"
+        ],
+        "method": "Public company feeds and individual posts"
+      },
+      "YouTube": {
+        "hosts": [
+          "youtube.com",
+          "youtu.be"
+        ],
+        "method": "Public videos and visible video counts"
+      },
+      "Reddit": {
+        "hosts": [
+          "reddit.com"
+        ],
+        "method": "Public discussions; cite relevant examples without bulk collection"
+      },
+      "Instagram": {
+        "hosts": [
+          "instagram.com"
+        ],
+        "method": "Public indexed posts and Reels"
+      },
+      "TikTok": {
+        "hosts": [
+          "tiktok.com"
+        ],
+        "method": "Public videos and TikTok Creative Center when available"
+      },
+      "Facebook": {
+        "hosts": [
+          "facebook.com"
+        ],
+        "method": "Public indexed posts; Ad Library separately for paid examples"
+      },
+      "X": {
+        "hosts": [
+          "x.com",
+          "twitter.com"
+        ],
+        "method": "Public indexed posts and publisher profiles"
+      },
+      "Threads": {
+        "hosts": [
+          "threads.com",
+          "threads.net"
+        ],
+        "method": "Public indexed posts"
+      },
+      "Pinterest": {
+        "hosts": [
+          "pinterest.com"
+        ],
+        "method": "Public indexed pins and boards"
+      },
+      "Bluesky": {
+        "hosts": [
+          "bsky.app"
+        ],
+        "method": "Public indexed posts and profiles"
+      },
+      "Publisher sites": {
+        "hosts": [
+          "statlabllc.com"
+        ],
+        "method": "Original case studies, articles and sample deliverables for context"
+      }
+    }
+  }
+}

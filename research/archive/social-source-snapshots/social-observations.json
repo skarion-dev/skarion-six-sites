@@ -1,0 +1,116 @@
+{
+  "coverage": {
+    "LinkedIn": {"status": "partial", "comparable": false, "detail": "Public company-page content and indexed post text were available. Some individual pages did not reopen, and exact dates and comparable engagement were unavailable."},
+    "YouTube": {"status": "partial", "comparable": false, "detail": "Two indexed, dated videos supplied relevant historical examples. The accessible search did not supply a matched fresh sample for both windows."},
+    "Reddit": {"status": "partial", "comparable": false, "detail": "Two public discussions were inspected. One had a relative timestamp and disclosed an affiliation. The other was a dated historical reference."},
+    "Instagram": {"status": "no_matches", "comparable": false, "detail": "The public index did not surface a verified topic-matched post or Reel."},
+    "TikTok": {"status": "restricted", "comparable": false, "detail": "Direct post search was blocked in this run. The public Creative Center was available for platform context but supplied no verified niche post for the sample."},
+    "Facebook": {"status": "restricted", "comparable": false, "detail": "Public queries did not yield a verified relevant post, and the Ad Library page returned HTTP 403 in this run."},
+    "X": {"status": "no_matches", "comparable": false, "detail": "The public index returned outage and company profiles. No verified target-topic post entered the sample."},
+    "Threads": {"status": "no_matches", "comparable": false, "detail": "The public index did not surface a verified topic-matched post for the query."},
+    "Pinterest": {"status": "no_matches", "comparable": false, "detail": "The public index did not surface a verified topic-matched pin for the query."},
+    "Bluesky": {"status": "no_matches", "comparable": false, "detail": "Visible results concerned outages, general GIS, and unrelated fiber optics. The screened sample contained no topic-matched posts."}
+  },
+  "observations": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/pathworks-engineering_ospdesign-fiberoptics-gis-activity-7505271689405153281-AnPf",
+      "publisher": "Pathworks Engineering",
+      "published": null,
+      "mode": "organic",
+      "format": "indexed technical post",
+      "theme": "field-to-record drift",
+      "summary": "Its post uses a field change such as a tray port swap to explain how map geometry and fiber records fall out of sync. The public search index supplied the text.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/nosh-fiber-llc_beadprogram-fiberconstruction-osp-activity-7501324433144410112-eSbS",
+      "publisher": "Nosh Fiber LLC",
+      "published": null,
+      "mode": "organic",
+      "format": "indexed capability post",
+      "theme": "closeout handoff",
+      "summary": "The contractor positions field construction, documentation, restoration and closeout as successive steps in the same project. The public search index supplied the text.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://in.linkedin.com/company/startelco-solutions",
+      "publisher": "Startelco Solutions",
+      "published": null,
+      "mode": "organic",
+      "format": "company capability update",
+      "theme": "closeout handoff",
+      "summary": "The public company page shows a service update bundling as-built support, splicing documentation and KMZ or PDF planning. It gives prospective buyers a project inquiry route.",
+      "metrics": {}
+    },
+    {
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/telecom/comments/1xsf8zj/how_does_your_team_manage_changes_to_fiber/",
+      "publisher": "r/telecom discussion",
+      "published": null,
+      "mode": "unknown",
+      "format": "community discussion",
+      "theme": "field-to-record drift",
+      "summary": "A poster who disclosed a software affiliation asked how teams reconcile proposed changes, field markups and final records. Replies described assigning an owner, keeping revisions visible and reconciling CAD and GIS with operational records.",
+      "metrics": {}
+    },
+    {
+      "platform": "Reddit",
+      "url": "https://www.reddit.com/r/FiberOptics/comments/1skow67/how_does_everyone_else_document_fiber/",
+      "publisher": "r/FiberOptics municipal operator discussion",
+      "published": "2026-04-13",
+      "mode": "organic",
+      "format": "buyer workflow question",
+      "theme": "spreadsheet-to-GIS migration",
+      "summary": "A municipal operator described growing beyond spreadsheet-based documentation and asked peers about alternatives, including how to represent plant and splice records.",
+      "metrics": {}
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=cmumZBtfOmg",
+      "publisher": "TechFibernet Academy",
+      "published": "2026-08-22",
+      "mode": "organic",
+      "format": "technical explainer",
+      "theme": "closeout handoff",
+      "summary": "The video packages digital route records, GIS as-builts and handover as a single workflow. The available evidence was the indexed video description.",
+      "metrics": {"views": 40, "likes": 1},
+      "metrics_as_of": "2026-11-26",
+      "metrics_context": "Counts came from an older search-index snapshot. The exact count date was unavailable."
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=buk0W2HyYD0",
+      "publisher": "PLP Czech Republic (MICOS)",
+      "published": "2025-11-13",
+      "mode": "organic",
+      "format": "how-to explainer",
+      "theme": "field-to-record drift",
+      "summary": "The training video frames fiber documentation around what to capture in the field, how to label it and how to record build changes.",
+      "metrics": {"views": 215, "likes": 5},
+      "metrics_as_of": "2026-11-26",
+      "metrics_context": "Counts came from an older search-index snapshot. The exact count date was unavailable."
+    }
+  ],
+  "performance_read": "The sample supports examples of formats and buyer questions. It lacks same-account engagement baselines or comparable 7-day counts, so post performance is undetermined.",
+  "tests": [
+    {
+      "idea": "Record a 40-second field-to-record walkthrough. Open with “The crew changed the splice. Who owns the map update?” Show an approved markup, the affected splice ID, and the reviewer’s exception log using labeled synthetic files. Offer the sample crosswalk",
+      "success_metric": "qualified sample requests and scope conversations from OSP or GIS leads",
+      "evidence": [
+        "https://www.linkedin.com/posts/pathworks-engineering_ospdesign-fiberoptics-gis-activity-7505271689405153281-AnPf",
+        "https://www.reddit.com/r/telecom/comments/1xsf8zj/how_does_your_team_manage_changes_to_fiber/"
+      ]
+    },
+    {
+      "idea": "Publish a five-slide handoff checklist. Start with the controlling route revision, then share one drawing excerpt, the owner schema, an asset-to-evidence example and the reviewer handoff. Offer the checklist to prime contractors",
+      "success_metric": "requests from target-buyer accounts and cases where buyers share a real package deadline",
+      "evidence": [
+        "https://www.linkedin.com/posts/nosh-fiber-llc_beadprogram-fiberconstruction-osp-activity-7501324433144410112-eSbS",
+        "https://www.youtube.com/watch?v=cmumZBtfOmg"
+      ]
+    }
+  ]
+}

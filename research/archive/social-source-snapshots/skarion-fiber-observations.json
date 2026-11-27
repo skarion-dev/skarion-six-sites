@@ -1,0 +1,148 @@
+{
+  "coverage": {
+    "LinkedIn": {
+      "status": "partial",
+      "comparable": false,
+      "detail": "Public feeds and indexed posts supplied examples. Several publication dates or visible engagement totals could not be verified for a comparable window."
+    },
+    "YouTube": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "No topic-specific video was selected after screening public results for the 30-day window."
+    },
+    "Reddit": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "No directly relevant current-window discussion entered the research sample."
+    },
+    "Instagram": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search yielded no verified topic-matched post in the target window."
+    },
+    "TikTok": {
+      "status": "restricted",
+      "comparable": false,
+      "detail": "Direct public post lookup was blocked by the search tool. No subject-specific result was verified."
+    },
+    "Facebook": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The public index did not return a verified post or case in the target scope."
+    },
+    "X": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched post."
+    },
+    "Threads": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched post."
+    },
+    "Pinterest": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched pin."
+    },
+    "Bluesky": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "Public results did not establish a verified post matching the service focus."
+    },
+    "Publisher sites": {
+      "status": "observed",
+      "comparable": false,
+      "detail": "Selected original case, sample, service or editorial pages support context. Website content is excluded from social comparisons."
+    }
+  },
+  "observations": [
+    {
+      "platform": "Publisher sites",
+      "url": "https://www.hrgreen.com/how-osp-engineering-decisions-affect-fiber-deployment-costs/",
+      "publisher": "HR Green",
+      "published": "2026-11-11",
+      "mode": "organic",
+      "format": "article",
+      "theme": "cost of design decisions",
+      "summary": "The article explains how route and field decisions can affect deployment costs. It connects the design record to later documentation and verification.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://et.linkedin.com/company/ccisystems",
+      "publisher": "CCI Systems",
+      "published": null,
+      "mode": "organic",
+      "format": "company feed update",
+      "theme": "field-to-design handoff",
+      "summary": "Its public feed describes a sequence from route validation and engineering through placement, splicing and testing. It frames the offer around continuity between teams.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/mark-welch-36744970_broadband-ftth-telecom-activity-7491878336353198082-vGXT",
+      "publisher": "Mark Welch",
+      "published": null,
+      "mode": "organic",
+      "format": "practitioner discussion",
+      "theme": "field-to-design handoff",
+      "summary": "The post asks where remote design needs field verification. Visible engineering and construction replies point to pole IDs, underground conflicts and clear ownership for QA.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/praveen-kumar-a0b440241_telecom-fiberoptics-osp-activity-7500568558112972801-ve1s",
+      "publisher": "Praveen Kumar",
+      "published": null,
+      "mode": "organic",
+      "format": "indexed technical checklist",
+      "theme": "constructability",
+      "summary": "The indexed post lists checks such as pole feasibility, splice access, slack, route conditions and bill of materials before release.",
+      "metrics": {}
+    },
+    {
+      "platform": "Publisher sites",
+      "url": "https://www.hrgreen.com/news/imon-advances-fiber-expansion-across-northeastern-minnesota/",
+      "publisher": "HR Green",
+      "published": "2026-09-21",
+      "mode": "organic",
+      "format": "project case",
+      "theme": "constructability",
+      "summary": "The named ImOn case shows how walkouts, easement review, GIS and client feedback feed a construction package.",
+      "metrics": {}
+    },
+    {
+      "platform": "Publisher sites",
+      "url": "https://www.utilitiesone.com/news/q-and-a-with-mircea-scinteianu-utilities-one-senior-engineering-manager",
+      "publisher": "Utilities One",
+      "published": null,
+      "mode": "organic",
+      "format": "engineer interview",
+      "theme": "expert-led content",
+      "summary": "A senior engineering manager explains how engineering work fits into telecom deployment. It uses a named technical lead as the narrator rather than a feature list.",
+      "metrics": {}
+    }
+  ],
+  "performance_read": "One publisher article had a verified November date. The LinkedIn discussions add technical context, with too few comparable post dates or engagement counts to rank formats or estimate buyer response.",
+  "tests": [
+    {
+      "idea": "Run a 45-second LinkedIn screen recording. Hook: “The route is drawn. What’s still blocking release?” Show one crossing sheet with the approved route, one missing field input and the open item’s owner. Offer the one-route intake checklist",
+      "success_metric": "checklist requests and scope calls from fiber design or construction leads",
+      "evidence": [
+        "https://www.hrgreen.com/how-osp-engineering-decisions-affect-fiber-deployment-costs/",
+        "https://www.linkedin.com/posts/mark-welch-36744970_broadband-ftth-telecom-activity-7491878336353198082-vGXT",
+        "https://www.linkedin.com/posts/praveen-kumar-a0b440241_telecom-fiberoptics-osp-activity-7500568558112972801-ve1s"
+      ]
+    },
+    {
+      "idea": "Try a project-story carousel for one synthetic route. Show the field inputs, one design decision, the review step and the finished package index. Invite a buyer to discuss one pending route",
+      "success_metric": "comments from prime PMs and requests for a route package sample",
+      "evidence": [
+        "https://et.linkedin.com/company/ccisystems",
+        "https://www.hrgreen.com/news/imon-advances-fiber-expansion-across-northeastern-minnesota/",
+        "https://www.utilitiesone.com/news/q-and-a-with-mircea-scinteianu-utilities-one-senior-engineering-manager"
+      ]
+    }
+  ]
+}

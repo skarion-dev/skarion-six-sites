@@ -2,6 +2,7 @@ import { cp, lstat, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/prom
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildCatalog, buildPages, escapeHtml, expandHome } from './pages.mjs';
+import { buildFoundersResearch } from './founders-research.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = path.join(root, 'dist');
@@ -90,7 +91,7 @@ const cards = sites.map(({ id, name, scope, domain, color, phase, summary }) => 
           <span class="lane"><span>${escapeHtml(scope)}</span><span class="phase">${escapeHtml(phase)}</span></span>
           <div class="card-title"><img src="${id}/logo.svg" width="44" height="44" alt=""><h2>${escapeHtml(name)}</h2></div>
           <p>${escapeHtml(summary)}</p>
-          <div class="card-foot"><span>${escapeHtml(domain)}</span><a href="${id}/">Website</a><a href="${id}/projects/">Projects</a><a href="${id}/capabilities/">Capabilities</a></div>
+          <div class="card-foot"><span>${escapeHtml(domain)}</span><a href="${id}/">Website</a><a href="${id}/projects/">Projects</a><a href="${id}/capabilities/">Capabilities</a><a href="founders-research/offers/${id}/">Research</a></div>
         </article>`).join('\n');
 const previewPath = path.join(dist, 'index.html');
 const preview = await readFile(previewPath, 'utf8');
@@ -103,6 +104,7 @@ for (const asset of ['base.css', 'details.css']) {
   await cp(path.join(root, 'shared', asset), path.join(catalogShared, asset));
 }
 await writeFile(path.join(catalog, 'index.html'), buildCatalog(sites, contentBySite));
+const research = await buildFoundersResearch(root, dist, sites);
 
 for (const site of sites) {
   const { id } = site;
@@ -137,4 +139,4 @@ for (const site of sites) {
 }
 
 const count = [...contentBySite.values()].reduce((total, content) => total + content.projects.length, 0);
-console.log(`Built ${sites.length} sites with capabilities, ${count} project case studies, and the preview hub in dist/.`);
+console.log(`Built ${sites.length} sites, ${count} case studies, and the internal research index for ${research.niches} niches and ${research.files} files.`);

@@ -1,0 +1,60 @@
+SKARION DRAFTING - LOW PRICE VALIDATION PROTOCOL
+November 12, 2026
+
+Purpose: test whether low-cost or free entry tasks lead to profitable repeat work.
+This revises the earlier assumption that every pilot must have a 40% margin.
+No campaign has been sent and no client trial has been completed by this model.
+
+BEFORE OFFERS
+- Confirm drafter cost and available hours, reviewer cost and availability.
+- Complete and review 3 permissioned sample exercises. Record every activity.
+- Choose a repeat-work pricing policy using actual costs; disclose it before trial.
+
+DIRECT PROSPECT TEST
+- Qualify 60 independent direct prospects with a relevant next drawing package.
+- Balance architecture/interior-design firms across three arms: $0, $25 and $49.
+- Randomize 20 prospects to each arm before sending offers.
+- Keep the same scope, source requirements, review, turnaround and follow-up.
+- Track all offers and refusals. Do not remove unsuccessful prospects from results.
+- Start with at most 10 completed trials total, at most 4 in any arm; if a capacity
+  limit is reached, record subsequent requests as deferred, not declined.
+- Small scope: one clean drawing excerpt or contained redline task estimated at
+  no more than 1.5 production hours, plus review, PM and correction allowance.
+- Quote larger or incomplete tasks separately. One introductory task per firm.
+- Free work has no favorable-review requirement and does not buy a testimonial.
+- Upwork prospects: use portfolio evidence and a funded paid test instead. Do not
+  route an Upwork prospect off-platform to obtain a free-work arrangement.
+
+LIMITS
+- Existing additional-cash ceiling: $950 for the first month.
+- Separate experiment limit: $650 economic acquisition cost including allocated
+  existing staff and sales time, or 30 team delivery hours, whichever occurs first.
+- These overlap; the experiment cap is not additional to the cash ceiling.
+- Record actual costs. Reduce the number of trials if the cap is reached earlier.
+
+EXACT RECORD FOR EACH PROSPECT
+Prospect ID / company / source / qualified reason / decision maker:
+Assigned price arm / date assigned / offer date:
+Source-quality and scope eligibility:
+Reply / trial acceptance / refusal reason / capacity deferral:
+Sales research and communication hours:
+Production / review / coordination / correction hours:
+Client acceptance / material defects / promised vs actual due date:
+Entry payment received / economic entry subsidy:
+Next paid quote / regular rate or price / accepted / declined / reason:
+Follow-on completed work / actual cost / invoice / collected payment:
+Second paid order / repeat hours / cumulative contribution:
+Cumulative acquisition cost recovered or outstanding:
+30-day / 60-day status:
+
+DECISION
+- Free-task acceptance is not willingness to pay.
+- Compare qualified replies, offer-to-trial conversion, offer-to-paid-follow-on
+  conversion, total labor, realized contribution and acquisition payback.
+- Do not assume that free and paid offers have equal conversion rates.
+- Aim for 2 clients buying follow-on work with positive measured contribution,
+  with at least 1 buying again. These are management checkpoints, not proof from
+  a statistically powered experiment. A small test cannot identify a sure winner.
+- If there are no paid follow-ons, review quality, segment, trust and scope before
+  increasing free volume. No paid response after 10 samples justifies changing
+  the test; it does not establish that true conversion is zero.

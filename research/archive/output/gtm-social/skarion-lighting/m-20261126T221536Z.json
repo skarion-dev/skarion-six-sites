@@ -1,0 +1,267 @@
+{
+  "plan": {
+    "watchlist": "skarion-lighting",
+    "run_id": "m-20261126T221536Z",
+    "current": [
+      "2026-10-28",
+      "2026-11-26"
+    ],
+    "previous": [
+      "2026-09-28",
+      "2026-10-27"
+    ],
+    "latest_saved": null,
+    "config": {
+      "name": "Skarion Lighting · photometric layouts",
+      "market": "U.S. electrical contractors, lighting distributors, and commercial site design teams; English, with global format references",
+      "goal": "Find clear ways to present fixture layouts, calculation inputs, alternatives and review requests.",
+      "topics": [
+        "commercial site photometrics",
+        "parking lot fixture layout",
+        "IES files",
+        "mounting height and distribution",
+        "uniformity and property-line spill"
+      ],
+      "accounts": [
+        "Wow Lighting and Controls",
+        "SiroLight",
+        "RAB Lighting",
+        "Nut Lighting",
+        "Acuity Brands",
+        "Summit Consultants",
+        "r/DIALux"
+      ],
+      "exclude": [
+        "residential decorative fixtures",
+        "unrelated lighting photography",
+        "product catalogs without layout examples"
+      ],
+      "lookback_days": 30,
+      "schedule": null,
+      "sources": {
+        "LinkedIn": {
+          "hosts": [
+            "linkedin.com"
+          ],
+          "method": "Public company feeds and individual posts"
+        },
+        "YouTube": {
+          "hosts": [
+            "youtube.com",
+            "youtu.be"
+          ],
+          "method": "Public videos and visible video counts"
+        },
+        "Reddit": {
+          "hosts": [
+            "reddit.com"
+          ],
+          "method": "Public discussions; cite relevant examples without bulk collection"
+        },
+        "Instagram": {
+          "hosts": [
+            "instagram.com"
+          ],
+          "method": "Public indexed posts and Reels"
+        },
+        "TikTok": {
+          "hosts": [
+            "tiktok.com"
+          ],
+          "method": "Public videos and TikTok Creative Center when available"
+        },
+        "Facebook": {
+          "hosts": [
+            "facebook.com"
+          ],
+          "method": "Public indexed posts; Ad Library separately for paid examples"
+        },
+        "X": {
+          "hosts": [
+            "x.com",
+            "twitter.com"
+          ],
+          "method": "Public indexed posts and publisher profiles"
+        },
+        "Threads": {
+          "hosts": [
+            "threads.com",
+            "threads.net"
+          ],
+          "method": "Public indexed posts"
+        },
+        "Pinterest": {
+          "hosts": [
+            "pinterest.com"
+          ],
+          "method": "Public indexed pins and boards"
+        },
+        "Bluesky": {
+          "hosts": [
+            "bsky.app"
+          ],
+          "method": "Public indexed posts and profiles"
+        },
+        "Publisher sites": {
+          "hosts": [
+            "summitmep.com"
+          ],
+          "method": "Original case studies, articles and sample deliverables for context"
+        }
+      }
+    }
+  },
+  "payload": {
+    "coverage": {
+      "LinkedIn": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "Public feeds and indexed posts supplied examples. Several publication dates or visible engagement totals could not be verified for a comparable window."
+      },
+      "YouTube": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "Selected reference videos are historical or have unverified publication dates. Indexed counts, when available, are older snapshots."
+      },
+      "Reddit": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "A relevant public discussion was selected. The sample does not establish comparable frequency or engagement."
+      },
+      "Instagram": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search yielded no verified topic-matched post in the target window."
+      },
+      "TikTok": {
+        "status": "restricted",
+        "comparable": false,
+        "detail": "Direct public post lookup was blocked by the search tool. No subject-specific result was verified."
+      },
+      "Facebook": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The public index did not return a verified post or case in the target scope."
+      },
+      "X": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched post."
+      },
+      "Threads": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched post."
+      },
+      "Pinterest": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched pin."
+      },
+      "Bluesky": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "Public results did not establish a verified post matching the service focus."
+      },
+      "Publisher sites": {
+        "status": "observed",
+        "comparable": false,
+        "detail": "Selected original case, sample, service or editorial pages support context. Website content is excluded from social comparisons."
+      }
+    },
+    "observations": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/wow-lighting-controls-inc_wowlighting-lightingdesign-photometrics-activity-7475234879119486976-QyaP",
+        "publisher": "Wow Lighting and Controls",
+        "published": null,
+        "mode": "organic",
+        "format": "indexed project explanation",
+        "theme": "fixtures and spacing",
+        "summary": "The distributor explains how a roadway fixture distribution affected spacing and visual comfort, connecting the selected layout to project concerns.",
+        "metrics": {}
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/rita-gao20001005_sirolight-parkinglotlighting-outdoorlighting-activity-7512383584780009473-gjrk",
+        "publisher": "Rita Gao · SiroLight example",
+        "published": null,
+        "mode": "organic",
+        "format": "indexed design comparison",
+        "theme": "fixtures and spacing",
+        "summary": "The post explains checking site geometry, pole height, spacing and light distribution in a simulation before selecting a product change.",
+        "metrics": {}
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/nut-lighting_most-people-think-lighting-design-starts-activity-7490125602197413888-DWPl",
+        "publisher": "Nut Lighting",
+        "published": null,
+        "mode": "organic",
+        "format": "indexed capability post",
+        "theme": "calculation deliverables",
+        "summary": "The designer lists AGi32 analysis, IES inputs and application types to make scope recognizable for a buyer.",
+        "metrics": {}
+      },
+      {
+        "platform": "Publisher sites",
+        "url": "https://summitmep.com/portfolio-item/the-luxe/",
+        "publisher": "Summit Consultants",
+        "published": null,
+        "mode": "organic",
+        "format": "project portfolio card",
+        "theme": "calculation deliverables",
+        "summary": "The apartment project page identifies its site lighting plan and photometric site plan as distinct deliverables within a broader electrical scope.",
+        "metrics": {}
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=o-7jIcAPGlw",
+        "publisher": "Catalin Design",
+        "published": "2026-03-15",
+        "mode": "organic",
+        "format": "technical explainer",
+        "theme": "fixtures and spacing",
+        "summary": "A DIALux tutorial shows the effect of pole spacing on a parking layout. The technical comparison gives viewers a concrete visual to inspect.",
+        "metrics": {
+          "views": 72,
+          "likes": 2
+        },
+        "metrics_as_of": "2026-11-26",
+        "metrics_context": "Count observed in the public search index. The platform measurement date was unavailable."
+      },
+      {
+        "platform": "Reddit",
+        "url": "https://www.reddit.com/r/DIALux/comments/1xyecca/a_free_mac_tool_for_inspecting_and_preparing/",
+        "publisher": "Vitrulux team in r/DIALux",
+        "published": "2026-11-17",
+        "mode": "unknown",
+        "format": "affiliated tool announcement",
+        "theme": "IES input checks",
+        "summary": "A team member explains how the separate tool can inspect IES or LDT distributions, metadata and comparison views before calculation, then asks where file preparation takes time.",
+        "metrics": {}
+      }
+    ],
+    "performance_read": "One tool discussion has a verified November date. The historical tutorial's indexed engagement is a single observation. The examples demonstrate how designers explain options and inputs, with insufficient comparable metrics to judge which format performs best.",
+    "tests": [
+      {
+        "idea": "Interview electrical contractors with a two-layout mockup. Hook: “Same lot. Same criteria. What changes with the fixture?” Keep geometry, grid and criteria fixed. Show spacing, mounting height and IES assumptions. Use calculated values only after the reviewer clears the model",
+        "success_metric": "buyers who can state their acceptance criteria and share a real fixture cut sheet or layout request",
+        "evidence": [
+          "https://www.linkedin.com/posts/wow-lighting-controls-inc_wowlighting-lightingdesign-photometrics-activity-7475234879119486976-QyaP",
+          "https://www.linkedin.com/posts/rita-gao20001005_sirolight-parkinglotlighting-outdoorlighting-activity-7512383584780009473-gjrk",
+          "https://www.youtube.com/watch?v=o-7jIcAPGlw"
+        ]
+      },
+      {
+        "idea": "Test a one-page photometrics intake card with distributors. Ask for base drawing, pole or mounting constraints, IES files and the reviewing party. Ask which required input usually arrives last",
+        "success_metric": "distributors who can identify an active layout and supply the missing input",
+        "evidence": [
+          "https://www.linkedin.com/posts/nut-lighting_most-people-think-lighting-design-starts-activity-7490125602197413888-DWPl",
+          "https://summitmep.com/portfolio-item/the-luxe/",
+          "https://www.reddit.com/r/DIALux/comments/1xyecca/a_free_mac_tool_for_inspecting_and_preparing/"
+        ]
+      }
+    ]
+  }
+}

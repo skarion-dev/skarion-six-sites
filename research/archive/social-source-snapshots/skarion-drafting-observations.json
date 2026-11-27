@@ -1,0 +1,153 @@
+{
+  "coverage": {
+    "LinkedIn": {
+      "status": "partial",
+      "comparable": false,
+      "detail": "Public feeds and indexed posts supplied examples. Several publication dates or visible engagement totals could not be verified for a comparable window."
+    },
+    "YouTube": {
+      "status": "partial",
+      "comparable": false,
+      "detail": "Selected reference videos are historical or have unverified publication dates. Indexed counts, when available, are older snapshots."
+    },
+    "Reddit": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "No directly relevant current-window discussion entered the research sample."
+    },
+    "Instagram": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search yielded no verified topic-matched post in the target window."
+    },
+    "TikTok": {
+      "status": "restricted",
+      "comparable": false,
+      "detail": "Direct public post lookup was blocked by the search tool. No subject-specific result was verified."
+    },
+    "Facebook": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The public index did not return a verified post or case in the target scope."
+    },
+    "X": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched post."
+    },
+    "Threads": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched post."
+    },
+    "Pinterest": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched pin."
+    },
+    "Bluesky": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "Public results did not establish a verified post matching the service focus."
+    },
+    "Publisher sites": {
+      "status": "observed",
+      "comparable": false,
+      "detail": "Selected original case, sample, service or editorial pages support context. Website content is excluded from social comparisons."
+    }
+  },
+  "observations": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/precision-property-measurements-ppm-_were-proud-to-offer-customization-services-activity-7305984273746993153-rOBD",
+      "publisher": "Precision Property Measurements",
+      "published": null,
+      "mode": "organic",
+      "format": "service differentiation post",
+      "theme": "CAD standards",
+      "summary": "PPM sells setting up the customer's drawing standards once and then using them across subsequent as-built orders.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/-skyline-design-group_bim-autocad-asbuiltdrawings-activity-7506707674911342592-imV2",
+      "publisher": "Skyline Design Group",
+      "published": null,
+      "mode": "organic",
+      "format": "indexed workflow post",
+      "theme": "revision trace",
+      "summary": "Skyline positions conversion of field markups to digital as-builts as a discrete drafting service and lists its outputs.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/cadbricks_scan-to-bim-cadbricks-activity-7510427802907758592-Kv_Q",
+      "publisher": "CADBRICKS",
+      "published": null,
+      "mode": "organic",
+      "format": "indexed sample offer",
+      "theme": "bounded trial",
+      "summary": "CADBRICKS lists native AutoCAD drawing types and invites architects to assess a one-floor trial where drafting is the bottleneck.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/gprsrealitycapture",
+      "publisher": "GPRS Reality Capture",
+      "published": null,
+      "mode": "organic",
+      "format": "project feed update",
+      "theme": "visual proof",
+      "summary": "The company illustrates a historic opera house capture and BIM handoff and explains who can use the model. It is a broader capture benchmark.",
+      "metrics": {}
+    },
+    {
+      "platform": "Publisher sites",
+      "url": "https://www.scan2plan.io/projects/special-projects",
+      "publisher": "Scan2Plan",
+      "published": null,
+      "mode": "organic",
+      "format": "portfolio case and excerpt",
+      "theme": "visual proof",
+      "summary": "Its Gray Space Architecture example identifies an actual 55-page legacy PDF-to-CAD conversion and the output format.",
+      "metrics": {}
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=KyR-mnnGoL0",
+      "publisher": "SHARE3DCAM",
+      "published": "2026-04-28",
+      "mode": "organic",
+      "format": "workflow demo",
+      "theme": "visual proof",
+      "summary": "The indexed demo makes a production sequence visible from source point cloud to early 2D CAD. The format is useful even though Skarion's first offer starts with buyer-approved files.",
+      "metrics": {
+        "views": 349,
+        "likes": 6
+      },
+      "metrics_as_of": "2026-11-26",
+      "metrics_context": "Count observed in the public search index. The platform measurement date was unavailable."
+    }
+  ],
+  "performance_read": "A historical video had visible indexed counts. The LinkedIn and portfolio examples describe formats and calls to action. They lack comparable buyer response, impressions and timing for a performance ranking.",
+  "tests": [
+    {
+      "idea": "Test a four-panel before-and-after post. Hook: “Can your CAD lead trace every redline?” Show the approved markup, editable linework, revision register and one open reviewer item. Offer one sample DWG/PDF pair",
+      "success_metric": "qualified sample requests and small-batch scope calls",
+      "evidence": [
+        "https://www.linkedin.com/posts/precision-property-measurements-ppm-_were-proud-to-offer-customization-services-activity-7305984273746993153-rOBD",
+        "https://www.linkedin.com/posts/-skyline-design-group_bim-autocad-asbuiltdrawings-activity-7506707674911342592-imV2",
+        "https://www.scan2plan.io/projects/special-projects"
+      ]
+    },
+    {
+      "idea": "Test a founder post showing one client drafting standard in a synthetic sample. Use a legacy layer mapping and title-block example, then ask whether the buyer has an approved template for a one-batch pilot",
+      "success_metric": "responses with a sample standard, native format or batch size",
+      "evidence": [
+        "https://www.linkedin.com/posts/precision-property-measurements-ppm-_were-proud-to-offer-customization-services-activity-7305984273746993153-rOBD",
+        "https://www.linkedin.com/posts/cadbricks_scan-to-bim-cadbricks-activity-7510427802907758592-Kv_Q",
+        "https://www.youtube.com/watch?v=KyR-mnnGoL0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1427 @@
+{
+  "date": "2026-11-12",
+  "validation": "Reference cases and economic invariants passed",
+  "caveat": "Exhaustive enumeration over specified discrete assumptions, not real sales or CAD delivery tests. Grid pass rates are not success probabilities.",
+  "common": {
+    "currency": "USD",
+    "pm_hourly_cost": 20,
+    "sales_hourly_cost": 15,
+    "actual_costs_confirmed": false,
+    "taxes_included": false,
+    "one_time_launch_costs_included_in_monthly_grid": false,
+    "new_external_messages_sent": false
+  },
+  "fixed_jobs": {
+    "grid": {
+      "price": [
+        0,
+        10,
+        25,
+        49,
+        75,
+        99,
+        149,
+        175,
+        250,
+        350
+      ],
+      "production_hours": [
+        0.5,
+        1,
+        1.5,
+        2,
+        3,
+        4,
+        6,
+        8,
+        12
+      ],
+      "drafter_cost": [
+        2,
+        2.5,
+        3,
+        4,
+        6,
+        8,
+        10,
+        12,
+        15,
+        20
+      ],
+      "rework": [
+        0,
+        0.1,
+        0.25,
+        0.5,
+        1
+      ],
+      "review_fraction": [
+        0.1,
+        0.25,
+        0.5
+      ],
+      "reviewer_cost": [
+        10,
+        15,
+        20,
+        30
+      ],
+      "pm_hours": [
+        0.25,
+        0.5,
+        1
+      ],
+      "fee": [
+        0,
+        0.03,
+        0.1,
+        0.15
+      ],
+      "acquisition_cost_per_job": [
+        0,
+        10,
+        25,
+        50
+      ]
+    },
+    "count": 2592000,
+    "by_price": {
+      "0": {
+        "tested": 259200,
+        "positive_delivery_contribution": 0,
+        "positive_after_acquisition": 0,
+        "worst_after_acquisition": -730.0,
+        "best_after_acquisition": -6.5
+      },
+      "10": {
+        "tested": 259200,
+        "positive_delivery_contribution": 2296,
+        "positive_after_acquisition": 574,
+        "worst_after_acquisition": -721.5,
+        "best_after_acquisition": 3.5
+      },
+      "25": {
+        "tested": 259200,
+        "positive_delivery_contribution": 39812,
+        "positive_after_acquisition": 12360,
+        "worst_after_acquisition": -708.75,
+        "best_after_acquisition": 18.5
+      },
+      "49": {
+        "tested": 259200,
+        "positive_delivery_contribution": 112764,
+        "positive_after_acquisition": 57362,
+        "worst_after_acquisition": -688.35,
+        "best_after_acquisition": 42.5
+      },
+      "75": {
+        "tested": 259200,
+        "positive_delivery_contribution": 157212,
+        "positive_after_acquisition": 109280,
+        "worst_after_acquisition": -666.25,
+        "best_after_acquisition": 68.5
+      },
+      "99": {
+        "tested": 259200,
+        "positive_delivery_contribution": 183508,
+        "positive_after_acquisition": 153232,
+        "worst_after_acquisition": -645.85,
+        "best_after_acquisition": 92.5
+      },
+      "149": {
+        "tested": 259200,
+        "positive_delivery_contribution": 215232,
+        "positive_after_acquisition": 201292,
+        "worst_after_acquisition": -603.35,
+        "best_after_acquisition": 142.5
+      },
+      "175": {
+        "tested": 259200,
+        "positive_delivery_contribution": 225520,
+        "positive_after_acquisition": 215318,
+        "worst_after_acquisition": -581.25,
+        "best_after_acquisition": 168.5
+      },
+      "250": {
+        "tested": 259200,
+        "positive_delivery_contribution": 243484,
+        "positive_after_acquisition": 238922,
+        "worst_after_acquisition": -517.5,
+        "best_after_acquisition": 243.5
+      },
+      "350": {
+        "tested": 259200,
+        "positive_delivery_contribution": 253696,
+        "positive_after_acquisition": 251970,
+        "worst_after_acquisition": -432.5,
+        "best_after_acquisition": 343.5
+      }
+    }
+  },
+  "monthly": {
+    "grid": {
+      "hourly_rate": [
+        5,
+        8,
+        10,
+        12,
+        15,
+        18,
+        20,
+        22,
+        25,
+        28,
+        30,
+        32,
+        35,
+        40
+      ],
+      "paid_capacity": [
+        80,
+        160
+      ],
+      "sold_hours": [
+        10,
+        20,
+        30,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160
+      ],
+      "drafter_cost": [
+        2,
+        2.5,
+        3,
+        4,
+        6,
+        8,
+        10,
+        12,
+        15,
+        20
+      ],
+      "rework": [
+        0,
+        0.1,
+        0.25,
+        0.5
+      ],
+      "review_fraction": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "reviewer_cost": [
+        15,
+        25
+      ],
+      "fee": [
+        0.03,
+        0.1,
+        0.15
+      ],
+      "overhead": [
+        100,
+        300,
+        600
+      ]
+    },
+    "count": 604800,
+    "technical_feasible": 400680,
+    "safe_feasible": 340200,
+    "safe_and_profitable": 41707,
+    "by_rate": {
+      "5": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 0
+      },
+      "8": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 0
+      },
+      "10": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 10
+      },
+      "12": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 96
+      },
+      "15": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 476
+      },
+      "18": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 1207
+      },
+      "20": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 1815
+      },
+      "22": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 2489
+      },
+      "25": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 3520
+      },
+      "28": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 4627
+      },
+      "30": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 5345
+      },
+      "32": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 6121
+      },
+      "35": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 7153
+      },
+      "40": {
+        "tested": 43200,
+        "safe_feasible": 24300,
+        "safe_and_profitable": 8848
+      }
+    },
+    "other_assumptions": {
+      "reviewer_capacity_hours": 40,
+      "pm_capacity_hours": 20,
+      "pm_hours_per_sold_hour": 0.1,
+      "monthly_sales_labor": 150,
+      "drafter_capacity_reserve": 0.2
+    }
+  },
+  "trial_cohorts": {
+    "grid": {
+      "entry_price": [
+        0,
+        10,
+        25,
+        49,
+        75,
+        99,
+        175
+      ],
+      "drafter_cost": [
+        2,
+        2.5,
+        3,
+        4,
+        6,
+        8,
+        10,
+        15,
+        20
+      ],
+      "trial_production_hours": [
+        0.5,
+        1.5,
+        3,
+        6
+      ],
+      "acquisition_per_completed_trial": [
+        0,
+        15,
+        50,
+        150
+      ],
+      "trial_to_repeat_conversion": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5,
+        0.75
+      ],
+      "repeat_hourly_rate": [
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "repeat_blocks_per_converted_client": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    "count": 120960,
+    "positive_expected_result": 59211,
+    "cannot_recover_within_ten_clients_and_selected_blocks": 40740,
+    "other_assumptions": {
+      "cohort_size": 10,
+      "trial_rework": 0.25,
+      "review_hours_per_trial": 0.5,
+      "pm_hours_per_trial": 0.25,
+      "reviewer_cost": 20,
+      "fee": 0.03,
+      "cohort_overhead": 100,
+      "block_hours": 20,
+      "repeat_rework": 0.1,
+      "review_hours_per_block": 4,
+      "pm_hours_per_block": 2,
+      "overhead_per_repeat_block": 25,
+      "idle_reserved_labor_included": false,
+      "price_response_relationship": "not assumed; acceptance and retention must be measured"
+    }
+  },
+  "funnel": {
+    "grid": {
+      "qualified_contacts": [
+        30,
+        60,
+        100,
+        200,
+        500
+      ],
+      "response_rate": [
+        0.01,
+        0.02,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "trial_acceptance_among_responses": [
+        0.1,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "repeat_conversion_among_trials": [
+        0.05,
+        0.1,
+        0.2,
+        0.3,
+        0.5
+      ],
+      "research_minutes_per_contact": [
+        5,
+        10,
+        20
+      ],
+      "entry_price": [
+        0,
+        25,
+        49,
+        99
+      ],
+      "repeat_rate": [
+        20,
+        25,
+        30
+      ],
+      "repeat_blocks": [
+        1,
+        3
+      ]
+    },
+    "count": 36000,
+    "positive_expected_result": 4887,
+    "other_assumptions": {
+      "sales_hourly_cost": 15,
+      "discovery_hours_per_response": 0.25,
+      "delivery_cost_per_trial": 33.75,
+      "cohort_overhead": 100,
+      "fee": 0.03,
+      "cost_per_repeat_block_including_overhead": 365,
+      "capacity_limits": "not enforced; this module isolates sales economics"
+    }
+  },
+  "user_calibrated": {
+    "grid": {
+      "bdt_per_usd": [
+        115,
+        124.75,
+        135
+      ],
+      "cost_uplift": [
+        0,
+        0.25,
+        0.5
+      ],
+      "available_drafter_hours": [
+        40,
+        80,
+        160
+      ],
+      "sold_hours": [
+        10,
+        20,
+        40,
+        56,
+        80,
+        100,
+        112,
+        120,
+        140,
+        160
+      ],
+      "selling_rate": [
+        5,
+        8,
+        10,
+        12,
+        15,
+        18,
+        20,
+        25,
+        30,
+        32
+      ],
+      "reviewer_cost": [
+        3,
+        6,
+        10,
+        20
+      ],
+      "review_fraction": [
+        0.1,
+        0.2,
+        0.3
+      ],
+      "fee": [
+        0.03,
+        0.1,
+        0.15
+      ],
+      "overhead": [
+        100,
+        300,
+        600
+      ],
+      "rework": [
+        0.1,
+        0.25,
+        0.5
+      ]
+    },
+    "count": 874800,
+    "safe_feasible": 330480,
+    "safe_and_profitable": 54485,
+    "reported_drafter_monthly_bdt": 40000,
+    "reference_fx": 124.75,
+    "fx_source": "https://www.bb.org.bd/en/index.php/econdata/exchangerate",
+    "monthly_usd": 320.64128256513027,
+    "assumed_paid_hours_for_hourly_conversion": 160,
+    "hourly_usd": 2.0040080160320644,
+    "all_in_cost_and_availability_confirmed": false,
+    "monthly_scenarios": [
+      {
+        "sold_hours": 56,
+        "rate": 10,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 749.8412825651303,
+        "profit": -245.8412825651303
+      },
+      {
+        "sold_hours": 56,
+        "rate": 10,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 830.0016032064128,
+        "profit": -326.0016032064128
+      },
+      {
+        "sold_hours": 56,
+        "rate": 10,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 906.6412825651303,
+        "profit": -402.64128256513027
+      },
+      {
+        "sold_hours": 56,
+        "rate": 10,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 986.8016032064129,
+        "profit": -482.8016032064129
+      },
+      {
+        "sold_hours": 56,
+        "rate": 15,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 749.8412825651303,
+        "profit": 6.158717434869686
+      },
+      {
+        "sold_hours": 56,
+        "rate": 15,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 830.0016032064128,
+        "profit": -74.00160320641282
+      },
+      {
+        "sold_hours": 56,
+        "rate": 15,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 906.6412825651303,
+        "profit": -150.64128256513027
+      },
+      {
+        "sold_hours": 56,
+        "rate": 15,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 986.8016032064129,
+        "profit": -230.8016032064129
+      },
+      {
+        "sold_hours": 56,
+        "rate": 20,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 749.8412825651303,
+        "profit": 258.1587174348697
+      },
+      {
+        "sold_hours": 56,
+        "rate": 20,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 830.0016032064128,
+        "profit": 177.99839679358718
+      },
+      {
+        "sold_hours": 56,
+        "rate": 20,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 906.6412825651303,
+        "profit": 101.35871743486973
+      },
+      {
+        "sold_hours": 56,
+        "rate": 20,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 986.8016032064129,
+        "profit": 21.198396793587108
+      },
+      {
+        "sold_hours": 56,
+        "rate": 25,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 749.8412825651303,
+        "profit": 510.1587174348697
+      },
+      {
+        "sold_hours": 56,
+        "rate": 25,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 830.0016032064128,
+        "profit": 429.9983967935872
+      },
+      {
+        "sold_hours": 56,
+        "rate": 25,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 906.6412825651303,
+        "profit": 353.35871743486973
+      },
+      {
+        "sold_hours": 56,
+        "rate": 25,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 986.8016032064129,
+        "profit": 273.1983967935871
+      },
+      {
+        "sold_hours": 112,
+        "rate": 10,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 929.0412825651302,
+        "profit": 78.95871743486975
+      },
+      {
+        "sold_hours": 112,
+        "rate": 10,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1009.2016032064129,
+        "profit": -1.2016032064128694
+      },
+      {
+        "sold_hours": 112,
+        "rate": 10,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 1242.6412825651303,
+        "profit": -234.64128256513027
+      },
+      {
+        "sold_hours": 112,
+        "rate": 10,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1322.801603206413,
+        "profit": -314.8016032064129
+      },
+      {
+        "sold_hours": 112,
+        "rate": 15,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 929.0412825651302,
+        "profit": 582.9587174348698
+      },
+      {
+        "sold_hours": 112,
+        "rate": 15,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1009.2016032064129,
+        "profit": 502.79839679358713
+      },
+      {
+        "sold_hours": 112,
+        "rate": 15,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 1242.6412825651303,
+        "profit": 269.35871743486973
+      },
+      {
+        "sold_hours": 112,
+        "rate": 15,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1322.801603206413,
+        "profit": 189.1983967935871
+      },
+      {
+        "sold_hours": 112,
+        "rate": 20,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 929.0412825651302,
+        "profit": 1086.9587174348699
+      },
+      {
+        "sold_hours": 112,
+        "rate": 20,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1009.2016032064129,
+        "profit": 1006.7983967935871
+      },
+      {
+        "sold_hours": 112,
+        "rate": 20,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 1242.6412825651303,
+        "profit": 773.3587174348697
+      },
+      {
+        "sold_hours": 112,
+        "rate": 20,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1322.801603206413,
+        "profit": 693.1983967935871
+      },
+      {
+        "sold_hours": 112,
+        "rate": 25,
+        "reviewer_cost": 6,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 929.0412825651302,
+        "profit": 1590.9587174348699
+      },
+      {
+        "sold_hours": 112,
+        "rate": 25,
+        "reviewer_cost": 6,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1009.2016032064129,
+        "profit": 1510.798396793587
+      },
+      {
+        "sold_hours": 112,
+        "rate": 25,
+        "reviewer_cost": 20,
+        "uplift": 0,
+        "full_monthly_drafter_cost": 320.64128256513027,
+        "total_cost_before_fees": 1242.6412825651303,
+        "profit": 1277.3587174348697
+      },
+      {
+        "sold_hours": 112,
+        "rate": 25,
+        "reviewer_cost": 20,
+        "uplift": 0.25,
+        "full_monthly_drafter_cost": 400.80160320641284,
+        "total_cost_before_fees": 1322.801603206413,
+        "profit": 1197.198396793587
+      }
+    ],
+    "sample_delivery_cost": 18.75751503006012,
+    "full_pilot_delivery_cost": 40.02004008016032,
+    "entry_contributions": [
+      {
+        "price": 0,
+        "sample_contribution": -18.75751503006012,
+        "full_pilot_contribution": -40.02004008016032
+      },
+      {
+        "price": 25,
+        "sample_contribution": 5.492484969939881,
+        "full_pilot_contribution": -15.77004008016032
+      },
+      {
+        "price": 49,
+        "sample_contribution": 28.77248496993988,
+        "full_pilot_contribution": 7.50995991983968
+      },
+      {
+        "price": 99,
+        "sample_contribution": 77.27248496993988,
+        "full_pilot_contribution": 56.00995991983968
+      }
+    ],
+    "trial_payback": [
+      {
+        "price": 0,
+        "blocks": 1,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 437.5751503006012,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 3,
+        "expected_conversion_break_even": 0.21998448472148063,
+        "expected_result": -39.75150300601206,
+        "payback_probability_conditional_on_inputs": 0.3222004736000002
+      },
+      {
+        "price": 0,
+        "blocks": 3,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 437.5751503006012,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.07332816157382688,
+        "expected_result": 755.8957915831662,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      },
+      {
+        "price": 25,
+        "blocks": 1,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 195.0751503006012,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.09807116878406562,
+        "expected_result": 202.74849699398794,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      },
+      {
+        "price": 25,
+        "blocks": 3,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 195.0751503006012,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.032690389594688535,
+        "expected_result": 998.3957915831662,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      },
+      {
+        "price": 49,
+        "blocks": 1,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": -37.72484969939882,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 0,
+        "expected_conversion_break_even": 0.0,
+        "expected_result": 435.54849699398795,
+        "payback_probability_conditional_on_inputs": 1.0000000000000007
+      },
+      {
+        "price": 49,
+        "blocks": 3,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": -37.72484969939882,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 0,
+        "expected_conversion_break_even": 0.0,
+        "expected_result": 1231.1957915831663,
+        "payback_probability_conditional_on_inputs": 1.0000000000000007
+      },
+      {
+        "price": 99,
+        "blocks": 1,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": -522.7248496993989,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 0,
+        "expected_conversion_break_even": 0.0,
+        "expected_result": 920.548496993988,
+        "payback_probability_conditional_on_inputs": 1.0000000000000007
+      },
+      {
+        "price": 99,
+        "blocks": 3,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": -522.7248496993989,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 0,
+        "expected_conversion_break_even": 0.0,
+        "expected_result": 1716.1957915831663,
+        "payback_probability_conditional_on_inputs": 1.0000000000000007
+      }
+    ],
+    "free_repeat_rates": [
+      {
+        "rate": 10,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 437.5751503006012,
+        "repeat_block_contribution": 4.911823647294568,
+        "needed_repeat_clients": 30,
+        "expected_conversion_break_even": 2.969536243710063,
+        "expected_result": -408.1042084168338,
+        "payback_probability_conditional_on_inputs": 0
+      },
+      {
+        "rate": 15,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 437.5751503006012,
+        "repeat_block_contribution": 101.91182364729457,
+        "needed_repeat_clients": 2,
+        "expected_conversion_break_even": 0.14312214050681038,
+        "expected_result": 173.89579158316621,
+        "payback_probability_conditional_on_inputs": 0.6241903616000004
+      },
+      {
+        "rate": 20,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 437.5751503006012,
+        "repeat_block_contribution": 198.91182364729457,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.07332816157382688,
+        "expected_result": 755.8957915831662,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      },
+      {
+        "rate": 25,
+        "trial_delivery_each": 18.75751503006012,
+        "trial_loss": 437.5751503006012,
+        "repeat_block_contribution": 295.91182364729457,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.049291164386654034,
+        "expected_result": 1337.895791583166,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      }
+    ],
+    "cold_funnel": [
+      {
+        "price": 0,
+        "expected_trials": 10.0,
+        "expected_repeat_clients": 2.0,
+        "sales_labor_cost": 575.0,
+        "expected_result": 330.8957915831662,
+        "probability_at_least_one_repeat": 0.8660203251420383,
+        "probability_at_least_two_repeat": 0.5953543153279741
+      },
+      {
+        "price": 25,
+        "expected_trials": 10.0,
+        "expected_repeat_clients": 2.0,
+        "sales_labor_cost": 575.0,
+        "expected_result": 573.3957915831662,
+        "probability_at_least_one_repeat": 0.8660203251420383,
+        "probability_at_least_two_repeat": 0.5953543153279741
+      },
+      {
+        "price": 49,
+        "expected_trials": 10.0,
+        "expected_repeat_clients": 2.0,
+        "sales_labor_cost": 575.0,
+        "expected_result": 806.1957915831662,
+        "probability_at_least_one_repeat": 0.8660203251420383,
+        "probability_at_least_two_repeat": 0.5953543153279741
+      }
+    ],
+    "sensitivity_boundary": "Reviewer/PM/sales costs remain assumptions; monthly grid charges full drafter cost. Trials allocate only used labor, with idle capacity examined separately."
+  },
+  "total_grid_cases": 4228560,
+  "illustrations": {
+    "simple_trial_contribution": [
+      {
+        "price": 0,
+        "delivery_cost": 33.75,
+        "after_fees_and_delivery": -33.75
+      },
+      {
+        "price": 25,
+        "delivery_cost": 33.75,
+        "after_fees_and_delivery": -9.5
+      },
+      {
+        "price": 49,
+        "delivery_cost": 33.75,
+        "after_fees_and_delivery": 13.780000000000001
+      },
+      {
+        "price": 99,
+        "delivery_cost": 33.75,
+        "after_fees_and_delivery": 62.28
+      }
+    ],
+    "full_pilot_contribution": [
+      {
+        "price": 0,
+        "delivery_cost": 80,
+        "after_fees_and_delivery": -80.0
+      },
+      {
+        "price": 25,
+        "delivery_cost": 80,
+        "after_fees_and_delivery": -55.75
+      },
+      {
+        "price": 49,
+        "delivery_cost": 80,
+        "after_fees_and_delivery": -32.47
+      },
+      {
+        "price": 99,
+        "delivery_cost": 80,
+        "after_fees_and_delivery": 16.03
+      },
+      {
+        "price": 175,
+        "delivery_cost": 80,
+        "after_fees_and_delivery": 89.75
+      }
+    ],
+    "monthly_sensitivity": [
+      {
+        "rate": 15,
+        "labor": 4,
+        "profit": -150.0,
+        "cost_before_fees": 906.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 20,
+        "labor": 4,
+        "profit": 102.0,
+        "cost_before_fees": 906.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 25,
+        "labor": 4,
+        "profit": 354.0,
+        "cost_before_fees": 906.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 30,
+        "labor": 4,
+        "profit": 606.0,
+        "cost_before_fees": 906.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 15,
+        "labor": 6,
+        "profit": -310.0,
+        "cost_before_fees": 1066.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 20,
+        "labor": 6,
+        "profit": -58.0,
+        "cost_before_fees": 1066.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 25,
+        "labor": 6,
+        "profit": 194.0,
+        "cost_before_fees": 1066.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 30,
+        "labor": 6,
+        "profit": 446.0,
+        "cost_before_fees": 1066.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 15,
+        "labor": 8,
+        "profit": -470.0,
+        "cost_before_fees": 1226.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 20,
+        "labor": 8,
+        "profit": -218.0,
+        "cost_before_fees": 1226.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 25,
+        "labor": 8,
+        "profit": 34.0,
+        "cost_before_fees": 1226.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 30,
+        "labor": 8,
+        "profit": 286.0,
+        "cost_before_fees": 1226.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 15,
+        "labor": 10,
+        "profit": -630.0,
+        "cost_before_fees": 1386.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 20,
+        "labor": 10,
+        "profit": -378.0,
+        "cost_before_fees": 1386.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 25,
+        "labor": 10,
+        "profit": -126.0,
+        "cost_before_fees": 1386.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      },
+      {
+        "rate": 30,
+        "labor": 10,
+        "profit": 126.0,
+        "cost_before_fees": 1386.0,
+        "technical_feasible": true,
+        "safe_feasible": true
+      }
+    ],
+    "cohort_payback": [
+      {
+        "price": 0,
+        "blocks": 1,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 587.5,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 5,
+        "expected_conversion_break_even": 0.4895833333333333,
+        "expected_result": -347.5,
+        "payback_probability_conditional_on_inputs": 0.03279349760000001
+      },
+      {
+        "price": 0,
+        "blocks": 3,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 587.5,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 2,
+        "expected_conversion_break_even": 0.16319444444444445,
+        "expected_result": 132.5,
+        "payback_probability_conditional_on_inputs": 0.6241903616000004
+      },
+      {
+        "price": 25,
+        "blocks": 1,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 345.0,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 3,
+        "expected_conversion_break_even": 0.2875,
+        "expected_result": -105.0,
+        "payback_probability_conditional_on_inputs": 0.3222004736000002
+      },
+      {
+        "price": 25,
+        "blocks": 3,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 345.0,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.09583333333333334,
+        "expected_result": 375.0,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      },
+      {
+        "price": 49,
+        "blocks": 1,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 112.19999999999999,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.09349999999999999,
+        "expected_result": 127.80000000000001,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      },
+      {
+        "price": 49,
+        "blocks": 3,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 112.19999999999999,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.031166666666666662,
+        "expected_result": 607.8,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      },
+      {
+        "price": 99,
+        "blocks": 1,
+        "trial_delivery_each": 33.75,
+        "trial_loss": -372.8,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 0,
+        "expected_conversion_break_even": 0.0,
+        "expected_result": 612.8,
+        "payback_probability_conditional_on_inputs": 1.0000000000000007
+      },
+      {
+        "price": 99,
+        "blocks": 3,
+        "trial_delivery_each": 33.75,
+        "trial_loss": -372.8,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 0,
+        "expected_conversion_break_even": 0.0,
+        "expected_result": 1092.8,
+        "payback_probability_conditional_on_inputs": 1.0000000000000007
+      }
+    ],
+    "free_repeat_rate_sensitivity": [
+      {
+        "rate": 15,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 587.5,
+        "repeat_block_contribution": -74.0,
+        "needed_repeat_clients": null,
+        "expected_conversion_break_even": null,
+        "expected_result": -1031.5,
+        "payback_probability_conditional_on_inputs": 0
+      },
+      {
+        "rate": 20,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 587.5,
+        "repeat_block_contribution": 23.0,
+        "needed_repeat_clients": 9,
+        "expected_conversion_break_even": 0.8514492753623188,
+        "expected_result": -449.5,
+        "payback_probability_conditional_on_inputs": 4.198400000000002e-06
+      },
+      {
+        "rate": 25,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 587.5,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 2,
+        "expected_conversion_break_even": 0.16319444444444445,
+        "expected_result": 132.5,
+        "payback_probability_conditional_on_inputs": 0.6241903616000004
+      },
+      {
+        "rate": 30,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 587.5,
+        "repeat_block_contribution": 217.0,
+        "needed_repeat_clients": 1,
+        "expected_conversion_break_even": 0.09024577572964669,
+        "expected_result": 714.5,
+        "payback_probability_conditional_on_inputs": 0.8926258176000005
+      }
+    ],
+    "free_acquisition_sensitivity": [
+      {
+        "acquisition_per_trial": 0,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 437.5,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 2,
+        "expected_conversion_break_even": 0.12152777777777778,
+        "expected_result": 282.5,
+        "payback_probability_conditional_on_inputs": 0.6241903616000004
+      },
+      {
+        "acquisition_per_trial": 15,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 587.5,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 2,
+        "expected_conversion_break_even": 0.16319444444444445,
+        "expected_result": 132.5,
+        "payback_probability_conditional_on_inputs": 0.6241903616000004
+      },
+      {
+        "acquisition_per_trial": 50,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 937.5,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 3,
+        "expected_conversion_break_even": 0.2604166666666667,
+        "expected_result": -217.5,
+        "payback_probability_conditional_on_inputs": 0.3222004736000002
+      },
+      {
+        "acquisition_per_trial": 150,
+        "trial_delivery_each": 33.75,
+        "trial_loss": 1937.5,
+        "repeat_block_contribution": 120.0,
+        "needed_repeat_clients": 6,
+        "expected_conversion_break_even": 0.5381944444444444,
+        "expected_result": -1217.5,
+        "payback_probability_conditional_on_inputs": 0.006369382400000003
+      }
+    ],
+    "direct_funnel_examples": [
+      {
+        "n": 30,
+        "expected_trials": 1.5,
+        "expected_repeat_clients": 0.30000000000000004,
+        "sales_labor_cost": 86.25,
+        "expected_result": -128.875,
+        "probability_at_least_one_repeat": 0.2602996266117198,
+        "probability_at_least_two_repeat": 0.036147998312240914
+      },
+      {
+        "n": 60,
+        "expected_trials": 3.0,
+        "expected_repeat_clients": 0.6000000000000001,
+        "sales_labor_cost": 172.5,
+        "expected_result": -157.74999999999997,
+        "probability_at_least_one_repeat": 0.4528433576092388,
+        "probability_at_least_two_repeat": 0.12123327131180767
+      },
+      {
+        "n": 100,
+        "expected_trials": 5.0,
+        "expected_repeat_clients": 1.0,
+        "sales_labor_cost": 287.5,
+        "expected_result": -196.25000000000003,
+        "probability_at_least_one_repeat": 0.6339676587267709,
+        "probability_at_least_two_repeat": 0.26423802107704436
+      },
+      {
+        "n": 200,
+        "expected_trials": 10.0,
+        "expected_repeat_clients": 2.0,
+        "sales_labor_cost": 575.0,
+        "expected_result": -292.50000000000006,
+        "probability_at_least_one_repeat": 0.8660203251420383,
+        "probability_at_least_two_repeat": 0.5953543153279741
+      },
+      {
+        "n": 300,
+        "expected_trials": 15.0,
+        "expected_repeat_clients": 3.0,
+        "sales_labor_cost": 862.5,
+        "expected_result": -388.75,
+        "probability_at_least_one_repeat": 0.9509591059287142,
+        "probability_at_least_two_repeat": 0.8023503360157271
+      }
+    ],
+    "zero_repeats_upper_95_one_sided": [
+      {
+        "completed_trials": 10,
+        "upper_conversion": 0.2588655508930523
+      },
+      {
+        "completed_trials": 20,
+        "upper_conversion": 0.13910834066826516
+      },
+      {
+        "completed_trials": 30,
+        "upper_conversion": 0.09503385285530419
+      }
+    ]
+  }
+}

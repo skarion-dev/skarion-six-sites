@@ -1,0 +1,281 @@
+{
+  "plan": {
+    "watchlist": "skarion-estimating",
+    "run_id": "m-20261126T221535Z",
+    "current": [
+      "2026-10-28",
+      "2026-11-26"
+    ],
+    "previous": [
+      "2026-09-28",
+      "2026-10-27"
+    ],
+    "latest_saved": null,
+    "config": {
+      "name": "Skarion Estimating · utility bid takeoffs",
+      "market": "U.S. wet utility, underground and heavy civil contractors; English",
+      "goal": "Find useful posts about verifiable quantity takeoffs, revisions, exclusions and bid review.",
+      "topics": [
+        "utility quantity takeoff",
+        "wet utility estimating",
+        "bid addendum delta",
+        "trench depth bands",
+        "marked-up bid plans and Excel"
+      ],
+      "accounts": [
+        "StatLab",
+        "Bidding Enterprise",
+        "AGTEK",
+        "HCSS",
+        "Draftech",
+        "Construction Queen",
+        "r/estimators",
+        "Tribuild Consultancy"
+      ],
+      "exclude": [
+        "homeowner pricing",
+        "generic construction budgets",
+        "software demos unrelated to utilities"
+      ],
+      "lookback_days": 30,
+      "schedule": null,
+      "sources": {
+        "LinkedIn": {
+          "hosts": [
+            "linkedin.com"
+          ],
+          "method": "Public company feeds and individual posts"
+        },
+        "YouTube": {
+          "hosts": [
+            "youtube.com",
+            "youtu.be"
+          ],
+          "method": "Public videos and visible video counts"
+        },
+        "Reddit": {
+          "hosts": [
+            "reddit.com"
+          ],
+          "method": "Public discussions; cite relevant examples without bulk collection"
+        },
+        "Instagram": {
+          "hosts": [
+            "instagram.com"
+          ],
+          "method": "Public indexed posts and Reels"
+        },
+        "TikTok": {
+          "hosts": [
+            "tiktok.com"
+          ],
+          "method": "Public videos and TikTok Creative Center when available"
+        },
+        "Facebook": {
+          "hosts": [
+            "facebook.com"
+          ],
+          "method": "Public indexed posts; Ad Library separately for paid examples"
+        },
+        "X": {
+          "hosts": [
+            "x.com",
+            "twitter.com"
+          ],
+          "method": "Public indexed posts and publisher profiles"
+        },
+        "Threads": {
+          "hosts": [
+            "threads.com",
+            "threads.net"
+          ],
+          "method": "Public indexed posts"
+        },
+        "Pinterest": {
+          "hosts": [
+            "pinterest.com"
+          ],
+          "method": "Public indexed pins and boards"
+        },
+        "Bluesky": {
+          "hosts": [
+            "bsky.app"
+          ],
+          "method": "Public indexed posts and profiles"
+        },
+        "Publisher sites": {
+          "hosts": [
+            "statlabllc.com",
+            "tribuildconsultancy.com"
+          ],
+          "method": "Original case studies, articles and sample deliverables for context"
+        }
+      }
+    }
+  },
+  "payload": {
+    "coverage": {
+      "LinkedIn": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "Public feeds and indexed posts supplied examples. Several publication dates or visible engagement totals could not be verified for a comparable window."
+      },
+      "YouTube": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "Selected reference videos are historical or have unverified publication dates. Indexed counts, when available, are older snapshots."
+      },
+      "Reddit": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "A relevant public discussion was selected. The sample does not establish comparable frequency or engagement."
+      },
+      "Instagram": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search yielded no verified topic-matched post in the target window."
+      },
+      "TikTok": {
+        "status": "restricted",
+        "comparable": false,
+        "detail": "Direct public post lookup was blocked by the search tool. No subject-specific result was verified."
+      },
+      "Facebook": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The public index did not return a verified post or case in the target scope."
+      },
+      "X": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched post."
+      },
+      "Threads": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched post."
+      },
+      "Pinterest": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched pin."
+      },
+      "Bluesky": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "Public results did not establish a verified post matching the service focus."
+      },
+      "Publisher sites": {
+        "status": "observed",
+        "comparable": false,
+        "detail": "Selected original case, sample, service or editorial pages support context. Website content is excluded from social comparisons."
+      }
+    },
+    "observations": [
+      {
+        "platform": "Publisher sites",
+        "url": "https://statlabllc.com/trades/utilities/",
+        "publisher": "StatLab",
+        "published": null,
+        "mode": "organic",
+        "format": "deliverable sample page",
+        "theme": "quantity traceability",
+        "summary": "It shows an editable utility workbook, marked plans, sample access and line-level breakdowns. That gives an estimator a way to inspect what will arrive.",
+        "metrics": {}
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/agtek-development-company-inc._civilengineering-earthmoving-construction-activity-7471214854012350467-lN1l",
+        "publisher": "AGTEK",
+        "published": null,
+        "mode": "organic",
+        "format": "software workflow post",
+        "theme": "trench and depth checks",
+        "summary": "AGTEK frames takeoff errors as field-cost risk and uses underground checks as the practical demonstration. It is a tool vendor benchmark.",
+        "metrics": {}
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/bidding-enterprise_construction-biddingenterprise-estimating-activity-7332260516830117888-TC_G",
+        "publisher": "Bidding Enterprise",
+        "published": null,
+        "mode": "organic",
+        "format": "founder conference video",
+        "theme": "bid review",
+        "summary": "Its founder describes who checks the takeoff, coordinates suppliers and assembles the bid package. The event is the setup for a service explanation.",
+        "metrics": {}
+      },
+      {
+        "platform": "Reddit",
+        "url": "https://www.reddit.com/r/estimators/comments/1xazlo9/wet_utility_estimator/",
+        "publisher": "r/estimators wet utility discussion",
+        "published": null,
+        "mode": "unknown",
+        "format": "practitioner discussion",
+        "theme": "quantity traceability",
+        "summary": "The discussion is about learning wet utility estimating. The indexed thread includes advice on checking a known pipe run and logging plan or spec assumptions.",
+        "metrics": {}
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=Nbmn-BzxYWU",
+        "publisher": "Construction Queen Consulting & Education",
+        "published": "2026-01-28",
+        "mode": "organic",
+        "format": "technical explainer",
+        "theme": "trench and depth checks",
+        "summary": "The trainer explains how pipe size, slope and alignment affect excavation. The example uses an individual estimating decision as the lesson.",
+        "metrics": {
+          "views": 91,
+          "likes": 1
+        },
+        "metrics_as_of": "2026-11-26",
+        "metrics_context": "Count observed in the public search index. The platform measurement date was unavailable."
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/engr-muhammad-shafi_construction-utilities-quantitytakeoff-activity-7511807307882749953-enox",
+        "publisher": "Muhammad Shafi",
+        "published": null,
+        "mode": "organic",
+        "format": "indexed practitioner checklist",
+        "theme": "quantity traceability",
+        "summary": "The post itemizes utility takeoff lines, including pipe, structures, trenching, backfill, bedding and connections.",
+        "metrics": {}
+      },
+      {
+        "platform": "Publisher sites",
+        "publisher": "Tribuild Consultancy",
+        "url": "https://www.tribuildconsultancy.com/resources/on-screen-takeoff-vs-constructconnect-takeoff-should-your-estimating-team-switch",
+        "published": "2026-11-24",
+        "mode": "organic",
+        "format": "workflow comparison article",
+        "theme": "handoff to bid review",
+        "summary": "The estimating consultancy compares two tools around the handoff from measured quantities to the proposal and offers to review a contractor's workflow. This is a general preconstruction benchmark.",
+        "metrics": {}
+      }
+    ],
+    "performance_read": "The YouTube metric snapshot is historical and belongs to one video. The sales pages and public conversations reveal the questions buyers and estimators discuss. They provide insufficient evidence to rank posts or infer paid conversion.",
+    "tests": [
+      {
+        "idea": "Run a LinkedIn document post. Hook: “Addendum B landed. Which line of your bid moved?” Put the baseline and revision side by side, highlight one changed pipe line and manhole count, and offer the synthetic delta workbook. Clear the comparison with the estimating reviewer",
+        "success_metric": "requests from contractor estimators and confirmed bid scopes with due dates",
+        "evidence": [
+          "https://statlabllc.com/trades/utilities/",
+          "https://www.reddit.com/r/estimators/comments/1xazlo9/wet_utility_estimator/",
+          "https://www.linkedin.com/posts/engr-muhammad-shafi_construction-utilities-quantitytakeoff-activity-7511807307882749953-enox",
+          "https://www.tribuildconsultancy.com/resources/on-screen-takeoff-vs-constructconnect-takeoff-should-your-estimating-team-switch"
+        ]
+      },
+      {
+        "idea": "Test a 40-second depth-band walkthrough. Trace one pipe run from plan to profile to worksheet. Show which depth bands reconcile the schedule and where the payable item is recorded. Use the same sample CTA as the document post",
+        "success_metric": "qualified template requests and takeoff review calls per post",
+        "evidence": [
+          "https://www.linkedin.com/posts/agtek-development-company-inc._civilengineering-earthmoving-construction-activity-7471214854012350467-lN1l",
+          "https://www.reddit.com/r/estimators/comments/1xazlo9/wet_utility_estimator/",
+          "https://www.youtube.com/watch?v=Nbmn-BzxYWU"
+        ]
+      }
+    ]
+  }
+}

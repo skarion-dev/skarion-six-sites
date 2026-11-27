@@ -1,0 +1,275 @@
+{
+  "plan": {
+    "watchlist": "skarion-stormwater",
+    "run_id": "m-20261126T221536Z",
+    "current": [
+      "2026-10-28",
+      "2026-11-26"
+    ],
+    "previous": [
+      "2026-09-28",
+      "2026-10-27"
+    ],
+    "latest_saved": null,
+    "config": {
+      "name": "Skarion Stormwater · asset records and inventory support",
+      "market": "U.S. civil and stormwater primes, municipal asset managers and field inspection partners; English",
+      "goal": "Find content that shows inspection evidence, asset inventory QA, missing connections and usable handoffs.",
+      "topics": [
+        "stormwater asset inventory",
+        "culvert and inlet records",
+        "photo and map reconciliation",
+        "stormwater GIS",
+        "asset IDs and unknown downstream connections"
+      ],
+      "accounts": [
+        "Tighe & Bond",
+        "Horsley Witten Group",
+        "Geographic Technologies Group",
+        "SAM",
+        "WithersRavenel",
+        "AQUALIS",
+        "RJN Group"
+      ],
+      "exclude": [
+        "weather news",
+        "generic green infrastructure promotion",
+        "hydraulic design without inventory or evidence"
+      ],
+      "lookback_days": 30,
+      "schedule": null,
+      "sources": {
+        "LinkedIn": {
+          "hosts": [
+            "linkedin.com"
+          ],
+          "method": "Public company feeds and individual posts"
+        },
+        "YouTube": {
+          "hosts": [
+            "youtube.com",
+            "youtu.be"
+          ],
+          "method": "Public videos and visible video counts"
+        },
+        "Reddit": {
+          "hosts": [
+            "reddit.com"
+          ],
+          "method": "Public discussions; cite relevant examples without bulk collection"
+        },
+        "Instagram": {
+          "hosts": [
+            "instagram.com"
+          ],
+          "method": "Public indexed posts and Reels"
+        },
+        "TikTok": {
+          "hosts": [
+            "tiktok.com"
+          ],
+          "method": "Public videos and TikTok Creative Center when available"
+        },
+        "Facebook": {
+          "hosts": [
+            "facebook.com"
+          ],
+          "method": "Public indexed posts; Ad Library separately for paid examples"
+        },
+        "X": {
+          "hosts": [
+            "x.com",
+            "twitter.com"
+          ],
+          "method": "Public indexed posts and publisher profiles"
+        },
+        "Threads": {
+          "hosts": [
+            "threads.com",
+            "threads.net"
+          ],
+          "method": "Public indexed posts"
+        },
+        "Pinterest": {
+          "hosts": [
+            "pinterest.com"
+          ],
+          "method": "Public indexed pins and boards"
+        },
+        "Bluesky": {
+          "hosts": [
+            "bsky.app"
+          ],
+          "method": "Public indexed posts and profiles"
+        },
+        "Publisher sites": {
+          "hosts": [
+            "sam.biz",
+            "rjn.com"
+          ],
+          "method": "Original case studies, articles and sample deliverables for context"
+        }
+      }
+    }
+  },
+  "payload": {
+    "coverage": {
+      "LinkedIn": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "Public feeds and indexed posts supplied examples. Several publication dates or visible engagement totals could not be verified for a comparable window."
+      },
+      "YouTube": {
+        "status": "partial",
+        "comparable": false,
+        "detail": "Selected reference videos are historical or have unverified publication dates. Indexed counts, when available, are older snapshots."
+      },
+      "Reddit": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "No directly relevant current-window discussion entered the research sample."
+      },
+      "Instagram": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search yielded no verified topic-matched post in the target window."
+      },
+      "TikTok": {
+        "status": "restricted",
+        "comparable": false,
+        "detail": "Direct public post lookup was blocked by the search tool. No subject-specific result was verified."
+      },
+      "Facebook": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The public index did not return a verified post or case in the target scope."
+      },
+      "X": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched post."
+      },
+      "Threads": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched post."
+      },
+      "Pinterest": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The indexed search did not supply a verified topic-matched pin."
+      },
+      "Bluesky": {
+        "status": "no_matches",
+        "comparable": false,
+        "detail": "The search found broad project news mentioning drainage, without a relevant competitor post about asset inventory or inspection handoff."
+      },
+      "Publisher sites": {
+        "status": "observed",
+        "comparable": false,
+        "detail": "Selected original case, sample, service or editorial pages support context. Website content is excluded from social comparisons."
+      }
+    },
+    "observations": [
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/tighe-bond_stormwater-stormwatermanagement-teamtighebond-activity-7505634122355130370-Thuj",
+        "publisher": "Tighe & Bond",
+        "published": null,
+        "mode": "organic",
+        "format": "conference recap",
+        "theme": "inspection history",
+        "summary": "The firm explains how a multi-year inspection record can inform maintenance decisions and puts the presenters and their project in view.",
+        "metrics": {}
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/horsley-witten-group-inc_culverts-teamwork-ecologicalrestoration-activity-7496639889246175232-22_0",
+        "publisher": "Horsley Witten Group",
+        "published": null,
+        "mode": "organic",
+        "format": "indexed field photo story",
+        "theme": "evidence capture",
+        "summary": "The indexed caption identifies staff measuring a culvert in North Reading and names the recorded dimensions and water depth. June 2026 is the fieldwork date.",
+        "metrics": {}
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/geographic-technologies-group_gis-stormwatermanagement-ms4compliance-activity-7498772628359335936-8EC0",
+        "publisher": "Geographic Technologies Group",
+        "published": null,
+        "mode": "organic",
+        "format": "indexed municipal implementation post",
+        "theme": "evidence capture",
+        "summary": "Its Hobart example traces a field inspection form and photos through Survey123 into GIS dashboards used by city staff.",
+        "metrics": {}
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/posts/withersravenel_infrastructureresilience-stormwater-floodrisk-activity-7503519930420740096-XqKg",
+        "publisher": "WithersRavenel",
+        "published": null,
+        "mode": "organic",
+        "format": "indexed expert recap",
+        "theme": "trusted source records",
+        "summary": "The firm features a stormwater engineer discussing flood risk, post-storm conditions and how trusted infrastructure data informs decisions.",
+        "metrics": {}
+      },
+      {
+        "platform": "Publisher sites",
+        "url": "https://www.sam.biz/projects/topeka-storm-sewer-inspection-and-mapping/",
+        "publisher": "SAM",
+        "published": null,
+        "mode": "organic",
+        "format": "named municipal case",
+        "theme": "asset crosswalk",
+        "summary": "The Topeka case shows the facility ID as the link between basin-level GIS inventory and the city's Cityworks system.",
+        "metrics": {}
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://www.youtube.com/watch?v=yYMwgrEl0KI",
+        "publisher": "AQUALIS",
+        "published": null,
+        "mode": "organic",
+        "format": "inspection workflow demo",
+        "theme": "inspection history",
+        "summary": "The indexed training demonstrates GIS for inspection tracking, field notes, asset condition and maintenance planning. The chapters give the viewer a practical sequence.",
+        "metrics": {}
+      },
+      {
+        "platform": "Publisher sites",
+        "publisher": "RJN Group",
+        "url": "https://www.rjn.com/experience/storm-water-system-engineering-case-study",
+        "published": null,
+        "mode": "organic",
+        "format": "named municipal case",
+        "theme": "asset crosswalk",
+        "summary": "RJN's San Antonio case explains how the updated GIS connects storm sewer records with condition assessment, inspection video and risk information for maintenance planning.",
+        "metrics": {}
+      }
+    ],
+    "performance_read": "Public examples show the use of field photos, inspection explainers and map-to-maintenance stories. Dates and engagement are too sparse for a comparison of formats or a reliable momentum call.",
+    "tests": [
+      {
+        "idea": "Show a one-inlet proof card in a private prime interview. Hook: “Can your reviewer find the right photo from the map?” Link one synthetic asset ID to its geometry, image index and inspection record. Show how an unconfirmed downstream connection is assigned for follow-up",
+        "success_metric": "primes who share a schema or identify a basin for a scoped inventory review",
+        "evidence": [
+          "https://www.linkedin.com/posts/horsley-witten-group-inc_culverts-teamwork-ecologicalrestoration-activity-7496639889246175232-22_0",
+          "https://www.linkedin.com/posts/geographic-technologies-group_gis-stormwatermanagement-ms4compliance-activity-7498772628359335936-8EC0",
+          "https://www.sam.biz/projects/topeka-storm-sewer-inspection-and-mapping/",
+          "https://www.rjn.com/experience/storm-water-system-engineering-case-study"
+        ]
+      },
+      {
+        "idea": "Try a one-basin scope sheet. Show the source records accepted, asset count cap, sample exception register and handoff to the prime's reviewer. Ask what their field team needs to verify before desktop QA",
+        "success_metric": "qualified partners who can supply records and name an acceptance owner and deadline",
+        "evidence": [
+          "https://www.linkedin.com/posts/tighe-bond_stormwater-stormwatermanagement-teamtighebond-activity-7505634122355130370-Thuj",
+          "https://www.sam.biz/projects/topeka-storm-sewer-inspection-and-mapping/",
+          "https://www.youtube.com/watch?v=yYMwgrEl0KI"
+        ]
+      }
+    ]
+  }
+}

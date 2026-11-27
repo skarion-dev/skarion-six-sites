@@ -1,0 +1,149 @@
+SKARION DRAFTING
+Reusable launch templates | November 12, 2026
+
+Confirmed direction: experienced architectural drafter available; US architecture
+and interior-design firms; working brand Skarion Drafting; incremental 30-day
+cash ceiling $950, excluding existing salaries. Roles and commercial terms below
+are proposed. Fill all brackets before use. Nothing in this file has been sent.
+
+1. CLIENT INTAKE
+Company / contact / decision maker:
+Project name and jurisdiction:
+Client professional responsible for design and approval:
+Production-only scope requested:
+Source files and revision dates:
+Source ownership / permission to use:
+Sheet and view list:
+Units / known control dimensions / source-quality concerns:
+DWG version / layer standard / title block / fonts / plot style:
+Deliverables and intended use:
+Requested date / client review availability / time zone:
+Open questions / missing inputs:
+Who verifies field dimensions:
+Portfolio permission: No unless separately documented.
+Qualification decision / reason:
+
+2. PILOT SCOPE AND QUOTE
+Quote ID / date / expiry:
+Contracting entities:
+Client representative:
+Source files accepted for this quote:
+Included sheets, views and tasks:
+Excluded work:
+Required client answers before start:
+Deliverables: [DWG version], plotted PDF, assumptions and revision log.
+Production estimate: [hours] at internal economic cost [USD/hour].
+Review estimate: [hours] at [USD/hour].
+Coordination estimate: [hours] at [USD/hour].
+Nonbillable rework allowance: [hours] at [USD/hour].
+Other job cost:
+Transaction fee percentage:
+Target contribution margin:
+Quote floor = direct cost / (1 - fee fraction - target margin fraction).
+Quoted price:
+First draft date after complete inputs and payment setup:
+One consolidated review round due within [5 business days].
+Skarion transcription errors are corrected without additional charge.
+New inputs, added sheets or changed design decisions require a change estimate.
+Direct payment proposal: 50% deposit, 50% on acceptance before editable release.
+For Upwork work use its funded milestones, submission and payment process.
+Client acceptance criteria:
+File confidentiality / retention / deletion terms:
+Client design and measurement responsibilities:
+Approved by / date:
+
+3. CHANGE REQUEST
+Job / request ID:
+Requested by / date:
+Change from agreed source or scope:
+Classification: Skarion correction / client change / unresolved.
+Added production, review and coordination hours:
+Additional price:
+Revised delivery date:
+Client written approval / date:
+
+4. REVIEW AND RELEASE RECORD
+Job / version / reviewer / date:
+Units and scale checked against supplied controls:
+Control dimensions checked and conflicts resolved:
+All markups accounted for:
+Source-to-output overlay reviewed:
+Layers, text, dimensions, lineweights, xrefs and plot settings checked:
+Every plotted PDF page inspected:
+DWG reopened from delivery folder with required dependencies:
+Assumptions acknowledged by client:
+Defects found / severity / owner / resolution evidence:
+Critical unresolved defects: [must be zero before release].
+Client-owned open questions and release limitations:
+Release approved / transmittal sent / files released:
+
+5. TIME AND ECONOMICS RECORD
+Job / date / staff member:
+Activity: production / review / coordination / error correction / client change.
+Hours / economic hourly cost / chargeable hours:
+Fixed-price revenue earned or hourly work accepted:
+Transaction fees / direct costs / contribution:
+Estimated vs actual hours and explanation:
+Deposit / invoice / payment / outstanding balance:
+Sales acquisition hours and cash cost (tracked separately):
+Do not count a deposit or an unused prepaid block as profit.
+
+6. LEAD RECORD
+Company / website / verified date:
+Contact / role / verified source:
+Recent relevant work / reason for fit:
+Likely production need (hypothesis until confirmed):
+Stage: researched / qualified / contacted / discovery / quote / paid pilot /
+       delivered / repeat order / lost / paused.
+Last contact / next action / next action date:
+Authorized sender / channel:
+Actual reply / volume / timing / budget / approver:
+Scope or quote link / quoted amount / outcome / reason lost:
+Opt-out status:
+
+7. DIRECT OUTREACH DRAFT
+Subject: CAD production support for [firm name]
+
+Hi [name],
+
+I saw [specific verified project or relevant work]. Skarion Drafting supports
+drawing production from client-supplied plans and markups, including PDF-to-DWG
+conversion and redline updates.
+
+For a suitable small package, we can scope a paid pilot at $175 to $350, with a
+layered DWG, plotted PDF and an assumptions log. [Insert only a completed,
+permissioned sample link.]
+
+Do you have a drawing package coming up that would be useful to review for scope
+and turnaround?
+
+[Sender name and accurate business signature]
+[Required contact and opt-out information for the outreach channel]
+
+Follow-up after about 4 business days:
+Hi [name], following up on the CAD production note below. If [verified relevant
+workflow] creates an occasional drafting backlog, we can review one package and
+propose a defined pilot. Is this handled by you or another person at [firm]?
+
+Final follow-up after about 8 to 10 business days:
+Hi [name], I will pause the follow-ups here. If a drawing revision or conversion
+package comes up later, I would be glad to review the scope. [Signature]
+
+8. MONTHLY BLOCK OUTLINE
+20 production hours / $640 / 30 days / approximately 5 hours per week.
+Routine internal review included; only approved client changes use extra hours.
+Corrections to Skarion errors do not consume purchased production hours.
+Confirm scope, weekly scheduling, client response time, expiry, rollover, refund,
+payment and acceptance terms in writing. Overage only after written approval.
+This is a commercial outline, not a complete services agreement.
+
+9. PORTFOLIO CASE STUDY
+Label: client work with permission / demonstration exercise.
+Input format and source rights:
+Problem and agreed scope:
+Before image / delivered excerpt:
+Standards applied and checks performed:
+Actual production, review and revision hours:
+What was excluded or remained client-verified:
+Client publication permission reference:
+Never imply demonstration work is a completed client engagement.

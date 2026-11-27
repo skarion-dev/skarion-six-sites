@@ -5,6 +5,8 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = path.join(root, 'dist');
 const sites = JSON.parse(await readFile(path.join(root, 'sites.json'), 'utf8'));
+const archive = JSON.parse(await readFile(path.join(root, 'research', 'manifest.json'), 'utf8'));
+const archivePaths = new Set(archive.map(({ path: file }) => file));
 const failures = [];
 
 function expect(result, message) {
@@ -26,6 +28,11 @@ async function checkReference(reference, page, html) {
   expect(url.origin === base.origin, `${page}: unsupported URL ${reference}`);
   if (url.origin !== base.origin) return;
   const location = decodeURIComponent(url.pathname);
+  if (location.startsWith('/_research_archive/')) {
+    expect(page.startsWith('/founders-research/') && archivePaths.has(location.slice('/_research_archive/'.length)),
+      `${page}: invalid private archive target ${reference}`);
+    return;
+  }
   let target = path.join(dist, location);
   if (location.endsWith('/')) target = path.join(target, 'index.html');
   const found = await exists(target);
@@ -57,9 +64,25 @@ async function checkPage(page) {
 
 const hub = await checkPage('/index.html');
 const catalog = await checkPage('/catalog/index.html');
+const research = await checkPage('/founders-research/index.html');
+const archivePage = await checkPage('/founders-research/archive/index.html');
+expect(hub.includes('href="founders-research/"'), 'Preview is missing Founder’s Research');
+expect(archivePaths.size === archive.length, 'Duplicate paths in the research archive');
+expect((archivePage.match(/\sdownload>/g) ?? []).length === archive.length, 'The source index does not list every original');
+expect(!(await exists(path.join(dist, '_research_archive'))), 'Original archive files leaked into the hosted output');
+const pages = await readdir(path.join(dist, 'founders-research', 'niches'));
+expect(pages.length === 25, 'The research preview needs all 25 niche pages');
+for (const niche of pages) {
+  const page = await checkPage(`/founders-research/niches/${niche}/index.html`);
+  for (const title of ['Market evidence and competition', 'RFP and opportunity ledger', 'Prime and subcontract due diligence']) {
+    expect(page.includes(title), `Niche ${niche} missing ${title}`);
+  }
+}
 let projectCount = 0;
 let fileCount = 0;
 for (const { id, name } of sites) {
+  expect(research.includes(`offers/${id}/`), `Research preview is missing ${name}`);
+  await checkPage(`/founders-research/offers/${id}/index.html`);
   const page = `/${id}/index.html`;
   const html = await checkPage(page);
   expect(hub.includes(`href="${id}/"`), `Preview is missing ${name}`);
@@ -109,5 +132,5 @@ if (failures.length) {
   console.error(failures.map((message) => `- ${message}`).join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`Checked ${sites.length} sites, ${projectCount} project case studies, ${fileCount} sample downloads, and the preview hub.`);
+  console.log(`Checked ${sites.length} sites, ${projectCount} case studies, ${fileCount} sample downloads, and research pages for ${pages.length} niches and ${archive.length} archived files.`);
 }

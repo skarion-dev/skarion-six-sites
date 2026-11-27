@@ -1,0 +1,112 @@
+{
+  "watchlist": "skarion-stormwater",
+  "run_id": "m-20261126T221536Z",
+  "current": [
+    "2026-10-28",
+    "2026-11-26"
+  ],
+  "previous": [
+    "2026-09-28",
+    "2026-10-27"
+  ],
+  "latest_saved": null,
+  "config": {
+    "name": "Skarion Stormwater · asset records and inventory support",
+    "market": "U.S. civil and stormwater primes, municipal asset managers and field inspection partners; English",
+    "goal": "Find content that shows inspection evidence, asset inventory QA, missing connections and usable handoffs.",
+    "topics": [
+      "stormwater asset inventory",
+      "culvert and inlet records",
+      "photo and map reconciliation",
+      "stormwater GIS",
+      "asset IDs and unknown downstream connections"
+    ],
+    "accounts": [
+      "Tighe & Bond",
+      "Horsley Witten Group",
+      "Geographic Technologies Group",
+      "SAM",
+      "WithersRavenel",
+      "AQUALIS",
+      "RJN Group"
+    ],
+    "exclude": [
+      "weather news",
+      "generic green infrastructure promotion",
+      "hydraulic design without inventory or evidence"
+    ],
+    "lookback_days": 30,
+    "schedule": null,
+    "sources": {
+      "LinkedIn": {
+        "hosts": [
+          "linkedin.com"
+        ],
+        "method": "Public company feeds and individual posts"
+      },
+      "YouTube": {
+        "hosts": [
+          "youtube.com",
+          "youtu.be"
+        ],
+        "method": "Public videos and visible video counts"
+      },
+      "Reddit": {
+        "hosts": [
+          "reddit.com"
+        ],
+        "method": "Public discussions; cite relevant examples without bulk collection"
+      },
+      "Instagram": {
+        "hosts": [
+          "instagram.com"
+        ],
+        "method": "Public indexed posts and Reels"
+      },
+      "TikTok": {
+        "hosts": [
+          "tiktok.com"
+        ],
+        "method": "Public videos and TikTok Creative Center when available"
+      },
+      "Facebook": {
+        "hosts": [
+          "facebook.com"
+        ],
+        "method": "Public indexed posts; Ad Library separately for paid examples"
+      },
+      "X": {
+        "hosts": [
+          "x.com",
+          "twitter.com"
+        ],
+        "method": "Public indexed posts and publisher profiles"
+      },
+      "Threads": {
+        "hosts": [
+          "threads.com",
+          "threads.net"
+        ],
+        "method": "Public indexed posts"
+      },
+      "Pinterest": {
+        "hosts": [
+          "pinterest.com"
+        ],
+        "method": "Public indexed pins and boards"
+      },
+      "Bluesky": {
+        "hosts": [
+          "bsky.app"
+        ],
+        "method": "Public indexed posts and profiles"
+      },
+      "Publisher sites": {
+        "hosts": [
+          "sam.biz"
+        ],
+        "method": "Original case studies, articles and sample deliverables for context"
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "name": "SkarionGIS · utility asset data and closeout",
+  "market": "U.S. utility GIS managers, owner-operators, engineering primes and asset teams; English",
+  "goal": "Find proven examples of explaining data readiness, source-to-asset traceability and bounded migration QA.",
+  "topics": [
+    "utility GIS data readiness",
+    "CAD to GIS",
+    "source-to-asset crosswalk",
+    "asset identifiers and topology",
+    "record reconciliation and GIS closeout"
+  ],
+  "accounts": [
+    "Cloudpoint Geospatial",
+    "VETRO",
+    "RMSI",
+    "GDRS",
+    "SSP Innovations",
+    "VertiGIS",
+    "r/gis"
+  ],
+  "exclude": [
+    "consumer web maps",
+    "unrelated geospatial tutorials",
+    "fiber route design with no GIS deliverable"
+  ],
+  "lookback_days": 30,
+  "schedule": null,
+  "sources": {
+    "LinkedIn": {
+      "hosts": [
+        "linkedin.com"
+      ],
+      "method": "Public company feeds and individual posts"
+    },
+    "YouTube": {
+      "hosts": [
+        "youtube.com",
+        "youtu.be"
+      ],
+      "method": "Public videos and visible video counts"
+    },
+    "Reddit": {
+      "hosts": [
+        "reddit.com"
+      ],
+      "method": "Public discussions; cite relevant examples without bulk collection"
+    },
+    "Instagram": {
+      "hosts": [
+        "instagram.com"
+      ],
+      "method": "Public indexed posts and Reels"
+    },
+    "TikTok": {
+      "hosts": [
+        "tiktok.com"
+      ],
+      "method": "Public videos and TikTok Creative Center when available"
+    },
+    "Facebook": {
+      "hosts": [
+        "facebook.com"
+      ],
+      "method": "Public indexed posts; Ad Library separately for paid examples"
+    },
+    "X": {
+      "hosts": [
+        "x.com",
+        "twitter.com"
+      ],
+      "method": "Public indexed posts and publisher profiles"
+    },
+    "Threads": {
+      "hosts": [
+        "threads.com",
+        "threads.net"
+      ],
+      "method": "Public indexed posts"
+    },
+    "Pinterest": {
+      "hosts": [
+        "pinterest.com"
+      ],
+      "method": "Public indexed pins and boards"
+    },
+    "Bluesky": {
+      "hosts": [
+        "bsky.app"
+      ],
+      "method": "Public indexed posts and profiles"
+    },
+    "Publisher sites": {
+      "hosts": [
+        "gdrsgeo.com",
+        "publicpower.org"
+      ],
+      "method": "Original case studies, articles and sample deliverables for context"
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "coverage": {
+    "LinkedIn": {
+      "status": "partial",
+      "comparable": false,
+      "detail": "Public feeds and indexed posts supplied examples. Several publication dates or visible engagement totals could not be verified for a comparable window."
+    },
+    "YouTube": {
+      "status": "partial",
+      "comparable": false,
+      "detail": "Selected reference videos are historical or have unverified publication dates. Indexed counts, when available, are older snapshots."
+    },
+    "Reddit": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "No directly relevant current-window discussion entered the research sample."
+    },
+    "Instagram": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search yielded no verified topic-matched post in the target window."
+    },
+    "TikTok": {
+      "status": "restricted",
+      "comparable": false,
+      "detail": "Direct public post lookup was blocked by the search tool. No subject-specific result was verified."
+    },
+    "Facebook": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The public index did not return a verified post or case in the target scope."
+    },
+    "X": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched post."
+    },
+    "Threads": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched post."
+    },
+    "Pinterest": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "The indexed search did not supply a verified topic-matched pin."
+    },
+    "Bluesky": {
+      "status": "no_matches",
+      "comparable": false,
+      "detail": "Public results did not establish a verified post matching the service focus."
+    },
+    "Publisher sites": {
+      "status": "observed",
+      "comparable": false,
+      "detail": "Selected original case, sample, service or editorial pages support context. Website content is excluded from social comparisons."
+    }
+  },
+  "observations": [
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/posts/cloudpointgeospatial_is-your-data-ready-for-the-arcgis-utility-activity-7468014740448034817-okOe",
+      "publisher": "Cloudpoint Geospatial",
+      "published": null,
+      "mode": "organic",
+      "format": "readiness offer",
+      "theme": "data readiness",
+      "summary": "The post opens with a buyer-facing readiness question, names geometric and model-rule issues, and offers an assessment followed by a cleanup roadmap.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/vetrofibermap/",
+      "publisher": "VETRO",
+      "published": null,
+      "mode": "organic",
+      "format": "event feed update",
+      "theme": "field-to-record workflow",
+      "summary": "A public event update invites operators to discuss construction handoffs and bringing field updates into their system of record. It makes the workflow the reason to talk.",
+      "metrics": {}
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://au.linkedin.com/company/rmsi/",
+      "publisher": "RMSI",
+      "published": null,
+      "mode": "organic",
+      "format": "trade-show update",
+      "theme": "data readiness",
+      "summary": "The firm describes utility conversations around migration, scanned easements, aligning assets with LiDAR and keeping as-built data current, using the event as a setting for concrete use cases.",
+      "metrics": {}
+    },
+    {
+      "platform": "Publisher sites",
+      "url": "https://gdrsgeo.com/telecom-broadband.html",
+      "publisher": "GDRS",
+      "published": null,
+      "mode": "organic",
+      "format": "service workflow page",
+      "theme": "traceable handoff",
+      "summary": "Its telecom page names source-linked trackable outputs such as record drawings, asset and evidence indexes, geospatial files and exceptions. It shows where the client owns verification.",
+      "metrics": {}
+    },
+    {
+      "platform": "Publisher sites",
+      "url": "https://www.publicpower.org/periodical/article/public-power-utilities-move-transition-utility-network",
+      "publisher": "American Public Power Association / SSP Innovations feature",
+      "published": "2026-11-23",
+      "mode": "paid",
+      "format": "sponsored customer story",
+      "theme": "data readiness",
+      "summary": "This paid feature uses Lincoln Electric System's planned migration to explain data preparation and how different utility teams use the network. Use it as positioning evidence.",
+      "metrics": {}
+    },
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/watch?v=K30oxsTC3ZI",
+      "publisher": "Cloudpoint Geospatial",
+      "published": "2022-05-12",
+      "mode": "organic",
+      "format": "chaptered educational demo",
+      "theme": "migration preparation",
+      "summary": "Its sanitary sewer example walks through planning, migration, staging and implementation. The chapters organize a complex subject around decisions a utility team can follow.",
+      "metrics": {
+        "views": 15762,
+        "likes": 137
+      },
+      "metrics_as_of": "2026-11-26",
+      "metrics_context": "Count observed in the public search index. The platform measurement date was unavailable."
+    }
+  ],
+  "performance_read": "The Cloudpoint video has visible historical counts and demonstrates a deep technical format. The indexed counts and unmeasured LinkedIn posts do not supply a matched comparison. The sponsored article provides messaging evidence only.",
+  "tests": [
+    {
+      "idea": "Test a five-slide readiness check. Hook: “Would this asset survive your next GIS import?” Show one duplicated ID, one missing source and one unresolved connection. Offer a worksheet for a single layer review",
+      "success_metric": "qualified requests for a one-layer QA scope or source schema discussion",
+      "evidence": [
+        "https://www.linkedin.com/posts/cloudpointgeospatial_is-your-data-ready-for-the-arcgis-utility-activity-7468014740448034817-okOe",
+        "https://au.linkedin.com/company/rmsi/",
+        "https://www.youtube.com/watch?v=K30oxsTC3ZI"
+      ]
+    },
+    {
+      "idea": "Test a 45-second map-to-source recording. Select one synthetic asset, find its revision and evidence reference, then show what the exception queue sends to the prime. Offer the source crosswalk",
+      "success_metric": "qualified crosswalk requests and invitations to review a real data batch",
+      "evidence": [
+        "https://www.linkedin.com/company/vetrofibermap/",
+        "https://gdrsgeo.com/telecom-broadband.html",
+        "https://www.publicpower.org/periodical/article/public-power-utilities-move-transition-utility-network"
+      ]
+    }
+  ]
+}

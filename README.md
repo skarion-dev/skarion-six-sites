@@ -39,3 +39,4 @@ The intake form builds a draft addressed to `info@skarion.com` in the visitor's 
 
 - [Brand, domain and social launch plan](review/launch-kit.md)
 - [Technical and publication review sheet](review/site-review.md)
+- [Founder’s Research and archive provenance](research/README.md) · [Open in the local preview](http://127.0.0.1:4173/founders-research/)

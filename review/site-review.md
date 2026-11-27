@@ -11,6 +11,7 @@ Add a named owner and evidence link to every decision. Review one lane at a time
 | Lighting | Photometric reviewer | Pending | Pilot review | [Project brief](../sites/lighting/portfolio-review.md) |
 | Stormwater | Stormwater and GIS reviewers | Pending | Pilot review | [Project brief](../sites/stormwater/portfolio-review.md) |
 | Survey CAD | Client’s survey or utility reviewer and licensed professional where required | Pending | Desktop pilot draft | [Project brief](../sites/surveying/portfolio-review.md) |
+| Sprinkler CAD | Authorized contractor design lead or responsible fire protection professional | Pending | Redline pilot draft | [Project brief](../sites/sprinkler/portfolio-review.md) |
 
 ## Website review
 

@@ -116,6 +116,7 @@ export async function buildFoundersResearch(root, dist, sites) {
   const archive = path.join(sources, 'archive');
   const files = JSON.parse(await readFile(path.join(sources, 'manifest.json'), 'utf8'));
   const offers = JSON.parse(await readFile(path.join(sources, 'catalog.json'), 'utf8'));
+  const additionalNiches = JSON.parse(await readFile(path.join(sources, 'niches.json'), 'utf8'));
   const destination = path.join(dist, 'founders-research');
   for (const file of files) {
     const parts = file.path.split('/');
@@ -150,6 +151,21 @@ export async function buildFoundersResearch(root, dist, sites) {
       roundupAnchor: `${number}-${title.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/ /g, '-')}`,
     });
   }
+  for (const niche of additionalNiches) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(niche.id) || niches.some(({ id }) => id === niche.id)) {
+      throw new Error(`Invalid or duplicate research niche: ${niche.id}`);
+    }
+    const number = niches.length + 1;
+    const records = Object.entries(niche.records).map(([title, file]) => {
+      const record = files.find(({ path }) => path === file);
+      if (!record) throw new Error(`Missing research record for ${niche.id}: ${file}`);
+      return { ...record, title };
+    });
+    niches.push({
+      number, id: niche.id, title: niche.title, notes: `<p>${h(niche.notes)}</p>`, records,
+      offers: sites.filter(({ id }) => offers[id].niches.includes(number)),
+    });
+  }
   if (niches.some(({ offers }) => !offers.length)) throw new Error('A research niche is missing its offer mapping');
 
   const overview = layout('./', 'Founder’s Research', 'Find the market evidence, RFP records, competitor research and source files behind each Skarion offer.', `
@@ -171,7 +187,7 @@ export async function buildFoundersResearch(root, dist, sites) {
         `${subcontract}Skarion_25_Niche_Subcontract_Pursuit_Index`,
         `${bundle}06_RFPs_and_Teaming/`,
       ]))}`)}
-    ${block('All 25 niches', `${filterBox('Find a niche by name')}<ul class="research-niches" data-filter-list>${niches.map((niche) => nicheLink('./', niche)).join('')}</ul>`, 'niches')}
+    ${block(`All ${niches.length} niches`, `${filterBox('Find a niche by name')}<ul class="research-niches" data-filter-list>${niches.map((niche) => nicheLink('./', niche)).join('')}</ul>`, 'niches')}
     `, { filter: true });
   await writePage(destination, overview);
 
@@ -186,8 +202,8 @@ export async function buildFoundersResearch(root, dist, sites) {
     await writePage(path.join(destination, 'niches', niche.id), layout('../../', niche.title,
       'Market evidence, buyer and prime opportunities, and the subcontract follow-up recorded for this niche.', `
       ${block('Market, RFP and subcontract files', fileRows(niche.records))}
-      ${block('November 25 research notes', `${niche.notes}
-        <p><a href="${repositoryFile(`research/archive/${roundup}`, niche.roundupAnchor)}">Open the original RFP roundup and its source links</a></p>`)}
+      ${niche.roundupAnchor ? block('November 25 research notes', `${niche.notes}
+        <p><a href="${repositoryFile(`research/archive/${roundup}`, niche.roundupAnchor)}">Open the original RFP roundup and its source links</a></p>`) : block('Pilot research notes', niche.notes)}
       ${supporting.length || sectorAttachments.length ? block('Related source material', fileRows([...supporting, ...sectorAttachments])) : ''}
       ${block('Related Skarion offers', `<ul class="research-niches">${niche.offers.map(({ id, name }) => `<li><a href="../../offers/${id}/">${h(name)}</a></li>`).join('')}</ul>`)}
       `, { site: 'Niche research' }));

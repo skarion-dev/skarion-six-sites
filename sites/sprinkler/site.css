@@ -1,0 +1,65 @@
+:root {
+  --paper: #f8f5f0;
+  --panel: #fffefa;
+  --ink: #2d2a28;
+  --muted: #594f48;
+  --line: #cfc1b6;
+  --accent: #913521;
+  --tint: #eee3d9;
+}
+.sprinkler { color: var(--ink); background: var(--paper); font: 1rem/1.6 'Segoe UI', system-ui, sans-serif; }
+.sprinkler-wrap { width: min(76rem, calc(100% - clamp(2rem, 8vw, 7rem))); margin-inline: auto; }
+.sprinkler a { color: inherit; }
+.sprinkler h1, .sprinkler h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 460; letter-spacing: -.05em; line-height: 1.02; }
+.sprinkler h1 { max-width: 13ch; margin: .7rem 0 1.2rem; font-size: clamp(3rem, 6.4vw, 6.5rem); }
+.sprinkler h2 { margin: 0 0 1.2rem; font-size: clamp(2.05rem, 4.5vw, 4rem); }
+.sprinkler-header { border-bottom: 1px solid var(--line); }
+.header-row, .sprinkler-footer { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: .85rem 1.3rem; }
+.sprinkler-brand { display: inline-flex; align-items: center; line-height: 1.04; gap: .65rem; text-decoration: none; }
+.sprinkler-brand img { flex: none; }
+.sprinkler-brand strong { display: block; margin-top: .1rem; font-size: 1.12rem; }
+.sprinkler-header nav { display: flex; flex-wrap: wrap; gap: .55rem clamp(1rem, 3vw, 2.5rem); }
+.sprinkler-header nav a { font-weight: 650; text-decoration: none; }
+.sprinkler-header nav a:hover { text-decoration: underline; text-underline-offset: .22em; }
+.sprinkler .button { display: inline-flex; min-height: 44px; justify-content: center; align-items: center; padding: .55rem .9rem; border: 1px solid var(--accent); border-radius: .2rem; color: #fff; background: var(--accent); font-weight: 700; text-decoration: none; text-align: center; cursor: pointer; }
+.sprinkler .button:hover { background: var(--ink); border-color: var(--ink); }
+.text-link { font-weight: 680; text-underline-offset: .22em; }
+.sprinkler-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); align-items: center; gap: clamp(1.6rem, 5vw, 5rem); padding-block: clamp(2.9rem, 8vw, 6.9rem); }
+.eyebrow { color: var(--accent); font-size: .98rem; font-weight: 700; }
+.lead { max-width: 34rem; margin: 0 0 .95rem; color: var(--muted); font-size: clamp(1.04rem, 1.65vw, 1.22rem); }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.25rem; margin-top: 1.4rem; }
+.drawing { margin: 0; border: 1px solid var(--line); background: var(--panel); box-shadow: 0 .85rem 2.1rem #3a211614; }
+.drawing-header, .drawing figcaption { padding: .65rem .9rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem .75rem; color: var(--muted); font-size: .91rem; }
+.drawing-header { border-bottom: 1px solid var(--line); }
+.drawing-header strong { color: var(--accent); }
+.drawing img { display: block; width: 100%; }
+.drawing figcaption { border-top: 1px solid var(--line); }
+.sprinkler-services, .sprinkler-process, .contact-grid { padding-block: clamp(2.6rem, 7vw, 5.4rem); }
+.sprinkler-services { border-top: 1px solid var(--line); }
+.service-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
+.service-grid article { padding: clamp(1rem, 3vw, 1.65rem); border: 1px solid var(--line); background: var(--panel); }
+.service-grid h3 { margin: 0 0 .5rem; line-height: 1.18; font-size: 1.27rem; }
+.service-grid p { margin: 0; color: var(--muted); }
+.responsibility { padding-block: clamp(2.6rem, 6vw, 4.4rem); background: var(--ink); color: #fff; }
+.responsibility p { max-width: 54rem; margin: 0; color: #f2e7de; font-size: 1.09rem; }
+.sprinkler-process, .contact-grid { display: grid; grid-template-columns: minmax(0, .84fr) minmax(0, 1.16fr); gap: clamp(1rem, 5vw, 4.6rem); align-items: start; }
+.sprinkler-process ol { margin: 0; padding-left: 1.45rem; }
+.sprinkler-process li { padding: .7rem 0; }
+.sprinkler-process li + li { border-top: 1px solid var(--line); }
+.sprinkler-contact { border-block: 1px solid var(--line); background: var(--tint); }
+.sprinkler form { min-width: 0; padding: clamp(1rem, 3vw, 1.7rem); border: 1px solid var(--line); background: var(--panel); }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; }
+.form-grid label { display: grid; gap: .25rem; align-content: start; min-width: 0; font-weight: 650; }
+.form-grid input, .form-grid select, .form-grid textarea { width: 100%; min-height: 43px; padding: .43rem .55rem; border: 1px solid #83746a; border-radius: .18rem; color: var(--ink); background: #fff; font: inherit; }
+.form-grid textarea { resize: vertical; }
+.form-grid .wide { grid-column: 1 / -1; }
+.form-help { color: var(--muted); font-size: .91rem; }
+.sprinkler-footer { flex-wrap: wrap; padding-block: 1rem; color: var(--muted); }
+@media (max-width: 710px) {
+  .sprinkler-hero, .sprinkler-process, .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .header-row { flex-wrap: wrap; padding-block: .72rem; }
+  .header-row .header-action { display: none; }
+}
+@media (max-width: 450px) {
+  .service-grid, .form-grid { grid-template-columns: minmax(0, 1fr); }
+}

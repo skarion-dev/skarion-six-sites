@@ -6,6 +6,7 @@ const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = path.join(root, 'dist');
 const sites = JSON.parse(await readFile(path.join(root, 'sites.json'), 'utf8'));
 const archive = JSON.parse(await readFile(path.join(root, 'research', 'manifest.json'), 'utf8'));
+const additionalNiches = JSON.parse(await readFile(path.join(root, 'research', 'niches.json'), 'utf8'));
 const archivePaths = new Set(archive.map(({ path: file }) => file));
 const failures = [];
 
@@ -71,7 +72,7 @@ expect(archivePaths.size === archive.length, 'Duplicate paths in the research ar
 expect((archivePage.match(/\sdownload>/g) ?? []).length === archive.length, 'The source index does not list every original');
 expect(!(await exists(path.join(dist, '_research_archive'))), 'Original archive files leaked into the hosted output');
 const pages = await readdir(path.join(dist, 'founders-research', 'niches'));
-expect(pages.length === 25, 'The research preview needs all 25 niche pages');
+expect(pages.length === 25 + additionalNiches.length, 'The research preview needs the original and additional niche pages');
 for (const niche of pages) {
   const page = await checkPage(`/founders-research/niches/${niche}/index.html`);
   for (const title of ['Market evidence and competition', 'RFP and opportunity ledger', 'Prime and subcontract due diligence']) {

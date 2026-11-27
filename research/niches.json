@@ -1,0 +1,13 @@
+[
+  {
+    "id": "fire-sprinkler-cad",
+    "title": "Fire sprinkler CAD and BIM support",
+    "notes": "The November 27 research supports a paid, contractor-reviewed redline pilot. Qualify BIM coordination and extraction against the client’s actual software and release workflow. Start with approved source files, a named reviewer and one sheet.",
+    "records": {
+      "Market evidence and competition": "sprinkler/Sprinkler_CAD_Market_and_Launch_2026-11-27.md",
+      "RFP and opportunity ledger": "sprinkler/Sprinkler_CAD_Qualification_Queue_2026-11-27.csv",
+      "Prime and subcontract due diligence": "sprinkler/Zihad_Sprinkler_CAD_50_Hour_Sprint_2026-11-27.md",
+      "Source procurement record": "sprinkler/Delaware_State_University_Conrad_Hall_Specification.pdf"
+    }
+  }
+]

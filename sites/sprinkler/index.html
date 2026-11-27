@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fire sprinkler CAD and BIM production support from approved designer markups. Redline drafting, coordination exhibits and checked sheet extracts for sprinkler contractors.">
+  <meta name="theme-color" content="#f8f5f0">
+  <link rel="icon" href="./logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="./site.css">
+  <script defer src="shared/site.js"></script>
+  <title>Skarion Sprinkler CAD | Fire Sprinkler Drafting and BIM Support</title>
+</head>
+<body class="sprinkler">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="sprinkler-header">
+    <div class="sprinkler-wrap header-row">
+      <a href="./" class="sprinkler-brand"><img src="./logo.svg" width="43" height="43" alt=""><span>Skarion<strong>Sprinkler CAD</strong></span></a>
+      <nav aria-label="Main navigation">
+        <a href="./capabilities/">Capabilities</a><a href="./projects/">Projects</a><a href="#process">Process</a>
+      </nav>
+      <a class="button header-action" href="#contact">Scope one sheet</a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="sprinkler-wrap sprinkler-hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Fire sprinkler CAD and BIM support</p>
+        <h1 id="hero-title">Sprinkler drafting for busy contractors.</h1>
+        <p class="lead">Send a base drawing and your designer’s approved markups. Get an editable update, a check plot, and a record of what still needs a decision.</p>
+        <div class="actions">
+          <a class="button" href="#contact">Scope a paid redline batch</a>
+          <a class="text-link" href="./projects/">View sample handoffs</a>
+        </div>
+      </div>
+      <figure class="drawing">
+        <div class="drawing-header"><strong>FP-101</strong><span>Redline review</span></div>
+        <img src="./assets/projects/redline-after.webp" width="1350" height="900" alt="Schematic approved redline on a separate layer, with an unresolved item tagged for the fire sprinkler designer" fetchpriority="high">
+        <figcaption><span>Synthetic training example</span><a href="./projects/sprinkler-redline-incorporation/">Open the source and check plot</a></figcaption>
+      </figure>
+    </section>
+    <section class="sprinkler-wrap sprinkler-services" id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Production work your designer can check</h2>
+      <div class="service-grid">
+        <article><h3>Redlines and record drawings</h3><p>Apply approved comments to the supplied CAD or BIM files and tie each change back to its source.</p></article>
+        <article><h3>BIM coordination support</h3><p>Compare supplied trade views, capture conflicts and update the model from authorized dispositions.</p></article>
+        <article><h3>Shop drawing extraction</h3><p>Prepare review sheets and schedules from an approved model when the contractor supplies the extraction and release rules.</p></article>
+        <article><h3>Drawing QA and issue tracking</h3><p>Reconcile references, tags and revisions across the CAD files, check plots and issue register.</p></article>
+      </div>
+    </section>
+    <!-- SITE_DETAIL_SHOWCASE -->
+    <section class="responsibility" aria-labelledby="responsibility-title">
+      <div class="sprinkler-wrap">
+        <h2 id="responsibility-title">Your sprinkler lead owns design and release.</h2>
+        <p>Your authorized professional or contractor decides the system, layout criteria, equipment and hydraulics. The responsible team verifies field conditions and controls permit, fabrication and installation releases. We draft from accepted instructions and return unresolved questions to that team.</p>
+      </div>
+    </section>
+    <section class="sprinkler-wrap sprinkler-process" id="process" aria-labelledby="process-title">
+      <div><h2 id="process-title">Start with one paid sheet.</h2><p class="lead">Use a redacted example from a real production queue and involve the person who will check the result.</p></div>
+      <ol>
+        <li><strong>Agree the input.</strong> Confirm base and markup revisions, drawing standards, software version, file access and authorized reviewer.</li>
+        <li><strong>Draft and track.</strong> Incorporate the approved changes, record each disposition and flag missing or conflicting instructions.</li>
+        <li><strong>Check the handoff.</strong> Review the working file, plot and register together. Use the accepted batch to scope the next one.</li>
+      </ol>
+    </section>
+    <section class="sprinkler-contact" id="contact" aria-labelledby="contact-title">
+      <div class="sprinkler-wrap contact-grid">
+        <div>
+          <h2 id="contact-title">Tell us about your drawing queue.</h2>
+          <p class="lead">Share your jurisdiction, source file type, CAD or BIM version and reviewer. We’ll agree how to receive any project files before you send them.</p>
+          <a class="text-link" href="mailto:info@skarion.com?subject=Skarion%20Sprinkler%20CAD">info@skarion.com</a>
+        </div>
+        <form action="mailto:info@skarion.com" method="post" enctype="text/plain" data-intake data-recipient="info@skarion.com" data-subject="Skarion Sprinkler CAD pilot">
+          <div class="form-grid">
+            <label>Your name<input name="name" autocomplete="name" required></label>
+            <label>Work email<input type="email" name="email" autocomplete="email" required></label>
+            <label>Contractor or firm<input name="company" autocomplete="organization"></label>
+            <label>Work type<select name="service" required>
+              <option value="" disabled selected>Choose a work type</option>
+              <option>Redlines or record drawings</option><option>BIM coordination support</option>
+              <option>Shop drawing extraction</option><option>Drawing QA and issue tracking</option>
+            </select></label>
+            <label class="wide">Target deadline<input name="timeline" placeholder="Date and time zone"></label>
+            <label class="wide">Batch brief<textarea name="scope" rows="4" required maxlength="1600" placeholder="Location, source files, CAD version and authorized reviewer"></textarea></label>
+          </div>
+          <p class="form-help">Review the email in your mail app before sending.</p>
+          <button class="button" type="submit">Open email draft</button>
+          <p data-intake-status role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="sprinkler-wrap sprinkler-footer"><strong>Skarion Sprinkler CAD</strong><span>A Skarion Engineering pilot</span><a href="mailto:info@skarion.com">Email Skarion</a></footer>
+</body>
+</html>

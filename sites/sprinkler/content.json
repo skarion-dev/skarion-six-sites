@@ -1,0 +1,319 @@
+{
+  "capabilityIntro": "Fire sprinkler drafting and BIM production support for contractors and trade coordination teams. We start with reviewed inputs and return editable updates, check plots and questions for the authorized project team.",
+  "buyerRoles": [
+    "Fire sprinkler contractor design managers",
+    "Fire protection design leads",
+    "Trade BIM and VDC coordinators",
+    "Contractor fabrication leads"
+  ],
+  "capabilities": [
+    {
+      "title": "Approved redlines and record updates",
+      "summary": "Carry designer-approved revisions into the supplied drawing or model and show how each input was handled.",
+      "inputs": [
+        "Accepted base file, markup package and revision list",
+        "Layer or family standards and sheet templates",
+        "Authorized client reviewer and expected issue format"
+      ],
+      "outputs": [
+        "Editable draft in the agreed tool and a check PDF",
+        "Revision register tied to source comments",
+        "Held questions with owners and affected sheets"
+      ],
+      "checks": [
+        "Compare each changed item to its approval",
+        "Check tags, references and plotted revisions across the set",
+        "Keep conflicting instructions open for the lead designer"
+      ]
+    },
+    {
+      "title": "BIM coordination support",
+      "summary": "Use the provided trade exports to document overlaps and implement the client’s approved responses.",
+      "inputs": [
+        "Accepted model revisions, shared coordinates and issue conventions",
+        "Trade views and criteria supplied by the coordination lead",
+        "Approved dispositions and source evidence for any changes"
+      ],
+      "outputs": [
+        "Review exhibits and issue register",
+        "Named views or model revision in the agreed workflow",
+        "Source and change references for each affected item"
+      ],
+      "checks": [
+        "Confirm linked model revisions and coordinate alignment",
+        "Separate observed overlap from confirmed clash disposition",
+        "Keep changes tied to the responsible designer and trade lead"
+      ]
+    },
+    {
+      "title": "Shop drawing and schedule extraction",
+      "summary": "Produce a review extract from an approved source model, with the contractor’s shop lead controlling fabrication release.",
+      "inputs": [
+        "Approved model and authorized revision",
+        "Sheet and schedule standards, extraction limits and hold rules",
+        "Contractor shop reviewer and output versions"
+      ],
+      "outputs": [
+        "Draft shop sheets and schedules from the approved source",
+        "Source-to-output register with open holds",
+        "Working files and plots for the fabrication lead"
+      ],
+      "checks": [
+        "Trace IDs and values to the approved source revision",
+        "Keep held items out of the extracted schedule",
+        "Have the contractor confirm fabrication dimensions, counts and release"
+      ]
+    },
+    {
+      "title": "Issue registers and drawing QA",
+      "summary": "Maintain a reviewable record of sheet, model and issue changes across handoffs.",
+      "inputs": [
+        "Current file index, title block and revision conventions",
+        "Authorized change list and expected deliverables",
+        "Named ownership for technical decisions"
+      ],
+      "outputs": [
+        "Revision and issue crosswalk",
+        "Source and output file inventory",
+        "Check plot and unresolved-item list"
+      ],
+      "checks": [
+        "Open the agreed file version and reconcile reference paths",
+        "Compare plotted tags and issue status to the underlying record",
+        "Route missing design information to the authorized reviewer"
+      ]
+    }
+  ],
+  "handoff": {
+    "formats": [
+      "Editable files in an agreed and verified AutoCAD, Revit or contractor-specific workflow",
+      "Check PDFs, issue register and a source revision list",
+      "Review sheets and schedules when extraction scope is authorized",
+      "Editable DXF and PDF for the synthetic examples"
+    ],
+    "requirements": [
+      "Accepted drawing or model revision, markups and references",
+      "Project CAD standards, software version and permissions to share the inputs",
+      "Named client reviewer and applicable project and jurisdiction requirements"
+    ],
+    "boundaries": [
+      "The authorized professional or contractor selects and approves system design, equipment and layout criteria.",
+      "The responsible project team owns hydraulics, compliance decisions and field verification.",
+      "The client’s authorized team controls permit, fabrication and installation release."
+    ]
+  },
+  "projects": [
+    {
+      "id": "sprinkler-redline-incorporation",
+      "title": "Approved redlines to a CAD review sheet",
+      "category": "Redline production",
+      "draft": true,
+      "summary": "Carry one approved markup into the draft and keep a conflicting instruction visible for the designer.",
+      "image": "assets/projects/approved-redlines.webp",
+      "imageAlt": "A schematic change overlay shows incorporated markup M-01 and F-02 held for review",
+      "handoffSummary": {
+        "Source": "Synthetic FP-M1 base and markup",
+        "Draft sheet": "FP-101",
+        "Open review": "F-02 conflicting continuation directions"
+      },
+      "comparison": [
+        {
+          "label": "Before · Source markup",
+          "image": "assets/projects/redline-before.webp",
+          "alt": "A source sketch shows approved and held drafting instructions",
+          "caption": "M-01 is approved for drafting. M-02 contains conflicting continuation directions."
+        },
+        {
+          "label": "After · Check plot",
+          "image": "assets/projects/redline-after.webp",
+          "alt": "The check plot shows the transferred revision and a separate F-02 hold",
+          "caption": "The approved change is incorporated. F-02 stays visible for the designer."
+        }
+      ],
+      "context": "A fictional sprinkler contractor provides a base layout and two comments. The lead authorizes M-01 and directs the CAD team to hold M-02 while the intended continuation is clarified.",
+      "constraints": [
+        "Carry only the authorized geometry into the review draft.",
+        "Retain the original line for source comparison.",
+        "Keep the open continuation tagged for the design lead."
+      ],
+      "approach": [
+        {
+          "title": "Match the inputs",
+          "text": "Identify the base revision and approved markup."
+        },
+        {
+          "title": "Draft the authorized revision",
+          "text": "Transfer M-01 onto a distinct layer and keep the earlier line visible."
+        },
+        {
+          "title": "Return the open decision",
+          "text": "Tag F-02 on the check sheet and link it to the source register."
+        }
+      ],
+      "deliverables": [
+        "Layered draft CAD and matching PDF check sheet",
+        "Source markup PDF and revision register"
+      ],
+      "verification": [
+        "Find M-01 on the source and the updated geometry on FP-101.",
+        "Check that the base remains visible as a reference.",
+        "Match F-02 and its open status between the check plot and register."
+      ],
+      "review": "The lead designer resolves the conflicting continuation directions and approves every production issue.",
+      "files": [
+        {
+          "path": "assets/samples/approved-redlines.dxf",
+          "label": "Editable schematic DXF",
+          "description": "Layered training geometry with a named FP-101 layout."
+        },
+        {
+          "path": "assets/samples/approved-redlines.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch training check sheet."
+        },
+        {
+          "path": "assets/samples/redline-source.pdf",
+          "label": "Source markup exercise",
+          "description": "Original schematic markup with approved and held inputs."
+        },
+        {
+          "path": "assets/samples/redline-register.csv",
+          "label": "Revision register",
+          "description": "Source, disposition and next reviewer for each mark."
+        }
+      ]
+    },
+    {
+      "id": "sprinkler-coordination-issues",
+      "title": "Fire protection and HVAC coordination review",
+      "category": "Coordination support",
+      "draft": true,
+      "summary": "Document an overlap in supplied trade views and assign the unresolved disposition to the responsible leads.",
+      "image": "assets/projects/trade-coordination.webp",
+      "imageAlt": "A plan-view overlap between supplied fire protection and HVAC references is circled for review",
+      "handoffSummary": {
+        "Source": "Illustrative trade exports R03 and R05",
+        "Draft sheet": "FP-201",
+        "Open review": "CO-07 elevation and disposition"
+      },
+      "context": "A fictional coordination lead supplies two schematic plan exports for a ceiling review. The sample marks the possible conflict so the designer and trade lead can check the model context.",
+      "constraints": [
+        "Preserve original geometry and model revision identifiers.",
+        "Treat the supplied views as plan references.",
+        "Keep elevations and any model change with the authorized reviewer."
+      ],
+      "approach": [
+        {
+          "title": "Check the reference versions",
+          "text": "Retain both source revision IDs in the input table."
+        },
+        {
+          "title": "Record the overlap",
+          "text": "Make a review exhibit with distinct trade layers and an issue tag."
+        },
+        {
+          "title": "Assign the next decision",
+          "text": "Record CO-07 with its missing elevation check and reviewers."
+        }
+      ],
+      "deliverables": [
+        "Layered 2D coordination exhibit and matching PDF",
+        "Trade revision inventory and issue register"
+      ],
+      "verification": [
+        "Trace FP-07 and HVAC-12 back to the source inventory.",
+        "Locate CO-07 on the plot.",
+        "Confirm the issue remains open pending model context and approved disposition."
+      ],
+      "review": "The designated designer and trade lead confirm three-dimensional context and own the resolution. The sample illustrates an issue handoff in an exported 2D view.",
+      "files": [
+        {
+          "path": "assets/samples/trade-coordination.dxf",
+          "label": "Editable schematic DXF",
+          "description": "Layered training geometry with a named FP-201 layout."
+        },
+        {
+          "path": "assets/samples/trade-coordination.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch training check sheet."
+        },
+        {
+          "path": "assets/samples/coordination-source.csv",
+          "label": "Trade source inventory",
+          "description": "The provided trade exports and their revisions."
+        },
+        {
+          "path": "assets/samples/coordination-issues.csv",
+          "label": "Coordination register",
+          "description": "Open issue, missing check and assigned owners."
+        }
+      ]
+    },
+    {
+      "id": "sprinkler-shop-extraction",
+      "title": "Shop drawing extraction and release check",
+      "category": "Shop documentation",
+      "draft": true,
+      "summary": "Reconcile two included example items against a source revision and preserve a separate shop hold.",
+      "image": "assets/projects/shop-extraction.webp",
+      "imageAlt": "A symbolic check sheet shows two items for review and a third held outside the extraction",
+      "handoffSummary": {
+        "Source": "Fictional approved model record R06",
+        "Draft sheet": "FP-301",
+        "Open review": "SH-31C shop disposition"
+      },
+      "context": "A fictional contractor supplies an approved source register and identifies one item on hold. The draft extraction preserves the included item IDs and the separate hold so the shop reviewer can check the handoff.",
+      "constraints": [
+        "Use the R06 source ID and the supplied item list.",
+        "Carry the two authorized entries into the draft review schedule.",
+        "Leave the held item outside the extracted schedule."
+      ],
+      "approach": [
+        {
+          "title": "Check the release inputs",
+          "text": "Confirm source revision and which items are included for review."
+        },
+        {
+          "title": "Prepare the extract",
+          "text": "Create a symbolic check sheet and cross-reference the two included entries."
+        },
+        {
+          "title": "Keep the hold visible",
+          "text": "Show SH-31C as a separate review item for the shop lead."
+        }
+      ],
+      "deliverables": [
+        "Layered schematic CAD and matching PDF",
+        "Illustrative model export index and extraction register"
+      ],
+      "verification": [
+        "Match SH-31A and SH-31B to the R06 inventory.",
+        "Check that SH-31C remains on hold.",
+        "Confirm that the register leaves fabrication release with the contractor."
+      ],
+      "review": "The shop lead validates dimensions, material and release. The training files demonstrate revision and item control.",
+      "files": [
+        {
+          "path": "assets/samples/shop-extraction.dxf",
+          "label": "Editable schematic DXF",
+          "description": "Layered training geometry with a named FP-301 layout."
+        },
+        {
+          "path": "assets/samples/shop-extraction.pdf",
+          "label": "Matching vector PDF",
+          "description": "An 11 × 17-inch training check sheet."
+        },
+        {
+          "path": "assets/samples/extraction-source.csv",
+          "label": "Source release index",
+          "description": "The illustrative source ID and client dispositions."
+        },
+        {
+          "path": "assets/samples/extraction-register.csv",
+          "label": "Extraction and hold register",
+          "description": "The two items in review and a held item tracked separately."
+        }
+      ]
+    }
+  ]
+}

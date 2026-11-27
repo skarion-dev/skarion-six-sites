@@ -1,6 +1,6 @@
 # Founder’s Research
 
-The [local team preview](http://127.0.0.1:4173/founders-research/) connects seven offers and 25 researched niches to the archive. Each niche has its own market report, procurement search, and subcontract due diligence. Skarion Survey CAD builds on the Survey CAD processing and utility-conflict research.
+The [local team preview](http://127.0.0.1:4173/founders-research/) connects eight offers and 26 researched niches to the archive. Each niche has its own market, procurement and qualification research. The original 25 briefs keep their dated records.
 
 - `archive/output/` preserves the workspace reports, raw social runs, niche benchmarks, RFP and pursuit indexes, PDFs, and GTM workbooks.
 - `archive/original-bundle/` preserves the November 24 research ZIP and its 22 complete entries, including the Drafting datasets, original RFP material, and its file manifest. The VCL context retains its restricted internal reference designation.
@@ -8,6 +8,7 @@ The [local team preview](http://127.0.0.1:4173/founders-research/) connects seve
 - `archive/opportunities/`, `archive/gtm-social/`, and `archive/drafting-business/` preserve the county registry and inputs, watchlist definitions, and Drafting launch and pricing work.
 - `archive/social-source-snapshots/` preserves the observation and plan JSON used to make the first manual reports.
 - `archive/surveying/` holds the historical pilot brief, the updated survey and utility CAD research, its prospect queue, and saved procurement evidence.
+- `archive/sprinkler/` holds the contractor production research, qualification queue, 50-hour training sprint and a source specification.
 
 `manifest.json` records each original byte count and SHA-256. The repository stays private. The site build emits the index and authenticated repository links. It excludes the source files from the hosted output. The local preview can also serve an original copy from this checkout.
 

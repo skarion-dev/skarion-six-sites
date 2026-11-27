@@ -953,5 +953,25 @@
     "path": "surveying/Survey_CAD_Utility_Research_2026-11-27.md",
     "bytes": 11582,
     "sha256": "97801a6f993c144f18b2c841cd0e707205a7dbe64d40e0c917b761dec34a0054"
+  },
+  {
+    "path": "sprinkler/Delaware_State_University_Conrad_Hall_Specification.pdf",
+    "bytes": 5333828,
+    "sha256": "668fff01584b263054d68b8a3b1abd0690ffcde5312da239779972952151c2ac"
+  },
+  {
+    "path": "sprinkler/Sprinkler_CAD_Market_and_Launch_2026-11-27.md",
+    "bytes": 10256,
+    "sha256": "5ea51d5e565c84cd2448d98c007d046346d62a036e9ff1018094927cdcda87c0"
+  },
+  {
+    "path": "sprinkler/Sprinkler_CAD_Qualification_Queue_2026-11-27.csv",
+    "bytes": 2754,
+    "sha256": "4d85ee6537f28c64b686d602c03c2a9adf1fd0a19ce12e143121fd40faeb64c2"
+  },
+  {
+    "path": "sprinkler/Zihad_Sprinkler_CAD_50_Hour_Sprint_2026-11-27.md",
+    "bytes": 4947,
+    "sha256": "76502a12ab5a0d22881af54b7418bbb3462cd8afcf18c1bc1964d794c9fdca26"
   }
 ]

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Skarion Sprinkler CAD">
+  <rect width="64" height="64" rx="12" fill="#2d2a28"/>
+  <path d="M13 19h38M32 19v15m-8 0h16" fill="none" stroke="#f7eee4" stroke-width="3" stroke-linecap="round"/>
+  <path d="m25 40-5 8m12-8v10m7-10 5 8" fill="none" stroke="#ffad94" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="32" cy="19" r="3.2" fill="#ffad94"/>
+</svg>

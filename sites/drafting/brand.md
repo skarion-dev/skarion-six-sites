@@ -1,6 +1,6 @@
 # Skarion Drafting brand kit
 
-Working identity for the CAD drafting and as-builts practice. The buyer is a utility contractor closeout lead, engineering project manager or CAD production manager with an approved drawing package and a deadline.
+Working identity for the CAD drafting and as-builts practice. The buyer is a contractor, facility records lead, architect or engineering production manager with a defined drafting scope, authorized source records and a deadline.
 
 ## Positioning and voice
 
@@ -30,7 +30,7 @@ The mark folds the corner of a plot sheet over a redline. The mark is [logo.svg]
 
 **Art direction.** Lead with deliverables the buyer can inspect. Draw a bounded scene, use quiet gridlines, and highlight a single discrepancy or resolution. Make legends readable and label invented drawings as illustrative. Avoid client logos, job file screenshots and as-built measurements unless the reviewer and rights owner approve the exact material.
 
-**Assets included.** [Field-markup illustration](assets/field-redline.svg), [record-plot illustration](assets/record-plot.svg), [editable social card](brand-assets/social-card.svg), [1200 × 630 PNG](brand-assets/social-card.png) and [512 × 512 avatar](brand-assets/avatar.png). These are original concept assets for Skarion. Use the system type stack. Prepare a 1080 × 1080 centered social crop or a 1080 × 1350 carousel cover when a channel needs it. Give plot screenshots a plain-language caption that communicates the difference between the states.
+**Assets included.** [Utility hero source view](assets/projects/ut-closeout-before.webp), [utility hero record view](assets/projects/ut-closeout-after.webp), [editable social card](brand-assets/social-card.svg), [1200 × 630 PNG](brand-assets/social-card.png) and [512 × 512 avatar](brand-assets/avatar.png). Use the approved demo drawing crop for the relevant case. Give plot screenshots a plain-language caption that names the change and flags any open item.
 
 ## Social and launch
 
@@ -45,4 +45,4 @@ Start on the approved Skarion LinkedIn business presence. Use two posts per week
 
 **Domain.** Proposed `skariondrafting.com`, pending owner and registrar review. Build output can run at that root once approved. If kept on the parent site, use `/cad-drafting-as-builts/`. Confirm canonical URL and share card after hosting is chosen. Inquiries open an email draft to `info@skarion.com`. Confirm mailbox routing, reviewer assignment, inquiry handling and secure drawing transfer before launch.
 
-The [portfolio review plan](portfolio-review.md) has the planned demonstrations and source examples for the team.
+The [portfolio review](portfolio-review.md) has the draft packages, checks and research for the team.

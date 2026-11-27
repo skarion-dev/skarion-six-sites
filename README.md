@@ -1,6 +1,6 @@
 # Skarion Engineering service websites
 
-Six standalone static websites with a common intake workflow and an internal review hub. Each site includes a technical capabilities page, an example project library, three illustrated project walkthroughs, downloadable sample deliverables and a brand kit. The websites are drafts for Skarion's team to review.
+Six standalone static websites with a common intake workflow and an internal review hub. Each site includes capabilities, an example project library, downloadable sample deliverables and a brand kit. The Drafting library has seven illustrated examples. The other five libraries have three each. The websites are drafts for Skarion's team to review.
 
 ## Preview
 

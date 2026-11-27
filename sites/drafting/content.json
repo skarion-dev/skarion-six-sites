@@ -1,15 +1,16 @@
 {
-  "capabilityIntro": "Production drafting for utility closeout, legacy drawing conversion and civil CAD queues. Start with one to three representative sheets so the buyer’s reviewer can confirm fit before assigning a larger batch.",
+  "capabilityIntro": "Drafting production for contractors, facilities teams and design consultants. Start with one to three representative sheets so your reviewer can check the CAD format, plotted output and review process.",
   "buyerRoles": [
-    "Utility contractor closeout or project manager",
-    "Engineering or survey CAD production lead",
-    "Facilities or asset-records manager",
-    "Civil consultant assembling plan and profile sheets"
+    "Utility and civil contractor project managers",
+    "Architecture and survey production leads",
+    "Mechanical contractor closeout teams",
+    "Facilities and asset-records managers",
+    "Design and bid teams coordinating drawing revisions"
   ],
   "capabilities": [
     {
-      "title": "Record drawings from approved field redlines",
-      "summary": "Bring construction revisions into the approved base drawing and log questions that need a review decision.",
+      "title": "Utility and mechanical record drawings",
+      "summary": "Use approved field markups to revise a utility or mechanical set and track details that need field confirmation.",
       "inputs": [
         "Approved field markups with revision and sheet references",
         "Editable base CAD and dependent references",
@@ -47,7 +48,7 @@
     },
     {
       "title": "Civil and survey drafting production",
-      "summary": "Prepare agreed plan, profile and existing-condition sheets from reviewed source data under the buyer’s template.",
+      "summary": "Prepare plans, profiles and crossing exhibits from approved survey records, stationing and design instructions.",
       "inputs": [
         "Reviewer-approved source data and point or feature codes",
         "Horizontal reference, vertical datum and units",
@@ -65,8 +66,27 @@
       ]
     },
     {
-      "title": "CAD overflow and revision control",
-      "summary": "Establish a shared revision queue and repeatable handoff after the first production batch is accepted.",
+      "title": "Building existing-conditions drafting",
+      "summary": "Turn field sketches and recorded measurements into an editable architectural base for the design team.",
+      "inputs": [
+        "Dimensioned field sketch or authorized measured records",
+        "Room and opening notes with any areas flagged for verification",
+        "CAD template, unit convention and required layout list"
+      ],
+      "outputs": [
+        "Layered existing floor plan and supporting opening details",
+        "Plotted sheets with matching layout IDs and revisions",
+        "Opening or field verification register with source references"
+      ],
+      "checks": [
+        "Check tagged features and recorded opening widths against the source",
+        "Compare the CAD and plotted room dimensions and door symbols",
+        "Keep unverified conditions visible and route them to the client reviewer"
+      ]
+    },
+    {
+      "title": "Addenda and drawing revisions",
+      "summary": "Carry supplied changes across affected sheets, then document the issue and the remaining inputs.",
       "inputs": [
         "Representative set and buyer standards",
         "Batch priorities, reviewers and revision cadence",
@@ -86,15 +106,15 @@
   ],
   "handoff": {
     "formats": [
-      "Native AutoCAD DWG or agreed Civil 3D version for production work",
-      "Plotted PDFs with a named sheet index",
-      "CSV or spreadsheet revision and exception registers",
-      "Portable DXF for the website illustrations"
+      "DWG or Civil 3D version agreed for production work",
+      "Plotted PDFs with matching sheet IDs and revisions",
+      "Drawing index, change log and agreed reference files",
+      "Editable DXF for the downloadable website samples"
     ],
     "requirements": [
-      "One authorized source set with a current revision",
-      "Approved units, CAD template, plot layout and dependent file list",
-      "Named reviewer, target delivery date and secure handoff channel"
+      "Authorized source set with revision and sheet references",
+      "Target CAD version, units, drawing template and plot conventions",
+      "Reference files, designated reviewer and secure transfer method"
     ],
     "boundaries": [
       "The buyer’s accountable reviewer handles field verification, survey determinations and interpretation of design intent.",
@@ -187,7 +207,13 @@
           "label": "Change and exception register",
           "description": "Two mock instructions with sheet, station, revision status and next action."
         }
-      ]
+      ],
+      "group": "utility-civil",
+      "handoffSummary": {
+        "Source": "UT-M1 field markup and seven profile stations",
+        "Drawing set": "Record plan, profile and tie-in detail",
+        "Open review": "E-01 tie-in dimension at 1+80"
+      }
     },
     {
       "id": "legacy-utility-plan-redraw",
@@ -263,58 +289,449 @@
           "label": "Source-to-layer crosswalk",
           "description": "CAD layers, dimension checks and the owner action for open tag L-01."
         }
-      ]
+      ],
+      "group": "conversion-revisions",
+      "handoffSummary": {
+        "Source": "Scanned utility-room plan with two known dimensions",
+        "Drawing set": "LEG-01 layered redraw and plotted sheet",
+        "Open review": "L-01 unreadable equipment tag"
+      }
     },
     {
       "id": "civil-existing-conditions",
-      "title": "Civil existing-conditions plan and profile",
-      "category": "Civil CAD production",
-      "summary": "Five fictional source points produce a coordinated plan and profile with checked station and elevation labels.",
-      "image": "assets/projects/civil-existing-conditions.svg",
-      "imageAlt": "Synthetic civil drawing showing five centerline points over 100 feet and the corresponding existing elevation profile",
-      "context": "A fictional civil reviewer provides five existing-ground points along an access corridor. The sample turns them into a centerline plan and profile with enough source detail to reconcile each plotted label.",
+      "title": "Commercial service court grading package",
+      "group": "utility-civil",
+      "category": "Civil plan and profile",
+      "draft": true,
+      "summary": "A 120-foot curb-line profile carries the approved grading markup while preserving both end elevations.",
+      "handoffSummary": {
+        "Source": "Five survey stations and a prime consultant’s markup",
+        "Drawing set": "CV-01 grading plan and CV-02 profile",
+        "Open review": "Survey elevation at the east connection"
+      },
+      "image": "assets/projects/civil-service-court-comparison.webp",
+      "imageAlt": "Side-by-side source and finished drawing for commercial service court grading package",
+      "comparison": [
+        {
+          "label": "Before · Supplied field data",
+          "image": "assets/projects/civil-service-court-before.webp",
+          "alt": "Existing curb and five labeled survey elevations across a service court",
+          "caption": "CV-M1 records the existing curb, inlet and elevation references used by the prime."
+        },
+        {
+          "label": "After · Grading markup",
+          "image": "assets/projects/civil-service-court-after.webp",
+          "alt": "A revised green grading line on the original curb base with an east connection callout",
+          "caption": "The revised line uses the supplied markup. The east connection stays open."
+        }
+      ],
+      "context": "A fictional civil consultant needs an existing base and an approved grading markup assembled for review. The plan and profile share the five supplied survey stations.",
       "constraints": [
-        "Use the supplied synthetic local planar coordinates and illustrative vertical datum.",
-        "Draft a 100-foot alignment at 25-foot source intervals.",
-        "Represent the profile at 10 times vertical exaggeration in its separate graphic frame."
+        "Use the supplied local vertical datum and work in feet.",
+        "Hold the surveyed end matches at 100.20 and 99.55 feet.",
+        "Carry the proposed elevations as supplied and retain the existing profile as a reference."
       ],
       "approach": [
         {
-          "title": "Validate the source import",
-          "text": "Check that source point IDs are unique and stations advance in 25-foot increments from 0+00 to 1+00."
+          "title": "Check the source stations",
+          "text": "Tie the five records to CV-M1 and compare the 0+00 and 1+20 match points."
         },
         {
-          "title": "Draft plan and profile views",
-          "text": "Plot coordinates in the plan frame. Convert each supplied elevation to its profile height above the 100-foot datum line."
+          "title": "Draft the plan and profile",
+          "text": "Keep existing and revised linework on separate layers. Use the source elevations to plot the profile."
         },
         {
-          "title": "Package the source for checking",
-          "text": "Retain the input register with source IDs, stations, coordinates and elevations so a reviewer can reconstruct the views."
+          "title": "Track the missing spot elevation",
+          "text": "Key the east connection on CV-01 and assign the follow-up to the prime’s survey reviewer."
         }
       ],
       "deliverables": [
-        "CV-01 editable DXF with plan and profile frames",
-        "Synthetic source point register",
-        "Illustrated plan and profile preview with the vertical scale noted"
+        "CV-01 site plan and CV-02 curb-line profile in editable CAD and matching PDFs",
+        "Supplied elevations in CSV and a source sheet for comparison",
+        "Review register for the open connection"
       ],
       "verification": [
-        "Check that the centerline spans 100 drawing units with five labeled points.",
-        "Confirm that the peak elevation is 101.20 feet at station 0+50 and plots 12 profile drawing units above the 100-foot datum line.",
-        "Check every annotated elevation against the downloaded point register."
+        "Check the horizontal station span from 0+00 to 1+20.",
+        "At 0+60, reconcile existing 99.95 feet and revised 99.90 feet against the source CSV.",
+        "Verify both shared end elevations and the east connection callout before release."
       ],
-      "review": "The client’s civil or survey reviewer would approve source, datum and drawing suitability. These fictional points have no survey provenance and are provided only for the workflow illustration.",
+      "review": "The prime retains grading decisions. Its survey reviewer confirms the missing east connection elevation.",
       "files": [
         {
-          "path": "assets/samples/civil-cv01.dxf",
-          "label": "CV-01 plan and profile drawing (DXF)",
-          "description": "Layered centerline, point marks and a separate profile frame. Plan model units are feet."
+          "path": "assets/samples/civil-service-court.dxf",
+          "label": "Editable CAD set",
+          "description": "Named CV-01 and CV-02 layouts with separate source and revised layers."
         },
         {
-          "path": "assets/samples/civil-source-points.csv",
-          "label": "Synthetic source points (CSV)",
-          "description": "Five local-grid coordinates and elevations with station labels for the plan and profile."
+          "path": "assets/samples/civil-service-court-drawings.pdf",
+          "label": "Plotted drawing set",
+          "description": "Two vector sheets with the curb plan, stationing and profile."
+        },
+        {
+          "path": "assets/samples/civil-service-court-source.pdf",
+          "label": "Synthetic source drawing",
+          "description": "Existing conditions source sheet CV-M1."
+        },
+        {
+          "path": "assets/samples/civil-service-court-review.csv",
+          "label": "Grading review register",
+          "description": "Source change, open connection and next reviewer."
+        },
+        {
+          "path": "assets/samples/civil-service-court-points.csv",
+          "label": "Source elevations",
+          "description": "Existing and markup elevations at five station references."
+        }
+      ]
+    },
+    {
+      "id": "tenant-suite-existing",
+      "title": "Tenant suite existing-conditions drawings",
+      "group": "building-mechanical",
+      "category": "Architectural base plan",
+      "draft": true,
+      "summary": "A dimensioned 48-by-34-foot field sketch becomes an editable floor plan with tagged openings.",
+      "handoffSummary": {
+        "Source": "TI-M1 field sketch and opening notes",
+        "Drawing set": "TI-01 existing plan and TI-02 opening detail",
+        "Open review": "D-02 head height"
+      },
+      "image": "assets/projects/tenant-suite-existing-comparison.webp",
+      "imageAlt": "Side-by-side source and finished drawing for tenant suite existing-conditions drawings",
+      "comparison": [
+        {
+          "label": "Before · Field sketch",
+          "image": "assets/projects/tenant-suite-existing-before.webp",
+          "alt": "Three-room shell and field note for opening D-02",
+          "caption": "The source measures the shell and records the opening locations and widths."
+        },
+        {
+          "label": "After · Editable floor plan",
+          "image": "assets/projects/tenant-suite-existing-after.webp",
+          "alt": "Existing suite with room labels, two door swings and tag D-02",
+          "caption": "The floor plan shows the measured partitions and door swings. D-02 stays tagged for the height check."
+        }
+      ],
+      "context": "A fictional tenant improvement team supplies field notes for a three-room suite. The architect needs an editable existing base and a record of the incomplete opening measurement.",
+      "constraints": [
+        "Use the field sketch’s shell dimensions and measured partition locations.",
+        "Draw D-01 and D-02 from the supplied opening notes.",
+        "Carry D-02’s width and keep the missing head height open."
+      ],
+      "approach": [
+        {
+          "title": "Build the base plan",
+          "text": "Draft the 48-by-34-foot shell and existing partitions in feet."
+        },
+        {
+          "title": "Connect the drawing tags",
+          "text": "Use D-01 and D-02 on TI-01 and check the D-02 detail on TI-02."
+        },
+        {
+          "title": "Log the field check",
+          "text": "Record supplied widths and the head-height question in the opening register."
+        }
+      ],
+      "deliverables": [
+        "Editable floor plan and opening detail layouts",
+        "Matching two-sheet PDF and field-sketch PDF",
+        "Opening register with source references"
+      ],
+      "verification": [
+        "Check the 48-by-34-foot shell against TI-M1.",
+        "Measure the four-foot D-02 opening in the plan and detail.",
+        "Trace D-02 to the register and confirm the head height remains open."
+      ],
+      "review": "The client’s field reviewer verifies the missing head height before the architect uses it in design.",
+      "files": [
+        {
+          "path": "assets/samples/tenant-suite-existing.dxf",
+          "label": "Editable CAD set",
+          "description": "Named TI-01 and TI-02 layouts with editable walls and opening geometry."
+        },
+        {
+          "path": "assets/samples/tenant-suite-existing-drawings.pdf",
+          "label": "Plotted drawing set",
+          "description": "Vector floor plan and D-02 opening detail."
+        },
+        {
+          "path": "assets/samples/tenant-suite-existing-source.pdf",
+          "label": "Synthetic source drawing",
+          "description": "Field sketch TI-M1 for the suite."
+        },
+        {
+          "path": "assets/samples/tenant-suite-existing-review.csv",
+          "label": "Opening register",
+          "description": "D-01 and D-02 dimensions and verification status."
+        }
+      ]
+    },
+    {
+      "id": "mechanical-room-records",
+      "title": "Mechanical room record drawing set",
+      "group": "building-mechanical",
+      "category": "MEP record drafting",
+      "draft": true,
+      "summary": "A five-foot return branch reroute updates the record plan while retaining the pump location.",
+      "handoffSummary": {
+        "Source": "MR-M1 marks M-01 and M-02",
+        "Drawing set": "MR-01 room plan and MR-02 sleeve detail",
+        "Open review": "E-M01 sleeve centerline height"
+      },
+      "image": "assets/projects/mechanical-room-records-comparison.webp",
+      "imageAlt": "Side-by-side source and finished drawing for mechanical room record drawing set",
+      "comparison": [
+        {
+          "label": "Before · Contractor field markup",
+          "image": "assets/projects/mechanical-room-records-before.webp",
+          "alt": "Mechanical room reference plan with a marked return branch reroute",
+          "caption": "M-01 marks a horizontal route change. M-02 records the missing sleeve height."
+        },
+        {
+          "label": "After · Record plan",
+          "image": "assets/projects/mechanical-room-records-after.webp",
+          "alt": "Green return branch around the fixed pump footprint, with a red issue tag near the sleeve",
+          "caption": "The revised route stays tied to the source. E-M01 points to the sleeve review."
+        }
+      ],
+      "context": "A fictional mechanical contractor supplies a return branch reroute for a turnover set. The plan geometry is available, and the contractor still owes one elevation.",
+      "constraints": [
+        "Keep the P-01 footprint in the supplied location.",
+        "Apply the supplied horizontal reroute only.",
+        "Carry the sleeve location into the detail and hold its centerline height for field verification."
+      ],
+      "approach": [
+        {
+          "title": "Retain the base",
+          "text": "Keep the room boundary, equipment footprint and original route for comparison."
+        },
+        {
+          "title": "Incorporate M-01",
+          "text": "Draw the field-marked route on the record layer and tag the open sleeve on MR-01."
+        },
+        {
+          "title": "Link M-02 to the detail",
+          "text": "Put the open height on MR-02 and assign the field response in the review register."
+        }
+      ],
+      "deliverables": [
+        "Editable CAD layouts for the room plan and sleeve detail",
+        "Matching record PDF and field markup PDF",
+        "Source and exception register"
+      ],
+      "verification": [
+        "Measure the five-foot horizontal shift against M-01 and check the unchanged P-01 footprint.",
+        "Compare MR-01 and MR-02 with the plotted sheets.",
+        "Find E-M01 in the drawing set and confirm the reviewer sees the pending centerline height."
+      ],
+      "review": "The contractor provides the verified sleeve elevation and the mechanical reviewer approves the record issue.",
+      "files": [
+        {
+          "path": "assets/samples/mechanical-room-records.dxf",
+          "label": "Editable CAD set",
+          "description": "Named MR-01 and MR-02 layouts with prior and revised pipe layers."
+        },
+        {
+          "path": "assets/samples/mechanical-room-records-drawings.pdf",
+          "label": "Plotted drawing set",
+          "description": "Two vector sheets with the record plan and review detail."
+        },
+        {
+          "path": "assets/samples/mechanical-room-records-source.pdf",
+          "label": "Synthetic source drawing",
+          "description": "Mechanical room markup MR-M1."
+        },
+        {
+          "path": "assets/samples/mechanical-room-records-review.csv",
+          "label": "Mechanical review register",
+          "description": "M-01 route incorporation and M-02 sleeve height review."
+        }
+      ]
+    },
+    {
+      "id": "coordinated-addendum",
+      "title": "Two-sheet equipment pad addendum",
+      "group": "conversion-revisions",
+      "category": "Cross-sheet revision control",
+      "draft": true,
+      "summary": "One bulletin changes the pad width from 27 to 33 feet on both the plan and detail.",
+      "handoffSummary": {
+        "Source": "AB-02 and the R0 pad plan",
+        "Drawing set": "AD-01 plan and AD-02 detail at R1",
+        "Open review": "A-02 supplier anchor pattern"
+      },
+      "image": "assets/projects/coordinated-addendum-comparison.webp",
+      "imageAlt": "Side-by-side source and finished drawing for two-sheet equipment pad addendum",
+      "comparison": [
+        {
+          "label": "Before · R0 and bulletin markup",
+          "image": "assets/projects/coordinated-addendum-before.webp",
+          "alt": "Original pad outline with the six-foot extension marked in red",
+          "caption": "AB-02 extends the east edge by six feet and supplies the change to both sheets."
+        },
+        {
+          "label": "After · R1 plan",
+          "image": "assets/projects/coordinated-addendum-after.webp",
+          "alt": "The 33-foot revised pad appears in green with its previous outline dashed",
+          "caption": "AD-01 carries the new width and refers to AD-02. The supplier pattern is still pending."
+        }
+      ],
+      "context": "A fictional project team needs to carry a design bulletin through a plan and detail before releasing the next issue. The bulletin includes a pad dimension and identifies an outstanding supplier input.",
+      "constraints": [
+        "Apply only the supplied six-foot eastward extension.",
+        "Use the same issue revision and pad width on both sheets.",
+        "Keep the anchor pattern open for the design reviewer."
+      ],
+      "approach": [
+        {
+          "title": "Index the bulletin",
+          "text": "Record A-01 and A-02 against AB-02 in the change register."
+        },
+        {
+          "title": "Synchronize the geometry",
+          "text": "Update the 27-foot plan outline and detail to 33 feet while preserving the prior outline as a reference."
+        },
+        {
+          "title": "Check the issue set",
+          "text": "Compare layout IDs, R1 stamps, width labels and the open item in CAD and PDF."
+        }
+      ],
+      "deliverables": [
+        "Matching R1 plan and detail in one editable CAD file and two PDF sheets",
+        "Source markup and an issue register with both dispositions"
+      ],
+      "verification": [
+        "Measure the 33-foot revised width in both model views.",
+        "Confirm AD-01 and AD-02 both show R1 and match the plotted set.",
+        "Trace the open anchor pattern to A-02 and confirm who owns the next decision."
+      ],
+      "review": "The supplier confirms the anchor layout. The design lead reviews the information and releases the next issue.",
+      "files": [
+        {
+          "path": "assets/samples/coordinated-addendum.dxf",
+          "label": "Editable CAD set",
+          "description": "Named AD-01 and AD-02 layouts with separate R0 reference and R1 layers."
+        },
+        {
+          "path": "assets/samples/coordinated-addendum-drawings.pdf",
+          "label": "Plotted drawing set",
+          "description": "R1 vector plan and detail showing the same pad width."
+        },
+        {
+          "path": "assets/samples/coordinated-addendum-source.pdf",
+          "label": "Synthetic source drawing",
+          "description": "R0 plan with synthetic bulletin AB-02."
+        },
+        {
+          "path": "assets/samples/coordinated-addendum-review.csv",
+          "label": "Addendum issue register",
+          "description": "Cross-sheet revision and supplier-input status."
+        }
+      ]
+    },
+    {
+      "id": "road-crossing-exhibit",
+      "title": "Utility road crossing review exhibit",
+      "group": "utility-civil",
+      "category": "Right-of-way drafting",
+      "draft": true,
+      "summary": "A plan and section bring the supplied crossing route and right-of-way limits into one review set.",
+      "handoffSummary": {
+        "Source": "RX-M1 roadway base and crossing markup",
+        "Drawing set": "RX-01 crossing plan and RX-02 schematic section",
+        "Open review": "Existing utility depth at the crossing"
+      },
+      "image": "assets/projects/road-crossing-exhibit-comparison.webp",
+      "imageAlt": "Side-by-side source and finished drawing for utility road crossing review exhibit",
+      "comparison": [
+        {
+          "label": "Before · Road base and markup",
+          "image": "assets/projects/road-crossing-exhibit-before.webp",
+          "alt": "Two road edges and right-of-way limits with the supplied route marked",
+          "caption": "RX-M1 shows the crossing route and roadway references from the prime’s source."
+        },
+        {
+          "label": "After · Crossing plan",
+          "image": "assets/projects/road-crossing-exhibit-after.webp",
+          "alt": "Revised route and pavement edges with stations 12+05 and 12+65",
+          "caption": "RX-01 carries the station references and points to the review section on RX-02."
+        }
+      ],
+      "context": "A fictional prime consultant supplies a road crossing alignment and schematic section. The utility owner has yet to confirm the depth of an existing line at the crossing.",
+      "constraints": [
+        "Retain the source roadway and right-of-way geometry.",
+        "Use the supplied station references. The 60 feet describes the baseline interval.",
+        "Mark the existing utility depth as pending and keep the clearance question with the prime."
+      ],
+      "approach": [
+        {
+          "title": "Separate roadway features",
+          "text": "Keep pavement edges and right-of-way limits on their own layers."
+        },
+        {
+          "title": "Coordinate plan and section",
+          "text": "Reference RX-02 from RX-01 and show the supplied route in each view."
+        },
+        {
+          "title": "Record the evidence gap",
+          "text": "Identify the unverified depth on RX-02 and assign the next action to the prime reviewer."
+        }
+      ],
+      "deliverables": [
+        "Editable crossing plan and schematic section with named layouts",
+        "Matching vector PDF and original synthetic markup",
+        "Review register for station references and the depth hold"
+      ],
+      "verification": [
+        "Check the 60-foot baseline interval between 12+05 and 12+65.",
+        "Follow the section reference and compare the plotted route with the supplied geometry.",
+        "Check that the depth remains open in the section and the register."
+      ],
+      "review": "The owner or field team verifies the depth. The prime engineer determines clearance and manages the permit submittal.",
+      "files": [
+        {
+          "path": "assets/samples/road-crossing-exhibit.dxf",
+          "label": "Editable CAD set",
+          "description": "Named RX-01 and RX-02 layouts with roadway references and supplied route geometry."
+        },
+        {
+          "path": "assets/samples/road-crossing-exhibit-drawings.pdf",
+          "label": "Plotted drawing set",
+          "description": "Plan and schematic section for crossing review."
+        },
+        {
+          "path": "assets/samples/road-crossing-exhibit-source.pdf",
+          "label": "Synthetic source drawing",
+          "description": "Fictional roadway base and crossing markup RX-M1."
+        },
+        {
+          "path": "assets/samples/road-crossing-exhibit-review.csv",
+          "label": "Crossing review register",
+          "description": "Source stations and the depth item assigned for verification."
         }
       ]
     }
+  ],
+  "projectGroups": [
+    {
+      "id": "utility-civil",
+      "title": "Utility, civil and survey",
+      "description": "Record sets, grading markups and right-of-way review exhibits."
+    },
+    {
+      "id": "building-mechanical",
+      "title": "Buildings and mechanical",
+      "description": "Existing-conditions base drawings and mechanical turnover packages."
+    },
+    {
+      "id": "conversion-revisions",
+      "title": "Conversion and revisions",
+      "description": "Archive redraws and coordinated changes across drawing sets."
+    }
+  ],
+  "featuredProjectIds": [
+    "utility-trench-closeout",
+    "legacy-utility-plan-redraw",
+    "tenant-suite-existing"
   ]
 }

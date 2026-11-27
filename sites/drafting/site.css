@@ -78,6 +78,7 @@
 .drafting .services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .drafting .service { display: grid; align-content: start; gap: .95rem; min-width: 0; padding: clamp(1.2rem, 3vw, 2.5rem); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--panel); }
 .drafting .service-primary { background: var(--leaf); }
+.drafting .service:last-child { grid-column: 1 / -1; }
 .drafting .service h3 { font-family: var(--display-font); font-size: clamp(1.6rem, 3vw, 2.65rem); font-weight: 400; line-height: 1.05; letter-spacing: -.045em; }
 .drafting .service p:not(.eyebrow) { color: var(--muted); }
 .drafting .service-detail { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: .7rem; border-top: 1px solid var(--line); padding-top: .9rem; }

@@ -1,0 +1,100 @@
+{
+  "name": "Skarion Fiber · OSP design",
+  "market": "U.S. fiber operators, telecom primes and OSP engineering managers; English",
+  "goal": "Find content that helps a project manager assess one construction-ready design package from approved inputs.",
+  "topics": [
+    "OSP fiber design",
+    "field verification and constructability",
+    "HLD to LLD",
+    "permit and crossing inputs",
+    "plan sheets and splice schedules"
+  ],
+  "accounts": [
+    "HR Green",
+    "CCI Systems",
+    "Utilities One",
+    "Horrocks",
+    "Fiber Construction Company",
+    "Expander Inc.",
+    "r/FiberOptics"
+  ],
+  "exclude": [
+    "consumer fiber deals and outages",
+    "installation crews without a design topic",
+    "hiring-only posts"
+  ],
+  "lookback_days": 30,
+  "schedule": null,
+  "sources": {
+    "LinkedIn": {
+      "hosts": [
+        "linkedin.com"
+      ],
+      "method": "Public company feeds and individual posts"
+    },
+    "YouTube": {
+      "hosts": [
+        "youtube.com",
+        "youtu.be"
+      ],
+      "method": "Public videos and visible video counts"
+    },
+    "Reddit": {
+      "hosts": [
+        "reddit.com"
+      ],
+      "method": "Public discussions; cite relevant examples without bulk collection"
+    },
+    "Instagram": {
+      "hosts": [
+        "instagram.com"
+      ],
+      "method": "Public indexed posts and Reels"
+    },
+    "TikTok": {
+      "hosts": [
+        "tiktok.com"
+      ],
+      "method": "Public videos and TikTok Creative Center when available"
+    },
+    "Facebook": {
+      "hosts": [
+        "facebook.com"
+      ],
+      "method": "Public indexed posts; Ad Library separately for paid examples"
+    },
+    "X": {
+      "hosts": [
+        "x.com",
+        "twitter.com"
+      ],
+      "method": "Public indexed posts and publisher profiles"
+    },
+    "Threads": {
+      "hosts": [
+        "threads.com",
+        "threads.net"
+      ],
+      "method": "Public indexed posts"
+    },
+    "Pinterest": {
+      "hosts": [
+        "pinterest.com"
+      ],
+      "method": "Public indexed pins and boards"
+    },
+    "Bluesky": {
+      "hosts": [
+        "bsky.app"
+      ],
+      "method": "Public indexed posts and profiles"
+    },
+    "Publisher sites": {
+      "hosts": [
+        "hrgreen.com",
+        "utilitiesone.com"
+      ],
+      "method": "Original case studies, articles and sample deliverables for context"
+    }
+  }
+}

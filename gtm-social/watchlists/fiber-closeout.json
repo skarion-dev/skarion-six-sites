@@ -1,0 +1,22 @@
+{
+  "name": "Fiber closeout and as-built records",
+  "market": "U.S. fiber construction and telecom engineering; English",
+  "goal": "Find competitor content formats, buyer questions and original post ideas for Skarion Drafting and SkarionGIS.",
+  "topics": ["fiber closeout", "fiber as-built records", "GIS and splice records", "CAD redline handoff", "fiber route documentation"],
+  "accounts": ["Pathworks Engineering", "VETRO", "3-GIS", "GDRS", "CCI Systems", "Startelco Solutions", "r/FiberOptics", "r/telecom"],
+  "exclude": ["internet outage updates", "consumer internet speed", "job listings without an editorial post"],
+  "lookback_days": 30,
+  "schedule": null,
+  "sources": {
+    "LinkedIn": {"hosts": ["linkedin.com"], "method": "Public company pages and indexed individual posts"},
+    "YouTube": {"hosts": ["youtube.com", "youtu.be"], "method": "Public videos, channels and visible video counts"},
+    "Reddit": {"hosts": ["reddit.com"], "method": "Public indexed discussions; cite examples without bulk collection"},
+    "Instagram": {"hosts": ["instagram.com"], "method": "Public indexed posts and Reels"},
+    "TikTok": {"hosts": ["tiktok.com"], "method": "Public videos if accessible; Creative Center for platform or ad context"},
+    "Facebook": {"hosts": ["facebook.com"], "method": "Public indexed pages and posts; Ad Library separately for paid examples"},
+    "X": {"hosts": ["x.com", "twitter.com"], "method": "Public indexed posts and issuer profiles"},
+    "Threads": {"hosts": ["threads.com", "threads.net"], "method": "Public indexed posts"},
+    "Pinterest": {"hosts": ["pinterest.com"], "method": "Public indexed pins and boards"},
+    "Bluesky": {"hosts": ["bsky.app"], "method": "Public indexed posts and profiles"}
+  }
+}

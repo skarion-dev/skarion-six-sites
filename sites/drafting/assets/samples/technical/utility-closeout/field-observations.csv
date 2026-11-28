@@ -1,0 +1,23 @@
+station_ft,offset_ft_north_positive,surface_ft_local,pipe_crown_ft_local,record_id,observation
+0,-19,106.8,101.67,CO-01,Exposed start coupling
+40,-19,106.63,101.55,FH-11,Baseline shot
+80,-19,106.52,101.41,FH-12,Baseline shot
+120,-19,106.42,101.25,CO-02,Offset begins
+144,-10,106.31,101.19,CO-03,Offset bend
+160,-10,106.27,101.06,FH-13,Installed alignment
+183,-10,106.24,101.0,V-03,Valve relocated from 1+60
+200,-10,106.46,100.88,FH-14,Installed alignment
+216,-10,106.55,100.82,X-01,Water crown at gas crossing
+240,-10,106.47,100.78,FH-15,Installed alignment
+268,-19,106.31,100.66,CO-04,Return to baseline
+280,-19,106.27,100.61,FH-16,Return shot
+320,-19,106.35,100.48,CO-05,Matchline shot
+360,-19,106.18,100.27,FH-17,Baseline shot
+400,-19,105.97,100.06,FH-18,Baseline shot
+440,-19,105.83,99.95,V-04,Valve box center
+480,-19,105.71,99.86,FH-19,Baseline shot
+520,-19,105.79,99.74,FH-20,Baseline shot
+560,-19,105.86,99.61,FH-21,Baseline shot
+600,-19,105.95,99.53,FH-22,Baseline shot
+618,-19,106.02,99.44,CO-06,Last accepted observation
+640,,106.14,,E-01,Existing tie-in sketch only

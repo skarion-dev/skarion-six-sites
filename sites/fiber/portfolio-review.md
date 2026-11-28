@@ -1,5 +1,13 @@
 # Skarion Fiber portfolio review
 
+## Mercer Road crossing technical sample
+
+The Mercer Road sample pairs a three-sheet DWG and PDF set with a fictional roadway and utility locate record. The plan and profile use one baseline for roadway edges, right-of-way, bore entry and exit, and three utilities. The water and storm observations carry supplied underside elevations. The gas depth at 1+43 stays open in the plan, profile and review register. The sample package includes the points behind the profile and the review actions. [Crossing package](assets/samples/technical/fiber-crossing/fiber-crossing-package.zip)
+
+The portfolio work is original fictional drafting. The reviewer, utility owner and governing agency control field confirmation and any release decision.
+
+## Research queue
+
 This queue belongs to the Skarion team. Third-party projects are research references. Build and approve original artifacts before adding a work section to the website or publishing case-linked social posts.
 
 ## Project precedents
@@ -18,7 +26,7 @@ This queue belongs to the Skarion team. Third-party projects are research refere
 | Proposed sample | Produce | Owner and acceptance check | Release state |
 |---|---|---|---|
 | Aerial route segment | Invent a short distribution route and create a key map, two detail sheets, one splice schedule, a material extract, and a revision log. | OSP lead assigns an independent technical reviewer to check sheet joins, structure and cable labels, fiber continuity, and consistent plan-to-schedule IDs. Marketing applies the synthetic demonstration label. | Awaiting team production |
-| Underground crossing and bore detail | Create a plan/profile and crossing note using invented field records and criteria. Include a conflict log and one escalated decision. | Technical reviewer verifies fictional reference criteria and escalated items. Marketing removes approval language. | Awaiting team production |
+| Underground crossing and bore detail | Coordinate plan/profile, roadway limits, source elevations and utility-owner actions. | Compare the station limits and supplied elevations and keep the gas-depth hold on the issued sheets. | Technical sample built |
 | Plan and splice revision cycle | Apply a fictional field redline to an existing drawing and splice attachment. Reconcile lengths, quantities, and revision identifiers. | Peer reviewer checks continuity and file structure. OSP lead records accepted and open changes. Marketing confirms that prior and revised exports show the intended difference. | Awaiting team production |
 
 For every candidate, capture owner or fictional source description, Skarion scope, input and output versions, responsible reviewer, accepted outcomes and dated reuse permissions. Use headers and alt text that identify synthetic figures where applicable. In the site, place approved work examples after the services section, link to named output previews and give each page its own permission record. Use a private review copy until the OSP lead, marketing owner, and authorized approver all record a release decision.

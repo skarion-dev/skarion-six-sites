@@ -1,0 +1,5 @@
+id,source,instruction_or_exception,affected_sheets,status
+R01,FR-01 / CO-02 to CO-04,Offset water route from 1+20 to 2+68. Maximum 9.00 ft toward road.,"U-101, U-601",Drawn from accepted points
+R02,FR-01 / V-03,Move V-03 from 1+60 to 1+83. Update plan marker and asset schedule.,"U-101, U-601",Drawn from accepted point
+R03,FR-01 / X-01,Gas underside 102.38 ft and water crown 100.82 ft at 2+16. Record observed 1.56 ft gap.,"U-101, U-501, U-601",Measured values transcribed
+E-01,FR-02 / CO-06,Exact existing tie-in position and pipe elevation remain open beyond 6+18.,"U-102, U-501, U-601",Hold for closeout lead

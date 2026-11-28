@@ -1,0 +1,11 @@
+id,room,side,x_ft,y_ft,visible_width_ft
+D01,101,south,6.0,0,3.5
+D02,101,north,7,16,3
+D03,102,north,25,16,3
+D04,103,north,49,16,3
+D05,104,south,2,22,3
+D06,105,south,18,22,3
+D07,106,south,32,22,3
+D08,107,south,46,22,3
+D09,108,south,56,22,3
+D10,109,west,0,17.5,3.5

@@ -18,8 +18,12 @@ function projectPath(project) {
   return `projects/${project.id}/`;
 }
 
+function portfolioName(site) {
+  return site.id === 'drafting' ? 'Technical samples' : 'Example projects';
+}
+
 function projectCard(project, base, lazy = true) {
-  return `<article class="project-tile">
+  return `<article class="project-tile${project.technicalSample ? ' technical-project' : ''}">
     <a class="project-link" href="${base}${projectPath(project)}">
       <img src="${base}${h(project.image)}" alt="" width="720" height="432"${lazy ? ' loading="lazy"' : ''}>
       <div class="project-tile-body">
@@ -42,10 +46,10 @@ function featuredProjects(content) {
     : content.projects;
 }
 
-function navLinks(base, current) {
+function navLinks(site, base, current) {
   const section = (path, text) => `<a href="${base}${path}/"${current === path ? ' aria-current="page"' : ''}>${text}</a>`;
   return `${section('capabilities', 'Capabilities')}
-        ${section('projects', 'Projects')}
+        ${section('projects', site.id === 'drafting' ? portfolioName(site) : 'Projects')}
         <a href="${base}#process">Process</a>`;
 }
 
@@ -84,7 +88,7 @@ function shell(site, base, current, pageTitle, description, main) {
   <header class="detail-header">
     <div class="detail-width detail-header-inner">
       <a href="${base}" class="detail-brand"><img src="${base}logo.svg" width="40" height="40" alt=""><strong>${h(site.name)}</strong></a>
-      <nav aria-label="Main navigation">${navLinks(base, current)}</nav>
+      <nav aria-label="Main navigation">${navLinks(site, base, current)}</nav>
       <a class="detail-button detail-button-outline" href="${base}#contact">Discuss scope</a>
     </div>
   </header>
@@ -103,10 +107,10 @@ function shell(site, base, current, pageTitle, description, main) {
 `;
 }
 
-function breadcrumbs(base, current, insideProjects = false) {
+function breadcrumbs(base, current, parent = '') {
   return `<nav class="detail-crumb" aria-label="Breadcrumb"><ol>
     <li><a href="${base}">Home</a></li>
-    ${insideProjects ? `<li><a href="${base}projects/">Projects</a></li>` : ''}
+    ${parent ? `<li><a href="${base}projects/">${h(parent)}</a></li>` : ''}
     <li aria-current="page">${h(current)}</li>
   </ol></nav>`;
 }
@@ -144,7 +148,7 @@ function capabilitiesPage(site, content) {
       </div>
     </div>
     <section class="detail-width detail-section project-previews" aria-labelledby="related-projects">
-      <div class="detail-section-heading"><h2 id="related-projects">See the work in context</h2><a class="detail-text-link" href="../projects/">Browse project examples</a></div>
+      <div class="detail-section-heading"><h2 id="related-projects">See the work in context</h2><a class="detail-text-link" href="../projects/">${site.id === 'drafting' ? 'Browse technical samples' : 'Browse project examples'}</a></div>
       ${projectGrid(featuredProjects(content), base)}
     </section>
     ${discussion(site, base)}`);
@@ -153,18 +157,20 @@ function capabilitiesPage(site, content) {
 function projectsPage(site, content) {
   const base = '../';
   const groups = content.projectGroups;
+  const name = portfolioName(site);
+  const drafting = site.id === 'drafting';
   const directory = groups
     ? groups.map(({ id, title, description }) => `<section class="project-group" id="${h(id)}" aria-labelledby="title-${h(id)}">
       <div class="detail-section-heading"><div><h2 id="title-${h(id)}">${h(title)}</h2><p>${h(description)}</p></div></div>
       ${projectGrid(content.projects.filter((project) => project.group === id), base)}
     </section>`).join('')
     : projectGrid(content.projects, base, false);
-  return shell(site, base, 'projects', 'Example projects', `Illustrative ${site.scope.toLowerCase()} projects, technical workflows and downloadable sample files from ${site.name}.`, `
+  return shell(site, base, 'projects', name, `Illustrative ${site.scope.toLowerCase()} projects, technical workflows and downloadable sample files from ${site.name}.`, `
     <section class="detail-mast detail-width">
-      ${breadcrumbs(base, 'Projects')}
-      <h1>Example projects</h1>
-      <p class="detail-lead">${groups ? 'Compare source markups and finished drawings across the drafting workflows. Every example includes editable CAD, matching PDFs and a review record.' : 'Review the starting records, scope decisions, finished outputs and checks. Each example includes files you can open and inspect.'}</p>
-      <p class="sample-status">Illustrative projects built with synthetic data</p>
+      ${breadcrumbs(base, name)}
+      <h1>${h(name)}</h1>
+      <p class="detail-lead">${drafting ? 'Open three drafting handoffs from source records through editable DWGs, matching drawing sets and decisions left for the reviewer.' : 'Review the starting records, scope decisions, finished outputs and checks. Each example includes files you can open and inspect.'}</p>
+      <p class="sample-status">${drafting ? 'Technical samples with synthetic data' : 'Illustrative projects built with synthetic data'}</p>
       ${groups ? `<nav class="catalog-nav" aria-label="Jump to work type">${groups.map(({ id, title }) => `<a href="#${h(id)}">${h(title)}</a>`).join('')}</nav>` : ''}
     </section>
     <section class="detail-width detail-section library-section" aria-label="Project directory">
@@ -179,12 +185,24 @@ function caseVisuals(project, base) {
     return `<section class="case-comparison" aria-label="Before and after drawings">
       ${project.comparison.map(({ label, image, alt, caption }) => `<figure class="case-figure">
         <h2>${h(label)}</h2>
-        <img src="${base}${h(image)}" alt="${h(alt)}" width="1350" height="904">
+        <img src="${base}${h(image)}" alt="${h(alt)}" width="${project.technicalSample ? 1904 : 1350}" height="${project.technicalSample ? 1232 : 904}">
         <figcaption><span>${h(caption)}</span><a class="detail-text-link" href="${base}${h(image)}" target="_blank" rel="noopener" aria-label="Open full-size drawing, ${h(label)}">Open full-size drawing</a></figcaption>
       </figure>`).join('')}
     </section>`;
   }
   return `<figure class="case-figure"><img src="${base}${h(project.image)}" alt="${h(project.imageAlt)}" fetchpriority="high"><figcaption><span>${h(project.imageAlt)}</span><a class="detail-text-link" href="${base}${h(project.image)}" target="_blank" rel="noopener">Open full-size graphic</a></figcaption></figure>`;
+}
+
+function sheetGallery(project, base) {
+  if (!project.sheetPreviews?.length) return '';
+  return `<section class="detail-width detail-section technical-sheet-section" aria-labelledby="sheet-heading">
+    <div class="detail-section-heading"><h2 id="sheet-heading">Inside the drawing set</h2></div>
+    <div class="technical-sheet-grid">${project.sheetPreviews.map(({ label, image, alt }) => `
+      <figure class="case-figure">
+        <a href="${base}${h(image)}" target="_blank" rel="noopener"><img src="${base}${h(image)}" alt="${h(alt)}" width="1904" height="1232" loading="lazy">
+          <span>${h(label)}</span></a>
+      </figure>`).join('')}</div>
+  </section>`;
 }
 
 function casePage(site, project, others) {
@@ -199,17 +217,17 @@ function casePage(site, project, others) {
 
   return shell(site, base, '', project.title, project.summary, `
     <section class="detail-mast case-mast detail-width">
-      ${breadcrumbs(base, project.title, true)}
+      ${breadcrumbs(base, project.title, site.id === 'drafting' ? portfolioName(site) : 'Projects')}
       <div class="case-intro">
         <div><p class="detail-kicker">${h(project.category)}</p><h1>${h(project.title)}</h1><p class="detail-lead">${h(project.summary)}</p></div>
-        <div class="case-actions"><p class="sample-status">${project.draft ? 'Draft showcase' : 'Illustrative project'} · Synthetic data</p><a class="detail-button detail-button-solid" href="#sample-files">View sample files</a></div>
+        <div class="case-actions"><p class="sample-status">${project.technicalSample ? 'Technical sample' : project.draft ? 'Draft showcase' : 'Illustrative project'} · Synthetic data</p><a class="detail-button detail-button-solid" href="#sample-files">View sample files</a></div>
       </div>
       ${project.handoffSummary ? `<dl class="case-summary">${Object.entries(project.handoffSummary).map(([label, value]) => `<div><dt>${h(label)}</dt><dd>${h(value)}</dd></div>`).join('')}</dl>` : ''}
       ${caseVisuals(project, base)}
     </section>
     <div class="detail-width case-layout">
       <div class="case-story">
-        <section aria-labelledby="brief-heading"><h2 id="brief-heading">Project brief</h2><p>${h(project.context)}</p><h3>Scope constraints</h3>${list(project.constraints)}</section>
+        <section aria-labelledby="brief-heading"><h2 id="brief-heading">${project.technicalSample ? 'Sample brief' : 'Project brief'}</h2><p>${h(project.context)}</p><h3>Scope constraints</h3>${list(project.constraints)}</section>
         <section aria-labelledby="workflow-heading"><h2 id="workflow-heading">Production workflow</h2>
           <ol class="case-steps">${project.approach.map(({ title, text }) => `<li><h3>${h(title)}</h3><p>${h(text)}</p></li>`).join('')}</ol>
         </section>
@@ -223,8 +241,9 @@ function casePage(site, project, others) {
         </section>
       </aside>
     </div>
+    ${sheetGallery(project, base)}
     <section class="detail-width detail-section project-previews" aria-labelledby="more-projects">
-      <div class="detail-section-heading"><h2 id="more-projects">More project examples</h2><a class="detail-text-link" href="${base}projects/">All ${h(site.name)} projects</a></div>
+      <div class="detail-section-heading"><h2 id="more-projects">${project.technicalSample ? 'More technical samples' : 'More project examples'}</h2><a class="detail-text-link" href="${base}projects/">${project.technicalSample ? 'All technical samples' : `All ${h(site.name)} projects`}</a></div>
       <div class="project-grid project-grid-pair">${others.map((other) => projectCard(other, base)).join('')}</div>
     </section>
     ${discussion(site, base, project)}`);
@@ -244,6 +263,15 @@ export function buildPages(site, content) {
     ['projects/index.html', projectsPage(site, content)],
     ...content.projects.map((project) => [
       `${projectPath(project)}index.html`, casePage(site, project, related(project)),
+    ]),
+    ...(content.retiredProjects ?? []).map(({ id, title, target, label, description }) => [
+      `${projectPath({ id })}index.html`, shell(site, '../../', '', title, description, `
+        <section class="detail-mast detail-width">
+          ${breadcrumbs('../../', title, portfolioName(site))}
+          <h1>${h(title)}</h1>
+          <p class="detail-lead">${h(description)}</p>
+          <a class="detail-button detail-button-solid" href="${h(target)}">${h(label)}</a>
+        </section>`),
     ]),
   ];
 }
@@ -287,10 +315,11 @@ export function buildCatalog(sites, contentBySite) {
 }
 
 export function expandHome(html, site, content) {
+  const drafting = site.id === 'drafting';
   const showcase = `<section class="home-work" id="example-projects" data-lane="${site.id}" aria-labelledby="work-heading">
       <div class="detail-width">
-        <p class="detail-kicker">Illustrative projects · Synthetic data</p>
-        <div class="detail-section-heading"><div><h2 id="work-heading">Example projects</h2><p>See the scope, review steps and sample files for each example.</p></div><a class="detail-text-link" href="projects/">Browse the project library</a></div>
+        <p class="detail-kicker">${drafting ? 'Fictional source records and drawings' : 'Illustrative projects · Synthetic data'}</p>
+        <div class="detail-section-heading"><div><h2 id="work-heading">${h(portfolioName(site))}</h2><p>${drafting ? 'Review the source markups, editable DWGs, matching PDF sheets and open items.' : 'See the scope, review steps and sample files for each example.'}</p></div><a class="detail-text-link" href="projects/">${drafting ? 'Browse sample packages' : 'Browse the project library'}</a></div>
         ${projectGrid(featuredProjects(content))}
         <div class="home-capabilities">
           <div><h2>Technical capabilities</h2><p>${h(content.capabilityIntro)}</p><a class="detail-text-link" href="capabilities/">View inputs, outputs and checks</a></div>

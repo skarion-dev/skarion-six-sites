@@ -73,24 +73,96 @@
     },
     {
       "id": "underground-crossing-exhibit",
-      "title": "Underground road crossing review package",
-      "category": "Crossing exhibit",
-      "summary": "A synthetic 340-foot crossing segment with a 240-foot proposed bore and a clearly marked utility-depth decision.",
-      "image": "assets/projects/fiber-crossing.svg",
-      "imageAlt": "Fictional road crossing exhibit showing bore stations 0+35 to 2+75 and a utility depth hold at station 1+43",
-      "context": "A fictional municipality’s reviewer needs a crossing exhibit and requirements register. The proposed bore is stationed from 0+35 to 2+75. A utility crossing at 1+43 has an unverified depth in the source records.",
-      "constraints": ["All stations and constraints are fictional", "The vertical profile is schematic and does not establish depths or clearances", "The unverified utility depth stays open for field confirmation and reviewer disposition"],
-      "approach": [
-        { "title": "Assign a single station reference", "text": "Record both approaches and the bore against the same baseline and use it for the exhibit and conflict register." },
-        { "title": "Identify what the reviewer needs", "text": "Cross-reference the right-of-way sketch, utility locate note, and owner’s detail reference against the open requirements." },
-        { "title": "Keep the hold visible", "text": "Attach the missing utility-depth confirmation to station 1+43. Assign field verification and route disposition to their respective owners." }
+      "title": "Mercer Road fiber crossing",
+      "category": "Right-of-way drafting",
+      "summary": "A stationed 240 ft preliminary bore with road and right-of-way limits, observed water and storm elevations, and a gas depth held for field verification.",
+      "image": "assets/projects/technical/fiber-crossing-plan-profile.webp",
+      "imageAlt": "X-101 road crossing plan and profile with bounded bore route and the gas main depth hold",
+      "context": "A fictional roadway owner asks for a review exhibit before considering a crossing release. The buyer supplies roadway limits, locate evidence and preliminary bore elevations. The package traces those records and identifies the open gas depth without assigning a clearance.",
+      "constraints": [
+        "Use local engineering coordinates. Road pavement runs from 1+04 to 1+56 and the supplied right-of-way spans 0+70 to 1+90.",
+        "Show the preliminary bore from 0+35 to 2+75. Keep the gas elevation and clearance open at 1+43.",
+        "Show observed water and storm undersides separately from preliminary bore elevations."
       ],
-      "deliverables": ["Stationed crossing graphic with proposed limits and the unresolved utility conflict", "Segment schedule for the approaches and bore", "Requirements crosswalk with evidence and ownership"],
-      "verification": ["Approaches of 35 and 65 feet plus a 240-foot bore total 340 feet", "The proposed bore lies between 0+35 and 2+75 and spans the fictional roadway from 1+04 to 1+56", "Station 1+43 and the open utility-depth hold match between exhibit and crosswalk"],
-      "review": "Synthetic exhibit preparation example. The authorized reviewer and governing agency control any clearance, construction, or permitting decision.",
+      "approach": [
+        {
+          "title": "Align source records to one baseline",
+          "text": "Carry roadway edges, right-of-way limits, entry and exit stations and all three utility locates into the plan."
+        },
+        {
+          "title": "Plot elevations and the hold",
+          "text": "Use supplied ground and bore crown points. Mark gas as horizontal only, and carry the hold through the plan, profile and register."
+        },
+        {
+          "title": "Return reviewer actions",
+          "text": "Record the known elevation differences as arithmetic and route the gas depth and owner clearance decision to the responsible reviewers."
+        }
+      ],
+      "deliverables": [
+        "Three editable AutoCAD 2018 DWG layouts and three matching 17 × 11 in PDF sheets",
+        "Record sheet RS-01 and the observed surface and preliminary profile CSV",
+        "Utility evidence and conflict register plus checked station limits"
+      ],
+      "verification": [
+        "Check the 240 ft bore, 52 ft pavement and 120 ft right-of-way intervals against their paired station limits.",
+        "Verify 3.28 ft at the indicated water crossing and 2.03 ft at the storm crossing using the supplied values.",
+        "Confirm the gas crossing has no assigned elevation or clearance, and X-02 stays open on the profile and the register.",
+        "Verify DWG geometry, layers and viewports through a round-trip CAD conversion."
+      ],
+      "review": "The utility owner and authorized reviewer direct field verification and control any design or permitting decision.",
       "files": [
-        { "path": "assets/samples/crossing-stations.csv", "label": "Crossing station schedule", "description": "Approach and bore limits, roadway reference, and the unresolved utility point." },
-        { "path": "assets/samples/crossing-requirements.csv", "label": "Requirements and conflict crosswalk", "description": "Evidence and responsibility for the fictional ROW sketch, utility conflict, and detail reference." }
+        {
+          "path": "assets/samples/technical/fiber-crossing/fiber-crossing-package.zip",
+          "label": "Complete sample package",
+          "description": "Working DWG, PDF, source evidence, profile and station tables, and review register."
+        },
+        {
+          "path": "assets/samples/technical/fiber-crossing/fiber-crossing-sheets.pdf",
+          "label": "Plotted drawing set",
+          "description": "X-001 index, X-101 plan/profile and X-601 limits and utility review."
+        },
+        {
+          "path": "assets/samples/technical/fiber-crossing/fiber-crossing.dwg",
+          "label": "Edit the working drawing",
+          "description": "AutoCAD 2018 DWG with three layouts and model units in feet."
+        },
+        {
+          "path": "assets/samples/technical/fiber-crossing/fiber-crossing-source.pdf",
+          "label": "Source roadway and locate record",
+          "description": "RS-01 with station and crossing evidence."
+        },
+        {
+          "path": "assets/samples/technical/fiber-crossing/conflict-register.csv",
+          "label": "Conflict and review register",
+          "description": "Three crossed utilities with observed or held depths and next actions."
+        }
+      ],
+      "technicalSample": true,
+      "handoffSummary": {
+        "Bore limits": "0+35 to 2+75",
+        "Drawing set": "3 named sheets",
+        "Open item": "Gas depth at 1+43"
+      },
+      "comparison": [
+        {
+          "label": "RS-01 · Source roadway and locate record",
+          "image": "assets/projects/technical/fiber-crossing-source.webp",
+          "alt": "Fictional pavement, right-of-way and utility locate inputs by station",
+          "caption": "The supplied locate includes a horizontal gas position with its elevation open."
+        },
+        {
+          "label": "X-101 · Crossing plan and profile",
+          "image": "assets/projects/technical/fiber-crossing-plan-profile.webp",
+          "alt": "Coordinated plan and profile showing the preliminary bore and utility elevations where supplied",
+          "caption": "The plotted profile carries the preliminary bore, supplied utility observations and the gas depth hold."
+        }
+      ],
+      "sheetPreviews": [
+        {
+          "label": "X-601 · Limits and utility review register",
+          "image": "assets/projects/technical/fiber-crossing-conflicts.webp",
+          "alt": "Roadway and bore dimensions and action for each observed crossing"
+        }
       ]
     },
     {

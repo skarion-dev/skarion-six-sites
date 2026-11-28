@@ -116,6 +116,12 @@ for (const { id, name } of sites) {
   expect(fragments(capabilities).includes('handoff'), `${name}: missing handoff specifications`);
   expect(capabilities.includes('Checks before handoff'), `${name}: missing capability checks`);
   expect(library.includes('synthetic data'), `${name}: library needs example disclosure`);
+  for (const retired of content.retiredProjects ?? []) {
+    const route = `projects/${retired.id}/`;
+    await checkPage(`/${id}/${route}index.html`);
+    expect(!library.includes(route) && !catalog.includes(`../${id}/${route}`),
+      `${name}: retired example appears in the portfolio (${route})`);
+  }
   for (const project of content.projects) {
     const example = await checkPage(`/${id}/projects/${project.id}/index.html`);
     expect(library.includes(`projects/${project.id}/`), `${name}: project missing from library`);

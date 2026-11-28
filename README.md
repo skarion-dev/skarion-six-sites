@@ -39,6 +39,7 @@ The intake form builds a draft addressed to `info@skarion.com` in the visitor's 
 
 ## Team handoff
 
+- [Drafting sample review](sites/drafting/portfolio-review.md) · [Utility closeout ZIP](sites/drafting/assets/samples/technical/utility-closeout/utility-closeout-package.zip) · [Office existing conditions ZIP](sites/drafting/assets/samples/technical/office-existing/office-existing-package.zip) · [Civil redlines ZIP](sites/drafting/assets/samples/technical/civil-redlines/civil-redlines-package.zip) · [Fiber crossing ZIP](sites/fiber/assets/samples/technical/fiber-crossing/fiber-crossing-package.zip)
 - [Brand, domain and social launch plan](review/launch-kit.md)
 - [Technical and publication review sheet](review/site-review.md)
 - [Founder’s Research and archive provenance](research/README.md) · [Open in the local preview](http://127.0.0.1:4173/founders-research/)

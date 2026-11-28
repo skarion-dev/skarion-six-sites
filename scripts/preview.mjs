@@ -28,6 +28,8 @@ const types = {
   '.geojson': 'application/geo+json; charset=utf-8',
   '.dxf': 'application/dxf',
   '.pdf': 'application/pdf',
+  '.dwg': 'application/acad',
+  '.zip': 'application/zip',
 };
 
 createServer(async (request, response) => {

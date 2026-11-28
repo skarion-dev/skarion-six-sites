@@ -30,7 +30,7 @@ The mark folds the corner of a plot sheet over a redline. The mark is [logo.svg]
 
 **Art direction.** Lead with deliverables the buyer can inspect. Draw a bounded scene, use quiet gridlines, and highlight a single discrepancy or resolution. Make legends readable and label invented drawings as illustrative. Avoid client logos, job file screenshots and as-built measurements unless the reviewer and rights owner approve the exact material.
 
-**Assets included.** [Utility hero source view](assets/projects/ut-closeout-before.webp), [utility hero record view](assets/projects/ut-closeout-after.webp), [editable social card](brand-assets/social-card.svg), [1200 × 630 PNG](brand-assets/social-card.png) and [512 × 512 avatar](brand-assets/avatar.png). Use the approved demo drawing crop for the relevant case. Give plot screenshots a plain-language caption that names the change and flags any open item.
+**Assets included.** [Utility hero source view](assets/projects/technical/utility-closeout-markup.webp), [utility hero record view](assets/projects/technical/utility-closeout-record.webp), [editable social card](brand-assets/social-card.svg), [1200 × 630 PNG](brand-assets/social-card.png) and [512 × 512 avatar](brand-assets/avatar.png). Use plots from the relevant technical sample. Give screenshots a caption that names the change and any open item.
 
 ## Social and launch
 

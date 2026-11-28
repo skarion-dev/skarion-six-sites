@@ -1,0 +1,5 @@
+id,source,instruction,affected_sheets,status
+CR-01,SK-01 / detail A,"Use instructed equipment pad bounds E56 to E88, N58 to N78. Update plan, key and dimension check.","C-101, C-301",Incorporated
+CR-02,SK-01 / detail B,Show instructed 30 ft curb restoration from E69 to E99 at N32. Coordinate the profile extent.,"C-101, C-201, C-301",Incorporated
+CR-03,SK-02 / P03-P06,Use six issued crown elevations for the approved utility segment. Carry revised X-02 alignment.,"C-101, C-201, C-301",Incorporated
+CR-04,SK-02 / EC-A,Confirm existing utility crown beyond STA 1+50. Leave the downstream connection open.,"C-101, C-201, C-301",Hold for civil lead

@@ -1,0 +1,6 @@
+asset,station_ft,offset_ft,elevation_ft_local,status
+V-03,183,-10,101.0,Valve relocated from 1+60
+X-01,216,-10,100.82,Water crown at gas crossing
+V-04,440,-19,99.95,Valve box center
+CO-06,618,-19,99.44,Last accepted observation
+E-01,640,,,Existing tie-in sketch only

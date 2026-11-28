@@ -1,0 +1,10 @@
+room,name,x_ft,y_ft,nominal_width_ft,nominal_depth_ft,ceiling,ceiling_height
+101,RECEPTION,0,0,16,16,ACT-01,"9'-0"""
+102,OPEN OFFICE,16,0,24,16,ACT-01,"9'-0"""
+103,MEETING,40,0,24,16,ACT-01,"9'-0"""
+104,OFFICE A,0,22,14,14,ACT-01,"9'-0"""
+105,OFFICE B,14,22,14,14,ACT-01,"9'-0"""
+106,BREAK ROOM,28,22,16,14,GWB-01,"8'-6"""
+107,STORAGE,44,22,10,14,HOLD,
+108,RESTROOM,54,22,10,14,GWB-01,"8'-6"""
+109,HALL,0,16,64,6,GWB-01,"8'-6"""

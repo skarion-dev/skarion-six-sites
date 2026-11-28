@@ -10,7 +10,7 @@ const marker = path.join(dist, '.skarion-build');
 const sites = JSON.parse(await readFile(path.join(root, 'sites.json'), 'utf8'));
 const publicFiles = new Set(['index.html', 'site.css', 'logo.svg', 'favicon.svg', 'social-card.svg', 'social-card.png']);
 const assetExtensions = new Set(['.avif', '.css', '.gif', '.ico', '.jpeg', '.jpg', '.js', '.png', '.svg', '.webp', '.woff2']);
-const sampleExtensions = new Set(['.csv', '.dxf', '.geojson', '.json', '.pdf', '.txt']);
+const sampleExtensions = new Set(['.csv', '.dwg', '.dxf', '.geojson', '.json', '.pdf', '.txt', '.zip']);
 
 async function exists(file) {
   try {
@@ -61,13 +61,19 @@ for (const { id } of sites) {
     }
     projectIds.add(project.id);
     if (!project.files.length) throw new Error(`${id}/${project.id} has no sample files.`);
-    const comparisonImages = (project.comparison ?? []).map(({ image }) => image);
+    const comparisonImages = [...(project.comparison ?? []), ...(project.sheetPreviews ?? [])].map(({ image }) => image);
     for (const asset of [project.image, ...comparisonImages, ...project.files.map((file) => file.path)]) {
       const file = path.join(source, asset);
       if (!/^assets\/(?:[a-z0-9_-]+\/)*[a-z0-9_-]+\.[a-z0-9]+$/i.test(asset) || !isCopyable(file) || !(await exists(file))?.isFile()) {
         throw new Error(`${id}/${project.id}: invalid or missing asset ${asset}`);
       }
     }
+  }
+  for (const retired of content.retiredProjects ?? []) {
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(retired.id) || projectIds.has(retired.id)) {
+      throw new Error(`${id}: invalid or duplicate retired project ${retired.id}`);
+    }
+    projectIds.add(retired.id);
   }
   contentBySite.set(id, content);
 }

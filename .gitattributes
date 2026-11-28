@@ -1,2 +1,4 @@
 *.pdf binary
+*.dwg binary
+*.zip binary
 research/archive/** -text

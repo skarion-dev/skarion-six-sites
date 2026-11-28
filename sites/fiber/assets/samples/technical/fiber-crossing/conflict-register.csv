@@ -1,0 +1,4 @@
+id,station,utility,utility_underside_ft_local,preliminary_bore_crown_ft_local,illustrative_difference_ft,source_type,review_action
+X-01,0+90,Water main,101.80,98.52,3.28,Observed underside,Compare supplied points
+X-02,1+43,Gas main,Open,98.16,Open,Locate horizontal only,Field verify; owner review
+X-03,1+76,Storm conduit,99.95,97.92,2.03,Observed underside,Owner compare / release
